@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Mr_Catknight/UI/Scenes/Main_Menu.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Development/Scenes/Prototype.unity
+    guid: 87f083d1b8f36d04a89c380d1eb0bf03
   m_configObjects: {}
