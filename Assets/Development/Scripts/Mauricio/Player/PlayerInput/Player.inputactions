@@ -137,6 +137,17 @@
                 },
                 {
                     "name": "",
+                    "id": "9cd7c03c-b03c-482b-b409-5a19ee1f8c76",
+                    "path": "<DualShockGamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "830286df-cc89-43d3-a545-72a6196004da",
                     "path": "<Keyboard>/ctrl",
                     "interactions": "",
@@ -227,6 +238,17 @@
             "devices": [
                 {
                     "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "PS4",
+            "bindingGroup": "PS4",
+            "devices": [
+                {
+                    "devicePath": "<DualShockGamepad>",
                     "isOptional": false,
                     "isOR": false
                 }
