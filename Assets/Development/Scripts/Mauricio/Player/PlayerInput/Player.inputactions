@@ -7,9 +7,9 @@
             "actions": [
                 {
                     "name": "Movement",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "09b57423-a270-4c30-bd70-cc34b7ca47a9",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 },
@@ -115,6 +115,17 @@
                 },
                 {
                     "name": "",
+                    "id": "afeb2b6f-4d27-48f8-921b-c1f31384480d",
+                    "path": "<DualShockGamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "7a8a9db6-9b31-498c-ad1e-c541d91d3e1e",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -170,6 +181,17 @@
                 },
                 {
                     "name": "",
+                    "id": "fc359f9b-9a2c-44cf-b344-f2ccd780d6d3",
+                    "path": "<DualShockGamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "84464181-506c-48cd-8c55-53c8c5d42f4e",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
@@ -192,6 +214,17 @@
                 },
                 {
                     "name": "",
+                    "id": "84c7a7f0-ad98-4ddc-b7f1-d9315bddc2cc",
+                    "path": "<Gamepad>/rightStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "27fbab0c-3611-42ee-a6b5-13871aa89195",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
@@ -208,6 +241,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
+                    "action": "DashDirection",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5991fe89-4167-4168-b7dc-2f06a4f68a84",
+                    "path": "<DualShockGamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PS4",
                     "action": "DashDirection",
                     "isComposite": false,
                     "isPartOfComposite": false
