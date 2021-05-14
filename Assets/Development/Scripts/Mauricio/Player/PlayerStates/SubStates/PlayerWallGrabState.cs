@@ -29,7 +29,7 @@ public class PlayerWallGrabState : PlayerTouchingWallState
     {
         base.Enter();
 
-        holdPosition = player.transform.position;
+        holdPosition = _player.transform.position;
 
         HoldPosition();
     }
@@ -43,27 +43,27 @@ public class PlayerWallGrabState : PlayerTouchingWallState
     {
         base.LogicUpdate();     
 
-        if (!isExitingState)
+        if (!_isExitingState)
         {
             HoldPosition();
 
             if (yInput > 0)
             {
-                stateMachine.ChangeState(player.WallClimbState);
+                _stateMachine.ChangeState(_player.WallClimbState);
             }
             else if (yInput < 0 || !grabInput)
             {
-                stateMachine.ChangeState(player.WallSlideState);
+                _stateMachine.ChangeState(_player.WallSlideState);
             }
         }       
     }
 
     private void HoldPosition()
     {
-        player.transform.position = holdPosition;
+        _player.transform.position = holdPosition;
 
-        player.SetVelocityX(0f);
-        player.SetVelocityY(0f);
+        _player.SetVelocityX(0f);
+        _player.SetVelocityY(0f);
     }
 
     public override void PhysicsUpdate()

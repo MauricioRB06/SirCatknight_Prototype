@@ -11,31 +11,31 @@ public class PlayerCrouchMoveState : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
-        player.SetColliderHeight(playerData.crouchColliderHeight);
+        _player.SetColliderHeight(_playerData.crouchColliderHeight);
     }
 
     public override void Exit()
     {
         base.Exit();
-        player.SetColliderHeight(playerData.standColliderHeight);
+        _player.SetColliderHeight(_playerData.standColliderHeight);
     }
 
     public override void LogicUpdate()
     {
         base.LogicUpdate();
 
-        if (!isExitingState)
+        if (!_isExitingState)
         {
-            player.SetVelocityX(playerData.crouchMovementVelocity * player.FacingDirection);
-            player.CheckIfShouldFlip(xInput);
+            _player.SetVelocityX(_playerData.crouchMovementVelocity * _player.FacingDirection);
+            _player.CheckIfShouldFlip(xInput);
 
             if(xInput == 0)
             {
-                stateMachine.ChangeState(player.CrouchIdleState);
+                _stateMachine.ChangeState(_player.CrouchIdleState);
             }
             else if(yInput != -1 && !isTouchingCeiling)
             {
-                stateMachine.ChangeState(player.MoveState);
+                _stateMachine.ChangeState(_player.MoveState);
             }
         }
 

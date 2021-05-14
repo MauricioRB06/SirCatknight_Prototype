@@ -24,18 +24,18 @@ public class PlayerGroundedState : PlayerState
     {
         base.DoChecks();
 
-        isGrounded = player.CheckIfGrounded();
-        isTouchingWall = player.CheckIfTouchingWall();
-        isTouchingLedge = player.CheckIfTouchingLedge();
-        isTouchingCeiling = player.CheckForCeiling();
+        isGrounded = _player.CheckIfGrounded();
+        isTouchingWall = _player.CheckIfTouchingWall();
+        isTouchingLedge = _player.CheckIfTouchingLedge();
+        isTouchingCeiling = _player.CheckForCeiling();
     }
 
     public override void Enter()
     {
         base.Enter();
 
-        player.JumpState.ResetAmountOfJumpsLeft();
-        player.DashState.ResetCanDash();
+        _player.JumpState.ResetAmountOfJumpsLeft();
+        _player.DashState.ResetCanDash();
     }
 
     public override void Exit()
@@ -47,26 +47,26 @@ public class PlayerGroundedState : PlayerState
     {
         base.LogicUpdate();
 
-        xInput = player.InputHandler.NormInputX;
-        yInput = player.InputHandler.NormInputY;
-        JumpInput = player.InputHandler.JumpInput;
-        grabInput = player.InputHandler.GrabInput;
-        dashInput = player.InputHandler.DashInput;
+        xInput = _player.InputHandler.NormInputX;
+        yInput = _player.InputHandler.NormInputY;
+        JumpInput = _player.InputHandler.JumpInput;
+        grabInput = _player.InputHandler.GrabInput;
+        dashInput = _player.InputHandler.DashInput;
 
-        if (JumpInput && player.JumpState.CanJump())
+        if (JumpInput && _player.JumpState.CanJump())
         {
-            stateMachine.ChangeState(player.JumpState);
+            _stateMachine.ChangeState(_player.JumpState);
         }else if (!isGrounded)
         {
-            player.InAirState.StartCoyoteTime();
-            stateMachine.ChangeState(player.InAirState);
+            _player.InAirState.StartCoyoteTime();
+            _stateMachine.ChangeState(_player.InAirState);
         }else if(isTouchingWall && grabInput && isTouchingLedge)
         {
-            stateMachine.ChangeState(player.WallGrabState);
+            _stateMachine.ChangeState(_player.WallGrabState);
         }
-        else if (dashInput && player.DashState.CheckIfCanDash() && !isTouchingCeiling)
+        else if (dashInput && _player.DashState.CheckIfCanDash() && !isTouchingCeiling)
         {
-            stateMachine.ChangeState(player.DashState);
+            _stateMachine.ChangeState(_player.DashState);
         }
     }
 

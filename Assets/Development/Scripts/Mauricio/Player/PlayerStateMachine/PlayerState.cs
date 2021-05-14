@@ -3,58 +3,77 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/* Documentación Usada:
+ * 
+ * Protected: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/protected
+ * Virtual & Override: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual
+ * 
+ */
+
 public class PlayerState
 {
-    protected Player player;
-    protected PlayerStateMachine stateMachine;
-    protected PlayerData playerData;
+    protected Player _player;                        // Referencia a nuestro jugador
+    protected PlayerStateMachine _stateMachine;      // Referencia a nuestra maquina de estados
+    protected PlayerData _playerData;                // Aquí almacenaremos las variables de nuestro jugador
 
-    protected bool isAnimationFinished;
-    protected bool isExitingState;
+    protected bool _isAnimationFinished;
 
-    protected float startTime;
+    protected bool _isExitingState;
 
-    private string animBoolName;
+    /* el tiempo de inicio se establece cada vez que ingresamos a un estado, de esa manera desde cualquier estado
+     * podemos tener una referencia de cuánto tiempo hemos estado en un estado especifico */
 
-    public PlayerState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName)
+    protected float _startTime;
+
+    /* Cada estado va a tener un nombre que asignamos cuando creamos el estado y se usara para decirle al animador
+     * que animación deberia repoducirse */
+
+    private string _animationBoolName;
+
+    // Constructor de la clase
+    public PlayerState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animationBoolName)
     {
-        this.player = player;
-        this.stateMachine = stateMachine;
-        this.playerData = playerData;
-        this.animBoolName = animBoolName;
+        this._player = player;
+        this._stateMachine = stateMachine;
+        this._playerData = playerData;
+        this._animationBoolName = animationBoolName;
     }
 
-    public virtual void Enter()
-    {
-        DoChecks();
-        player.Anim.SetBool(animBoolName, true);
-        startTime = Time.time;
-        Debug.Log(animBoolName);
-        isAnimationFinished = false;
-        isExitingState = false;
-    }
-
-    public virtual void Exit()
-    {
-        player.Anim.SetBool(animBoolName, false);
-        isExitingState = true;
-    }
-
-    public virtual void LogicUpdate()
-    {
-
-    }
-
-    public virtual void PhysicsUpdate()
+    public virtual void Enter() // Se llama cuando entramos al estado
     {
         DoChecks();
+        _player.playerAnimator.SetBool(_animationBoolName, true);
+        _startTime = Time.time;
+        /*Debug.Log(_animBoolName);*/
+        _isAnimationFinished = false;
+        _isExitingState = false;
     }
+
+    public virtual void Exit()    // Se llama cuando abandonamos el estado
+    {
+        _player.playerAnimator.SetBool(_animationBoolName, false);
+        _isExitingState = true;
+    }
+
+    public virtual void LogicUpdate()       // Se llama en cada Frame del juego
+    {
+
+    }
+
+    public virtual void PhysicsUpdate()     // Se llama en cada actualización fija
+    {
+        DoChecks();
+    }
+
+    /* La usaremos desde PhysicsUpdate() y desde Enter(), por lo que en esta función le diremos al estado si queremos
+     * que busque suelo o muros, cosas así, de esa manera no tenemos que llamarlos en la actualización de físicas y en
+     * cada estado, podemos hacerlo una vez y hacer comprobaciones */
 
     public virtual void DoChecks() { }
 
     public virtual void AnimationTrigger() { }
 
-    public virtual void AnimationFinishTrigger() => isAnimationFinished = true;
+    public virtual void AnimationFinishTrigger() => _isAnimationFinished = true;
     
 
 }

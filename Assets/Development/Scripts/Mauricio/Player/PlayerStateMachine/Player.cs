@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
+/* Documentación Usada:
+* 
+* Awake: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html
+* Start: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
+* Update: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html
+* Fixed Update: https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html
+* 
+*/
+
 public class Player : MonoBehaviour
 {
-    #region State Variables
     public PlayerStateMachine StateMachine { get; private set; }
 
     public PlayerIdleState IdleState { get; private set; }
@@ -22,19 +30,16 @@ public class Player : MonoBehaviour
     public PlayerCrouchIdleState CrouchIdleState { get; private set; }
     public PlayerCrouchMoveState CrouchMoveState { get; private set; }
 
+
     [SerializeField]
     private PlayerData playerData;
-    #endregion
 
-    #region Components
-    public Animator Anim { get; private set; }
+    public Animator playerAnimator { get; private set; }
     public PlayerInputHandler InputHandler { get; private set; }
-    public Rigidbody2D RB { get; private set; }
+    public Rigidbody2D playerRigidBody2D { get; private set; }
     public Transform DashDirectionIndicator { get; private set; }
     public BoxCollider2D MovementCollider { get; private set; }
-    #endregion
 
-    #region Check Transforms
 
     [SerializeField]
     private Transform groundCheck;
@@ -45,19 +50,16 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Transform ceilingCheck;
 
-    #endregion
 
-    #region Other Variables
     public Vector2 CurrentVelocity { get; private set; }
     public int FacingDirection { get; private set; }    
 
     private Vector2 workspace;
-    #endregion
 
-    #region Unity Callback Functions
+
     private void Awake()
     {
-        StateMachine = new PlayerStateMachine();
+        StateMachine = new PlayerStateMachine();     // Con esto cada vez que inicie el juego tendremos una máquina de estado para nuestro jugador
 
         IdleState = new PlayerIdleState(this, StateMachine, playerData, "idle");
         MoveState = new PlayerMoveState(this, StateMachine, playerData, "move");
@@ -76,9 +78,9 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        Anim = GetComponent<Animator>();
+        playerAnimator = GetComponent<Animator>();
         InputHandler = GetComponent<PlayerInputHandler>();
-        RB = GetComponent<Rigidbody2D>();
+        playerRigidBody2D = GetComponent<Rigidbody2D>();
         DashDirectionIndicator = transform.Find("DashDirectionIndicator");
         MovementCollider = GetComponent<BoxCollider2D>();
 
@@ -89,7 +91,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        CurrentVelocity = RB.velocity;
+        CurrentVelocity = playerRigidBody2D.velocity;
         StateMachine.CurrentState.LogicUpdate();
     }
 
@@ -97,13 +99,11 @@ public class Player : MonoBehaviour
     {
         StateMachine.CurrentState.PhysicsUpdate();
     }
-    #endregion
 
-    #region Set Functions
 
     public void SetVelocityZero()
     {
-        RB.velocity = Vector2.zero;
+        playerRigidBody2D.velocity = Vector2.zero;
         CurrentVelocity = Vector2.zero;
     }
 
@@ -111,34 +111,31 @@ public class Player : MonoBehaviour
     {
         angle.Normalize();
         workspace.Set(angle.x * velocity * direction, angle.y * velocity);
-        RB.velocity = workspace;
+        playerRigidBody2D.velocity = workspace;
         CurrentVelocity = workspace;
     }
 
     public void SetVelocity(float velocity, Vector2 direction)
     {
         workspace = direction * velocity;
-        RB.velocity = workspace;
+        playerRigidBody2D.velocity = workspace;
         CurrentVelocity = workspace;
     }
 
     public void SetVelocityX(float velocity)
     {
         workspace.Set(velocity, CurrentVelocity.y);
-        RB.velocity = workspace;
+        playerRigidBody2D.velocity = workspace;
         CurrentVelocity = workspace;
     }
 
     public void SetVelocityY(float velocity)
     {
         workspace.Set(CurrentVelocity.x, velocity);
-        RB.velocity = workspace;
+        playerRigidBody2D.velocity = workspace;
         CurrentVelocity = workspace;
     }
 
-    #endregion
-
-    #region Check Functions
 
     public bool CheckForCeiling()
     {
@@ -173,9 +170,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    #endregion
-
-    #region Other Functions
 
     public void SetColliderHeight(float height)
     {
@@ -209,5 +203,4 @@ public class Player : MonoBehaviour
         FacingDirection *= -1;
         transform.Rotate(0.0f, 180.0f, 0.0f);
     }
-    #endregion
 }
