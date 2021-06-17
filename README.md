@@ -1,4 +1,4 @@
-# Mr_Catknight
+# Sr_Catknight
  University Project Made With Unity
  
  Mr. Catknight is a 2D platform and adventure video game with metroidvania style,
