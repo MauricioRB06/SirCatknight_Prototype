@@ -45,21 +45,36 @@ TagManager:
   - name: Background
     uniqueID: 2840594545
     locked: 0
-  - name: Decoration
+  - name: BackgroundDecoration
     uniqueID: 2090695731
+    locked: 0
+  - name: Tileset
+    uniqueID: 2287366829
     locked: 0
   - name: Platforms
     uniqueID: 1667960627
     locked: 0
-  - name: Enemy
+  - name: Enemys
     uniqueID: 3615571261
+    locked: 0
+  - name: PickUpObjects
+    uniqueID: 3764674289
     locked: 0
   - name: Player
     uniqueID: 756119877
     locked: 0
-  - name: Game Objects
-    uniqueID: 2226434991
+  - name: ForegroundDecorationA
+    uniqueID: 135042913
     locked: 0
-  - name: Foreground Decoration
+  - name: DamageObjects
+    uniqueID: 434826159
+    locked: 0
+  - name: DamageProjectiles
+    uniqueID: 2885013087
+    locked: 0
+  - name: ForegroundDecorationB
     uniqueID: 1796422411
+    locked: 0
+  - name: UI
+    uniqueID: 2164614975
     locked: 0

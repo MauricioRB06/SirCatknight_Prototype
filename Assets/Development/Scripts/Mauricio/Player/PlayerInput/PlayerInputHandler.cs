@@ -19,8 +19,11 @@ public class PlayerInputHandler : MonoBehaviour
     public Vector2 RawMovementInput { get; private set; }
     public Vector2 RawDashDirectionInput { get; private set; }
     public Vector2Int DashDirectionInput { get; private set; }
+
+    // Las usaremos para realizar el movimiento normalizado
     public int NormInputX { get; private set; }
     public int NormInputY { get; private set; }
+
     public bool JumpInput { get; private set; }
     public bool JumpInputStop { get; private set; }
     public bool GrabInput { get; private set; }
@@ -51,6 +54,7 @@ public class PlayerInputHandler : MonoBehaviour
 
         if(Mathf.Abs(RawMovementInput.x) > 0.5f)
         {
+            //Normalizamos el movimiento para estandarizar los controles
             NormInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
         }
         else

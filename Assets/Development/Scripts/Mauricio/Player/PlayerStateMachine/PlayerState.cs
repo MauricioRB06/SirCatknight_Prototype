@@ -28,7 +28,7 @@ public class PlayerState
     /* Cada estado va a tener un nombre que asignamos cuando creamos el estado y se usara para decirle al animador
      * que animación deberia repoducirse */
 
-    private string _animationBoolName;
+    private string _animationBoolName;  // Hace referencia a las variables dentro del animador 
 
     // Constructor de la clase
     public PlayerState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animationBoolName)
@@ -44,7 +44,6 @@ public class PlayerState
         DoChecks();
         _player.playerAnimator.SetBool(_animationBoolName, true);
         _startTime = Time.time;
-        /*Debug.Log(_animBoolName);*/
         _isAnimationFinished = false;
         _isExitingState = false;
     }

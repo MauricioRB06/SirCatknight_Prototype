@@ -215,10 +215,21 @@
                 {
                     "name": "",
                     "id": "84c7a7f0-ad98-4ddc-b7f1-d9315bddc2cc",
-                    "path": "<Gamepad>/rightStickPress",
+                    "path": "<DualShockGamepad>/rightStickPress",
                     "interactions": "",
                     "processors": "",
                     "groups": "PS4",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d96605ff-7897-4c00-8efc-af7db05fcd0e",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
                     "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -253,6 +264,93 @@
                     "processors": "",
                     "groups": "PS4",
                     "action": "DashDirection",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "7d523b5a-8e05-4cc1-97f1-ccf3757d3f56",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "50f3edab-87c2-4c17-aa66-2760ed19f885",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Point",
+                    "type": "Value",
+                    "id": "0c094634-ff3c-41d3-a482-8a7bb1f00f36",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Cancel",
+                    "type": "Button",
+                    "id": "b80b41da-9c3f-4cb9-84cd-3a1fc083e3ac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "afd51359-fafa-41fd-bc30-f093f98c848f",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fb4c6f68-3c8f-4848-bcad-584f15b89ffc",
+                    "path": "<Pen>/tip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0bc72bb5-2505-4a11-8942-60a0633b4cbf",
+                    "path": "<Touchscreen>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cf3452ab-393a-44c5-bb8b-c910edd07c55",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c601648e-3365-425e-a1ac-fd9ed5b0812d",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

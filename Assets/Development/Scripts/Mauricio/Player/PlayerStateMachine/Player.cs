@@ -9,6 +9,7 @@ using UnityEngine.Rendering;
 * Start: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
 * Update: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html
 * Fixed Update: https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html
+* PlayerPrefs: https://docs.unity3d.com/ScriptReference/PlayerPrefs.html
 * 
 */
 
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour
     public PlayerCrouchIdleState CrouchIdleState { get; private set; }
     public PlayerCrouchMoveState CrouchMoveState { get; private set; }
 
+    private float checkPointPositionX, checkPointPositionY;
 
     [SerializeField]
     private PlayerData playerData;
@@ -50,16 +52,16 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Transform ceilingCheck;
 
-
+    // La usaremos para no llamar al RigidBody2D y preguntarle por la velocidad en Y en todo momento
     public Vector2 CurrentVelocity { get; private set; }
     public int FacingDirection { get; private set; }    
 
-    private Vector2 workspace;
+    private Vector2 workspace;  // La usaremos para no tener que crear un nuevo vector cada vez que el personaje se mueva
 
 
     private void Awake()
     {
-        StateMachine = new PlayerStateMachine();     // Con esto cada vez que inicie el juego tendremos una máquina de estado para nuestro jugador
+        StateMachine = new PlayerStateMachine();
 
         IdleState = new PlayerIdleState(this, StateMachine, playerData, "idle");
         MoveState = new PlayerMoveState(this, StateMachine, playerData, "move");
@@ -71,22 +73,27 @@ public class Player : MonoBehaviour
         WallClimbState = new PlayerWallClimbState(this, StateMachine, playerData, "wallClimb");
         WallJumpState = new PlayerWallJumpState(this, StateMachine, playerData, "inAir");
         LedgeClimbState = new PlayerLedgeClimbState(this, StateMachine, playerData, "ledgeClimbState");
-        DashState = new PlayerDashState(this, StateMachine, playerData, "inAir");
+        DashState = new PlayerDashState(this, StateMachine, playerData, "Dash");
         CrouchIdleState = new PlayerCrouchIdleState(this, StateMachine, playerData, "crouchIdle");
         CrouchMoveState = new PlayerCrouchMoveState(this, StateMachine, playerData, "crouchMove");
     }
 
     private void Start()
     {
+        if (PlayerPrefs.GetFloat("checkPointPositionX") != 0)
+        {
+            transform.position = (new Vector2(PlayerPrefs.GetFloat("checkPointPositionX"), PlayerPrefs.GetFloat("checkPointPositiony")));
+        }
+
         playerAnimator = GetComponent<Animator>();
         InputHandler = GetComponent<PlayerInputHandler>();
         playerRigidBody2D = GetComponent<Rigidbody2D>();
         DashDirectionIndicator = transform.Find("DashDirectionIndicator");
         MovementCollider = GetComponent<BoxCollider2D>();
 
-        FacingDirection = 1;
+        FacingDirection = 1;    // El personaje siempre inicia mirando a la derecha
 
-        StateMachine.Initialize(IdleState);
+        StateMachine.Initialize(IdleState); // Estado inicial del personaje cuando inicia el juego
     }
 
     private void Update()
@@ -162,6 +169,7 @@ public class Player : MonoBehaviour
         return Physics2D.Raycast(wallCheck.position, Vector2.right * -FacingDirection, playerData.wallCheckDistance, playerData.whatIsGround);
     }
 
+    // Comprobar si deberiamos rotar al personaje
     public void CheckIfShouldFlip(int xInput)
     {
         if(xInput != 0 && xInput != FacingDirection)
@@ -169,7 +177,6 @@ public class Player : MonoBehaviour
             Flip();
         }
     }
-
 
     public void SetColliderHeight(float height)
     {
@@ -198,9 +205,16 @@ public class Player : MonoBehaviour
 
     private void AnimtionFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
 
+    // Rotar al personaje segun la dirección de movimiento
     private void Flip()
     {
         FacingDirection *= -1;
         transform.Rotate(0.0f, 180.0f, 0.0f);
+    }
+
+    public void ReachedCheckpoint(float x, float y)
+    {
+        PlayerPrefs.SetFloat("checkPointPositionX", x);
+        PlayerPrefs.SetFloat("checkPointPositionY", y);
     }
 }

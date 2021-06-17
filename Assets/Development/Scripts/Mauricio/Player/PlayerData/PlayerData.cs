@@ -5,6 +5,8 @@ using UnityEngine;
 /* Documentación Usada:
  * 
  * Attributes: https://docs.unity3d.com/Manual/Attributes.html
+ * ScriptableObject: https://docs.unity3d.com/Manual/class-ScriptableObject.html
+ * CreateAssetMenu: https://docs.unity3d.com/ScriptReference/CreateAssetMenuAttribute.html
  * 
  */
 
@@ -15,7 +17,7 @@ public class PlayerData : ScriptableObject
     public float movementVelocity = 10f;
 
     [Header("Jump State")]  //
-    public float jumpVelocity = 15f;
+    public float jumpForce = 15f;
     public int amountOfJumps = 1;
 
     [Header("Wall Jump State")] //
@@ -56,4 +58,7 @@ public class PlayerData : ScriptableObject
     public float groundCheckRadius = 0.3f;
     public float wallCheckDistance = 0.5f;
     public LayerMask whatIsGround;
+
+    [Header("AttackSword")] //
+    public int amountOfAttacks = 1;
 }

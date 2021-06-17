@@ -16,7 +16,7 @@ public class PlayerIdleState : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
-        _player.SetVelocityX(0f);
+        _player.SetVelocityX(0f);   // Para evitar errores del animador y evitar movimientos involuntarios
     }
 
     public override void Exit()
