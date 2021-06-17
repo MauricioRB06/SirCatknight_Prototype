@@ -1,50 +1,51 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Dev_Platform : MonoBehaviour
+namespace Development.Scripts.Mauricio.Objects
 {
-
-    private PlatformEffector2D _effector;
-    public Collider2D _test;
-    public float startWaiTime;
-    private float _waitedTime;
-
-    private void Start()
+    public class Dev_Platform : MonoBehaviour
     {
-        _effector = GetComponent<PlatformEffector2D>();
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
+
+        private PlatformEffector2D _effector;
+        public Collider2D _test;
+        public float startWaiTime;
+        private float _waitedTime;
+
+        private void Start()
         {
-            if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.Space))
+            _effector = GetComponent<PlatformEffector2D>();
+        }
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Player"))
             {
-                _waitedTime = startWaiTime;
-            }
-
-            if (Input.GetKey(KeyCode.S))
-            {
-                if (_waitedTime <= 0)
+                if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.Space))
                 {
-                    _effector.rotationalOffset = 180f;
                     _waitedTime = startWaiTime;
                 }
-                else
+
+                if (Input.GetKey(KeyCode.S))
                 {
-                    _waitedTime -= Time.deltaTime;
+                    if (_waitedTime <= 0)
+                    {
+                        _effector.rotationalOffset = 180f;
+                        _waitedTime = startWaiTime;
+                    }
+                    else
+                    {
+                        _waitedTime -= Time.deltaTime;
+                    }
+                }
+
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    _effector.rotationalOffset = 0;
                 }
             }
-
-            if (Input.GetKey(KeyCode.Space))
-            {
-                _effector.rotationalOffset = 0;
-            }
         }
-    }
 
-    private void Update()
-    {
+        private void Update()
+        {
 
+        }
     }
 }

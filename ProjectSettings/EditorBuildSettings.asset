@@ -6,31 +6,31 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Mr_Catknight/UI/Scenes/Main_Menu.unity
+    path: Assets/UI/Scenes/Main_Menu.unity
     guid: 1d3488db32f05f643b218e4ae73c4c5e
   - enabled: 1
-    path: Assets/Mr_Catknight/UI/Scenes/Credits.unity
+    path: Assets/UI/Scenes/Credits.unity
     guid: 55182882583f9d24fa0bfd8eaf44a4f3
   - enabled: 1
-    path: Assets/Mr_Catknight/Maps/Scenes/Tutorial.unity
+    path: Assets/Maps/Scenes/Tutorial.unity
     guid: 5d0a88279c67ba64c8b62c5e3db867a2
   - enabled: 1
-    path: Assets/Mr_Catknight/Maps/Scenes/Level_1.unity
+    path: Assets/Maps/Scenes/Level_1.unity
     guid: 85abde0f6e6837542a4341005b364812
   - enabled: 1
-    path: Assets/Mr_Catknight/Maps/Scenes/Level_2.unity
+    path: Assets/Maps/Scenes/Level_2.unity
     guid: 31530203c517c9d488b31f1609241d96
   - enabled: 1
-    path: Assets/Mr_Catknight/Maps/Scenes/Level_3.unity
+    path: Assets/Maps/Scenes/Level_3.unity
     guid: 7401be2929904144ca5d46ee383a70dd
   - enabled: 1
-    path: Assets/Mr_Catknight/Maps/Scenes/Level_4.unity
+    path: Assets/Maps/Scenes/Level_4.unity
     guid: 669f3c88e6f158c42a49c41d8f86bf8b
   - enabled: 1
-    path: Assets/Mr_Catknight/Maps/Scenes/Level_5.unity
+    path: Assets/Maps/Scenes/Level_5.unity
     guid: 9cc09b25cafb3a1469aa39d4abc037c4
   - enabled: 1
-    path: Assets/Mr_Catknight/Maps/Scenes/Level_6.unity
+    path: Assets/Maps/Scenes/Level_6.unity
     guid: b9f9b6ded2f4eca4f8dbd1c7b4519dc4
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 7741c6926f2a87141be8dbe5afd8dcbe,

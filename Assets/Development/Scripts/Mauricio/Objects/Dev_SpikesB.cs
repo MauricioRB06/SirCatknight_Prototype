@@ -1,15 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Movil_Spikes : MonoBehaviour
+namespace Development.Scripts.Mauricio.Objects
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    public class Movil_Spikes : MonoBehaviour
     {
-        if (collision.transform.CompareTag("Player"))
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-            Debug.Log("Damage");
-            Destroy(collision.gameObject);
+            if (collision.transform.CompareTag("Player"))
+            {
+                Debug.Log("Damage");
+                Destroy(collision.gameObject);
+            }
         }
     }
 }

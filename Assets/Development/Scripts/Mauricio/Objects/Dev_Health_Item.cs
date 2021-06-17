@@ -1,16 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Health_Item : MonoBehaviour
+namespace Development.Scripts.Mauricio.Objects
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class Health_Item : MonoBehaviour
     {
-        if (collision.CompareTag("Player"))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            GetComponent<SpriteRenderer>().enabled = false;
-            gameObject.transform.GetChild(0).gameObject.SetActive(true);
-            Destroy(gameObject, 0.8f);
+            if (collision.CompareTag("Player"))
+            {
+                GetComponent<SpriteRenderer>().enabled = false;
+                gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                Destroy(gameObject, 0.8f);
+            }
         }
     }
 }
