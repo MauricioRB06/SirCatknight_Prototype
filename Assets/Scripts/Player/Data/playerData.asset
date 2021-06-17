@@ -42,5 +42,5 @@ MonoBehaviour:
     m_Bits: 256
   layerWall:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   amountOfAttacks: 1

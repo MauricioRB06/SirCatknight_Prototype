@@ -21,22 +21,25 @@ namespace Player.PlayerStates
         private bool _jumpInputStop;
         private bool _isJumping;
         
+        // We use them to verify controls for skills
         private bool _grabInput;
         private bool _dashInput;
 
-        //Checks
+        // We use them to verify possible status changes
         private bool _isGrounded;
         private bool _isTouchingWall;
         private bool _isTouchingWallBack;
         private bool _isTouchingLedge;
         
+        // 
         private bool _oldIsTouchingWall;
         private bool _oldIsTouchingWallBack;
-
+        
+        // 
         private bool _coyoteTime;
         private bool _wallJumpCoyoteTime;
         
-
+        // 
         private float _startWallJumpCoyoteTime;
         private static readonly int YVelocity = Animator.StringToHash("yVelocity");
         private static readonly int XVelocity = Animator.StringToHash("xVelocity");
@@ -153,7 +156,8 @@ namespace Player.PlayerStates
                 _isJumping = false;
             }
         }
-
+        
+        // 
         private void CheckCoyoteTime()
         {
             if (!_coyoteTime || !(Time.time > StartTime + PlayerData.coyoteTime)) return;
@@ -161,7 +165,8 @@ namespace Player.PlayerStates
             _coyoteTime = false;
             Player.JumpState.DecreaseAmountOfJumpsLeft();
         }
-
+        
+        // 
         private void CheckWallJumpCoyoteTime()
         {
             if(_wallJumpCoyoteTime && Time.time > _startWallJumpCoyoteTime + PlayerData.coyoteTime)
@@ -169,7 +174,7 @@ namespace Player.PlayerStates
                 _wallJumpCoyoteTime = false;
             }
         }
-
+        
         public void StartCoyoteTime() => _coyoteTime = true;
 
         private void StartWallJumpCoyoteTime()

@@ -13,9 +13,9 @@ namespace Player.StateMachine
 {
     public class PlayerState
     {
-        protected readonly Player Player;                        // Reference to player 
-        protected readonly PlayerStateMachine StateMachine;      // Reference to state machine
-        protected readonly PlayerData PlayerData;     // Reference to player data
+        protected readonly Player Player;                       // Reference to player 
+        protected readonly PlayerStateMachine StateMachine;     // Reference to state machine
+        protected readonly PlayerData PlayerData;               // Reference to player data
         
         // We use it when we want to mark an animation as finished 
         protected bool IsAnimationFinished;
@@ -33,10 +33,10 @@ namespace Player.StateMachine
         protected PlayerState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
             string animationBoolName)
         {
-            this.Player = player;
-            this.StateMachine = stateMachine;
-            this.PlayerData = playerData;
-            this._animationBoolName = animationBoolName;
+            Player = player;
+            StateMachine = stateMachine;
+            PlayerData = playerData;
+            _animationBoolName = animationBoolName;
         }
         
         // This Function is called when we enter the state

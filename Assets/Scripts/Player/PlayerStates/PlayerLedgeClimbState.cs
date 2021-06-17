@@ -114,7 +114,7 @@ namespace Player.PlayerStates
 
         private void CheckForSpace()
         {
-            _isTouchingCeiling = Physics2D.Raycast(_cornerPos + (Vector2.up * 0.015f) + (Vector2.right * (Player.FacingDirection * 0.015f)), Vector2.up, PlayerData.standColliderHeight, PlayerData.layerGround);
+            _isTouchingCeiling = Physics2D.Raycast(_cornerPos + (Vector2.up * 0.015f) + (Vector2.right * (Player.FacingDirection * 0.015f)), Vector2.up, PlayerData.standColliderHeight, PlayerData.layerGroundAndWalls);
             Player.PlayerAnimator.SetBool(IsTouchingCeiling, _isTouchingCeiling);
         }
     }

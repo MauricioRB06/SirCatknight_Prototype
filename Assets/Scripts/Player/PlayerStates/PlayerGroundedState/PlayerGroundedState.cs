@@ -9,12 +9,15 @@ namespace Player.PlayerStates.PlayerGroundedState
         protected int YInput;
 
         protected bool IsTouchingCeiling;
-
-        private bool _jumpInput;
-        private bool _grabInput;
+        
+        // We use them to verify possible status changes
         private bool _isGrounded;
         private bool _isTouchingWall;
         private bool _isTouchingLedge;
+        
+        // We use them to verify controls for skills
+        private bool _jumpInput;
+        private bool _grabInput;
         private bool _dashInput;
         
         // Class constructor

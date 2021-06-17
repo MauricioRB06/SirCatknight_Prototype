@@ -5,12 +5,19 @@ namespace Player.PlayerStates.PlayerTouchingWallState
 {
     public class PlayerTouchingWallState : PlayerState
     {
-        protected bool IsGrounded;
-        protected bool IsTouchingWall;
+        // We use them to verify possible status changes
+        private bool _isGrounded;
+        private bool _isTouchingWall;
+        private bool _isTouchingLedge;
+        
+        // We use them to verify controls for skills
         protected bool GrabInput;
-        protected bool JumpInput;
-        protected bool IsTouchingLedge;
-        protected int XInput;
+        private bool _jumpInput;
+        
+        // We use it to know whether to switch between WallSlide or AirState
+        private int _xInput;
+        
+        // We use it to switch between GrabState and ClimbState
         protected int YInput;
         
         // Class constructor
@@ -33,11 +40,11 @@ namespace Player.PlayerStates.PlayerTouchingWallState
         {
             base.DoChecks();
 
-            IsGrounded = Player.CheckIfGrounded();
-            IsTouchingWall = Player.CheckIfTouchingWall();
-            IsTouchingLedge = Player.CheckIfTouchingLedge();
+            _isGrounded = Player.CheckIfGrounded();
+            _isTouchingWall = Player.CheckIfTouchingWall();
+            _isTouchingLedge = Player.CheckIfTouchingLedge();
 
-            if(IsTouchingWall && !IsTouchingLedge)
+            if(_isTouchingWall && !_isTouchingLedge)
             {
                 Player.LedgeClimbState.SetDetectedPosition(Player.transform.position);
             }
@@ -47,25 +54,25 @@ namespace Player.PlayerStates.PlayerTouchingWallState
         {
             base.LogicUpdate();
 
-            XInput = Player.InputHandler.NormInputX;
+            _xInput = Player.InputHandler.NormInputX;
             YInput = Player.InputHandler.NormInputY;
             GrabInput = Player.InputHandler.GrabInput;
-            JumpInput = Player.InputHandler.JumpInput;
+            _jumpInput = Player.InputHandler.JumpInput;
 
-            if (JumpInput)
+            if (_jumpInput)
             {            
-                Player.WallJumpState.DetermineWallJumpDirection(IsTouchingWall);
+                Player.WallJumpState.DetermineWallJumpDirection(_isTouchingWall);
                 StateMachine.ChangeState(Player.WallJumpState);
             }
-            else if (IsGrounded && !GrabInput)
+            else if (_isGrounded && !GrabInput)
             {
                 StateMachine.ChangeState(Player.IdleState);
             }
-            else if(!IsTouchingWall || (XInput != Player.FacingDirection && !GrabInput))
+            else if(!_isTouchingWall || (_xInput != Player.FacingDirection && !GrabInput))
             {
                 StateMachine.ChangeState(Player.InAirState);
             }
-            else if(IsTouchingWall && !IsTouchingLedge)
+            else if(_isTouchingWall && !_isTouchingLedge)
             {
                 StateMachine.ChangeState(Player.LedgeClimbState);
             }

@@ -74,6 +74,7 @@ namespace Player
         private void Awake()
         {
             StateMachine = new PlayerStateMachine();
+            
             IdleState = new PlayerIdleState(this, StateMachine, playerData, "idle");
             MoveState = new PlayerMoveState(this, StateMachine, playerData, "move");
             JumpState = new PlayerJumpState(this, StateMachine, playerData, "inAir");
@@ -91,11 +92,16 @@ namespace Player
 
         private void Start()
         {
-            if (PlayerPrefs.GetFloat("_checkPointPositionX") != 0)
+            /*
+             
+             Don't Delete :v
+             
+             if (PlayerPrefs.GetFloat("_checkPointPositionX") != 0)
             {
                 transform.position = (new Vector2(PlayerPrefs.GetFloat("_checkPointPositionX"),
                     PlayerPrefs.GetFloat("_checkPointPositionY")));
-            }
+                    
+            }*/
 
             PlayerAnimator = GetComponent<Animator>();
             InputHandler = GetComponent<PlayerInputHandler>();
@@ -165,36 +171,36 @@ namespace Player
         public bool CheckForCeiling()
         {
             return Physics2D.OverlapCircle(ceilingCheck.position, playerData.groundCheckRadius,
-                playerData.layerGround);
+                playerData.layerGroundAndWalls);
         }
         
-        // 
+        // We use it to check whether or not we are touching the ground
         public bool CheckIfGrounded()
         {
             var groundCheckPosition = groundCheck.position;
             return Physics2D.OverlapCircle(groundCheckPosition, playerData.groundCheckRadius,
-                playerData.layerGround);
+                playerData.layerGroundAndWalls);
         }
         
-        // 
+        // We use it to check whether or not we are touching a wall
         public bool CheckIfTouchingWall()
         {
             return Physics2D.Raycast(wallCheck.position, Vector2.right * FacingDirection,
-                playerData.wallCheckDistance, playerData.layerGround);
+                playerData.wallCheckDistance, playerData.layerGroundAndWalls);
         }
         
         // 
         public bool CheckIfTouchingLedge()
         {
             return Physics2D.Raycast(ledgeCheck.position, Vector2.right * FacingDirection,
-                playerData.wallCheckDistance, playerData.layerGround);
+                playerData.wallCheckDistance, playerData.layerGroundAndWalls);
         }
         
         // 
         public bool CheckIfTouchingWallBack()
         {
             return Physics2D.Raycast(wallCheck.position, Vector2.right * -FacingDirection,
-                playerData.wallCheckDistance, playerData.layerGround);
+                playerData.wallCheckDistance, playerData.layerGroundAndWalls);
         }
 
         // Check if we should rotate the character
@@ -223,12 +229,12 @@ namespace Player
         {
             var wallPosition = wallCheck.position;
             RaycastHit2D xHit = Physics2D.Raycast(wallPosition, Vector2.right * FacingDirection,
-                playerData.wallCheckDistance, playerData.layerGround);
+                playerData.wallCheckDistance, playerData.layerGroundAndWalls);
             var xDist = xHit.distance;
             _newVelocity.Set((xDist + 0.015f) * FacingDirection, 0f);
             var ledgePosition = ledgeCheck.position;
             RaycastHit2D yHit = Physics2D.Raycast(ledgePosition + (Vector3)(_newVelocity),
-                Vector2.down, ledgePosition.y - wallPosition.y + 0.015f, playerData.layerGround);
+                Vector2.down, ledgePosition.y - wallPosition.y + 0.015f, playerData.layerGroundAndWalls);
             var yDist = yHit.distance;
 
             _newVelocity.Set(wallPosition.x + (xDist * FacingDirection), ledgePosition.y - yDist);

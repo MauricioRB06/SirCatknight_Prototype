@@ -29,7 +29,7 @@ namespace Player.Input
         public bool JumpInput { get; private set; }
         public bool JumpInputStop { get; private set; }
         
-        // 
+        // We use it to check if the button is being pressed to grab the wall
         public bool GrabInput { get; private set; }
         
         // We use them to configure the total duration of the Dash based on the duration of the button press

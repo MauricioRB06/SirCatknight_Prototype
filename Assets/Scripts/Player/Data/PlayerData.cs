@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 /* Documentation:
  * 
@@ -59,8 +60,7 @@ namespace Player.Data
         [Header("Check Variables")]
         public float groundCheckRadius = 0.3f;
         public float wallCheckDistance = 0.5f;
-        public LayerMask layerGround;
-        public LayerMask layerWall;
+        public LayerMask layerGroundAndWalls;
 
         [Header("AttackSword")]
         public int amountOfAttacks = 1;
