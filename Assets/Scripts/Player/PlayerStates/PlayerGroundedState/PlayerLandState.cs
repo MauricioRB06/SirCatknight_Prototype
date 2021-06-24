@@ -20,7 +20,7 @@ namespace Player.PlayerStates.PlayerGroundedState
                 
             if (XInput != 0)
             {
-                StateMachine.ChangeState(Player.MoveState);
+                StateMachine.ChangeState(Player.RunState);
             }
             else if (IsAnimationFinished)
             {

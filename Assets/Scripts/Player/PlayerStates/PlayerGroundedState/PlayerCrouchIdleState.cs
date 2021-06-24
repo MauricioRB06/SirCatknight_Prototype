@@ -5,6 +5,7 @@ namespace Player.PlayerStates.PlayerGroundedState
 {
     public class PlayerCrouchIdleState : PlayerGroundedState
     {
+        // Class Constructor
         public PlayerCrouchIdleState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
             string animBoolName) : base(player, stateMachine, playerData, animBoolName)
         {
@@ -21,7 +22,8 @@ namespace Player.PlayerStates.PlayerGroundedState
         public override void Exit()
         {
             base.Exit();
-            Player.SetColliderHeight(PlayerData.standColliderHeight);
+            
+            Player.SetColliderHeight(PlayerData.normalColliderHeight);
         }
 
         public override void LogicUpdate()

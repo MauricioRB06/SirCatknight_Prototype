@@ -13,14 +13,9 @@ namespace Player.Input
 {
     public class PlayerInputHandler : MonoBehaviour
     {
-        private PlayerInput _playerInput;
-        private Camera _playerCamera;
-        
-        //
+        //We will use it to store the initial value of the movement raw input
         private Vector2 RawMovementInput { get; set; }
-        private Vector2 RawDashDirectionInput { get; set; }
-        public Vector2Int DashDirectionInput { get; private set; }
-
+        
         // We use them to perform the normalized movement
         public int NormInputX { get; private set; }
         public int NormInputY { get; private set; }
@@ -36,14 +31,27 @@ namespace Player.Input
         public bool DashInput { get; private set; }
         public bool DashInputStop { get; private set; }
         
+        // We use them to get a reference to the control scheme we are using 
+        private PlayerInput _playerInput;
+        
+        // We use it to take the camera as a reference and position the DashInput within the player's screen
+        private Camera _playerCamera;
+        
+        // We will use it to store the initial value of the raw input
+        private Vector2 RawDashDirectionInput { get; set; }
+        
+        // We use it to store the normalized address of the RawDashInput 
+        public Vector2Int DashDirectionInput { get; private set; }
+        
         // Waiting time to be able to press a button again
         [SerializeField]
         private float inputHoldTime = 0.2f;
         
-        // 
+        // We use it to control the behavior of Dash and Jump skills based on the time the player presses the button
         private float _jumpInputStartTime;
         private float _dashInputStartTime;
 
+        private bool _isSleeping;
         private void Start()
         {
             _playerInput = GetComponent<PlayerInput>();
@@ -59,7 +67,10 @@ namespace Player.Input
         public void OnMoveInput(InputAction.CallbackContext context)
         {
             RawMovementInput = context.ReadValue<Vector2>();
-
+            
+            /* We use a minimum tolerance of movement of the controls, to make sure that the player really wants to
+               move and to avoid errors in the animator when it is wall climb due to small changes in the input values
+               of the control */
             if(Mathf.Abs(RawMovementInput.x) > 0.5f)
             {
                 // We normalize the movement to standardize the controls
@@ -95,7 +106,7 @@ namespace Player.Input
                 JumpInputStop = true;
             }
         }
-
+        
         public void OnGrabInput(InputAction.CallbackContext context)
         {
             if (context.started)
@@ -122,16 +133,19 @@ namespace Player.Input
                 DashInputStop = true;
             }
         }
-
+        
+        // 
         public void OnDashDirectionInput(InputAction.CallbackContext context)
         {
             RawDashDirectionInput = context.ReadValue<Vector2>();
 
             if(_playerInput.currentControlScheme == "Keyboard")
             {
+                // We convert our raw input, into a vector that points from our player, towards the mouse position
                 RawDashDirectionInput = _playerCamera.ScreenToWorldPoint(RawDashDirectionInput) - transform.position;
             }
-
+            
+            // We normalize the RawDashInput to obtain values that are traversed in 45° positions
             DashDirectionInput = Vector2Int.RoundToInt(RawDashDirectionInput.normalized);
         }
         
@@ -144,7 +158,7 @@ namespace Player.Input
         // We use it to prevent unwanted jumps from being made
         private void CheckJumpInputHoldTime()
         {
-            if(Time.time >= _jumpInputStartTime + inputHoldTime)
+            if (Time.time >= _jumpInputStartTime + inputHoldTime)
             {
                 JumpInput = false;
             }

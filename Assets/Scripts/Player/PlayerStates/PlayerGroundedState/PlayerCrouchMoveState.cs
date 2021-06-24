@@ -5,6 +5,7 @@ namespace Player.PlayerStates.PlayerGroundedState
 {
     public class PlayerCrouchMoveState : PlayerGroundedState
     {
+        // Class Constructor
         public PlayerCrouchMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
             string animBoolName) : base(player, stateMachine, playerData, animBoolName)
         {
@@ -13,13 +14,15 @@ namespace Player.PlayerStates.PlayerGroundedState
         public override void Enter()
         {
             base.Enter();
+            
             Player.SetColliderHeight(PlayerData.crouchColliderHeight);
         }
 
         public override void Exit()
         {
             base.Exit();
-            Player.SetColliderHeight(PlayerData.standColliderHeight);
+            
+            Player.SetColliderHeight(PlayerData.normalColliderHeight);
         }
 
         public override void LogicUpdate()
@@ -37,7 +40,7 @@ namespace Player.PlayerStates.PlayerGroundedState
             }
             else if(YInput != -1 && !IsTouchingCeiling)
             {
-                StateMachine.ChangeState(Player.MoveState);
+                StateMachine.ChangeState(Player.RunState);
             }
         }
     }

@@ -6,21 +6,32 @@ namespace Player.PlayerStates
 {
     public class PlayerLedgeClimbState : PlayerState
     {
-        private Vector2 _detectedPos;
+        // We use it to store the position of the corner, when it is detected
         private Vector2 _cornerPos;
-        private Vector2 _startPos;
+        
+        // We use them to locate the starting and ending point from where the corner climbs to where it ends
+        private Vector2 _startPosition;
         private Vector2 _stopPos;
 
+        // We use it to know if the player is hanging
         private bool _isHanging;
+        
+        // We use it to check if the corner is climbing
         private bool _isClimbing;
+        
+        // We use it so that the player can jump, while hanging
         private bool _jumpInput;
+        
+        // We use it to know if when climbing a roof and we must go crouch
         private bool _isTouchingCeiling;
-
+        
+        // We use it to detect the input and know whether to climb the corner or drop
         private int _xInput;
         private int _yInput;
         
-        private static readonly int ClimbLedge = Animator.StringToHash("climbLedge");
-        private static readonly int IsTouchingCeiling = Animator.StringToHash("isTouchingCeiling");
+        // Generate id parameters for the animator
+        private static readonly int ClimbLedge = Animator.StringToHash("LedgeClimbUp");
+        private static readonly int IsTouchingCeiling = Animator.StringToHash("TouchingCeiling");
 
         // Class Constructor
         public PlayerLedgeClimbState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
@@ -31,6 +42,7 @@ namespace Player.PlayerStates
         public override void AnimationFinishTrigger()
         {
             base.AnimationFinishTrigger();
+            
             Player.PlayerAnimator.SetBool(ClimbLedge, false);
         }
 
@@ -46,14 +58,15 @@ namespace Player.PlayerStates
             base.Enter();
 
             Player.SetVelocityZero();
-            Player.transform.position = _detectedPos;
             _cornerPos = Player.DetermineCornerPosition();
 
-            _startPos.Set(_cornerPos.x - (Player.FacingDirection * PlayerData.startOffset.x), _cornerPos.y - PlayerData.startOffset.y);
-            _stopPos.Set(_cornerPos.x + (Player.FacingDirection * PlayerData.stopOffset.x), _cornerPos.y + PlayerData.stopOffset.y);
+            _startPosition.Set(_cornerPos.x - (Player.FacingDirection * PlayerData.startOffset.x),
+                _cornerPos.y - PlayerData.startOffset.y);
+            
+            _stopPos.Set(_cornerPos.x + (Player.FacingDirection * PlayerData.stopOffset.x),
+                _cornerPos.y + PlayerData.stopOffset.y);
 
-            Player.transform.position = _startPos;
-
+            Player.transform.position = _startPosition;
         }
 
         public override void Exit()
@@ -90,7 +103,7 @@ namespace Player.PlayerStates
                 _jumpInput = Player.InputHandler.JumpInput;
 
                 Player.SetVelocityZero();
-                Player.transform.position = _startPos;
+                Player.transform.position = _startPosition;
 
                 if (_xInput == Player.FacingDirection && _isHanging && !_isClimbing)
                 {
@@ -109,12 +122,13 @@ namespace Player.PlayerStates
                 }
             }
         }
-
-        public void SetDetectedPosition(Vector2 pos) => _detectedPos = pos;
-
+        
+        // We use it to throw lightning from the corner and check if we have full room to stand up
         private void CheckForSpace()
         {
-            _isTouchingCeiling = Physics2D.Raycast(_cornerPos + (Vector2.up * 0.015f) + (Vector2.right * (Player.FacingDirection * 0.015f)), Vector2.up, PlayerData.standColliderHeight, PlayerData.layerGroundAndWalls);
+            _isTouchingCeiling = Physics2D.Raycast(_cornerPos + Vector2.up * 0.015f + Vector2.right * (Player.FacingDirection * 0.015f),
+                Vector2.up, PlayerData.normalColliderHeight, PlayerData.layerGroundWalls);
+            
             Player.PlayerAnimator.SetBool(IsTouchingCeiling, _isTouchingCeiling);
         }
     }

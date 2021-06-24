@@ -1,5 +1,6 @@
 ﻿using Player.Data;
 using Player.StateMachine;
+using UnityEngine;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
@@ -17,6 +18,7 @@ namespace Player.PlayerStates.PlayerGroundedState
             
             // To avoid animator mistakes and avoid involuntary movements
             Player.SetVelocityX(0f);
+            StartTime = Time.time;
         }
 
         public override void LogicUpdate()
@@ -27,11 +29,15 @@ namespace Player.PlayerStates.PlayerGroundedState
             
             if (XInput != 0)
             {
-                StateMachine.ChangeState(Player.MoveState);
+                StateMachine.ChangeState(Player.RunState);
             }
             else if (YInput == -1)
             {
                 StateMachine.ChangeState(Player.CrouchIdleState);
+            }
+            else if (Time.time >= StartTime + PlayerData.sleepTime)
+            {
+                StateMachine.ChangeState(Player.SleepState);
             }
         }
     }

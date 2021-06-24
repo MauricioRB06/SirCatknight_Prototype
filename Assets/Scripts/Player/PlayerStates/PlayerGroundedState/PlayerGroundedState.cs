@@ -5,15 +5,20 @@ namespace Player.PlayerStates.PlayerGroundedState
 {
     public class PlayerGroundedState : PlayerState
     {
+        // We use it to determine the motion in the X axis
         protected int XInput;
+        
+        // We use it to determine if the player is crouching or not
         protected int YInput;
-
-        protected bool IsTouchingCeiling;
+        
+        // We use them to check if the player is sleeping
+        private bool _isSleeping;
         
         // We use them to verify possible status changes
         private bool _isGrounded;
         private bool _isTouchingWall;
         private bool _isTouchingLedge;
+        protected bool IsTouchingCeiling;
         
         // We use them to verify controls for skills
         private bool _jumpInput;
@@ -40,6 +45,7 @@ namespace Player.PlayerStates.PlayerGroundedState
         {
             base.Enter();
 
+            _isSleeping = Player.CheckIfPlayerSleep();
             Player.JumpState.ResetAmountOfJumpsLeft();
             Player.DashState.ResetCanDash();
         }
@@ -54,7 +60,7 @@ namespace Player.PlayerStates.PlayerGroundedState
             _grabInput = Player.InputHandler.GrabInput;
             _dashInput = Player.InputHandler.DashInput;
 
-            if (_jumpInput && Player.JumpState.CanJump())
+            if (_jumpInput && Player.JumpState.CanJump() && !IsTouchingCeiling && !_isSleeping)
             {
                 StateMachine.ChangeState(Player.JumpState);
             }
@@ -67,7 +73,7 @@ namespace Player.PlayerStates.PlayerGroundedState
             {
                 StateMachine.ChangeState(Player.WallGrabState);
             }
-            else if (_dashInput && Player.DashState.CheckIfCanDash() && !IsTouchingCeiling)
+            else if (_dashInput && Player.DashState.CheckIfCanDash() && !IsTouchingCeiling && !_isSleeping)
             {
                 StateMachine.ChangeState(Player.DashState);
             }
