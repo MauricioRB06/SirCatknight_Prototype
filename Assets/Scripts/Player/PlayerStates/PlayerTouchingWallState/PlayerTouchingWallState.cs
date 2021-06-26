@@ -26,16 +26,6 @@ namespace Player.PlayerStates.PlayerTouchingWallState
         {
         }
 
-        public override void AnimationFinishTrigger()
-        {
-            base.AnimationFinishTrigger();
-        }
-
-        public override void AnimationTrigger()
-        {
-            base.AnimationTrigger();
-        }
-
         protected override void DoChecks()
         {
             base.DoChecks();
@@ -43,11 +33,6 @@ namespace Player.PlayerStates.PlayerTouchingWallState
             _isGrounded = Player.CheckIfGrounded();
             _isTouchingWall = Player.CheckIfTouchingWall();
             _isTouchingLedge = Player.CheckIfTouchingLedge();
-
-            if(_isTouchingWall && !_isTouchingLedge)
-            {
-                Player.LedgeClimbState.SetDetectedPosition(Player.transform.position);
-            }
         }
 
         public override void LogicUpdate()

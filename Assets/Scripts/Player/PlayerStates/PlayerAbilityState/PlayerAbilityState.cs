@@ -20,12 +20,14 @@ namespace Player.PlayerStates.PlayerAbilityState
         protected override void DoChecks()
         {
             base.DoChecks();
+            
             _isGrounded = Player.CheckIfGrounded();
         }
 
         public override void Enter()
         {
             base.Enter();
+            
             IsAbilityDone = false;
         }
         

@@ -17,6 +17,7 @@ namespace Player.PlayerStates.PlayerAbilityState
         public override void Enter()
         {
             base.Enter();
+            
             Player.InputHandler.UseJumpInput();
             Player.SetVelocityY(PlayerData.jumpForce);
             IsAbilityDone = true;

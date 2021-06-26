@@ -20,7 +20,7 @@ namespace Player.StateMachine
         // We use it when we want to mark an animation as finished 
         protected bool IsAnimationFinished;
         
-        // 
+        // We use it to prevent that if we are leaving a state, actions of the state from which we are leaving can be executed
         protected bool IsExitingState;
 
         // We use it to have a reference of how long we have been in a specific state
