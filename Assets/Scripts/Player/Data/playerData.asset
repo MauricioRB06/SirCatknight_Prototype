@@ -17,6 +17,8 @@ MonoBehaviour:
   walkVelocity: 3
   jumpForce: 15
   amountOfJumps: 1
+  dodgeRollImpulse: 30
+  dodgeRollLifeTime: 0.4
   wallJumpVelocity: 20
   wallJumpTime: 0.4
   wallJumpAngle: {x: 1, y: 2}
@@ -36,10 +38,3 @@ MonoBehaviour:
   crouchMovementVelocity: 3
   crouchColliderHeight: 1.3
   normalColliderHeight: 1.6
-  groundCheckRadius: 0.3
-  ceilingCheckRadius: 0.2
-  wallCheckDistance: 0.5
-  layerGroundWalls:
-    serializedVersion: 2
-    m_Bits: 64
-  amountOfAttacks: 3

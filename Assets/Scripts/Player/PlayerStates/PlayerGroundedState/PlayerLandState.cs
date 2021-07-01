@@ -1,13 +1,12 @@
 ﻿using Player.Data;
-using Player.StateMachine;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerLandState : PlayerGroundedState
+    public class EntityLandState : EntityGroundedState
     {
         // Class constructor
-        public PlayerLandState(Player player, PlayerStateMachine stateMachine,
-        PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public EntityLandState(Player entity, global::StateMachine.StateMachine stateMachine,
+        PlayerData entityData, string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
         {
         }
 
@@ -20,11 +19,11 @@ namespace Player.PlayerStates.PlayerGroundedState
                 
             if (XInput != 0)
             {
-                StateMachine.ChangeState(Player.RunState);
+                StateMachine.ChangeState(Entity.RunState);
             }
             else if (IsAnimationFinished)
             {
-                StateMachine.ChangeState(Player.IdleState);
+                StateMachine.ChangeState(Entity.IdleState);
             }
         }
     }

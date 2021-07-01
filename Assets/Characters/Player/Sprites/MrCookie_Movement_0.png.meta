@@ -374,6 +374,9 @@ TextureImporter:
   - first:
       213: -4529194974571777777
     second: Player_MoveBackHurt_7
+  - first:
+      213: 6049746916104050964
+    second: Empty
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -3098,6 +3101,27 @@ TextureImporter:
       bones: []
       spriteID: f013a26da211521c0800000000000000
       internalID: -4529194974571777777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Empty
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419956b64c405f350800000000000000
+      internalID: 6049746916104050964
       vertices: []
       indices: 
       edges: []

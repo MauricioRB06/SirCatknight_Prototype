@@ -17,7 +17,7 @@ TagManager:
   - Damageable
   - Dead
   - Player
-  - 
+  - Weapon
   - 
   - 
   - 
@@ -71,4 +71,7 @@ TagManager:
     locked: 0
   - name: ForegroundDecorationB
     uniqueID: 1796422411
+    locked: 0
+  - name: UI
+    uniqueID: 2606211409
     locked: 0

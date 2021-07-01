@@ -18,7 +18,22 @@ MonoBehaviour:
   m_GUID: c8604243d763b8b4180f6872c16b3b2e
   m_SerializeEntries:
   - m_GUID: b9da6108d63b7af41a7f015ef2d9f1a6
-    m_Address: UI Text_en
+    m_Address: UI Menu Text_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: 30788ff7422a7904da2ec33070104b8f
+    m_Address: UI InGame Text_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: cc906672875c6814780a605617a6fabf
+    m_Address: Game Credits Text_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+  - m_GUID: 19cde0821d10413478ba4faba7e0f352
+    m_Address: Collectibles_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

@@ -1,17 +1,17 @@
 ﻿using Player.Data;
-using Player.StateMachine;
+using StateMachine;
 using UnityEngine;
 
 namespace Player.PlayerStates.PlayerTouchingWallState
 {
-    public class PlayerWallGrabState : PlayerTouchingWallState
+    public class EntityWallGrabState : EntityTouchingWallState
     {   
-        // We use it to save the position of the player and prevent him from moving
+        // We use it to save the position of the entity and prevent him from moving
         private Vector2 _holdPosition;
         
         // Class Constructor
-        public PlayerWallGrabState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public EntityWallGrabState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
+            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
         {
         }
 
@@ -19,7 +19,7 @@ namespace Player.PlayerStates.PlayerTouchingWallState
         {
             base.Enter();
 
-            _holdPosition = Player.transform.position;
+            _holdPosition = Entity.transform.position;
             HoldPosition();
         }
 
@@ -33,23 +33,23 @@ namespace Player.PlayerStates.PlayerTouchingWallState
 
             if (YInput > 0)
             {
-                StateMachine.ChangeState(Player.WallClimbState);
+                StateMachine.ChangeState(Entity.WallClimbState);
             }
             else if (YInput < 0 || !GrabInput)
             {
-                StateMachine.ChangeState(Player.WallSlideState);
+                StateMachine.ChangeState(Entity.WallSlideState);
             }
         }
 
         private void HoldPosition()
         {
-            Player.transform.position = _holdPosition;
+            Entity.transform.position = _holdPosition;
 
-            Player.SetVelocityX(0f);
+            Core.Movement.SetVelocityX(0f);
             
             /* We have to set the speed of Y to 0, since Cinemachine works with the speed of the object so we have
                problems with the camera if we don't set  */
-            Player.SetVelocityY(0f);
+            Core.Movement.SetVelocityY(0f);
         }
     }
 }

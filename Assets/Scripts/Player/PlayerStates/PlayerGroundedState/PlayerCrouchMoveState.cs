@@ -1,13 +1,13 @@
 ﻿using Player.Data;
-using Player.StateMachine;
+using StateMachine;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerCrouchMoveState : PlayerGroundedState
+    public class EntityCrouchMoveState : EntityGroundedState
     {
         // Class Constructor
-        public PlayerCrouchMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public EntityCrouchMoveState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
+            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
         {
         }
 
@@ -15,14 +15,14 @@ namespace Player.PlayerStates.PlayerGroundedState
         {
             base.Enter();
             
-            Player.SetColliderHeight(PlayerData.crouchColliderHeight);
+            Entity.SetColliderHeight(EntityData.crouchColliderHeight);
         }
 
         public override void Exit()
         {
             base.Exit();
             
-            Player.SetColliderHeight(PlayerData.normalColliderHeight);
+            Entity.SetColliderHeight(EntityData.normalColliderHeight);
         }
 
         public override void LogicUpdate()
@@ -31,16 +31,16 @@ namespace Player.PlayerStates.PlayerGroundedState
 
             if (IsExitingState) return;
             
-            Player.SetVelocityX(PlayerData.crouchMovementVelocity * Player.FacingDirection);
-            Player.CheckIfShouldFlip(XInput);
+            Core.Movement.SetVelocityX(EntityData.crouchMovementVelocity * Core.Movement.FacingDirection);
+            Core.Movement.CheckIfShouldFlip(XInput);
 
             if(XInput == 0)
             {
-                StateMachine.ChangeState(Player.CrouchIdleState);
+                StateMachine.ChangeState(Entity.CrouchIdleState);
             }
             else if(YInput != -1 && !IsTouchingCeiling)
             {
-                StateMachine.ChangeState(Player.RunState);
+                StateMachine.ChangeState(Entity.RunState);
             }
         }
     }

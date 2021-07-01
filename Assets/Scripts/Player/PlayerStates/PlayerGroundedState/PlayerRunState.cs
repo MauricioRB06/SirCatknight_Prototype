@@ -1,13 +1,12 @@
 ﻿using Player.Data;
-using Player.StateMachine;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerRunState : PlayerGroundedState
+    public class EntityRunState : EntityGroundedState
     {
         // Class Constructor
-        public PlayerRunState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public EntityRunState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
+            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
         {
         }
 
@@ -15,19 +14,19 @@ namespace Player.PlayerStates.PlayerGroundedState
         {
             base.LogicUpdate();
 
-            Player.CheckIfShouldFlip(XInput);
+            Core.Movement.CheckIfShouldFlip(XInput);
 
-            Player.SetVelocityX(PlayerData.runVelocity * XInput);
+            Core.Movement.SetVelocityX(EntityData.runVelocity * XInput);
 
             if (IsExitingState) return;
             
             if (XInput == 0)
             {
-                StateMachine.ChangeState(Player.IdleState);
+                StateMachine.ChangeState(Entity.IdleState);
             }
             else if (YInput == -1)
             {
-                StateMachine.ChangeState(Player.CrouchMoveState);
+                StateMachine.ChangeState(Entity.CrouchMoveState);
             }
         }
     }

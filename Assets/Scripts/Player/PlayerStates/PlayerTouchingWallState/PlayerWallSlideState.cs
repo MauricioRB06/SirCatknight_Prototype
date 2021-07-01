@@ -1,13 +1,13 @@
 ﻿using Player.Data;
-using Player.StateMachine;
+using StateMachine;
 
 namespace Player.PlayerStates.PlayerTouchingWallState
 {
-    public class PlayerWallSlideState : PlayerTouchingWallState
+    public class EntityWallSlideState : EntityTouchingWallState
     {
         // Class Constructor
-        public PlayerWallSlideState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
-            string animBoolName): base(player, stateMachine, playerData, animBoolName)
+        public EntityWallSlideState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
+            string animBoolName): base(entity, stateMachine, entityData, animBoolName)
         {
         }
 
@@ -17,11 +17,11 @@ namespace Player.PlayerStates.PlayerTouchingWallState
 
             if (IsExitingState) return;
             
-            Player.SetVelocityY(-PlayerData.wallSlideVelocity);
+            Core.Movement.SetVelocityY(-EntityData.wallSlideVelocity);
 
             if (GrabInput && YInput == 0)
             {
-                StateMachine.ChangeState(Player.WallGrabState);
+                StateMachine.ChangeState(Entity.WallGrabState);
             }
         }
     }

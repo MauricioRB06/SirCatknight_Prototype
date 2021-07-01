@@ -1,43 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.Localization.Settings;
+using UnityEngine.SceneManagement;
 
-/* Documentación Usada:
+/* Documentation:
 * 
 * Scripting Localization: https://docs.unity3d.com/Packages/com.unity.localization@1.0/manual/Scripting.html
 * 
 */
 
-public class Main_Menu : MonoBehaviour
+namespace UI
 {
-    public void NewGame()
+    public class MainMenu : MonoBehaviour
     {
-        SceneManager.LoadScene("Tutorial");
-    }
+        public void NewGame()
+        {
+            SceneManager.LoadScene("Tutorial");
+        }
 
-    public void Enen()
-    {
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0] ;
-    }
+        public void Enen()
+        {
+            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0] ;
+        }
 
-    public void Eses()
-    {
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[2];
-    }
+        public void Eses()
+        {
+            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[2];
+        }
 
-    public void Jpja()
-    {
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
-    }
-    public void Credits()
-    {
-        SceneManager.LoadScene("Credits");
-    }
+        public void Jpja()
+        {
+            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
+        }
+        public void Credits()
+        {
+            SceneManager.LoadScene("Credits");
+        }
 
-    public void Exit()
-    {
-        Application.Quit();
+        public void Exit()
+        {
+            Application.Quit();
+        }
     }
 }

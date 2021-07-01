@@ -25,6 +25,18 @@ MonoBehaviour:
     m_Address: Assets/Localization/Tables/Language Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: 8923647fad9352449b5bf876a8bec72b
+    m_Address: Assets/Localization/Tables/UI_InGameText Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 7ad583f9fbe44874d8f0df0917a6a823
+    m_Address: Assets/Localization/Tables/Game Credits Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: caf5a71902b0e33409bb25b2da77ef1e
+    m_Address: Assets/Localization/Tables/Collectibles Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 099765490df7a8b42afbca8e793739cc, type: 2}
   m_SchemaSet:

@@ -1,14 +1,14 @@
 ﻿using Player.Data;
-using Player.StateMachine;
+using StateMachine;
 using UnityEngine;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerIdleState : PlayerGroundedState
+    public class EntityIdleState : EntityGroundedState
     {
         // Class constructor
-        public PlayerIdleState(Player player, PlayerStateMachine stateMachine,
-            PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public EntityIdleState(Player entity, global::StateMachine.StateMachine stateMachine,
+            PlayerData entityData, string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
         {
         }
 
@@ -17,7 +17,7 @@ namespace Player.PlayerStates.PlayerGroundedState
             base.Enter();
             
             // To avoid animator mistakes and avoid involuntary movements
-            Player.SetVelocityX(0f);
+            Core.Movement.SetVelocityX(0f);
             StartTime = Time.time;
         }
 
@@ -29,15 +29,15 @@ namespace Player.PlayerStates.PlayerGroundedState
             
             if (XInput != 0)
             {
-                StateMachine.ChangeState(Player.RunState);
+                StateMachine.ChangeState(Entity.RunState);
             }
             else if (YInput == -1)
             {
-                StateMachine.ChangeState(Player.CrouchIdleState);
+                StateMachine.ChangeState(Entity.CrouchIdleState);
             }
-            else if (Time.time >= StartTime + PlayerData.sleepTime)
+            else if (Time.time >= StartTime + EntityData.sleepTime)
             {
-                StateMachine.ChangeState(Player.SleepState);
+                StateMachine.ChangeState(Entity.SleepState);
             }
         }
     }

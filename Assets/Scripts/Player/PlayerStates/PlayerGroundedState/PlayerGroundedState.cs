@@ -1,17 +1,17 @@
 ﻿using Player.Data;
-using Player.StateMachine;
+using StateMachine;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerGroundedState : PlayerState
+    public class EntityGroundedState : EntityState
     {
         // We use it to determine the motion in the X axis
         protected int XInput;
         
-        // We use it to determine if the player is crouching or not
+        // We use it to determine if the entity is crouching or not
         protected int YInput;
         
-        // We use them to check if the player is sleeping
+        // We use them to check if the entity is sleeping
         private bool _isSleeping;
         
         // We use them to verify possible status changes
@@ -24,10 +24,11 @@ namespace Player.PlayerStates.PlayerGroundedState
         private bool _jumpInput;
         private bool _grabInput;
         private bool _dashInput;
+        private bool _dodgeRollInput;
         
         // Class constructor
-        protected PlayerGroundedState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        protected EntityGroundedState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
+            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
         {
         }
 
@@ -35,47 +36,60 @@ namespace Player.PlayerStates.PlayerGroundedState
         {
             base.DoChecks();
 
-            _isGrounded = Player.CheckIfGrounded();
-            _isTouchingWall = Player.CheckIfTouchingWall();
-            _isTouchingLedge = Player.CheckIfTouchingLedge();
-            IsTouchingCeiling = Player.CheckForCeiling();
+            _isGrounded = Core.CollisionSenses.Ground;
+            _isTouchingWall = Core.CollisionSenses.WallFront;
+            _isTouchingLedge = Core.CollisionSenses.Ledge;
+            IsTouchingCeiling = Core.CollisionSenses.Ceiling;
         }
 
         public override void Enter()
         {
             base.Enter();
 
-            _isSleeping = Player.CheckIfPlayerSleep();
-            Player.JumpState.ResetAmountOfJumpsLeft();
-            Player.DashState.ResetCanDash();
+            _isSleeping = Entity.CheckIfPlayerSleep();
+            Entity.JumpState.ResetAmountOfJumpsLeft();
+            Entity.DashState.ResetCanDash();
         }
 
         public override void LogicUpdate()
         {
             base.LogicUpdate();
 
-            XInput = Player.InputHandler.NormInputX;
-            YInput = Player.InputHandler.NormInputY;
-            _jumpInput = Player.InputHandler.JumpInput;
-            _grabInput = Player.InputHandler.GrabInput;
-            _dashInput = Player.InputHandler.DashInput;
+            XInput = Entity.InputHandler.NormInputX;
+            YInput = Entity.InputHandler.NormInputY;
+            _jumpInput = Entity.InputHandler.JumpInput;
+            _grabInput = Entity.InputHandler.GrabInput;
+            _dashInput = Entity.InputHandler.DashInput;
+            _dodgeRollInput = Entity.InputHandler.DodgeRollInput;
 
-            if (_jumpInput && Player.JumpState.CanJump() && !IsTouchingCeiling && !_isSleeping)
+            if (Entity.InputHandler.AttackInputs[(int) CombatInputs.Primary] && !IsTouchingCeiling)
             {
-                StateMachine.ChangeState(Player.JumpState);
+                StateMachine.ChangeState((Entity.PrimaryAttackState));
+            }
+            else if (Entity.InputHandler.AttackInputs[(int) CombatInputs.Secondary] && !IsTouchingCeiling)
+            {
+                StateMachine.ChangeState((Entity.SecondaryAttackState));
+            }
+            else if (_jumpInput && Entity.JumpState.CanJump() && !IsTouchingCeiling && !_isSleeping)
+            {
+                StateMachine.ChangeState(Entity.JumpState);
             }
             else if (!_isGrounded)
             {
-                Player.InAirState.StartCoyoteTime();
-                StateMachine.ChangeState(Player.InAirState);
+                Entity.InAirState.StartCoyoteTime();
+                StateMachine.ChangeState(Entity.InAirState);
             }
             else if(_isTouchingWall && _grabInput && _isTouchingLedge)
             {
-                StateMachine.ChangeState(Player.WallGrabState);
+                StateMachine.ChangeState(Entity.WallGrabState);
             }
-            else if (_dashInput && Player.DashState.CheckIfCanDash() && !IsTouchingCeiling && !_isSleeping)
+            else if (_dashInput && Entity.DashState.CheckIfCanDash() && !IsTouchingCeiling && !_isSleeping)
             {
-                StateMachine.ChangeState(Player.DashState);
+                StateMachine.ChangeState(Entity.DashState);
+            }
+            else if (_dodgeRollInput && !_isSleeping)
+            {
+                StateMachine.ChangeState(Entity.DodgeRoll);
             }
         }
     }

@@ -4,8 +4,8 @@ using UnityEngine;
  * 
  * Unnecessary property accesses:
  * 
- *  https://github.com/JetBrains/resharper-unity/wiki/Avoid-multiple-unnecessary-property-accesses
- *  https://forum.unity.com/threads/cache-transform-really-needed.356875/
+ *                      https://github.com/JetBrains/resharper-unity/wiki/Avoid-multiple-unnecessary-property-accesses
+ *                      https://forum.unity.com/threads/cache-transform-really-needed.356875/
  * 
  */
 

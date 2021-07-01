@@ -1,5 +1,5 @@
 ﻿using Player.Data;
-using Player.StateMachine;
+using StateMachine;
 using UnityEngine;
 
 /* Documentation:
@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace Player.PlayerStates
 {
-    public class PlayerInAirState : PlayerState
+    public class EntityInAirState : EntityState
     {
         // We use it to move in the air
         private int _xInput;
@@ -37,7 +37,7 @@ namespace Player.PlayerStates
         private bool _oldIsTouchingWall;
         private bool _oldIsTouchingWallBack;
         
-        // We use them to enable the CoyoteTime after leaving the ground or accidentally moving the player between wall jumps
+        // We use them to enable the CoyoteTime after leaving the ground or accidentally moving the entity between wall jumps
         private bool _coyoteTime;
         private bool _wallJumpCoyoteTime;
         
@@ -49,8 +49,8 @@ namespace Player.PlayerStates
         private static readonly int XVelocity = Animator.StringToHash("xVelocity");
 
         // Class constructor
-        public PlayerInAirState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public EntityInAirState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
+            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
         {
         }
 
@@ -62,10 +62,10 @@ namespace Player.PlayerStates
             _oldIsTouchingWall = _isTouchingWall;
             _oldIsTouchingWallBack = _isTouchingWallBack;
 
-            _isGrounded = Player.CheckIfGrounded();
-            _isTouchingWall = Player.CheckIfTouchingWall();
-            _isTouchingWallBack = Player.CheckIfTouchingWallBack();
-            _isTouchingLedge = Player.CheckIfTouchingLedge();
+            _isGrounded = Core.CollisionSenses.Ground;
+            _isTouchingWall = Core.CollisionSenses.WallFront;
+            _isTouchingWallBack = Core.CollisionSenses.WallBack;
+            _isTouchingLedge = Core.CollisionSenses.Ledge;
   
             if(!_wallJumpCoyoteTime && !_isTouchingWall && !_isTouchingWallBack && (_oldIsTouchingWall || _oldIsTouchingWallBack))
             {
@@ -90,34 +90,42 @@ namespace Player.PlayerStates
             CheckCoyoteTime();
             CheckWallJumpCoyoteTime();
 
-            _xInput = Player.InputHandler.NormInputX;
-            _jumpInput = Player.InputHandler.JumpInput;
-            _jumpInputStop = Player.InputHandler.JumpInputStop;
-            _grabInput = Player.InputHandler.GrabInput;
-            _dashInput = Player.InputHandler.DashInput;
+            _xInput = Entity.InputHandler.NormInputX;
+            _jumpInput = Entity.InputHandler.JumpInput;
+            _jumpInputStop = Entity.InputHandler.JumpInputStop;
+            _grabInput = Entity.InputHandler.GrabInput;
+            _dashInput = Entity.InputHandler.DashInput;
 
             CheckJumpLimiter();
             
-            if (_isGrounded && Player.CurrentVelocity.y < 0.01f)
+            if (Entity.InputHandler.AttackInputs[(int) CombatInputs.Primary])
+            {
+                StateMachine.ChangeState((Entity.PrimaryAttackState));
+            }
+            else if (Entity.InputHandler.AttackInputs[(int) CombatInputs.Secondary])
+            {
+                StateMachine.ChangeState((Entity.SecondaryAttackState));
+            }
+            else if (_isGrounded && Core.Movement.CurrentVelocity.y < 0.01f)
             {            
-                StateMachine.ChangeState(Player.LandState);
+                StateMachine.ChangeState(Entity.LandState);
             }
             else if(_isTouchingWall && !_isTouchingLedge && !_isGrounded)
             {
-                StateMachine.ChangeState(Player.LedgeClimbState);
+                StateMachine.ChangeState(Entity.LedgeClimbState);
             }
             else switch (_jumpInput)
             {
                 case true when _isTouchingWall || _isTouchingWallBack || _wallJumpCoyoteTime:
                     
                     StopWallJumpCoyoteTime();
-                    _isTouchingWall = Player.CheckIfTouchingWall();
-                    Player.WallJumpState.DetermineWallJumpDirection(_isTouchingWall);
-                    StateMachine.ChangeState(Player.WallJumpState);
+                    _isTouchingWall = Core.CollisionSenses.WallFront;
+                    Entity.WallJumpState.DetermineWallJumpDirection(_isTouchingWall);
+                    StateMachine.ChangeState(Entity.WallJumpState);
                     break;
                 
-                case true when Player.JumpState.CanJump():
-                    StateMachine.ChangeState(Player.JumpState);
+                case true when Entity.JumpState.CanJump():
+                    StateMachine.ChangeState(Entity.JumpState);
                     break;
                 
                 default:
@@ -126,28 +134,28 @@ namespace Player.PlayerStates
                     {
                         case true when _grabInput && _isTouchingLedge:
                             
-                            StateMachine.ChangeState(Player.WallGrabState);
+                            StateMachine.ChangeState(Entity.WallGrabState);
                             break;
                         
-                        case true when _xInput == Player.FacingDirection && Player.CurrentVelocity.y <= 0:
+                        case true when _xInput == Core.Movement.FacingDirection && Core.Movement.CurrentVelocity.y <= 0:
                             
-                            StateMachine.ChangeState(Player.WallSlideState);
+                            StateMachine.ChangeState(Entity.WallSlideState);
                             break;
                         
                         default:
                         {
-                            if(_dashInput && Player.DashState.CheckIfCanDash())
+                            if(_dashInput && Entity.DashState.CheckIfCanDash())
                             {
-                                StateMachine.ChangeState(Player.DashState);
+                                StateMachine.ChangeState(Entity.DashState);
                             }
                             else
                             {
-                                Player.CheckIfShouldFlip(_xInput);
-                                Player.SetVelocityX(PlayerData.runVelocity * _xInput);
+                                Core.Movement.CheckIfShouldFlip(_xInput);
+                                Core.Movement.SetVelocityX(EntityData.runVelocity * _xInput);
                 
                                 // We pass the motion parameters to the animator, so that it plays the correct animation
-                                Player.PlayerAnimator.SetFloat(YVelocity, Player.CurrentVelocity.y);
-                                Player.PlayerAnimator.SetFloat(XVelocity, Mathf.Abs(Player.CurrentVelocity.x));
+                                Entity.PlayerAnimator.SetFloat(YVelocity, Core.Movement.CurrentVelocity.y);
+                                Entity.PlayerAnimator.SetFloat(XVelocity, Mathf.Abs(Core.Movement.CurrentVelocity.x));
                             }
 
                             break;
@@ -167,10 +175,10 @@ namespace Player.PlayerStates
             
             if (_jumpInputStop)
             {
-                Player.SetVelocityY(Player.CurrentVelocity.y * PlayerData.jumpHeightLimiter);
+                Core.Movement.SetVelocityY(Core.Movement.CurrentVelocity.y * EntityData.jumpHeightLimiter);
                 _isJumping = false;
             }
-            else if (Player.CurrentVelocity.y <= 0f)
+            else if (Core.Movement.CurrentVelocity.y <= 0f)
             {
                 _isJumping = false;
             }
@@ -179,16 +187,16 @@ namespace Player.PlayerStates
         // We use it to check if we have CoyoteTime remaining
         private void CheckCoyoteTime()
         {
-            if (!_coyoteTime || !(Time.time > StartTime + PlayerData.coyoteTime)) return;
+            if (!_coyoteTime || !(Time.time > StartTime + EntityData.coyoteTime)) return;
             
             _coyoteTime = false;
-            Player.JumpState.DecreaseAmountOfJumpsLeft();
+            Entity.JumpState.DecreaseAmountOfJumpsLeft();
         }
         
         // We use it to check if we have WallCoyoteTime remaining
         private void CheckWallJumpCoyoteTime()
         {
-            if(_wallJumpCoyoteTime && Time.time > _startWallJumpCoyoteTime + PlayerData.coyoteTime)
+            if(_wallJumpCoyoteTime && Time.time > _startWallJumpCoyoteTime + EntityData.coyoteTime)
             {
                 _wallJumpCoyoteTime = false;
             }

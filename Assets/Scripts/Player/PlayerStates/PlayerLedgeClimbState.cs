@@ -1,10 +1,10 @@
 ﻿using Player.Data;
-using Player.StateMachine;
+using StateMachine;
 using UnityEngine;
 
 namespace Player.PlayerStates
 {
-    public class PlayerLedgeClimbState : PlayerState
+    public class EntityLedgeClimbState : EntityState
     {
         // We use it to store the position of the corner, when it is detected
         private Vector2 _cornerPos;
@@ -13,13 +13,13 @@ namespace Player.PlayerStates
         private Vector2 _startPosition;
         private Vector2 _stopPos;
 
-        // We use it to know if the player is hanging
+        // We use it to know if the entity is hanging
         private bool _isHanging;
         
         // We use it to check if the corner is climbing
         private bool _isClimbing;
         
-        // We use it so that the player can jump, while hanging
+        // We use it so that the entity can jump, while hanging
         private bool _jumpInput;
         
         // We use it to know if when climbing a roof and we must go crouch
@@ -29,13 +29,16 @@ namespace Player.PlayerStates
         private int _xInput;
         private int _yInput;
         
+        // We use it to return to store the position of the corners that are detected
+        private Vector2 _detectedCornerPosition;
+        
         // Generate id parameters for the animator
         private static readonly int ClimbLedge = Animator.StringToHash("LedgeClimbUp");
         private static readonly int IsTouchingCeiling = Animator.StringToHash("TouchingCeiling");
 
         // Class Constructor
-        public PlayerLedgeClimbState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
-            string animBoolName): base(player, stateMachine, playerData, animBoolName)
+        public EntityLedgeClimbState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
+            string animBoolName): base(entity, stateMachine, entityData, animBoolName)
         {
         }
 
@@ -43,7 +46,7 @@ namespace Player.PlayerStates
         {
             base.AnimationFinishTrigger();
             
-            Player.PlayerAnimator.SetBool(ClimbLedge, false);
+            Entity.PlayerAnimator.SetBool(ClimbLedge, false);
         }
 
         public override void AnimationTrigger()
@@ -57,16 +60,16 @@ namespace Player.PlayerStates
         {
             base.Enter();
 
-            Player.SetVelocityZero();
-            _cornerPos = Player.DetermineCornerPosition();
+            Core.Movement.SetVelocityZero();
+            _cornerPos = DetermineCornerPosition();
 
-            _startPosition.Set(_cornerPos.x - (Player.FacingDirection * PlayerData.startOffset.x),
-                _cornerPos.y - PlayerData.startOffset.y);
+            _startPosition.Set(_cornerPos.x - (Core.Movement.FacingDirection * EntityData.startOffset.x),
+                _cornerPos.y - EntityData.startOffset.y);
             
-            _stopPos.Set(_cornerPos.x + (Player.FacingDirection * PlayerData.stopOffset.x),
-                _cornerPos.y + PlayerData.stopOffset.y);
+            _stopPos.Set(_cornerPos.x + (Core.Movement.FacingDirection * EntityData.stopOffset.x),
+                _cornerPos.y + EntityData.stopOffset.y);
 
-            Player.transform.position = _startPosition;
+            Entity.transform.position = _startPosition;
         }
 
         public override void Exit()
@@ -77,7 +80,7 @@ namespace Player.PlayerStates
 
             if (!_isClimbing) return;
             
-            Player.transform.position = _stopPos;
+            Entity.transform.position = _stopPos;
             _isClimbing = false;
         }
 
@@ -89,36 +92,36 @@ namespace Player.PlayerStates
             {
                 if (_isTouchingCeiling)
                 {
-                    StateMachine.ChangeState(Player.CrouchIdleState);
+                    StateMachine.ChangeState(Entity.CrouchIdleState);
                 }
                 else
                 {
-                    StateMachine.ChangeState(Player.IdleState);
+                    StateMachine.ChangeState(Entity.IdleState);
                 }
             }
             else
             {
-                _xInput = Player.InputHandler.NormInputX;
-                _yInput = Player.InputHandler.NormInputY;
-                _jumpInput = Player.InputHandler.JumpInput;
+                _xInput = Entity.InputHandler.NormInputX;
+                _yInput = Entity.InputHandler.NormInputY;
+                _jumpInput = Entity.InputHandler.JumpInput;
 
-                Player.SetVelocityZero();
-                Player.transform.position = _startPosition;
+                Core.Movement.SetVelocityZero();
+                Entity.transform.position = _startPosition;
 
-                if (_xInput == Player.FacingDirection && _isHanging && !_isClimbing)
+                if (_xInput == Core.Movement.FacingDirection && _isHanging && !_isClimbing)
                 {
                     CheckForSpace();
                     _isClimbing = true;
-                    Player.PlayerAnimator.SetBool(ClimbLedge, true);
+                    Entity.PlayerAnimator.SetBool(ClimbLedge, true);
                 }
                 else if (_yInput == -1 && _isHanging && !_isClimbing)
                 {
-                    StateMachine.ChangeState(Player.InAirState);
+                    StateMachine.ChangeState(Entity.InAirState);
                 }
                 else if(_jumpInput && !_isClimbing)
                 {
-                    Player.WallJumpState.DetermineWallJumpDirection(true);
-                    StateMachine.ChangeState(Player.WallJumpState);
+                    Entity.WallJumpState.DetermineWallJumpDirection(true);
+                    StateMachine.ChangeState(Entity.WallJumpState);
                 }
             }
         }
@@ -126,10 +129,36 @@ namespace Player.PlayerStates
         // We use it to throw lightning from the corner and check if we have full room to stand up
         private void CheckForSpace()
         {
-            _isTouchingCeiling = Physics2D.Raycast(_cornerPos + Vector2.up * 0.015f + Vector2.right * (Player.FacingDirection * 0.015f),
-                Vector2.up, PlayerData.normalColliderHeight, PlayerData.layerGroundWalls);
+            _isTouchingCeiling = Physics2D.Raycast(_cornerPos + Vector2.up * 0.015f + Vector2.right * (Core.Movement.FacingDirection * 0.015f),
+                Vector2.up, EntityData.normalColliderHeight, Core.CollisionSenses.LayerGroundWalls);
             
-            Player.PlayerAnimator.SetBool(IsTouchingCeiling, _isTouchingCeiling);
+            Entity.PlayerAnimator.SetBool(IsTouchingCeiling, _isTouchingCeiling);
+        }
+        
+        // We use it to determine the position of the detected corner
+        private Vector2 DetermineCornerPosition()
+        {
+            var wallCheckPosition = Core.CollisionSenses.WallCheck.position;
+            var ledgeCheckPosition = Core.CollisionSenses.LedgeCheck.position;
+            
+            // First we detect the distance from the wall
+            var xWallHit = Physics2D.Raycast(wallCheckPosition, Vector2.right * Core.Movement.FacingDirection,
+                Core.CollisionSenses.WallCheckDistance, Core.CollisionSenses.LayerGroundWalls);
+            var xWallDistance = xWallHit.distance;
+            
+            // We save that distance from the wall to use to check the ground clearance
+            _detectedCornerPosition.Set((xWallDistance + 0.015f) * Core.Movement.FacingDirection, 0f);
+            
+            // Determine the distance from the ground
+            var yFloorHit = Physics2D.Raycast(ledgeCheckPosition + (Vector3)(_detectedCornerPosition),
+                Vector2.down, ledgeCheckPosition.y - wallCheckPosition.y + 0.015f,Core.CollisionSenses.LayerGroundWalls);
+            var yFloorDistance = yFloorHit.distance;
+            
+            // Finally we get the exact position of the corner
+            _detectedCornerPosition.Set(wallCheckPosition.x + (xWallDistance * Core.Movement.FacingDirection),
+                ledgeCheckPosition.y - yFloorDistance);
+            
+            return _detectedCornerPosition;
         }
     }
 }

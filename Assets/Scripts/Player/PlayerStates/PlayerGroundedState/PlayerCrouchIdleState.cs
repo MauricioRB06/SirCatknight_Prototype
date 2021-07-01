@@ -1,13 +1,13 @@
 ﻿using Player.Data;
-using Player.StateMachine;
+using StateMachine;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerCrouchIdleState : PlayerGroundedState
+    public class EntityCrouchIdleState : EntityGroundedState
     {
         // Class Constructor
-        public PlayerCrouchIdleState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public EntityCrouchIdleState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
+            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
         {
         }
 
@@ -15,15 +15,15 @@ namespace Player.PlayerStates.PlayerGroundedState
         {
             base.Enter();
 
-            Player.SetVelocityZero();
-            Player.SetColliderHeight(PlayerData.crouchColliderHeight);
+            Core.Movement.SetVelocityZero();
+            Entity.SetColliderHeight(EntityData.crouchColliderHeight);
         }
 
         public override void Exit()
         {
             base.Exit();
             
-            Player.SetColliderHeight(PlayerData.normalColliderHeight);
+            Entity.SetColliderHeight(EntityData.normalColliderHeight);
         }
 
         public override void LogicUpdate()
@@ -34,11 +34,11 @@ namespace Player.PlayerStates.PlayerGroundedState
             
             if(XInput != 0)
             {
-                StateMachine.ChangeState(Player.CrouchMoveState);
+                StateMachine.ChangeState(Entity.CrouchMoveState);
             }
             else if(YInput != -1 && !IsTouchingCeiling)
             {
-                StateMachine.ChangeState(Player.IdleState);
+                StateMachine.ChangeState(Entity.IdleState);
             }
         }
     }

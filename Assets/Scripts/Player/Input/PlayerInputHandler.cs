@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 /* Documentation:
@@ -31,6 +32,10 @@ namespace Player.Input
         public bool DashInput { get; private set; }
         public bool DashInputStop { get; private set; }
         
+        // We use them to check if the Dodge button is pressed
+        public bool DodgeRollInput { get; private set; }
+        public bool DodgeRollInputStop { get; private set; }
+        
         // We use them to get a reference to the control scheme we are using 
         private PlayerInput _playerInput;
         
@@ -50,10 +55,19 @@ namespace Player.Input
         // We use it to control the behavior of Dash and Jump skills based on the time the player presses the button
         private float _jumpInputStartTime;
         private float _dashInputStartTime;
-
+        
+        // 
         private bool _isSleeping;
+        
+        //
+        public bool[] AttackInputs { get; private set; }
+        
+        
         private void Start()
         {
+            var count = Enum.GetValues(typeof(CombatInputs)).Length;
+            AttackInputs = new bool[count];
+            
             _playerInput = GetComponent<PlayerInput>();
             _playerCamera = Camera.main;
         }
@@ -71,25 +85,9 @@ namespace Player.Input
             /* We use a minimum tolerance of movement of the controls, to make sure that the player really wants to
                move and to avoid errors in the animator when it is wall climb due to small changes in the input values
                of the control */
-            if(Mathf.Abs(RawMovementInput.x) > 0.5f)
-            {
-                // We normalize the movement to standardize the controls
-                NormInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
-            }
-            else
-            {
-                NormInputX = 0;
-            }
-        
-            if(Mathf.Abs(RawMovementInput.y) > 0.5f)
-            {
-                // We normalize the movement to standardize the controls
-                NormInputY = (int)(RawMovementInput * Vector2.up).normalized.y;
-            }
-            else
-            {
-                NormInputY = 0;
-            }
+
+            NormInputX = Mathf.RoundToInt(RawMovementInput.x);
+            NormInputY = Mathf.RoundToInt(RawMovementInput.y);
         }
 
         public void OnJumpInput(InputAction.CallbackContext context)
@@ -134,7 +132,6 @@ namespace Player.Input
             }
         }
         
-        // 
         public void OnDashDirectionInput(InputAction.CallbackContext context)
         {
             RawDashDirectionInput = context.ReadValue<Vector2>();
@@ -149,11 +146,51 @@ namespace Player.Input
             DashDirectionInput = Vector2Int.RoundToInt(RawDashDirectionInput.normalized);
         }
         
-        // We use it to set the jump to false, after we use it
+        public void OnDodgeRollInput(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                DodgeRollInput = true;
+                DodgeRollInputStop = false;
+            }
+            else if (context.canceled)
+            {
+                DodgeRollInputStop = true;
+            }
+        }
+        
+        public void OnPrimaryAttackInput(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                AttackInputs[(int) CombatInputs.Primary] = true;
+            }
+            else if (context.canceled)
+            {
+                AttackInputs[(int) CombatInputs.Primary] = false;
+            }
+        }
+        
+        public void OnSecondaryAttackInput(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                AttackInputs[(int) CombatInputs.Secondary] = true;
+            }
+            else if (context.canceled)
+            {
+                AttackInputs[(int) CombatInputs.Secondary] = false;
+            }
+        }
+        
+        // We use it to set the JumpInput to false, after using it
         public void UseJumpInput() => JumpInput = false;
         
-        // 
+        // We use it to set the DashInput to false, after using it
         public void UseDashInput() => DashInput = false;
+        
+        //We use it to set the DodgeRollInput to false, after using it
+        public void UseDodgeRollInput() => DodgeRollInput = false;
         
         // We use it to prevent unwanted jumps from being made
         private void CheckJumpInputHoldTime()
@@ -172,4 +209,10 @@ namespace Player.Input
             }
         }
     }
+}
+
+public enum CombatInputs
+{
+    Primary,
+    Secondary
 }

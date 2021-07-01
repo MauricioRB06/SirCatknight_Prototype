@@ -1,10 +1,13 @@
 ﻿using Player.Data;
-using Player.StateMachine;
+using StateMachine;
 
 namespace Player.PlayerStates.PlayerAbilityState
 {
-    public class PlayerAbilityState : PlayerState
+    public class EntityAbilityState : EntityState
     {
+        // We use it to determine the motion in the X axis
+        protected int XInput;
+        
         // We use it to know if the skill has already been performed
         protected bool IsAbilityDone;
         
@@ -12,8 +15,8 @@ namespace Player.PlayerStates.PlayerAbilityState
         private bool _isGrounded;
         
         // Class constructor
-        protected PlayerAbilityState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        protected EntityAbilityState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
+            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
         {
         }
 
@@ -21,7 +24,7 @@ namespace Player.PlayerStates.PlayerAbilityState
         {
             base.DoChecks();
             
-            _isGrounded = Player.CheckIfGrounded();
+            _isGrounded = Core.CollisionSenses.Ground;
         }
 
         public override void Enter()
@@ -34,16 +37,18 @@ namespace Player.PlayerStates.PlayerAbilityState
         public override void LogicUpdate()
         {
             base.LogicUpdate();
+            
+            XInput = Entity.InputHandler.NormInputX;
 
             if (!IsAbilityDone) return;
             
-            if (_isGrounded && Player.CurrentVelocity.y < 0.01f)
+            if (_isGrounded && Core.Movement.CurrentVelocity.y < 0.01f)
             {
-                StateMachine.ChangeState(Player.IdleState);
+                StateMachine.ChangeState(Entity.IdleState);
             }
             else
             {
-                StateMachine.ChangeState(Player.InAirState);
+                StateMachine.ChangeState(Entity.InAirState);
             }
         }
     }

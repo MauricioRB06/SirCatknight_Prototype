@@ -1,5 +1,5 @@
 ﻿using Player.Data;
-using Player.StateMachine;
+using StateMachine;
 using UnityEngine;
 
 /* Documentation:
@@ -14,15 +14,15 @@ using UnityEngine;
 
 namespace Player.PlayerStates.PlayerAbilityState
 { 
-    public class PlayerDashState : PlayerAbilityState 
+    public class EntityDashState : EntityAbilityState 
     { 
-        // We use it to check if the player can Dash
+        // We use it to check if the entity can Dash
         private bool CanDash { get; set; }
         
-        // We use it to know the player is in the DashState
+        // We use it to know the entity is in the DashState
         private bool _isHolding;
         
-        // We use it to check if the player has stopped pressing the skill button
+        // We use it to check if the entity has stopped pressing the skill button
         private bool _dashInputStop;
         
         // We use it to know when the cooling time has passed since the last use
@@ -35,8 +35,8 @@ namespace Player.PlayerStates.PlayerAbilityState
         private Vector2 _lastAfterImagePosition;
         
         // Class Constructor
-        public PlayerDashState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public EntityDashState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
+            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
         {
         }
         public override void Enter()
@@ -44,15 +44,15 @@ namespace Player.PlayerStates.PlayerAbilityState
             base.Enter();
 
             CanDash = false;
-            Player.InputHandler.UseDashInput();
+            Entity.InputHandler.UseDashInput();
             
             _isHolding = true;
-            _dashDirection = Vector2.right * Player.FacingDirection;
+            _dashDirection = Vector2.right * Core.Movement.FacingDirection;
 
-            Time.timeScale = PlayerData.dashHoldTimeScale;
+            Time.timeScale = EntityData.dashHoldTimeScale;
             StartTime = Time.unscaledTime;
 
-            Player.DashDirectionIndicator.gameObject.SetActive(true);
+            Entity.DashDirectionIndicator.gameObject.SetActive(true);
         }
 
         public override void Exit()
@@ -60,14 +60,14 @@ namespace Player.PlayerStates.PlayerAbilityState
             base.Exit();
             
             // We only call you when you are jumping in positive Y
-            if(Player.CurrentVelocity.y > 0)
+            if(Core.Movement.CurrentVelocity.y > 0)
             {
                 /* As we apply so much force so that the movement is fast, if we do not limit the movement,
-                 we generate that the player shoots out a great distance since we are applying a physical
-                 force to the rigid body of the player, with this what we achieve is once we leave the board
+                 we generate that the entity shoots out a great distance since we are applying a physical
+                 force to the rigid body of the entity, with this what we achieve is once we leave the board
                  after the timeout expires or we stop pressing the button, the movement is cut off to cut the
                  distance traveled */
-                Player.SetVelocityY(Player.CurrentVelocity.y * PlayerData.dashEndYLimiter);
+                Core.Movement.SetVelocityY(Core.Movement.CurrentVelocity.y * EntityData.dashEndYLimiter);
             }
         }
 
@@ -79,8 +79,8 @@ namespace Player.PlayerStates.PlayerAbilityState
             
             if (_isHolding)
             {
-                _dashDirectionInput = Player.InputHandler.DashDirectionInput;
-                _dashInputStop = Player.InputHandler.DashInputStop;
+                _dashDirectionInput = Entity.InputHandler.DashDirectionInput;
+                _dashInputStop = Entity.InputHandler.DashInputStop;
 
                 if(_dashDirectionInput != Vector2.zero)
                 {
@@ -88,26 +88,26 @@ namespace Player.PlayerStates.PlayerAbilityState
                     _dashDirection.Normalize();
                 }
                 
-                /* We obtain the Angle between the player and the dash input and assign it to the indicator,
+                /* We obtain the Angle between the entity and the dash input and assign it to the indicator,
                  to rotate it at the same angle as the input*/
-                Player.DashDirectionIndicator.rotation = Quaternion.Euler(0f, 0f,
+                Entity.DashDirectionIndicator.rotation = Quaternion.Euler(0f, 0f,
                     Vector2.SignedAngle(Vector2.right, _dashDirection) - 90f);
 
-                if (!_dashInputStop && !(Time.unscaledTime >= StartTime + PlayerData.dashMaxHoldTime)) return;
+                if (!_dashInputStop && !(Time.unscaledTime >= StartTime + EntityData.dashMaxHoldTime)) return;
                     
                 _isHolding = false;
                 Time.timeScale = 1f;
                 StartTime = Time.time;
                 
-                Player.CheckIfShouldFlip(Mathf.RoundToInt(_dashDirection.x));
-                Player.SetVelocity(PlayerData.dashImpulseVelocity, _dashDirection);
-                Player.DashDirectionIndicator.gameObject.SetActive(false);
+                Core.Movement.CheckIfShouldFlip(Mathf.RoundToInt(_dashDirection.x));
+                Core.Movement.SetVelocity(EntityData.dashImpulseVelocity, _dashDirection);
+                Entity.DashDirectionIndicator.gameObject.SetActive(false);
                 PlaceAfterImage();
             }
             else
             {
                 CheckIfShouldPlaceAfterImage();
-                if (!(Time.time >= StartTime + PlayerData.dashLifeTime)) return;
+                if (!(Time.time >= StartTime + EntityData.dashLifeTime)) return;
                     
                 IsAbilityDone = true;
                 _lastDashTime = Time.time;
@@ -117,7 +117,7 @@ namespace Player.PlayerStates.PlayerAbilityState
         // We use it to check if the necessary space between images has already been covered, to put another
         private void CheckIfShouldPlaceAfterImage()
         {
-            if(Vector2.Distance(Player.transform.position, _lastAfterImagePosition) >= PlayerData.distanceBetweenAfterImages)
+            if(Vector2.Distance(Entity.transform.position, _lastAfterImagePosition) >= EntityData.distanceBetweenAfterImages)
             {
                 PlaceAfterImage();
             }
@@ -127,12 +127,12 @@ namespace Player.PlayerStates.PlayerAbilityState
         private void PlaceAfterImage()
         {
             PlayerAfterImagePool.Instance.GetFromPool();
-            _lastAfterImagePosition = Player.transform.position;
+            _lastAfterImagePosition = Entity.transform.position;
         }
 
         public bool CheckIfCanDash()
         {
-            return CanDash && Time.time >= _lastDashTime + PlayerData.dashCooldown;
+            return CanDash && Time.time >= _lastDashTime + EntityData.dashCooldown;
         }
 
         public void ResetCanDash() => CanDash = true;

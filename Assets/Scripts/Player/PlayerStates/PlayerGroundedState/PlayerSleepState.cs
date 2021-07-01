@@ -1,13 +1,13 @@
 using Player.Data;
-using Player.StateMachine;
+using StateMachine;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerSleepState : PlayerGroundedState
+    public class EntitySleepState : EntityGroundedState
     {
         // Class Constructor
-        public PlayerSleepState(Player player, PlayerStateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public EntitySleepState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
+            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
         {
         }
         
@@ -19,7 +19,7 @@ namespace Player.PlayerStates.PlayerGroundedState
             
             if (XInput != 0)
             {
-                StateMachine.ChangeState(Player.RunState);
+                StateMachine.ChangeState(Entity.RunState);
             }
         }
     }

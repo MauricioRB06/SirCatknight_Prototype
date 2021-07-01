@@ -11,7 +11,7 @@ using UnityEngine.Serialization;
 
 namespace Player.Data
 {
-    [CreateAssetMenu(fileName ="newPlayerData", menuName ="Data/Player Data/Base Data")]
+    [CreateAssetMenu(fileName ="newPlayerData", menuName ="Data/Entity Data/Base Data")]
     public class PlayerData : ScriptableObject
     {
         [Header("Idle State")]
@@ -25,6 +25,10 @@ namespace Player.Data
         public float jumpForce = 15f;
         [Range(0f, 2f)]
         public int amountOfJumps = 1;
+
+        [Header(("Dodge Roll"))]
+        public float dodgeRollImpulse = 30f;
+        public float dodgeRollLifeTime = 0.4f;
 
         [Header("Wall Jump State")]
         public float wallJumpVelocity = 20;
@@ -50,7 +54,7 @@ namespace Player.Data
         [Header("Dash State")] 
         public float dashCooldown = 5f;
         /* We use it to modify the time scale of the game and make the effect of slow motion, as well as to know
-         the maximum time that we will be in that state */
+         the maximum time that we will be in that weaponState */
         public float dashMaxHoldTime = 1f;
         public float dashHoldTimeScale = 0.25f;
         // It is the life time of the Dash movement, once the timeout is reached or the player releases the button
@@ -66,15 +70,5 @@ namespace Player.Data
         public float crouchMovementVelocity = 3f;
         public float crouchColliderHeight = 1.3f;
         public float normalColliderHeight = 1.6f;
-        
-        // Change the properties to detect the floor and walls
-        [Header("Check Variables")]
-        public float groundCheckRadius = 0.3f;
-        public float ceilingCheckRadius = 0.2f;
-        public float wallCheckDistance = 0.5f;
-        public LayerMask layerGroundWalls;
-
-        [Header("AttackSword")]
-        public int amountOfAttacks = 3;
     }
 }
