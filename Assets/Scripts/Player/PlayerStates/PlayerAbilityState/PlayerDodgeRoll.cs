@@ -1,14 +1,13 @@
 using Player.Data;
-using StateMachine;
 using UnityEngine;
 
 namespace Player.PlayerStates.PlayerAbilityState
 {
-    public class EntityDodgeRoll : EntityAbilityState
+    public class PlayerDodgeRoll : PlayerAbilityState
     {
         // Class Constructor
-        public EntityDodgeRoll(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
-            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
+        public PlayerDodgeRoll(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
+            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
         {
         }
 
@@ -16,7 +15,7 @@ namespace Player.PlayerStates.PlayerAbilityState
         {
             base.Enter();
             
-            Entity.InputHandler.UseDodgeRollInput();
+            PlayerController.InputHandler.UseDodgeRollInput();
             
             Core.Movement.CheckIfShouldFlip(XInput);
 
@@ -25,7 +24,7 @@ namespace Player.PlayerStates.PlayerAbilityState
                 XInput *= Core.Movement.FacingDirection;
             } 
             
-            Core.Movement.SetVelocityX(EntityData.dodgeRollImpulse * XInput);
+            Core.Movement.SetVelocityX(PlayerData.dodgeRollImpulse * XInput);
 
         }
         
@@ -33,7 +32,7 @@ namespace Player.PlayerStates.PlayerAbilityState
         {
             base.LogicUpdate();
 
-            if (!(Time.time >= StartTime + EntityData.dodgeRollLifeTime)) return;
+            if (!(Time.time >= StartTime + PlayerData.dodgeRollLifeTime)) return;
             
             Core.Movement.CheckIfShouldFlip(-XInput);
             IsAbilityDone = true;

@@ -2,13 +2,25 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-/* Documentation:
+// The purpose of this Script is:
+/* Insert Here */
+
+/* Documentation and References:
  * 
  * Input System: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/QuickStartGuide.html
  * Math ABS: https://docs.microsoft.com/en-us/dotnet/api/system.math.abs?view=net-5.0
  * Screen To World Point: https://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html
+ * Enumeration Class: https://docs.microsoft.com/en-us/dotnet/api/system.enum?view=net-5.0
+ * Enumeration Types: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum
+ * Curse C# Enum: https://www.youtube.com/watch?v=gj1AA7ZkuSc [ Spanish ]
  * 
  */
+
+public enum CombatInputs
+{
+    PrimaryAttackInput,
+    SecondaryAttackInput
+}
 
 namespace Player.Input
 {
@@ -49,24 +61,19 @@ namespace Player.Input
         public Vector2Int DashDirectionInput { get; private set; }
         
         // Waiting time to be able to press a button again
-        [SerializeField]
-        private float inputHoldTime = 0.2f;
+        [SerializeField] private float inputHoldTime = 0.2f;
         
         // We use it to control the behavior of Dash and Jump skills based on the time the player presses the button
         private float _jumpInputStartTime;
         private float _dashInputStartTime;
         
-        // 
-        private bool _isSleeping;
-        
-        //
+        // We use it to store the amount of attack inputs the player has
         public bool[] AttackInputs { get; private set; }
-        
         
         private void Start()
         {
-            var count = Enum.GetValues(typeof(CombatInputs)).Length;
-            AttackInputs = new bool[count];
+            var attackInputCounter = Enum.GetValues(typeof(CombatInputs)).Length;
+            AttackInputs = new bool[attackInputCounter];
             
             _playerInput = GetComponent<PlayerInput>();
             _playerCamera = Camera.main;
@@ -107,15 +114,9 @@ namespace Player.Input
         
         public void OnGrabInput(InputAction.CallbackContext context)
         {
-            if (context.started)
-            {
-                GrabInput = true;
-            }
+            if (context.started) GrabInput = true;
 
-            if (context.canceled)
-            {
-                GrabInput = false;
-            }
+            if (context.canceled) GrabInput = false;
         }
 
         public void OnDashInput(InputAction.CallbackContext context)
@@ -163,11 +164,11 @@ namespace Player.Input
         {
             if (context.started)
             {
-                AttackInputs[(int) CombatInputs.Primary] = true;
+                AttackInputs[(int)CombatInputs.PrimaryAttackInput] = true;
             }
             else if (context.canceled)
             {
-                AttackInputs[(int) CombatInputs.Primary] = false;
+                AttackInputs[(int)CombatInputs.PrimaryAttackInput] = false;
             }
         }
         
@@ -175,11 +176,11 @@ namespace Player.Input
         {
             if (context.started)
             {
-                AttackInputs[(int) CombatInputs.Secondary] = true;
+                AttackInputs[(int)CombatInputs.SecondaryAttackInput] = true;
             }
             else if (context.canceled)
             {
-                AttackInputs[(int) CombatInputs.Secondary] = false;
+                AttackInputs[(int)CombatInputs.SecondaryAttackInput] = false;
             }
         }
         
@@ -195,24 +196,12 @@ namespace Player.Input
         // We use it to prevent unwanted jumps from being made
         private void CheckJumpInputHoldTime()
         {
-            if (Time.time >= _jumpInputStartTime + inputHoldTime)
-            {
-                JumpInput = false;
-            }
+            if (Time.time >= _jumpInputStartTime + inputHoldTime) { JumpInput = false; }
         }
-
+        
         private void CheckDashInputHoldTime()
         {
-            if(Time.time >= _dashInputStartTime + inputHoldTime)
-            {
-                DashInput = false;
-            }
+            if(Time.time >= _dashInputStartTime + inputHoldTime) { DashInput = false; }
         }
     }
-}
-
-public enum CombatInputs
-{
-    Primary,
-    Secondary
 }

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Level Music
+  - Boss Music
+  - Collectables Container
+  - LevelSpawn
   layers:
   - Default
   - TransparentFX
@@ -18,7 +22,7 @@ TagManager:
   - Dead
   - Player
   - Weapon
-  - 
+  - Projectiles
   - 
   - 
   - 

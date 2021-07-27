@@ -1,10 +1,9 @@
 ﻿using Player.Data;
-using StateMachine;
 using UnityEngine;
 
 namespace Player.PlayerStates.PlayerAbilityState
 {
-    public class EntityWallJumpState : EntityAbilityState
+    public class PlayerWallJumpState : PlayerAbilityState
     {   
         // We use it to determine the character's jumping direction from the wall he's on
         private int _wallJumpDirection;
@@ -14,31 +13,30 @@ namespace Player.PlayerStates.PlayerAbilityState
         private static readonly int XVelocity = Animator.StringToHash("xVelocity");
 
         // Class Constructor
-        public EntityWallJumpState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
-            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
-        {
-        }
+        public PlayerWallJumpState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
+            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName) { }
 
         public override void Enter()
         {
             base.Enter();
             
-            Entity.InputHandler.UseJumpInput();
+            PlayerController.InputHandler.UseJumpInput();
+            
             // We use it to reset the double jump (if we have) after jumping on the wall
-            Entity.JumpState.ResetAmountOfJumpsLeft();
-            Core.Movement.SetVelocity(EntityData.wallJumpVelocity, EntityData.wallJumpAngle, _wallJumpDirection);
+            PlayerController.JumpState.ResetAmountOfJumpsLeft();
+            Core.Movement.SetVelocity(PlayerData.wallJumpVelocity, PlayerData.wallJumpAngle, _wallJumpDirection);
             Core.Movement.CheckIfShouldFlip(_wallJumpDirection);
-            Entity.JumpState.DecreaseAmountOfJumpsLeft();
+            PlayerController.JumpState.DecreaseAmountOfJumpsLeft();
         }
 
         public override void LogicUpdate()
         {
             base.LogicUpdate();
 
-            Entity.PlayerAnimator.SetFloat(YVelocity, Core.Movement.CurrentVelocity.y);
-            Entity.PlayerAnimator.SetFloat(XVelocity, Mathf.Abs(Core.Movement.CurrentVelocity.x));
+            PlayerController.PlayerAnimator.SetFloat(YVelocity, Core.Movement.CurrentVelocity.y);
+            PlayerController.PlayerAnimator.SetFloat(XVelocity, Mathf.Abs(Core.Movement.CurrentVelocity.x));
 
-            if(Time.time >= StartTime + EntityData.wallJumpTime)
+            if(Time.time >= StartTime + PlayerData.wallJumpTime)
             {
                 IsAbilityDone = true;
             }

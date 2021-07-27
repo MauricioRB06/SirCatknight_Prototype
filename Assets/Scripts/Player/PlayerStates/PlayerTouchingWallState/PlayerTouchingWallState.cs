@@ -1,9 +1,8 @@
 ﻿using Player.Data;
-using StateMachine;
 
 namespace Player.PlayerStates.PlayerTouchingWallState
 {
-    public class EntityTouchingWallState : EntityState
+    public class PlayerTouchingWallState : PlayerState
     {
         // We use them to verify possible status changes
         private bool _isGrounded;
@@ -21,8 +20,8 @@ namespace Player.PlayerStates.PlayerTouchingWallState
         protected int YInput;
         
         // Class constructor
-        protected EntityTouchingWallState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
-            string animBoolName): base(entity, stateMachine, entityData, animBoolName)
+        protected PlayerTouchingWallState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
+            string animBoolName): base(playerController, stateMachine, playerData, animBoolName)
         {
         }
 
@@ -35,31 +34,37 @@ namespace Player.PlayerStates.PlayerTouchingWallState
             _isTouchingLedge = Core.CollisionSenses.Ledge;
         }
 
+        public override void Enter()
+        {
+            base.Enter();
+            Core.Movement.RestoreGravityScale(PlayerData.restoreGravityScale);
+        }
+
         public override void LogicUpdate()
         {
             base.LogicUpdate();
 
-            _xInput = Entity.InputHandler.NormInputX;
-            YInput = Entity.InputHandler.NormInputY;
-            GrabInput = Entity.InputHandler.GrabInput;
-            _jumpInput = Entity.InputHandler.JumpInput;
+            _xInput = PlayerController.InputHandler.NormInputX;
+            YInput = PlayerController.InputHandler.NormInputY;
+            GrabInput = PlayerController.InputHandler.GrabInput;
+            _jumpInput = PlayerController.InputHandler.JumpInput;
 
             if (_jumpInput)
             {            
-                Entity.WallJumpState.DetermineWallJumpDirection(_isTouchingWall);
-                StateMachine.ChangeState(Entity.WallJumpState);
+                PlayerController.WallJumpState.DetermineWallJumpDirection(_isTouchingWall);
+                StateMachine.ChangeState(PlayerController.WallJumpState);
             }
             else if (_isGrounded && !GrabInput)
             {
-                StateMachine.ChangeState(Entity.IdleState);
+                StateMachine.ChangeState(PlayerController.IdleState);
             }
             else if(!_isTouchingWall || (_xInput != Core.Movement.FacingDirection && !GrabInput))
             {
-                StateMachine.ChangeState(Entity.InAirState);
+                StateMachine.ChangeState(PlayerController.InAirState);
             }
             else if(_isTouchingWall && !_isTouchingLedge)
             {
-                StateMachine.ChangeState(Entity.LedgeClimbState);
+                StateMachine.ChangeState(PlayerController.LedgeClimbState);
             }
         }
     }

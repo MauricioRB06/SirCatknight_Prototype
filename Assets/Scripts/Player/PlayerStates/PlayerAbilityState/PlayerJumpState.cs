@@ -1,28 +1,29 @@
-﻿using Player.Data;
-using StateMachine;
+﻿using _Development.Scripts.Mauricio;
+using Player.Data;
 
 namespace Player.PlayerStates.PlayerAbilityState
 {
-    public class EntityJumpState : EntityAbilityState
+    public class PlayerJumpState : PlayerAbilityState
     {   
         private int _amountOfJumpsLeft;
         
         // Class constructor
-        public EntityJumpState(Player entity, global::StateMachine.StateMachine stateMachine,
-            PlayerData entityData, string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
+        public PlayerJumpState(PlayerController playerController, StateMachine.StateMachine stateMachine,
+            PlayerData playerData, string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
         {
-            _amountOfJumpsLeft = entityData.amountOfJumps;
+            _amountOfJumpsLeft = playerData.amountOfJumps;
         }
 
         public override void Enter()
         {
             base.Enter();
             
-            Entity.InputHandler.UseJumpInput();
-            Core.Movement.SetVelocityY(EntityData.jumpForce);
+            PlayerController.InputHandler.UseJumpInput();
+            Core.Movement.SetVelocityY(PlayerData.jumpForce);
             IsAbilityDone = true;
+            AudioManager.PlaySound(PlayerController.playerSounds.PlayerJump);
             _amountOfJumpsLeft--;
-            Entity.InAirState.SetIsJumping();
+            PlayerController.InAirState.SetIsJumping();
         }
 
         public bool CanJump()
@@ -30,7 +31,7 @@ namespace Player.PlayerStates.PlayerAbilityState
             return _amountOfJumpsLeft > 0;
         }
         
-        public void ResetAmountOfJumpsLeft() => _amountOfJumpsLeft = EntityData.amountOfJumps;
+        public void ResetAmountOfJumpsLeft() => _amountOfJumpsLeft = PlayerData.amountOfJumps;
         
         public void DecreaseAmountOfJumpsLeft() => _amountOfJumpsLeft--;
     }

@@ -1,13 +1,12 @@
 ﻿using Player.Data;
-using StateMachine;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class EntityCrouchMoveState : EntityGroundedState
+    public class PlayerCrouchMoveState : PlayerGroundedState
     {
         // Class Constructor
-        public EntityCrouchMoveState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
-            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
+        public PlayerCrouchMoveState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
+            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
         {
         }
 
@@ -15,14 +14,14 @@ namespace Player.PlayerStates.PlayerGroundedState
         {
             base.Enter();
             
-            Entity.SetColliderHeight(EntityData.crouchColliderHeight);
+            PlayerController.SetColliderHeight(PlayerData.crouchColliderHeight);
         }
 
         public override void Exit()
         {
             base.Exit();
             
-            Entity.SetColliderHeight(EntityData.normalColliderHeight);
+            PlayerController.SetColliderHeight(PlayerData.normalColliderHeight);
         }
 
         public override void LogicUpdate()
@@ -31,16 +30,16 @@ namespace Player.PlayerStates.PlayerGroundedState
 
             if (IsExitingState) return;
             
-            Core.Movement.SetVelocityX(EntityData.crouchMovementVelocity * Core.Movement.FacingDirection);
+            Core.Movement.SetVelocityX(PlayerData.crouchMovementVelocity * Core.Movement.FacingDirection);
             Core.Movement.CheckIfShouldFlip(XInput);
 
             if(XInput == 0)
             {
-                StateMachine.ChangeState(Entity.CrouchIdleState);
+                StateMachine.ChangeState(PlayerController.CrouchIdleState);
             }
             else if(YInput != -1 && !IsTouchingCeiling)
             {
-                StateMachine.ChangeState(Entity.RunState);
+                StateMachine.ChangeState(PlayerController.RunState);
             }
         }
     }

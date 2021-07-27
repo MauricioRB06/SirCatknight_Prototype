@@ -19,6 +19,16 @@
       "source": "builtin",
       "dependencies": {}
     },
+    "com.unity.2d.tilemap.extras": {
+      "version": "2.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.tilemap": "1.0.0",
+        "com.unity.2d.tilemap": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.addressables": {
       "version": "1.18.2",
       "depth": 1,
@@ -52,7 +62,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.cinemachine": {
-      "version": "2.7.4",
+      "version": "2.7.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -84,7 +94,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.9",
+      "version": "2.0.11",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -132,7 +142,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.purchasing": {
-      "version": "3.2.2",
+      "version": "3.2.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -188,7 +198,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.5.5",
+      "version": "1.5.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -200,7 +210,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.toolchain.win-x86_64-linux-x86_64": {
-      "version": "0.1.20-preview",
+      "version": "0.1.21-preview",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -219,7 +229,7 @@
       }
     },
     "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.7",
+      "version": "2.1.8",
       "depth": 0,
       "source": "registry",
       "dependencies": {

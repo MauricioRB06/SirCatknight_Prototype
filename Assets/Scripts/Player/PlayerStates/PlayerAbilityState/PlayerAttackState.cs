@@ -1,39 +1,34 @@
 using Player.Data;
-using StateMachine;
 using Weapons;
+
+// The purpose of this script is:
+/* Insert Here */
 
 namespace Player.PlayerStates.PlayerAbilityState
 {
-    public class EntityAttackState : EntityAbilityState
+    public class PlayerAttackState : PlayerAbilityState
     {
-        
-        // Reference to Entity Weapon
+        // Reference to weapon.
         private Weapon _currentWeapon;
         
-        //
-        private int _xInput;
-        
-        //
-        private float _velocityToSet;
-        // 
+        // We use it to track whether the speed should be set or not.
         private bool _setVelocity;
         
-        //
+        // We use it to store the speed at which the player will move.
+        private float _velocityToSet;
+        
+        // We use them to check whether a Flip() can be performed during the attack or not.
+        private int _xInput;
         private bool _shouldCheckFlip;
         
-        // Class Constructor
-        public EntityAttackState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
-            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
-        {
-        }
+        // Class Constructor.
+        public PlayerAttackState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
+            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName) { }
 
         public override void Enter()
         {
-            base.Enter();
-            
-            //
-            _setVelocity = false;
-            
+            base.Enter(); 
+            _setVelocity = false; 
             _currentWeapon.EnterWeapon();
         }
 
@@ -41,26 +36,26 @@ namespace Player.PlayerStates.PlayerAbilityState
         {
             base.LogicUpdate();
             
-            _xInput = Entity.InputHandler.NormInputX;
+            _xInput = PlayerController.InputHandler.NormInputX;
             
             if (_shouldCheckFlip)
             {
                 Core.Movement.CheckIfShouldFlip(_xInput);
             }
+
+            if (!_setVelocity) return;
             
-            if (_setVelocity)
-            {
-                Core.Movement.SetVelocityX(_velocityToSet * Core.Movement.FacingDirection);
-            }
+            Core.Movement.SetVelocityX(_velocityToSet * Core.Movement.FacingDirection);
+            Core.Movement.SetVelocityY(0);
         }
 
         public override void Exit()
         {
-            base.Exit();
-            
+            base.Exit(); 
             _currentWeapon.ExitWeapon();
         }
 
+        // We use it to let the state know which weapon to call.
         public void SetWeapon(Weapon weapon)
         {
             _currentWeapon = weapon;
@@ -69,18 +64,21 @@ namespace Player.PlayerStates.PlayerAbilityState
 
         public override void AnimationFinishTrigger()
         {
-            base.AnimationFinishTrigger();
-
+            base.AnimationFinishTrigger(); 
             IsAbilityDone = true;
         }
-
+        
+        // We use it to move the character when an attack moves the character forward.
         public void SetPlayerVelocity(float movementAttackSpeed)
         {
             Core.Movement.SetVelocityX((movementAttackSpeed * Core.Movement.FacingDirection));
+            Core.Movement.ReduceGravityScale(PlayerData.decreaseGravityScale);
+            Core.Movement.SetVelocityY(0);
             _velocityToSet = movementAttackSpeed;
             _setVelocity = true;
         }
         
+        // 
         public void SetFlipCheck(bool value)
         {
             _shouldCheckFlip = value;

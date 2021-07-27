@@ -1,16 +1,16 @@
 ﻿using Player.Data;
-using StateMachine;
 using UnityEngine;
+
+// The purpose of this Script is:
+/*  */
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class EntityIdleState : EntityGroundedState
+    public class PlayerIdleState : PlayerGroundedState
     {
         // Class constructor
-        public EntityIdleState(Player entity, global::StateMachine.StateMachine stateMachine,
-            PlayerData entityData, string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
-        {
-        }
+        public PlayerIdleState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
+            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName) { }
 
         public override void Enter()
         {
@@ -29,15 +29,15 @@ namespace Player.PlayerStates.PlayerGroundedState
             
             if (XInput != 0)
             {
-                StateMachine.ChangeState(Entity.RunState);
+                StateMachine.ChangeState(PlayerController.RunState);
             }
             else if (YInput == -1)
             {
-                StateMachine.ChangeState(Entity.CrouchIdleState);
+                StateMachine.ChangeState(PlayerController.CrouchIdleState);
             }
-            else if (Time.time >= StartTime + EntityData.sleepTime)
+            else if (Time.time >= StartTime + PlayerData.sleepTime)
             {
-                StateMachine.ChangeState(Entity.SleepState);
+                StateMachine.ChangeState(PlayerController.SleepState);
             }
         }
     }

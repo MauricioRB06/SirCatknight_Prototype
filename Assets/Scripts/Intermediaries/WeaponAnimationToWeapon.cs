@@ -1,45 +1,36 @@
 using UnityEngine;
 using Weapons;
 
+// The purpose of this Script is:
+/* Communicate the Animator Component of the objects that make up the weapon with the main object of the weapon */
+
+
+/* Documentation and References:
+ * 
+ * Sealed modifier: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/sealed
+ * 
+ */
+
 namespace Intermediaries
 {
-    public class WeaponAnimationToWeapon : MonoBehaviour
+    public sealed class WeaponAnimationToWeapon : MonoBehaviour
     {
+        // We use it as a reference to the weapon with which we want to communicate
         private Weapon _currentWeapon;
 
-        private void Start()
-        {
-            _currentWeapon = GetComponentInParent<Weapon>();
-        }
+        private void Start() { _currentWeapon = GetComponentInParent<Weapon>(); }
         
-        public virtual void AnimationFinishTrigger()
-        {
-            _currentWeapon.AnimationFinishTrigger();
-        }
+        // We call the AnimationTriggers inside the Animator component
+        public void IntermediaryAnimationFinishTrigger() { _currentWeapon.AnimationFinishTrigger(); }
         
-        private void AnimationStartMovementTrigger()
-        {
-            _currentWeapon .AnimationStartMovementTrigger();
-        }
+        private void IntermediaryAnimationStartMovementTrigger() { _currentWeapon .AnimationStartMovementTrigger(); }
 
-        private void AnimationStopMovementTrigger()
-        {
-            _currentWeapon .AnimationStopMovementTrigger();
-        }
+        private void IntermediaryAnimationStopMovementTrigger() { _currentWeapon .AnimationStopMovementTrigger(); }
 
-        private void AnimationTurnOnFlipTrigger()
-        {
-            _currentWeapon .AnimationTurnOnFlipTrigger();
-        }
+        private void IntermediaryAnimationTurnOnFlipTrigger() { _currentWeapon .AnimationTurnOnFlipTrigger(); }
         
-        private void AnimationTurnOffFlipTrigger()
-        {
-            _currentWeapon .AnimationTurnOffFlipTrigger();
-        }
+        private void IntermediaryAnimationTurnOffFlipTrigger() { _currentWeapon .AnimationTurnOffFlipTrigger(); }
 
-        private void AnimationActionTrigger()
-        {
-            _currentWeapon.AnimationActionTrigger();
-        }
+        private void IntermediaryAnimationActionTrigger() { _currentWeapon.AnimationActionTrigger(); }
     }
 }

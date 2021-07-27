@@ -1,5 +1,15 @@
 using UnityEngine;
 
+/* The purpose of this script is:
+ 
+    -- Insert here the general purpose of this script -- */
+
+/* Documentation and References:
+ * 
+ *
+ * 
+ */
+
 /* Documentation:
  * 
  * Unnecessary property accesses:
@@ -15,7 +25,7 @@ namespace Maps.General
     {
         [Header("Camera")][Tooltip("Camera with respect to which parallax is to be performed")]
         // To get the camera reference
-        public GameObject parallaxCamera;
+        private GameObject parallaxCamera;
         [Header("Parallax Axis")][Tooltip("Define X as the parallax axis")]
         public bool axisX;[Tooltip("Define Y as the parallax axis")]
         public bool axisY;
@@ -30,9 +40,11 @@ namespace Maps.General
         private float _distanceX, _distanceY;
         // The distance traveled in relation to the camera
         private float _temporalPositionX, _temporalPositionY;
-
+        
         private void Start()
         {   
+            parallaxCamera = GameObject.FindGameObjectWithTag("MainCamera");
+            
             var backgroundPosition = transform.position;
             
             // We obtain the initial position of the sprite in X

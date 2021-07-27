@@ -2,11 +2,11 @@
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class EntityLandState : EntityGroundedState
+    public class PlayerLandState : PlayerGroundedState
     {
         // Class constructor
-        public EntityLandState(Player entity, global::StateMachine.StateMachine stateMachine,
-        PlayerData entityData, string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
+        public PlayerLandState(PlayerController playerController, StateMachine.StateMachine stateMachine,
+        PlayerData playerData, string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
         {
         }
 
@@ -14,16 +14,15 @@ namespace Player.PlayerStates.PlayerGroundedState
         {
             base.LogicUpdate();
             
-            //
             if (IsExitingState) return;
                 
             if (XInput != 0)
             {
-                StateMachine.ChangeState(Entity.RunState);
+                StateMachine.ChangeState(PlayerController.RunState);
             }
             else if (IsAnimationFinished)
             {
-                StateMachine.ChangeState(Entity.IdleState);
+                StateMachine.ChangeState(PlayerController.IdleState);
             }
         }
     }

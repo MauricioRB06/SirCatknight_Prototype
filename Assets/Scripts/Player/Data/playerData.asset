@@ -38,3 +38,5 @@ MonoBehaviour:
   crouchMovementVelocity: 3
   crouchColliderHeight: 1.3
   normalColliderHeight: 1.6
+  decreaseGravityScale: 0.75
+  restoreGravityScale: 3

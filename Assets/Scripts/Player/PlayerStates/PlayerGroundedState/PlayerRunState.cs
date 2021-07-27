@@ -1,14 +1,13 @@
-﻿using Player.Data;
+﻿using Development.Scripts.Mauricio;
+using Player.Data;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class EntityRunState : EntityGroundedState
+    public class PlayerRunState : PlayerGroundedState
     {
         // Class Constructor
-        public EntityRunState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
-            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
-        {
-        }
+        public PlayerRunState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
+            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName) { }
 
         public override void LogicUpdate()
         {
@@ -16,17 +15,17 @@ namespace Player.PlayerStates.PlayerGroundedState
 
             Core.Movement.CheckIfShouldFlip(XInput);
 
-            Core.Movement.SetVelocityX(EntityData.runVelocity * XInput);
-
+            Core.Movement.SetVelocityX(PlayerData.runVelocity * XInput);
+            
             if (IsExitingState) return;
             
             if (XInput == 0)
             {
-                StateMachine.ChangeState(Entity.IdleState);
+                StateMachine.ChangeState(PlayerController.IdleState);
             }
             else if (YInput == -1)
             {
-                StateMachine.ChangeState(Entity.CrouchMoveState);
+                StateMachine.ChangeState(PlayerController.CrouchMoveState);
             }
         }
     }

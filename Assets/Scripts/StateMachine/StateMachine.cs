@@ -1,25 +1,31 @@
-﻿
-/* Documentation:
- *
- * Auto-implemented: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties
- *
- */
+﻿using Player;
+
+/* The purpose of this script is:
+  
+  Allow an object to switch between different states.
+
+  Documentation and References:
+
+  Properties: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties
+  Fields: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/fields
+
+*/
 
 namespace StateMachine
 {
     public class StateMachine
     {
-        /* The state machine is very simple, basically it is a variable that has a reference to the current state of
-         the entity, a function to initialize the state for the first time and another function to change the state */
-        public EntityState CurrentState { get; private set; }
+        public PlayerState CurrentState { get; private set; }
         
-        public void Initialize(EntityState startingState)
+        // We use it to set the state that the object will have when it is started.
+        public void Initialize(PlayerState startingState)
         {
             CurrentState = startingState;
             CurrentState.Enter();
         }
-
-        public void ChangeState(EntityState newState)
+        
+        // We use it to change the state of the object.
+        public void ChangeState(PlayerState newState)
         {
             CurrentState.Exit();
             CurrentState = newState;

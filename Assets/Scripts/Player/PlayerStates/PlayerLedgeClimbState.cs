@@ -1,10 +1,9 @@
 ﻿using Player.Data;
-using StateMachine;
 using UnityEngine;
 
 namespace Player.PlayerStates
 {
-    public class EntityLedgeClimbState : EntityState
+    public class PlayerLedgeClimbState : PlayerState
     {
         // We use it to store the position of the corner, when it is detected
         private Vector2 _cornerPos;
@@ -37,8 +36,8 @@ namespace Player.PlayerStates
         private static readonly int IsTouchingCeiling = Animator.StringToHash("TouchingCeiling");
 
         // Class Constructor
-        public EntityLedgeClimbState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
-            string animBoolName): base(entity, stateMachine, entityData, animBoolName)
+        public PlayerLedgeClimbState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
+            string animBoolName): base(playerController, stateMachine, playerData, animBoolName)
         {
         }
 
@@ -46,7 +45,7 @@ namespace Player.PlayerStates
         {
             base.AnimationFinishTrigger();
             
-            Entity.PlayerAnimator.SetBool(ClimbLedge, false);
+            PlayerController.PlayerAnimator.SetBool(ClimbLedge, false);
         }
 
         public override void AnimationTrigger()
@@ -55,21 +54,22 @@ namespace Player.PlayerStates
 
             _isHanging = true;
         }
-
+        
         public override void Enter()
         {
             base.Enter();
 
             Core.Movement.SetVelocityZero();
             _cornerPos = DetermineCornerPosition();
+            Core.Movement.RestoreGravityScale(PlayerData.restoreGravityScale);
 
-            _startPosition.Set(_cornerPos.x - (Core.Movement.FacingDirection * EntityData.startOffset.x),
-                _cornerPos.y - EntityData.startOffset.y);
+            _startPosition.Set(_cornerPos.x - (Core.Movement.FacingDirection * PlayerData.startOffset.x),
+                _cornerPos.y - PlayerData.startOffset.y);
             
-            _stopPos.Set(_cornerPos.x + (Core.Movement.FacingDirection * EntityData.stopOffset.x),
-                _cornerPos.y + EntityData.stopOffset.y);
+            _stopPos.Set(_cornerPos.x + (Core.Movement.FacingDirection * PlayerData.stopOffset.x),
+                _cornerPos.y + PlayerData.stopOffset.y);
 
-            Entity.transform.position = _startPosition;
+            PlayerController.transform.position = _startPosition;
         }
 
         public override void Exit()
@@ -80,7 +80,7 @@ namespace Player.PlayerStates
 
             if (!_isClimbing) return;
             
-            Entity.transform.position = _stopPos;
+            PlayerController.transform.position = _stopPos;
             _isClimbing = false;
         }
 
@@ -92,36 +92,36 @@ namespace Player.PlayerStates
             {
                 if (_isTouchingCeiling)
                 {
-                    StateMachine.ChangeState(Entity.CrouchIdleState);
+                    StateMachine.ChangeState(PlayerController.CrouchIdleState);
                 }
                 else
                 {
-                    StateMachine.ChangeState(Entity.IdleState);
+                    StateMachine.ChangeState(PlayerController.IdleState);
                 }
             }
             else
             {
-                _xInput = Entity.InputHandler.NormInputX;
-                _yInput = Entity.InputHandler.NormInputY;
-                _jumpInput = Entity.InputHandler.JumpInput;
+                _xInput = PlayerController.InputHandler.NormInputX;
+                _yInput = PlayerController.InputHandler.NormInputY;
+                _jumpInput = PlayerController.InputHandler.JumpInput;
 
                 Core.Movement.SetVelocityZero();
-                Entity.transform.position = _startPosition;
+                PlayerController.transform.position = _startPosition;
 
                 if (_xInput == Core.Movement.FacingDirection && _isHanging && !_isClimbing)
                 {
                     CheckForSpace();
                     _isClimbing = true;
-                    Entity.PlayerAnimator.SetBool(ClimbLedge, true);
+                    PlayerController.PlayerAnimator.SetBool(ClimbLedge, true);
                 }
                 else if (_yInput == -1 && _isHanging && !_isClimbing)
                 {
-                    StateMachine.ChangeState(Entity.InAirState);
+                    StateMachine.ChangeState(PlayerController.InAirState);
                 }
                 else if(_jumpInput && !_isClimbing)
                 {
-                    Entity.WallJumpState.DetermineWallJumpDirection(true);
-                    StateMachine.ChangeState(Entity.WallJumpState);
+                    PlayerController.WallJumpState.DetermineWallJumpDirection(true);
+                    StateMachine.ChangeState(PlayerController.WallJumpState);
                 }
             }
         }
@@ -130,9 +130,9 @@ namespace Player.PlayerStates
         private void CheckForSpace()
         {
             _isTouchingCeiling = Physics2D.Raycast(_cornerPos + Vector2.up * 0.015f + Vector2.right * (Core.Movement.FacingDirection * 0.015f),
-                Vector2.up, EntityData.normalColliderHeight, Core.CollisionSenses.LayerGroundWalls);
+                Vector2.up, PlayerData.normalColliderHeight, Core.CollisionSenses.LayerGroundWalls);
             
-            Entity.PlayerAnimator.SetBool(IsTouchingCeiling, _isTouchingCeiling);
+            PlayerController.PlayerAnimator.SetBool(IsTouchingCeiling, _isTouchingCeiling);
         }
         
         // We use it to determine the position of the detected corner

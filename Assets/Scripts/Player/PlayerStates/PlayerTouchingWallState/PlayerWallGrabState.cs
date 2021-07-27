@@ -1,25 +1,22 @@
 ﻿using Player.Data;
-using StateMachine;
 using UnityEngine;
 
 namespace Player.PlayerStates.PlayerTouchingWallState
 {
-    public class EntityWallGrabState : EntityTouchingWallState
+    public class PlayerWallGrabState : PlayerTouchingWallState
     {   
         // We use it to save the position of the entity and prevent him from moving
         private Vector2 _holdPosition;
         
         // Class Constructor
-        public EntityWallGrabState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
-            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
-        {
-        }
+        public PlayerWallGrabState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
+            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName) { }
 
         public override void Enter()
         {
             base.Enter();
 
-            _holdPosition = Entity.transform.position;
+            _holdPosition = PlayerController.transform.position;
             HoldPosition();
         }
 
@@ -33,17 +30,17 @@ namespace Player.PlayerStates.PlayerTouchingWallState
 
             if (YInput > 0)
             {
-                StateMachine.ChangeState(Entity.WallClimbState);
+                StateMachine.ChangeState(PlayerController.WallClimbState);
             }
             else if (YInput < 0 || !GrabInput)
             {
-                StateMachine.ChangeState(Entity.WallSlideState);
+                StateMachine.ChangeState(PlayerController.WallSlideState);
             }
         }
 
         private void HoldPosition()
         {
-            Entity.transform.position = _holdPosition;
+            PlayerController.transform.position = _holdPosition;
 
             Core.Movement.SetVelocityX(0f);
             

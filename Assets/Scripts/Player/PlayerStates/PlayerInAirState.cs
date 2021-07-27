@@ -1,5 +1,4 @@
 ﻿using Player.Data;
-using StateMachine;
 using UnityEngine;
 
 /* Documentation:
@@ -13,7 +12,7 @@ using UnityEngine;
 
 namespace Player.PlayerStates
 {
-    public class EntityInAirState : EntityState
+    public class PlayerInAirState : PlayerState
     {
         // We use it to move in the air
         private int _xInput;
@@ -49,11 +48,11 @@ namespace Player.PlayerStates
         private static readonly int XVelocity = Animator.StringToHash("xVelocity");
 
         // Class constructor
-        public EntityInAirState(Player entity, global::StateMachine.StateMachine stateMachine, PlayerData entityData,
-            string animBoolName) : base(entity, stateMachine, entityData, animBoolName)
+        public PlayerInAirState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
+            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
         {
         }
-
+        
         protected override void DoChecks()
         {
             base.DoChecks();
@@ -73,6 +72,13 @@ namespace Player.PlayerStates
             }
         }
 
+        public override void Enter()
+        {
+            base.Enter();
+            
+            Core.Movement.RestoreGravityScale(PlayerData.restoreGravityScale);
+        }
+
         public override void Exit()
         {
             base.Exit();
@@ -90,29 +96,29 @@ namespace Player.PlayerStates
             CheckCoyoteTime();
             CheckWallJumpCoyoteTime();
 
-            _xInput = Entity.InputHandler.NormInputX;
-            _jumpInput = Entity.InputHandler.JumpInput;
-            _jumpInputStop = Entity.InputHandler.JumpInputStop;
-            _grabInput = Entity.InputHandler.GrabInput;
-            _dashInput = Entity.InputHandler.DashInput;
+            _xInput = PlayerController.InputHandler.NormInputX;
+            _jumpInput = PlayerController.InputHandler.JumpInput;
+            _jumpInputStop = PlayerController.InputHandler.JumpInputStop;
+            _grabInput = PlayerController.InputHandler.GrabInput;
+            _dashInput = PlayerController.InputHandler.DashInput;
 
             CheckJumpLimiter();
             
-            if (Entity.InputHandler.AttackInputs[(int) CombatInputs.Primary])
+            if (PlayerController.InputHandler.AttackInputs[(int) CombatInputs.PrimaryAttackInput])
             {
-                StateMachine.ChangeState((Entity.PrimaryAttackState));
+                StateMachine.ChangeState((PlayerController.PrimaryAttackState));
             }
-            else if (Entity.InputHandler.AttackInputs[(int) CombatInputs.Secondary])
+            else if (PlayerController.InputHandler.AttackInputs[(int) CombatInputs.SecondaryAttackInput])
             {
-                StateMachine.ChangeState((Entity.SecondaryAttackState));
+                StateMachine.ChangeState((PlayerController.SecondaryAttackState));
             }
             else if (_isGrounded && Core.Movement.CurrentVelocity.y < 0.01f)
             {            
-                StateMachine.ChangeState(Entity.LandState);
+                StateMachine.ChangeState(PlayerController.LandState);
             }
             else if(_isTouchingWall && !_isTouchingLedge && !_isGrounded)
             {
-                StateMachine.ChangeState(Entity.LedgeClimbState);
+                StateMachine.ChangeState(PlayerController.LedgeClimbState);
             }
             else switch (_jumpInput)
             {
@@ -120,12 +126,12 @@ namespace Player.PlayerStates
                     
                     StopWallJumpCoyoteTime();
                     _isTouchingWall = Core.CollisionSenses.WallFront;
-                    Entity.WallJumpState.DetermineWallJumpDirection(_isTouchingWall);
-                    StateMachine.ChangeState(Entity.WallJumpState);
+                    PlayerController.WallJumpState.DetermineWallJumpDirection(_isTouchingWall);
+                    StateMachine.ChangeState(PlayerController.WallJumpState);
                     break;
                 
-                case true when Entity.JumpState.CanJump():
-                    StateMachine.ChangeState(Entity.JumpState);
+                case true when PlayerController.JumpState.CanJump():
+                    StateMachine.ChangeState(PlayerController.JumpState);
                     break;
                 
                 default:
@@ -134,28 +140,28 @@ namespace Player.PlayerStates
                     {
                         case true when _grabInput && _isTouchingLedge:
                             
-                            StateMachine.ChangeState(Entity.WallGrabState);
+                            StateMachine.ChangeState(PlayerController.WallGrabState);
                             break;
                         
                         case true when _xInput == Core.Movement.FacingDirection && Core.Movement.CurrentVelocity.y <= 0:
                             
-                            StateMachine.ChangeState(Entity.WallSlideState);
+                            StateMachine.ChangeState(PlayerController.WallSlideState);
                             break;
                         
                         default:
                         {
-                            if(_dashInput && Entity.DashState.CheckIfCanDash())
+                            if(_dashInput && PlayerController.DashState.CheckIfCanDash())
                             {
-                                StateMachine.ChangeState(Entity.DashState);
+                                StateMachine.ChangeState(PlayerController.DashState);
                             }
                             else
                             {
                                 Core.Movement.CheckIfShouldFlip(_xInput);
-                                Core.Movement.SetVelocityX(EntityData.runVelocity * _xInput);
+                                Core.Movement.SetVelocityX(PlayerData.runVelocity * _xInput);
                 
                                 // We pass the motion parameters to the animator, so that it plays the correct animation
-                                Entity.PlayerAnimator.SetFloat(YVelocity, Core.Movement.CurrentVelocity.y);
-                                Entity.PlayerAnimator.SetFloat(XVelocity, Mathf.Abs(Core.Movement.CurrentVelocity.x));
+                                PlayerController.PlayerAnimator.SetFloat(YVelocity, Core.Movement.CurrentVelocity.y);
+                                PlayerController.PlayerAnimator.SetFloat(XVelocity, Mathf.Abs(Core.Movement.CurrentVelocity.x));
                             }
 
                             break;
@@ -175,7 +181,7 @@ namespace Player.PlayerStates
             
             if (_jumpInputStop)
             {
-                Core.Movement.SetVelocityY(Core.Movement.CurrentVelocity.y * EntityData.jumpHeightLimiter);
+                Core.Movement.SetVelocityY(Core.Movement.CurrentVelocity.y * PlayerData.jumpHeightLimiter);
                 _isJumping = false;
             }
             else if (Core.Movement.CurrentVelocity.y <= 0f)
@@ -187,16 +193,16 @@ namespace Player.PlayerStates
         // We use it to check if we have CoyoteTime remaining
         private void CheckCoyoteTime()
         {
-            if (!_coyoteTime || !(Time.time > StartTime + EntityData.coyoteTime)) return;
+            if (!_coyoteTime || !(Time.time > StartTime + PlayerData.coyoteTime)) return;
             
             _coyoteTime = false;
-            Entity.JumpState.DecreaseAmountOfJumpsLeft();
+            PlayerController.JumpState.DecreaseAmountOfJumpsLeft();
         }
         
         // We use it to check if we have WallCoyoteTime remaining
         private void CheckWallJumpCoyoteTime()
         {
-            if(_wallJumpCoyoteTime && Time.time > _startWallJumpCoyoteTime + EntityData.coyoteTime)
+            if(_wallJumpCoyoteTime && Time.time > _startWallJumpCoyoteTime + PlayerData.coyoteTime)
             {
                 _wallJumpCoyoteTime = false;
             }

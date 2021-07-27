@@ -1,19 +1,20 @@
-using System;
 using System.Collections.Generic;
 using Interfaces;
 using UnityEngine;
 using Weapons.Data;
-using Weapons.Structs;
+
+// The purpose of this script is:
+/* Defining the behavior of AggressiveWeapons */
 
 namespace Weapons
 {
     public class AggressiveWeapon : Weapon
     {
-        // 
+        // We use it to store a reference to the WeaponAttackDetails of our weapon
         protected AggressiveWeaponData AggressiveWeaponData;
-        
-        // 
-        private readonly List<IDamageable> _detectedDamageable = new List<IDamageable>();
+
+        // We use it to store the IDamageableObjects detected by the HitBox of the weapon
+        private readonly List<IDamageableObject> _damageableObjectsDetected = new List<IDamageableObject>();
 
         protected override void Awake()
         {
@@ -29,41 +30,38 @@ namespace Weapons
             }
         }
 
-        public override void AnimationActionTrigger()
-        {
-            base.AnimationActionTrigger();
-
-            CheckMeleeAttack();
-        }
+        public override void AnimationActionTrigger() { base.AnimationActionTrigger(); CheckMeleeAttack(); }
         
-        //
+        // We use it to scroll through the list of IDamageableObjects that we reach with the weapon to apply damage
         private void CheckMeleeAttack()
         {
-            WeaponAttackDetails attackDetails = AggressiveWeaponData.AttackDetails[AttackCounter];
+            var attackDetails = AggressiveWeaponData.AttackDetails[AttackCounter];
                 
-            foreach (var item in _detectedDamageable)
+            foreach (var item in _damageableObjectsDetected)
             {
                 item.Damage(attackDetails.damageAmount);
             }
         }
         
-        // 
+        // We use it to add to the list the IDamageableObjects that are detected
         public void AddToDetected(Collider2D collision)
         {
-            var damageable = collision.GetComponent<IDamageable>();
-            if (damageable != null)
+            var checkDamageableObjectToAdd = collision.GetComponent<IDamageableObject>();
+            
+            if (checkDamageableObjectToAdd != null)
             {
-                _detectedDamageable.Add(damageable);
+                _damageableObjectsDetected.Add(checkDamageableObjectToAdd);
             }
         }
 
-        // 
+        // We use it to remove the IDamageableObjects from the list after applying the damage function
         public void RemoveFromDetected(Collider2D collision)
         {
-            var damageable = collision.GetComponent<IDamageable>();
-            if (damageable != null)
+            var checkDamageableObjectToRemove = collision.GetComponent<IDamageableObject>();
+            
+            if (checkDamageableObjectToRemove != null)
             {
-                _detectedDamageable.Remove(damageable);
+                _damageableObjectsDetected.Remove(checkDamageableObjectToRemove);
             }
         }
     }
