@@ -457,7 +457,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ----------
+  m_text: LANGUAGE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c0feafb6346392f4990d6a401e4c178d, type: 2}
   m_sharedMaterial: {fileID: -7079984045188087142, guid: c0feafb6346392f4990d6a401e4c178d,
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08365fc27876233408da171d7505cba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xVelocity: 0.015
+  xVelocity: 0.04
   yVelocity: 0
 --- !u!1 &237958478
 GameObject:
@@ -994,7 +994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08365fc27876233408da171d7505cba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xVelocity: 0.014
+  xVelocity: 0.05
   yVelocity: 0
 --- !u!1 &421647172
 GameObject:
@@ -1054,7 +1054,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ----------
+  m_text: EXIT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c0feafb6346392f4990d6a401e4c178d, type: 2}
   m_sharedMaterial: {fileID: -7079984045188087142, guid: c0feafb6346392f4990d6a401e4c178d,
@@ -1452,7 +1452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08365fc27876233408da171d7505cba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xVelocity: 0.012
+  xVelocity: 0.07
   yVelocity: 0
 --- !u!1 &664619419
 GameObject:
@@ -1791,7 +1791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08365fc27876233408da171d7505cba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xVelocity: 0.015
+  xVelocity: 0.08
   yVelocity: 0
 --- !u!1 &921001735
 GameObject:
@@ -1851,7 +1851,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ------
+  m_text: MUSIC
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c0feafb6346392f4990d6a401e4c178d, type: 2}
   m_sharedMaterial: {fileID: -7079984045188087142, guid: c0feafb6346392f4990d6a401e4c178d,
@@ -2103,7 +2103,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1460, y: 785}
+  m_AnchoredPosition: {x: 1460, y: 604}
   m_SizeDelta: {x: 768, y: 768}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &969627360
@@ -2239,7 +2239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08365fc27876233408da171d7505cba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xVelocity: 0.01
+  xVelocity: 0
   yVelocity: 0
 --- !u!1 &1020636713
 GameObject:
@@ -2299,7 +2299,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ----------
+  m_text: Back to Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c0feafb6346392f4990d6a401e4c178d, type: 2}
   m_sharedMaterial: {fileID: -7079984045188087142, guid: c0feafb6346392f4990d6a401e4c178d,
@@ -2507,7 +2507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ------
+  m_text: SFX
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c0feafb6346392f4990d6a401e4c178d, type: 2}
   m_sharedMaterial: {fileID: -7079984045188087142, guid: c0feafb6346392f4990d6a401e4c178d,
@@ -3092,7 +3092,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1152130648}
   - component: {fileID: 1152130652}
-  - component: {fileID: 1152130651}
   - component: {fileID: 1152130650}
   - component: {fileID: 1152130649}
   m_Layer: 0
@@ -3170,14 +3169,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!81 &1152130651
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152130647}
-  m_Enabled: 1
 --- !u!20 &1152130652
 Camera:
   m_ObjectHideFlags: 0
@@ -3633,7 +3624,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ----------
+  m_text: NEW GAME
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c0feafb6346392f4990d6a401e4c178d, type: 2}
   m_sharedMaterial: {fileID: -7079984045188087142, guid: c0feafb6346392f4990d6a401e4c178d,
@@ -3962,7 +3953,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4077,7 +4068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08365fc27876233408da171d7505cba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xVelocity: 0.02
+  xVelocity: 0.1
   yVelocity: 0
 --- !u!23 &1710686801
 MeshRenderer:
@@ -4439,7 +4430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08365fc27876233408da171d7505cba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xVelocity: 0.013
+  xVelocity: 0.06
   yVelocity: 0
 --- !u!1 &1786667419
 GameObject:
@@ -4537,7 +4528,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ----------
+  m_text: CREDITS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c0feafb6346392f4990d6a401e4c178d, type: 2}
   m_sharedMaterial: {fileID: -7079984045188087142, guid: c0feafb6346392f4990d6a401e4c178d,
@@ -4997,7 +4988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08365fc27876233408da171d7505cba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xVelocity: 0.018
+  xVelocity: 0.09
   yVelocity: 0
 --- !u!23 &2117194168
 MeshRenderer:
@@ -5325,7 +5316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ----------
+  m_text: SETTINGS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c0feafb6346392f4990d6a401e4c178d, type: 2}
   m_sharedMaterial: {fileID: -7079984045188087142, guid: c0feafb6346392f4990d6a401e4c178d,
@@ -5461,7 +5452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ----------
+  m_text: SETTINGS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c0feafb6346392f4990d6a401e4c178d, type: 2}
   m_sharedMaterial: {fileID: -7079984045188087142, guid: c0feafb6346392f4990d6a401e4c178d,
