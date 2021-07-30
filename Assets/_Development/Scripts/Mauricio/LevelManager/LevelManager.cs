@@ -44,23 +44,45 @@ namespace _Development.Scripts.Mauricio.LevelManager
         {
             _target = 0;
             progressBar.fillAmount = 0;
-            
-            var scene = SceneManager.LoadSceneAsync(sceneName);
-            scene.allowSceneActivation = false;
 
-            loadingCanvas.SetActive(true);
-
-            do
+            if (sceneName == "Credits" || sceneName == "Main_Menu")
             {
-                await Task.Delay(100);
-                _target = scene.progress;
+                var scene = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+                scene.allowSceneActivation = false;
+                
+                loadingCanvas.SetActive(true);
 
-            } while(scene.progress < 0.9f);
+                do
+                {
+                    await Task.Delay(100);
+                    _target = scene.progress;
+
+                } while(scene.progress < 0.9f);
             
-            //await Task.Delay(3000);
+                //await Task.Delay(3000);
             
-            scene.allowSceneActivation = true;
-            loadingCanvas.SetActive(false);
+                scene.allowSceneActivation = true;
+                loadingCanvas.SetActive(false);
+            }
+            else
+            {
+                var scene = SceneManager.LoadSceneAsync(sceneName);
+                scene.allowSceneActivation = false;
+                    
+                loadingCanvas.SetActive(true);
+
+                do
+                {
+                    await Task.Delay(100);
+                    _target = scene.progress;
+
+                } while(scene.progress < 0.9f);
+            
+                //await Task.Delay(3000);
+            
+                scene.allowSceneActivation = true;
+                loadingCanvas.SetActive(false);
+            }
         }
 
         private void Update()

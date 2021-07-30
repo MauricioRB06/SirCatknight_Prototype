@@ -18,7 +18,7 @@ namespace Player
     public class PlayerState
     {
         protected readonly Core.Core Core;
-        protected readonly PlayerController PlayerController;                           // Reference to Player 
+        protected readonly PlayerController PlayerController;       // Reference to Player 
         protected readonly StateMachine.StateMachine StateMachine;  // Reference to StateMachine
         protected readonly PlayerData PlayerData;                   // Reference to Player data
         

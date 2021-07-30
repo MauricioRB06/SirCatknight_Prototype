@@ -19,7 +19,7 @@ namespace _Development.Scripts.Mauricio.LevelManager
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            if(!collision.gameObject.CompareTag("Player")) return;
+            if (!collision.gameObject.CompareTag("Player")) return;
 
             if (sceneToMove == null) Debug.LogError("The level field is empty, please complete it");
             

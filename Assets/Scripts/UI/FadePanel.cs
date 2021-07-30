@@ -6,7 +6,7 @@ namespace UI
     {
         private Animator _fadePanelAnimator;
         
-        private void Start()
+        private void Awake()
         {
             _fadePanelAnimator = GetComponent<Animator>();
         }
