@@ -15,15 +15,15 @@ namespace _Development.Scripts.Mauricio
 
         private void Save()
         {
-            SaveManager.Save(CollectedItems, "CollectedItems");
+            //SaveManager.Save(CollectedItems, "CollectedItems");
         }
 
         private void Load()
         {
-            if (SaveManager.SaveExists("CollectedItems"))
-            {
-                CollectedItems = SaveManager.Load<HashSet<string>>("CollectedItems");
-            }
+           // if (SaveManager.SaveExists("CollectedItems"))
+           // {
+            //    CollectedItems = SaveManager.Load<HashSet<string>>("CollectedItems");
+            //}
         }
     }
 }

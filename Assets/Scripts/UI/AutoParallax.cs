@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace UI
 {
-    public class MenuParallax : MonoBehaviour
+    public class AutoParallax : MonoBehaviour
     {
         Material material;
         Vector2 offset;
@@ -14,12 +14,12 @@ namespace UI
             material = GetComponent<Renderer>().material;
         }
 
-        void Start()
+        private void Start()
         {
             offset = new Vector2(xVelocity,yVelocity);
         }
 
-        void Update()
+        private void Update()
         {
             material.mainTextureOffset += offset * Time.deltaTime;
         }

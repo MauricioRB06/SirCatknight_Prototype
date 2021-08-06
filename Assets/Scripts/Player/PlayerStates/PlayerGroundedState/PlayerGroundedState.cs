@@ -35,8 +35,8 @@ namespace Player.PlayerStates.PlayerGroundedState
         private bool _dodgeRollInput;
         
         // Class constructor
-        protected PlayerGroundedState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
+        protected PlayerGroundedState(PlayerController playerController, StateMachine.StateMachine stateMachine, 
+            PlayerData playerData, string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
         {
         }
 

@@ -6,7 +6,7 @@ using System;
 
 public class EnemyMovementStateMachine : MonoBehaviour
 {
-
+    /*
     public static state Idle = new state()
     {
             Enter = (eC) => Debug.Log("Ahora Toy quieto"),
@@ -35,7 +35,7 @@ public class EnemyMovementStateMachine : MonoBehaviour
     //[SerializeField] GameObject enemy;
     //EnemyController enContrl;
     // Start is called before the first frame update
-    public static void ChangeState(EnemyController eC, state newState)
+    public static void ChangeState(EnemysController eC, state newState)
     {
         eC.currentState.Exit(eC);
         eC.currentState = newState;
@@ -46,4 +46,5 @@ public class EnemyMovementStateMachine : MonoBehaviour
     {
         
     }
+    */
 }

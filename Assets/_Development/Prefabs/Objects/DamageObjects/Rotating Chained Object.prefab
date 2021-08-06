@@ -23,7 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7152523919884498650}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 0}
   m_Children:
@@ -42,6 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7152523920249419986}
   - component: {fileID: 7152523920249419949}
+  - component: {fileID: 2901242854637655595}
   m_Layer: 0
   m_Name: Rotation Axis
   m_TagString: Untagged
@@ -115,6 +116,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &2901242854637655595
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7152523920249419948}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.15
 --- !u!1 &7152523921138691377
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,7 +278,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isItRotating: 1
-  rotationSpeed: 1
+  rotationDirection: 0
+  rotationSpeed: 100
   damageToGive: 10
-  objectAudio: {fileID: 0}
+  rotationAxis: {fileID: 7152523920249419986}
+  vfxParticles: {fileID: 2954109119583838314, guid: 8fb56da4bb08e774280dcf377bcfa565,
+    type: 3}
   sfxAxis: {fileID: 7152523921138691382}
+  sfxChainedObject: {fileID: 1073632178937245045, guid: 6eb98c77fc272c04b816a58f40edd739,
+    type: 3}

@@ -5,8 +5,8 @@ namespace Player.PlayerStates.PlayerGroundedState
     public class PlayerSleepState : PlayerGroundedState
     {
         // Class Constructor
-        public PlayerSleepState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
+        public PlayerSleepState(PlayerController playerController, StateMachine.StateMachine stateMachine, 
+            PlayerData playerData, string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
         {
         }
         

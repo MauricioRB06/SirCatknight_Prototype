@@ -1,15 +1,4 @@
-﻿using _Development.Scripts.Mauricio;
-using Interfaces;
-using Player.Data;
-using Player.Input;
-using Player.Inventory;
-using Player.PlayerStates;
-using Player.PlayerStates.PlayerAbilityState;
-using Player.PlayerStates.PlayerGroundedState;
-using Player.PlayerStates.PlayerTouchingWallState;
-using UnityEngine;
-
-// The purpose of this script is:
+﻿// The purpose of this script is:
 /* Controlling the player character */
 
 /* Documentation and References:
@@ -22,6 +11,17 @@ using UnityEngine;
  * SerializeField: https://docs.unity3d.com/ScriptReference/SerializeField.html
  * 
  */
+
+using _Development.Scripts.Mauricio;
+using Interfaces;
+using Player.Data;
+using Player.Input;
+using Player.Inventory;
+using Player.PlayerStates;
+using Player.PlayerStates.PlayerAbilityState;
+using Player.PlayerStates.PlayerGroundedState;
+using Player.PlayerStates.PlayerTouchingWallState;
+using UnityEngine;
 
 namespace Player
 {

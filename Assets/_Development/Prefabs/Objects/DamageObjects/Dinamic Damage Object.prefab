@@ -75,8 +75,8 @@ GameObject:
   - component: {fileID: 2799096222643675991}
   - component: {fileID: 2799096222643675988}
   - component: {fileID: 2799096222643675989}
-  - component: {fileID: 2799096222643676073}
-  - component: {fileID: 2799096222643675990}
+  - component: {fileID: 4752212983967842268}
+  - component: {fileID: 5350469847292125351}
   m_Layer: 0
   m_Name: Dinamic Object
   m_TagString: Untagged
@@ -170,8 +170,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &2799096222643676073
-CircleCollider2D:
+--- !u!60 &4752212983967842268
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -184,9 +184,26 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.3
---- !u!114 &2799096222643675990
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.014537811, y: 0.33}
+      - {x: -0.2, y: 0.23}
+      - {x: -0.3183671, y: 0.043024063}
+      - {x: -0.23024292, y: -0.23465298}
+      - {x: -0.015106201, y: -0.33}
+      - {x: 0.21287537, y: -0.24728966}
+      - {x: 0.33, y: -0.041633606}
+      - {x: 0.23232697, y: 0.22791596}
+--- !u!114 &5350469847292125351
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,18 +212,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2799096222643675986}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a048c2fab30095408c60a1a522ff530, type: 3}
+  m_Script: {fileID: 11500000, guid: c73935affaccbf644ae6e989d17313d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMovableObject: 1
+  isMovableDamageObject: 1
   movementWaitingTime: 1
   movementSpeed: 1
-  isAPlatform: 0
   movementPoints:
   - {fileID: 2799096222356705766}
   - {fileID: 2799096223792141312}
-  damageToGive: 0
-  objectAudio: {fileID: 1578518288508485794, guid: d85c1e94065aa4a458a351bc5cba7086,
+  damageToGive: 5
+  sfxDamageObject: {fileID: 1578518288508485794, guid: d85c1e94065aa4a458a351bc5cba7086,
     type: 3}
 --- !u!1 &2799096223227399279
 GameObject:
@@ -231,7 +247,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2799096223227399279}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

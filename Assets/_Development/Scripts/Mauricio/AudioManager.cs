@@ -12,27 +12,35 @@ namespace _Development.Scripts.Mauricio
     {
         public static AudioManager Instance;
         
-        [SerializeField] private AudioMixer worldMusicMixer;
-        [SerializeField] private AudioMixer bossMusicMixer;
+        [SerializeField] private AudioMixer musicMixer;
         [SerializeField] private AudioMixer sfxMixer;
         
-        [SerializeField] private AudioSource levelMusic;
-        [SerializeField] private AudioSource bossMusic;
+        // 
+        private GameObject objectLevelMusic;
+        private GameObject objectBossMusic;
         
-        public AudioSource LevelMusic => levelMusic;
-        public AudioSource BossMusic => bossMusic;
-
+        // 
+        public AudioSource LevelMusic { get; private set; }
+        public AudioSource BossMusic { get; private set; }
+        
+        
         private Animator _audioFadeOut;
         
         [Range(-80.0f, 20.0f)] public float allMusicVolume;
         [Range(-80.0f, 20.0f)] public float sfxVolume;
-        
+
         private void Awake()
         {
             if (Instance == null)
             {
                 Instance = this;
                 DontDestroyOnLoad(gameObject);
+                
+                objectLevelMusic =  GameObject.FindWithTag("Level Music");
+                objectBossMusic = GameObject.FindWithTag("Boss Music");
+            
+                LevelMusic = objectLevelMusic.GetComponent<AudioSource>();
+                BossMusic = objectBossMusic.GetComponent<AudioSource>();
             }
             else
             {
@@ -45,19 +53,17 @@ namespace _Development.Scripts.Mauricio
         
         private void Start()
         {
-            PlaySound(levelMusic);
+            PlaySound(LevelMusic);
         }
 
         private void Update()
         {
-            BossMusicVolume();
             WorldMusicVolume();
             SfxVolume();
         }
         
-        public void BossMusicVolume() => bossMusicMixer.SetFloat("BossMusicVolume", allMusicVolume);
-        public void WorldMusicVolume() => worldMusicMixer.SetFloat("WorldMusicVolume", allMusicVolume);
-        public void SfxVolume() => sfxMixer.SetFloat("SfxVolume", sfxVolume);
+        public void WorldMusicVolume() => musicMixer.SetFloat("MusicMasterVolume", allMusicVolume);
+        public void SfxVolume() => sfxMixer.SetFloat("SFXMasterVolume", sfxVolume);
         
     }
 }

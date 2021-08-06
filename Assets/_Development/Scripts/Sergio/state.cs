@@ -7,8 +7,8 @@ public class state
 { 
     // Start is called before the first frame update
    
-    public Action<EnemyController> Enter;
-    public Func<EnemyController,Action> LogicUpdate;
-    public Action<EnemyController> Exit;
-    public EnemyController EnemyController { get; private set; }
+    public Action<EnemysController> Enter;
+    public Func<EnemysController,Action> LogicUpdate;
+    public Action<EnemysController> Exit;
+    public EnemysController EnemysController { get; private set; }
 }

@@ -21,16 +21,34 @@ namespace Intermediaries
         private void Start() { _currentWeapon = GetComponentInParent<Weapon>(); }
         
         // We call the AnimationTriggers inside the Animator component
-        public void IntermediaryAnimationFinishTrigger() { _currentWeapon.AnimationFinishTrigger(); }
-        
-        private void IntermediaryAnimationStartMovementTrigger() { _currentWeapon .AnimationStartMovementTrigger(); }
+        public void IntermediaryAnimationFinishTrigger()
+        {
+            _currentWeapon.AnimationFinishTrigger();
+        }
 
-        private void IntermediaryAnimationStopMovementTrigger() { _currentWeapon .AnimationStopMovementTrigger(); }
+        private void IntermediaryAnimationStartMovementTrigger()
+        {
+            _currentWeapon .AnimationStartMovementTrigger();
+        }
 
-        private void IntermediaryAnimationTurnOnFlipTrigger() { _currentWeapon .AnimationTurnOnFlipTrigger(); }
-        
-        private void IntermediaryAnimationTurnOffFlipTrigger() { _currentWeapon .AnimationTurnOffFlipTrigger(); }
+        private void IntermediaryAnimationStopMovementTrigger()
+        {
+            _currentWeapon .AnimationStopMovementTrigger();
+        }
 
-        private void IntermediaryAnimationActionTrigger() { _currentWeapon.AnimationActionTrigger(); }
+        private void IntermediaryAnimationTurnOnFlipTrigger()
+        {
+            _currentWeapon .AnimationTurnOnFlipTrigger();
+        }
+
+        private void IntermediaryAnimationTurnOffFlipTrigger()
+        {
+            _currentWeapon .AnimationTurnOffFlipTrigger();
+        }
+
+        private void IntermediaryAnimationActionTrigger()
+        {
+            _currentWeapon.AnimationActionTrigger();
+        }
     }
 }
