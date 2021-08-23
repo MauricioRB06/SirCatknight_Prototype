@@ -19,27 +19,27 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 96194961408
-    m_Localized: "Point De Contr\xF4le Atteint !"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 840193187840
-    m_Localized: Bouclier +1
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 929783521280
-    m_Localized: "Sant\xE9 ++"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 1330356330496
-    m_Localized: "Vous Avez Une Cl\xE9 !"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 2751654961152
-    m_Localized: Vous Avez Ouvert Une Porte !
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4222513487872
-    m_Localized: "Avez-Vous Ramass\xE9: Poiscalibur"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   references:

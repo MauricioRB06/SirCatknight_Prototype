@@ -12,39 +12,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
   m_Name: UI InGame Text Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: UI InGame Text
+  m_TableCollectionName: InGame Messages
   m_TableCollectionNameGuidString: 8923647fad9352449b5bf876a8bec72b
   m_Entries:
   - m_Id: 96194961408
-    m_Key: Reached Checkpoint
+    m_Key: Message Health ++
     m_Metadata:
       m_Items: []
   - m_Id: 840193187840
-    m_Key: Shield +1
+    m_Key: Message Shield ++
     m_Metadata:
       m_Items: []
   - m_Id: 929783521280
-    m_Key: Health ++
+    m_Key: Message Reached Checkpoint
     m_Metadata:
       m_Items: []
   - m_Id: 1330356330496
-    m_Key: Got a Key
+    m_Key: Message Got a Key
     m_Metadata:
       m_Items: []
   - m_Id: 2751654961152
-    m_Key: Open Door
+    m_Key: Message Door Lock
     m_Metadata:
       m_Items: []
   - m_Id: 4222513487872
-    m_Key: PickUp Weapon 1
+    m_Key: Message Door Unlock
     m_Metadata:
       m_Items: []
   - m_Id: 3498755373047808
-    m_Key: Piece Pickup
+    m_Key: Message Collectable Pickup
     m_Metadata:
       m_Items: []
   - m_Id: 3498800503758848
-    m_Key: Collectables Text
+    m_Key: Message Pressed The Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19816527711346688
+    m_Key: Message Activated The Lever
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19816529053523968
+    m_Key: Activated The Lever
     m_Metadata:
       m_Items: []
   m_Metadata:

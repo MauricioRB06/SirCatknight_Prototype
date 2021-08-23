@@ -25,8 +25,8 @@ MonoBehaviour:
   - m_Id: 915271229440
     m_Localized: 'Sr. Catknight Project Developed For
 
-      The Subject Of Object
-      Oriented Programming'
+      Object Oriented Programming
+      Course'
     m_Metadata:
       m_Items: []
   - m_Id: 831922020352
@@ -42,7 +42,9 @@ MonoBehaviour:
       > Game
       Designer
 
-      > Main Programmer
+      > Level Designer
+
+      > Lead Programmer
 
       > 2D artist'
     m_Metadata:
@@ -53,7 +55,7 @@ MonoBehaviour:
       Electronic Engineer
 
 
-      Main 2D Artist <
+      Lead 2D Artist <
 
       Programmer
       <'
@@ -61,7 +63,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 812762439680
     m_Localized: "Sergio S\xE1nchez Moreno\nSystems Engineer\n\n> Programmer\n> 2D
-      artist"
+      Artist"
     m_Metadata:
       m_Items: []
   - m_Id: 715119042560
@@ -85,7 +87,7 @@ MonoBehaviour:
       > Programmer
 
       >
-      2D artist'
+      2D Artist'
     m_Metadata:
       m_Items: []
   - m_Id: 835646562304
@@ -131,14 +133,14 @@ MonoBehaviour:
 
       2D Artist <
 
-      UI
+      UI/UX
       Designer <
 
       English Translation <'
     m_Metadata:
       m_Items: []
   - m_Id: 8378317971456
-    m_Localized: Teacher Of The Subject
+    m_Localized: Teacher Of The Course
     m_Metadata:
       m_Items: []
   - m_Id: 8439785496576
@@ -157,12 +159,12 @@ MonoBehaviour:
   - m_Id: 8582396026880
     m_Localized: 'A Special Mention For Catalina
 
-      ( Ziel ) And Perseus ( Mr.
-      Cookie )
+      ( Ziel ) And Perseus ( Perseus
+      )
 
-      Who Were The Inspiration For The
+      Who Were The Inspiration For The Project
 
-      Project :3'
+      Project :3 '
     m_Metadata:
       m_Items: []
   - m_Id: 784509607936

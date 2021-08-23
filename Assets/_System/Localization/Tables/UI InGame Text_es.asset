@@ -19,35 +19,43 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 96194961408
-    m_Localized: "\xA1 Punto De Control Alcanzado !"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 840193187840
-    m_Localized: Escudo +1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 929783521280
     m_Localized: Salud ++
     m_Metadata:
       m_Items: []
+  - m_Id: 840193187840
+    m_Localized: Escudo ++
+    m_Metadata:
+      m_Items: []
+  - m_Id: 929783521280
+    m_Localized: "\xA1 Punto De Control Alcanzado !"
+    m_Metadata:
+      m_Items: []
   - m_Id: 1330356330496
-    m_Localized: "\xA1 Haz Conseguido Una Llave !"
+    m_Localized: "\xA1 Has Conseguido Una Llave !"
     m_Metadata:
       m_Items: []
   - m_Id: 2751654961152
-    m_Localized: "\xA1 Has Abierto Una Puerta !"
+    m_Localized: "\xA1 Necesitas Una Llave Para Abrir Esta Puerta !"
     m_Metadata:
       m_Items: []
   - m_Id: 4222513487872
-    m_Localized: 'Has Recogido: Pezcalibur'
+    m_Localized: "\xA1 Has Abierto Una Puerta !"
     m_Metadata:
       m_Items: []
   - m_Id: 3498755373047808
-    m_Localized: "\xA1 Haz Recogido Una Pieza Del Coleccionable !"
+    m_Localized: "\xA1 Has Recogido: Pezcalibur !"
     m_Metadata:
       m_Items: []
   - m_Id: 3498800503758848
-    m_Localized: 'Piezas Encontradas:   /'
+    m_Localized: "\xA1 Has Recogido Una Pieza Del Coleccionable !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19816527711346688
+    m_Localized: '! Has Presionado El Boton !'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19816529053523968
+    m_Localized: "\xA1 Has Activado La Palanca !"
     m_Metadata:
       m_Items: []
   references:

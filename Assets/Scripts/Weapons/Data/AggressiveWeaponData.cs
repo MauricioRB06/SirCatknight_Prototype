@@ -1,5 +1,3 @@
-using UnityEngine;
-using Weapons.Structs;
 
 // The purpose of this Script is:
 /* Insert Here */
@@ -10,9 +8,14 @@ using Weapons.Structs;
  * 
  */
 
+using UnityEngine;
+using Weapons.Structs;
+
 namespace Weapons.Data
 {
-    [CreateAssetMenu(fileName ="newAggressiveWeaponData", menuName ="Data/Weapon Data/Aggressive Weapon")]
+    [CreateAssetMenu(fileName ="newAggressiveWeaponData",
+        menuName ="Sr.Catknight Data/Weapon Data/1. Aggressive Weapon", order = 1)]
+    
     public class AggressiveWeaponData : WeaponData
     {
         // We use it to store the AttackDetails of the weapon
@@ -26,7 +29,7 @@ namespace Weapons.Data
             AmountOfAttacks = attackDetails.Length;
             WeaponCooldownAttack = new float[AmountOfAttacks];
             AttackMovementSpeed = new float[AmountOfAttacks];
-
+            
             for (var i = 0; i < AmountOfAttacks; i++)
             {
                 AttackMovementSpeed[i] = attackDetails[i].movementSpeed;

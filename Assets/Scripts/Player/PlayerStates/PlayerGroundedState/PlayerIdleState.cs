@@ -6,11 +6,11 @@ using UnityEngine;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerIdleState : PlayerGroundedState
+    public class PlayerIdleState : BaseStates.PlayerGroundedState
     {
         // Class constructor
-        public PlayerIdleState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName) { }
+        public PlayerIdleState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
+            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName) { }
 
         public override void Enter()
         {
@@ -29,15 +29,15 @@ namespace Player.PlayerStates.PlayerGroundedState
             
             if (XInput != 0)
             {
-                StateMachine.ChangeState(PlayerController.RunState);
+                PlayerStateMachine.ChangeState(PlayerController.RunState);
             }
             else if (YInput == -1)
             {
-                StateMachine.ChangeState(PlayerController.CrouchIdleState);
+                PlayerStateMachine.ChangeState(PlayerController.CrouchIdleState);
             }
-            else if (Time.time >= StartTime + PlayerData.sleepTime)
+            else if (Time.time >= StartTime + DataPlayerController.sleepTime)
             {
-                StateMachine.ChangeState(PlayerController.SleepState);
+                PlayerStateMachine.ChangeState(PlayerController.SleepState);
             }
         }
     }

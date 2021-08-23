@@ -2,11 +2,11 @@ using Player.Data;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerWalkState : PlayerGroundedState
+    public class PlayerWalkState : BaseStates.PlayerGroundedState
     {
         // Class Constructor
-        public PlayerWalkState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
+        public PlayerWalkState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
+            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName)
         {
         }
         
@@ -16,17 +16,17 @@ namespace Player.PlayerStates.PlayerGroundedState
 
             Core.Movement.CheckIfShouldFlip(XInput);
 
-            Core.Movement.SetVelocityX(PlayerData.walkVelocity * XInput);
+            Core.Movement.SetVelocityX(DataPlayerController.walkVelocity * XInput);
 
             if (IsExitingState) return;
             
             if (XInput == 0)
             {
-                StateMachine.ChangeState(PlayerController.IdleState);
+                PlayerStateMachine.ChangeState(PlayerController.IdleState);
             }
             else if (YInput == -1)
             {
-                StateMachine.ChangeState(PlayerController.CrouchMoveState);
+                PlayerStateMachine.ChangeState(PlayerController.CrouchMoveState);
             }
         }
     }

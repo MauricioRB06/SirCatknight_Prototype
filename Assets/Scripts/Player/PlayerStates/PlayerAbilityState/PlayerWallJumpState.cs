@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Player.PlayerStates.PlayerAbilityState
 {
-    public class PlayerWallJumpState : PlayerAbilityState
+    public class PlayerWallJumpState : BaseStates.PlayerAbilityState
     {   
         // We use it to determine the character's jumping direction from the wall he's on
         private int _wallJumpDirection;
@@ -13,8 +13,8 @@ namespace Player.PlayerStates.PlayerAbilityState
         private static readonly int XVelocity = Animator.StringToHash("xVelocity");
 
         // Class Constructor
-        public PlayerWallJumpState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName) { }
+        public PlayerWallJumpState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
+            string animationBoolName) : base(playerController, playerStateMachine, dataPlayerController, animationBoolName) { }
 
         public override void Enter()
         {
@@ -24,7 +24,7 @@ namespace Player.PlayerStates.PlayerAbilityState
             
             // We use it to reset the double jump (if we have) after jumping on the wall
             PlayerController.JumpState.ResetAmountOfJumpsLeft();
-            Core.Movement.SetVelocity(PlayerData.wallJumpVelocity, PlayerData.wallJumpAngle, _wallJumpDirection);
+            Core.Movement.SetVelocity(DataPlayerController.wallJumpVelocity, DataPlayerController.wallJumpAngle, _wallJumpDirection);
             Core.Movement.CheckIfShouldFlip(_wallJumpDirection);
             PlayerController.JumpState.DecreaseAmountOfJumpsLeft();
         }
@@ -36,7 +36,7 @@ namespace Player.PlayerStates.PlayerAbilityState
             PlayerController.PlayerAnimator.SetFloat(YVelocity, Core.Movement.CurrentVelocity.y);
             PlayerController.PlayerAnimator.SetFloat(XVelocity, Mathf.Abs(Core.Movement.CurrentVelocity.x));
 
-            if(Time.time >= StartTime + PlayerData.wallJumpTime)
+            if(Time.time >= StartTime + DataPlayerController.wallJumpTime)
             {
                 IsAbilityDone = true;
             }

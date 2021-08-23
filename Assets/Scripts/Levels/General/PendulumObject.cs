@@ -16,6 +16,7 @@
 //  Unity Instantiate: https://docs.unity3d.com/ScriptReference/Object.Instantiate.html
 //  Unity Destroy: https://docs.unity3d.com/ScriptReference/Object.Destroy.html
 
+using Interfaces;
 using UnityEngine;
 
 namespace Levels.General
@@ -107,7 +108,7 @@ namespace Levels.General
         {
             if (!collision.gameObject.CompareTag("Player")) return;
             
-            collision.transform.GetComponent<Player.PlayerController>().Damage(damageToGive);
+            collision.transform.GetComponent<IDamageableObject>().TakeDamage(damageToGive);
         }
         
         // Allows you to change the pendulum state, to stop or resume its oscillation.

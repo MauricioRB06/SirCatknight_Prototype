@@ -2,11 +2,11 @@
 
 namespace Player.PlayerStates.PlayerTouchingWallState
 {
-    public class PlayerWallClimbState : PlayerTouchingWallState
+    public class PlayerWallClimbState : BaseStates.PlayerTouchingWallState
     {
         // Class Constructor
-        public PlayerWallClimbState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
+        public PlayerWallClimbState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
+            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName)
         {
         }
 
@@ -16,11 +16,11 @@ namespace Player.PlayerStates.PlayerTouchingWallState
 
             if (IsExitingState) return;
             
-            Core.Movement.SetVelocityY(PlayerData.wallClimbVelocity);
+            Core.Movement.SetVelocityY(DataPlayerController.wallClimbVelocity);
 
             if (YInput != 1)
             {
-                StateMachine.ChangeState(PlayerController.WallGrabState);
+                PlayerStateMachine.ChangeState(PlayerController.WallGrabState);
             }
         }
     }

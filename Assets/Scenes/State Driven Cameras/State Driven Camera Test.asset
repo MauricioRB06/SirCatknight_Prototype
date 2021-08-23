@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: State Driven Camera Test
   m_EditorClassIdentifier: 
   m_CustomBlends:
-  - m_From: Level Rail Camera
+  - m_From: CM vcam1
     m_To: 
     m_Blend:
       m_Style: 1

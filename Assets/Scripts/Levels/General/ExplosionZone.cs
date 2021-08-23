@@ -11,6 +11,7 @@
 //  Unity Awake: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html
 //  Unity OnCollisionEnter2D: https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnCollisionEnter2D.html
 
+using Interfaces;
 using UnityEngine;
 
 namespace Levels.General
@@ -34,8 +35,8 @@ namespace Levels.General
         {
             if (!collision.gameObject.CompareTag("Player")) return;
             
-            collision.transform.GetComponent<Player.PlayerController>()
-                .Damage(GetComponentInParent<ExplosiveObject>().DamageToGive);
+            collision.transform.GetComponent<IDamageableObject>()
+                .TakeDamage(GetComponentInParent<ExplosiveObject>().DamageToGive);
         }
     }
 }

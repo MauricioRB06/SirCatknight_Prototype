@@ -10,6 +10,9 @@
  * 
  */
 
+
+using UnityEngine;
+
 namespace Weapons.Structs
 {
     [System.Serializable]
@@ -21,5 +24,8 @@ namespace Weapons.Structs
         public float movementSpeed;
         public float damageAmount;
         public float cooldown;
+
+        public float knockBackStrenght;
+        public Vector2 knockBackAngle;
     }
 }

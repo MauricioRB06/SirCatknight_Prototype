@@ -19,15 +19,15 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 96194961408
-    m_Localized: Reached Checkpoint !
+    m_Localized: Health ++
     m_Metadata:
       m_Items: []
   - m_Id: 840193187840
-    m_Localized: Shield +1
+    m_Localized: Shield ++
     m_Metadata:
       m_Items: []
   - m_Id: 929783521280
-    m_Localized: Health ++
+    m_Localized: Checkpoint Reached !
     m_Metadata:
       m_Items: []
   - m_Id: 1330356330496
@@ -35,21 +35,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2751654961152
-    m_Localized: You Have Opened a Door !
+    m_Localized: You Need A Key To Open This Door !
     m_Metadata:
       m_Items: []
   - m_Id: 4222513487872
-    m_Localized: 'Did You Pick Up: Fishcalibur
-
-'
+    m_Localized: You Have Opened a Door !
     m_Metadata:
       m_Items: []
   - m_Id: 3498755373047808
-    m_Localized: You Have Collected A Piece Of The Collectible !
+    m_Localized: 'You Picked Up: Fishcalibur'
     m_Metadata:
       m_Items: []
   - m_Id: 3498800503758848
-    m_Localized: 'Pieces Found:   /'
+    m_Localized: You Have Collected A Piece Of The Collectible !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19816527711346688
+    m_Localized: You Have Pressed The Button !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19816529053523968
+    m_Localized: You Have Activated The Lever !
     m_Metadata:
       m_Items: []
   references:

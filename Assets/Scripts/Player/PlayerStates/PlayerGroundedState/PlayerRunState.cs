@@ -1,13 +1,13 @@
-﻿using Development.Scripts.Mauricio;
+﻿
 using Player.Data;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerRunState : PlayerGroundedState
+    public class PlayerRunState : BaseStates.PlayerGroundedState
     {
         // Class Constructor
-        public PlayerRunState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName) { }
+        public PlayerRunState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
+            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName) { }
 
         public override void LogicUpdate()
         {
@@ -15,17 +15,17 @@ namespace Player.PlayerStates.PlayerGroundedState
 
             Core.Movement.CheckIfShouldFlip(XInput);
 
-            Core.Movement.SetVelocityX(PlayerData.runVelocity * XInput);
+            Core.Movement.SetVelocityX(DataPlayerController.runVelocity * XInput);
             
             if (IsExitingState) return;
             
             if (XInput == 0)
             {
-                StateMachine.ChangeState(PlayerController.IdleState);
+                PlayerStateMachine.ChangeState(PlayerController.IdleState);
             }
             else if (YInput == -1)
             {
-                StateMachine.ChangeState(PlayerController.CrouchMoveState);
+                PlayerStateMachine.ChangeState(PlayerController.CrouchMoveState);
             }
         }
     }

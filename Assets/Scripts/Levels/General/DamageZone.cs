@@ -13,6 +13,7 @@
 //  Unity OnTriggerStay2D: https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnTriggerStay2D.html
 
 using System.Collections;
+using Interfaces;
 using Player;
 using UnityEngine;
 
@@ -96,10 +97,11 @@ namespace Levels.General
             if (!enableDamageZone) return;
             if(!collision.gameObject.CompareTag("Player")) return;
             
-            collision.transform.GetComponent<PlayerController>().Damage(damagePerSecond * Time.deltaTime);
+            collision.transform.GetComponent<IDamageableObject>().TakeDamage(damagePerSecond * Time.deltaTime);
         }
         
         // Allows you to change the status of the zone, to enable or disable it.
+        [ContextMenu("zona fuego")]
         public void ChangeDamageState()
         {
             if (enableDamageZone)

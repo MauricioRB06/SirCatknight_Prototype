@@ -2,11 +2,11 @@
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerLandState : PlayerGroundedState
+    public class PlayerLandState : BaseStates.PlayerGroundedState
     {
         // Class constructor
-        public PlayerLandState(PlayerController playerController, StateMachine.StateMachine stateMachine,
-        PlayerData playerData, string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
+        public PlayerLandState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine,
+        DataPlayerController dataPlayerController, string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName)
         {
         }
 
@@ -18,11 +18,11 @@ namespace Player.PlayerStates.PlayerGroundedState
                 
             if (XInput != 0)
             {
-                StateMachine.ChangeState(PlayerController.RunState);
+                PlayerStateMachine.ChangeState(PlayerController.RunState);
             }
             else if (IsAnimationFinished)
             {
-                StateMachine.ChangeState(PlayerController.IdleState);
+                PlayerStateMachine.ChangeState(PlayerController.IdleState);
             }
         }
     }

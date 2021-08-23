@@ -14,7 +14,7 @@ using UnityEngine;
 
 namespace Player.PlayerStates.PlayerAbilityState
 { 
-    public class PlayerDashState : PlayerAbilityState 
+    public class PlayerDashState : BaseStates.PlayerAbilityState 
     { 
         // We use it to check if the entity can Dash
         private bool CanDash { get; set; }
@@ -35,8 +35,8 @@ namespace Player.PlayerStates.PlayerAbilityState
         private Vector2 _lastAfterImagePosition;
         
         // Class Constructor
-        public PlayerDashState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
+        public PlayerDashState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
+            string animationBoolName) : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
         }
         public override void Enter()
@@ -49,7 +49,7 @@ namespace Player.PlayerStates.PlayerAbilityState
             _isHolding = true;
             _dashDirection = Vector2.right * Core.Movement.FacingDirection;
 
-            Time.timeScale = PlayerData.dashHoldTimeScale;
+            Time.timeScale = DataPlayerController.dashHoldTimeScale;
             StartTime = Time.unscaledTime;
 
             PlayerController.DashDirectionIndicator.gameObject.SetActive(true);
@@ -70,7 +70,7 @@ namespace Player.PlayerStates.PlayerAbilityState
                   after the timeout expires or we stop pressing the button, the movement is cut off to cut the
                   distance traveled 
                 */
-                Core.Movement.SetVelocityY(Core.Movement.CurrentVelocity.y * PlayerData.dashEndYLimiter);
+                Core.Movement.SetVelocityY(Core.Movement.CurrentVelocity.y * DataPlayerController.dashEndYLimiter);
             }
         }
 
@@ -96,21 +96,21 @@ namespace Player.PlayerStates.PlayerAbilityState
                 PlayerController.DashDirectionIndicator.rotation = Quaternion.Euler(0f, 0f,
                     Vector2.SignedAngle(Vector2.right, _dashDirection) - 90f);
 
-                if (!_dashInputStop && !(Time.unscaledTime >= StartTime + PlayerData.dashMaxHoldTime)) return;
+                if (!_dashInputStop && !(Time.unscaledTime >= StartTime + DataPlayerController.dashMaxHoldTime)) return;
                     
                 _isHolding = false;
                 Time.timeScale = 1f;
                 StartTime = Time.time;
                 
                 Core.Movement.CheckIfShouldFlip(Mathf.RoundToInt(_dashDirection.x));
-                Core.Movement.SetVelocity(PlayerData.dashImpulseVelocity, _dashDirection);
+                Core.Movement.SetVelocity(DataPlayerController.dashImpulseVelocity, _dashDirection);
                 PlayerController.DashDirectionIndicator.gameObject.SetActive(false);
                 PlaceAfterImage();
             }
             else
             {
                 CheckIfShouldPlaceAfterImage();
-                if (!(Time.time >= StartTime + PlayerData.dashLifeTime)) return;
+                if (!(Time.time >= StartTime + DataPlayerController.dashLifeTime)) return;
                     
                 IsAbilityDone = true;
                 _lastDashTime = Time.time;
@@ -120,7 +120,7 @@ namespace Player.PlayerStates.PlayerAbilityState
         // We use it to check if the necessary space between images has already been covered, to put another
         private void CheckIfShouldPlaceAfterImage()
         {
-            if(Vector2.Distance(PlayerController.transform.position, _lastAfterImagePosition) >= PlayerData.distanceBetweenAfterImages)
+            if(Vector2.Distance(PlayerController.transform.position, _lastAfterImagePosition) >= DataPlayerController.distanceBetweenAfterImages)
             {
                 PlaceAfterImage();
             }
@@ -135,7 +135,7 @@ namespace Player.PlayerStates.PlayerAbilityState
 
         public bool CheckIfCanDash()
         {
-            return CanDash && Time.time >= _lastDashTime + PlayerData.dashCooldown;
+            return CanDash && Time.time >= _lastDashTime + DataPlayerController.dashCooldown;
         }
 
         public void ResetCanDash() => CanDash = true;

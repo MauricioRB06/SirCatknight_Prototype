@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace Player.PlayerStates.PlayerAbilityState
 {
-    public class PlayerDodgeRoll : PlayerAbilityState
+    public class PlayerDodgeRoll : BaseStates.PlayerAbilityState
     {
         // Class Constructor
-        public PlayerDodgeRoll(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
+        public PlayerDodgeRoll(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
+            string animationBoolName) : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
         }
 
@@ -24,7 +24,7 @@ namespace Player.PlayerStates.PlayerAbilityState
                 XInput *= Core.Movement.FacingDirection;
             } 
             
-            Core.Movement.SetVelocityX(PlayerData.dodgeRollImpulse * XInput);
+            Core.Movement.SetVelocityX(DataPlayerController.dodgeRollImpulse * XInput);
 
         }
         
@@ -32,7 +32,7 @@ namespace Player.PlayerStates.PlayerAbilityState
         {
             base.LogicUpdate();
 
-            if (!(Time.time >= StartTime + PlayerData.dodgeRollLifeTime)) return;
+            if (!(Time.time >= StartTime + DataPlayerController.dodgeRollLifeTime)) return;
             
             Core.Movement.CheckIfShouldFlip(-XInput);
             IsAbilityDone = true;

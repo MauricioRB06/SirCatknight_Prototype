@@ -2,11 +2,11 @@
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerCrouchMoveState : PlayerGroundedState
+    public class PlayerCrouchMoveState : BaseStates.PlayerGroundedState
     {
         // Class Constructor
-        public PlayerCrouchMoveState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
+        public PlayerCrouchMoveState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
+            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName)
         {
         }
 
@@ -14,14 +14,14 @@ namespace Player.PlayerStates.PlayerGroundedState
         {
             base.Enter();
             
-            PlayerController.SetColliderHeight(PlayerData.crouchColliderHeight);
+            PlayerController.SetColliderHeight(DataPlayerController.crouchColliderHeight);
         }
 
         public override void Exit()
         {
             base.Exit();
             
-            PlayerController.SetColliderHeight(PlayerData.normalColliderHeight);
+            PlayerController.SetColliderHeight(DataPlayerController.normalColliderHeight);
         }
 
         public override void LogicUpdate()
@@ -30,16 +30,16 @@ namespace Player.PlayerStates.PlayerGroundedState
 
             if (IsExitingState) return;
             
-            Core.Movement.SetVelocityX(PlayerData.crouchMovementVelocity * Core.Movement.FacingDirection);
+            Core.Movement.SetVelocityX(DataPlayerController.crouchMovementVelocity * Core.Movement.FacingDirection);
             Core.Movement.CheckIfShouldFlip(XInput);
 
             if(XInput == 0)
             {
-                StateMachine.ChangeState(PlayerController.CrouchIdleState);
+                PlayerStateMachine.ChangeState(PlayerController.CrouchIdleState);
             }
             else if(YInput != -1 && !IsTouchingCeiling)
             {
-                StateMachine.ChangeState(PlayerController.RunState);
+                PlayerStateMachine.ChangeState(PlayerController.RunState);
             }
         }
     }

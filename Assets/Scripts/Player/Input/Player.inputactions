@@ -22,9 +22,9 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Grab",
+                    "name": "Interact",
                     "type": "Button",
-                    "id": "ee8c4c69-67eb-4e6d-b014-3691699bc132",
+                    "id": "927c3123-d3a4-4d61-b952-d041e585d9ac",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -42,6 +42,14 @@
                     "type": "Value",
                     "id": "4f82a0cb-8525-49a6-99f9-b2785d6dc619",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Grab",
+                    "type": "Button",
+                    "id": "ee8c4c69-67eb-4e6d-b014-3691699bc132",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 },
@@ -71,17 +79,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "8084ff11-f5be-49ba-b375-cf376afd1417",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "StickDeadzone",
-                    "groups": "Gamepad",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "WASD",
                     "id": "c15d6ca9-0e71-4532-88a9-d8591ab9cdf2",
@@ -139,11 +136,22 @@
                 },
                 {
                     "name": "",
+                    "id": "6a2bf0f5-2eb3-4c62-afb6-a3577a74d41d",
+                    "path": "<XInputController>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox One",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "afeb2b6f-4d27-48f8-921b-c1f31384480d",
                     "path": "<DualShockGamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": "PS4",
+                    "groups": "DualShock 4",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -162,10 +170,10 @@
                 {
                     "name": "",
                     "id": "93b4a2e3-0f49-471d-ae5a-6abca93bb47a",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<XInputController>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
+                    "groups": "Xbox One",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -176,7 +184,7 @@
                     "path": "<DualShockGamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "PS4",
+                    "groups": "DualShock 4",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -195,10 +203,10 @@
                 {
                     "name": "",
                     "id": "5839750a-1389-46bd-b465-7d983a55fe5f",
-                    "path": "<Gamepad>/rightTrigger",
+                    "path": "<XInputController>/leftShoulder",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
+                    "groups": "Xbox One",
                     "action": "Grab",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -206,98 +214,43 @@
                 {
                     "name": "",
                     "id": "fc359f9b-9a2c-44cf-b344-f2ccd780d6d3",
-                    "path": "<DualShockGamepad>/rightTrigger",
+                    "path": "<DualShockGamepad>/leftShoulder",
                     "interactions": "",
                     "processors": "",
-                    "groups": "PS4",
+                    "groups": "DualShock 4",
                     "action": "Grab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "84464181-506c-48cd-8c55-53c8c5d42f4e",
-                    "path": "<Keyboard>/leftShift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Dash",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "fcaf1fbc-c936-4f1d-a571-c75dd9212be4",
-                    "path": "<Gamepad>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Dash",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "84c7a7f0-ad98-4ddc-b7f1-d9315bddc2cc",
-                    "path": "<DualShockGamepad>/rightStickPress",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PS4",
-                    "action": "Dash",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d96605ff-7897-4c00-8efc-af7db05fcd0e",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Dash",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "27fbab0c-3611-42ee-a6b5-13871aa89195",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "DashDirection",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "de047fe7-1093-4c64-9e67-98c9ebfbf2a4",
-                    "path": "<Mouse>/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "DashDirection",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5991fe89-4167-4168-b7dc-2f06a4f68a84",
-                    "path": "<DualShockGamepad>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PS4",
-                    "action": "DashDirection",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "ba620d72-68a7-46e6-b333-70e623f513e5",
-                    "path": "<Keyboard>/c",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
+                    "action": "DodgeRoll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3e0c1ab-3852-405d-8dd7-4f2bfba512b8",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox One",
+                    "action": "DodgeRoll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a708294e-6038-4f94-8a2f-37020999982c",
+                    "path": "<DualShockGamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualShock 4",
                     "action": "DodgeRoll",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -315,12 +268,155 @@
                 },
                 {
                     "name": "",
+                    "id": "037a18f4-f77b-4b20-b656-98c468d25bad",
+                    "path": "<XInputController>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox One",
+                    "action": "PrimaryAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a485334-816a-41ac-aa94-72c6c3d28b5b",
+                    "path": "<DualShockGamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualShock 4",
+                    "action": "PrimaryAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "025f68be-beb6-47d1-8295-023c074f871d",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
                     "action": "SecondaryAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e144630f-adf5-41ba-9ba2-821174da51a5",
+                    "path": "<XInputController>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox One",
+                    "action": "SecondaryAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3690799d-af8f-4e86-89cf-fde7440c7f3a",
+                    "path": "<DualShockGamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualShock 4",
+                    "action": "SecondaryAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b6b3365-1dd4-40d2-9198-f28e682d1409",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d26f2c1b-888b-4f6a-968f-de4a83203c73",
+                    "path": "<XInputController>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox One",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "af6b4ab8-1e27-4a47-ab45-90a9119c1a31",
+                    "path": "<DualShockGamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualShock 4",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "84464181-506c-48cd-8c55-53c8c5d42f4e",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fcaf1fbc-c936-4f1d-a571-c75dd9212be4",
+                    "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox One",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "84c7a7f0-ad98-4ddc-b7f1-d9315bddc2cc",
+                    "path": "<DualShockGamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualShock 4",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "de047fe7-1093-4c64-9e67-98c9ebfbf2a4",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "DashDirection",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "27fbab0c-3611-42ee-a6b5-13871aa89195",
+                    "path": "<XInputController>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox One",
+                    "action": "DashDirection",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bfa0f077-d8c4-4f4e-b369-5fee715eae87",
+                    "path": "<DualShockGamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualShock 4",
+                    "action": "DashDirection",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -350,6 +446,14 @@
                     "name": "Cancel",
                     "type": "Button",
                     "id": "b80b41da-9c3f-4cb9-84cd-3a1fc083e3ac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "681adeb1-c999-448b-ba36-1f6a80ad2cd0",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -410,6 +514,17 @@
                     "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "646dadb7-8bb9-4b2d-b23a-ea5c504fcd24",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
@@ -432,8 +547,8 @@
             ]
         },
         {
-            "name": "Gamepad",
-            "bindingGroup": "Gamepad",
+            "name": "Xbox One",
+            "bindingGroup": "Xbox One",
             "devices": [
                 {
                     "devicePath": "<Gamepad>",
@@ -443,8 +558,8 @@
             ]
         },
         {
-            "name": "PS4",
-            "bindingGroup": "PS4",
+            "name": "DualShock 4",
+            "bindingGroup": "DualShock 4",
             "devices": [
                 {
                     "devicePath": "<DualShockGamepad>",

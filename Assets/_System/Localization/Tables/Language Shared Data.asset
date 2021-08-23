@@ -27,6 +27,10 @@ MonoBehaviour:
     m_Key: Japanese
     m_Metadata:
       m_Items: []
+  - m_Id: 27043403450195968
+    m_Key: French
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - id: 0

@@ -6,7 +6,7 @@ using Weapons;
 
 namespace Player.PlayerStates.PlayerAbilityState
 {
-    public class PlayerAttackState : PlayerAbilityState
+    public class PlayerAttackState : BaseStates.PlayerAbilityState
     {
         // Reference to weapon.
         private Weapon _currentWeapon;
@@ -22,8 +22,10 @@ namespace Player.PlayerStates.PlayerAbilityState
         private bool _shouldCheckFlip;
         
         // Class Constructor.
-        public PlayerAttackState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName) { }
+        public PlayerAttackState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine,
+            DataPlayerController dataPlayerController, string animationBoolName) : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
+        {
+        }
 
         public override void Enter()
         {
@@ -59,7 +61,7 @@ namespace Player.PlayerStates.PlayerAbilityState
         public void SetWeapon(Weapon weapon)
         {
             _currentWeapon = weapon;
-            _currentWeapon.InitializeWeapon(this);
+            _currentWeapon.InitializeWeapon(this, Core);
         }
 
         public override void AnimationFinishTrigger()
@@ -72,7 +74,7 @@ namespace Player.PlayerStates.PlayerAbilityState
         public void SetPlayerVelocity(float movementAttackSpeed)
         {
             Core.Movement.SetVelocityX((movementAttackSpeed * Core.Movement.FacingDirection));
-            Core.Movement.ReduceGravityScale(PlayerData.decreaseGravityScale);
+            Core.Movement.ReduceGravityScale(DataPlayerController.decreaseGravityScale);
             Core.Movement.SetVelocityY(0);
             _velocityToSet = movementAttackSpeed;
             _setVelocity = true;

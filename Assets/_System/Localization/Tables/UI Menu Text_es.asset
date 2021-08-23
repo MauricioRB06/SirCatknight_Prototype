@@ -19,75 +19,43 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 113613905920
-    m_Localized: CONTINUAR
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4487459282944
-    m_Localized: MUSICA
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4544124329984
-    m_Localized: EFECTOS
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4929928994816
-    m_Localized: CONFIGURACION
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5081863462912
-    m_Localized: IDIOMA
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5440627449856
-    m_Localized: Regresar al menu
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5548504948736
     m_Localized: NUEVA PARTIDA
     m_Metadata:
       m_Items: []
-  - m_Id: 5637059289088
-    m_Localized: CREDITOS
+  - m_Id: 26012010431553536
+    m_Localized: Regresar al menu
     m_Metadata:
       m_Items: []
-  - m_Id: 7444035994820608
+  - m_Id: 26011217104117760
+    m_Localized: No :)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26011212708487168
+    m_Localized: Si :(
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26010892293021696
+    m_Localized: "\xBFEn verdad deseas\nabandonar la aventura?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26010828573155328
     m_Localized: SALIR
     m_Metadata:
       m_Items: []
-  - m_Id: 7450411840217088
-    m_Localized: Moverse
+  - m_Id: 26010749757988864
+    m_Localized: COLECCIONABLES
     m_Metadata:
       m_Items: []
-  - m_Id: 7450443242971136
-    m_Localized: Saltar
+  - m_Id: 26010793441665024
+    m_Localized: CONFIGURACION
     m_Metadata:
       m_Items: []
-  - m_Id: 7450445461757952
-    m_Localized: Agarrarse
+  - m_Id: 26010704157515776
+    m_Localized: CREDITOS
     m_Metadata:
       m_Items: []
-  - m_Id: 7450621555417088
-    m_Localized: Dash
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450679436812288
-    m_Localized: Direccion del Dash
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450728522752000
-    m_Localized: Esquivar
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450848580509696
-    m_Localized: Ataque Secundario
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450782612496384
-    m_Localized: Ataque Principal
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7452562041774080
-    m_Localized: Interactuar
+  - m_Id: 26010638629904384
+    m_Localized: CONTINUAR
     m_Metadata:
       m_Items: []
   references:

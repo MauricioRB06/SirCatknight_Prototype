@@ -7,9 +7,15 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+<<<<<<< HEAD
+	"last_search.785D90A9" = "prayerprefs"
+	"InspectorPreview.785D90A9" = "0"
+	"currentGroup.785D90A9" = "all"
+=======
 	"last_search.83F126EB" = "object"
 	"InspectorPreview.83F126EB" = "0"
 	"currentGroup.83F126EB" = "asset"
+>>>>>>> 48011e439fbd8368398d8f72243bf68ab117860e
 }
 providers = {
 	asset = {

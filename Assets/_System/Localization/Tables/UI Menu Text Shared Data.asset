@@ -12,79 +12,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
   m_Name: UI Menu Text Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: UI Menu Text
+  m_TableCollectionName: UI Main Menu
   m_TableCollectionNameGuidString: edd3b7a5cb3ec3c46853c580b56acd2c
   m_Entries:
   - m_Id: 113613905920
-    m_Key: Continue
+    m_Key: Button New Game
     m_Metadata:
       m_Items: []
-  - m_Id: 4487459282944
-    m_Key: Music Volume
+  - m_Id: 26010638629904384
+    m_Key: Button Continue
     m_Metadata:
       m_Items: []
-  - m_Id: 4544124329984
-    m_Key: SFX Volume
+  - m_Id: 26010704157515776
+    m_Key: Button Credits
     m_Metadata:
       m_Items: []
-  - m_Id: 4929928994816
-    m_Key: Settings
+  - m_Id: 26010749757988864
+    m_Key: Button Collectables
     m_Metadata:
       m_Items: []
-  - m_Id: 5081863462912
-    m_Key: Language
+  - m_Id: 26010793441665024
+    m_Key: Button Settings
     m_Metadata:
       m_Items: []
-  - m_Id: 5440627449856
-    m_Key: Back to Menu
+  - m_Id: 26010828573155328
+    m_Key: Button Exit
     m_Metadata:
       m_Items: []
-  - m_Id: 5548504948736
-    m_Key: New Game
+  - m_Id: 26010892293021696
+    m_Key: Button Are you sure?
     m_Metadata:
       m_Items: []
-  - m_Id: 5637059289088
-    m_Key: Credits
+  - m_Id: 26011212708487168
+    m_Key: Button Yes
     m_Metadata:
       m_Items: []
-  - m_Id: 7444035994820608
-    m_Key: Exit
+  - m_Id: 26011217104117760
+    m_Key: Button No
     m_Metadata:
       m_Items: []
-  - m_Id: 7450411840217088
-    m_Key: Controls Move
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450443242971136
-    m_Key: Controls Jump
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450445461757952
-    m_Key: Controls Grab
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450621555417088
-    m_Key: Controls Dash
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450679436812288
-    m_Key: Controls Dash Direction
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450728522752000
-    m_Key: Controls Dodge Roll
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450782612496384
-    m_Key: Primary Attack
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450848580509696
-    m_Key: Secondary Attack
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7452562041774080
-    m_Key: Interact
+  - m_Id: 26012010431553536
+    m_Key: Button Back to menu
     m_Metadata:
       m_Items: []
   m_Metadata:

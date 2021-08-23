@@ -37,6 +37,22 @@ MonoBehaviour:
     m_Address: Assets/Localization/Tables/Collectibles Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: 9ce0edca6bab3b74bb648c879df05522
+    m_Address: Assets/_System/Localization/Tables/UI Settings Menu Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 9707fab9bfe28064fb477cbfc21ce865
+    m_Address: Assets/_System/Localization/Tables/UI InGame HUD Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: ee8e59d37a137e84a99fc1415d74ee3e
+    m_Address: Assets/_System/Localization/Tables/InGame Pause Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+  - m_GUID: 6392ab94cb2f6fb4cb1c6dafe46e10c3
+    m_Address: Assets/_System/Localization/Tables/InGame GameOver Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 099765490df7a8b42afbca8e793739cc, type: 2}
   m_SchemaSet:

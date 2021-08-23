@@ -12,11 +12,103 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
   m_Name: Collectibles Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: Collectibles
+  m_TableCollectionName: UI Collectables
   m_TableCollectionNameGuidString: caf5a71902b0e33409bb25b2da77ef1e
   m_Entries:
-  - m_Id: 165635794051072
-    m_Key: Texto Coleccionable 1
+  - m_Id: 19657817710043136
+    m_Key: Collectable 0 Lock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657853177077760
+    m_Key: Collectable 1 Lock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657855655911424
+    m_Key: Collectable 2 Lock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657857908252672
+    m_Key: Collectable 3 Lock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657860458389504
+    m_Key: Collectable 4 Lock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657911222050816
+    m_Key: Collectable 5 Lock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658280593432576
+    m_Key: Collectable 0 Unlock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658282103382016
+    m_Key: Collectable 1 Unlock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658282808025088
+    m_Key: Collectable 2 Unlock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658283412004864
+    m_Key: Collectable 3 Unlock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658339611484160
+    m_Key: Collectable 4 Unlock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658341058519040
+    m_Key: Collectable 5 Unlock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658574060494848
+    m_Key: Collectable 0 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658575599804416
+    m_Key: Collectable 1 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658577139113984
+    m_Key: Collectable 2 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658578921693184
+    m_Key: Collectable 3 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658580771381248
+    m_Key: Collectable 4 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658583489290240
+    m_Key: Collectable 5 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658715320459264
+    m_Key: Collectable 0 Story
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658716159320064
+    m_Key: Collectable 1 Story
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658716964626432
+    m_Key: Collectable 2 Story
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658718105477120
+    m_Key: Collectable 3 Story
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658719514763264
+    m_Key: Collectable 4 Story
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658722870206464
+    m_Key: Collectable 5 Story
     m_Metadata:
       m_Items: []
   m_Metadata:

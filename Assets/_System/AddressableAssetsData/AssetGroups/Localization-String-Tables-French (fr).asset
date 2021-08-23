@@ -18,22 +18,42 @@ MonoBehaviour:
   m_GUID: 58740315ea4e3b946bfac2108bac1cc5
   m_SerializeEntries:
   - m_GUID: 6b9be47df214b5e4bbc6bb5bc08083c6
-    m_Address: Game Credits Text_fr
+    m_Address: UI Game Credits_fr
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-fr
   - m_GUID: 206d3e660bd2c7141b4088e10d9bb235
-    m_Address: UI InGame Text_fr
+    m_Address: InGame Messages_fr
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-fr
   - m_GUID: 443bde597cea3924ea31de8564fbbbdf
-    m_Address: UI Menu Text_fr
+    m_Address: UI Main Menu_fr
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-fr
   - m_GUID: 9ef63df386e1ff841ac2ac04feedb277
-    m_Address: Collectibles_fr
+    m_Address: UI Collectables_fr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr
+  - m_GUID: c0f1757229d87b04fb526dccaf3024e7
+    m_Address: UI Settings Menu_fr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr
+  - m_GUID: a6291061c5868f54e9d4c42b85299335
+    m_Address: InGame HUD_fr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr
+  - m_GUID: e76ac5f9d3b371d4aaf41da6048e2986
+    m_Address: InGame Pause_fr
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr
+  - m_GUID: bfed60aa1790662468518b6f1ddfddad
+    m_Address: InGame GameOver_fr
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-fr

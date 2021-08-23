@@ -17,6 +17,72 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: caf5a71902b0e33409bb25b2da77ef1e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 19657817710043136
+    m_Localized: 'Locked: You must get the 3 pieces of the collectible in the Tutorial
+      level'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657853177077760
+    m_Localized: 'Locked: You must get the 3 pieces of the collectible in the Sugar
+      Tower level'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657855655911424
+    m_Localized: 'Locked: You must get the 3 pieces of the collectible in the Samurai
+      Valley level'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657857908252672
+    m_Localized: 'Locked: You must get the 3 pieces of the collectible in the Labyrinth
+      In The Sky level'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657860458389504
+    m_Localized: 'Locked: You must get the 3 pieces of the collectible in the Corrupt
+      Mines Of Valmaril level'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657911222050816
+    m_Localized: 'Locked: You must get all 3 pieces of the collectible in the Meowvil
+      Castle level'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658280593432576
+    m_Localized: Collectible obtained in the Turorial level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658282103382016
+    m_Localized: Collectible obtained in the Sugar Tower level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658282808025088
+    m_Localized: Collectible obtained in the Samurai Valley level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658283412004864
+    m_Localized: Collectible obtained in the Labyrinth In The Sky level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658339611484160
+    m_Localized: Collectible obtained in the Corrupt Mines Of Valmaril level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658341058519040
+    m_Localized: Collectible obtained in the Meowvil Castle level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658574060494848
+    m_Localized: The Journey Begins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658575599804416
+    m_Localized: Sugary Adventures
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658578921693184
+    m_Localized: Above The Clouds
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

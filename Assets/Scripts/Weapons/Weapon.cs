@@ -29,6 +29,9 @@ namespace Weapons
         // We use it as a reference to the player's AttackState.
         private PlayerAttackState _weaponAttackState;
         
+        // 
+        protected Core.Core Core;
+        
         protected virtual void Awake()
         {
             _characterAnimator = transform.Find("Character").GetComponent<Animator>();
@@ -67,18 +70,41 @@ namespace Weapons
         }
 
         // We use it to let the weapon know which AttackState is the one that has called it.
-        public void InitializeWeapon(PlayerAttackState attackState) { _weaponAttackState = attackState; }
-
+        public void InitializeWeapon(PlayerAttackState attackState, Core.Core core)
+        {
+            _weaponAttackState = attackState;
+            Core = core;
+        }
+        
         // We call the AnimationTriggers inside the Intermediary component.
-        public virtual void AnimationStartMovementTrigger() { _weaponAttackState.SetPlayerVelocity(weaponData.AttackMovementSpeed[AttackCounter]); }
-
-        public virtual void AnimationStopMovementTrigger() { _weaponAttackState.SetPlayerVelocity(0f); }
+        public virtual void AnimationStartMovementTrigger()
+        {
+            _weaponAttackState.SetPlayerVelocity(weaponData.AttackMovementSpeed[AttackCounter]);
+        }
         
-        public virtual void AnimationTurnOnFlipTrigger() { _weaponAttackState.SetFlipCheck(true); }
+        // 
+        public virtual void AnimationStopMovementTrigger()
+        {
+            _weaponAttackState.SetPlayerVelocity(0f);
+        }
         
-        public virtual void AnimationTurnOffFlipTrigger() { _weaponAttackState.SetFlipCheck(false); }
+        // 
+        public virtual void AnimationTurnOnFlipTrigger()
+        {
+            _weaponAttackState.SetFlipCheck(true);
+        }
         
-        public virtual void AnimationFinishTrigger() { _weaponAttackState.AnimationFinishTrigger(); }
+        // 
+        public virtual void AnimationTurnOffFlipTrigger()
+        {
+            _weaponAttackState.SetFlipCheck(false);
+        }
+        
+        // 
+        public virtual void AnimationFinishTrigger()
+        {
+            _weaponAttackState.AnimationFinishTrigger();
+        }
         
         // We use it to store the logic that checks if we have hit an IDamageableObject.
         public virtual void AnimationActionTrigger() { }

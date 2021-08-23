@@ -27,6 +27,7 @@ namespace Levels.General
     {
         TutorialKey,
         ChocolateKey,
+        CandyKey,
         SakuraKey,
         RockKey,
         CrystalKey,

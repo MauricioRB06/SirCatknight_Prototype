@@ -19,75 +19,43 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 113613905920
-    m_Localized: CONTINUEZ
+    m_Localized: 
     m_Metadata:
       m_Items: []
-  - m_Id: 4487459282944
-    m_Localized: MUSIQUE
+  - m_Id: 26010638629904384
+    m_Localized: 
     m_Metadata:
       m_Items: []
-  - m_Id: 4544124329984
-    m_Localized: SFX
+  - m_Id: 26010704157515776
+    m_Localized: 
     m_Metadata:
       m_Items: []
-  - m_Id: 4929928994816
-    m_Localized: "LES PARAM\xC8TRES"
+  - m_Id: 26010749757988864
+    m_Localized: 
     m_Metadata:
       m_Items: []
-  - m_Id: 5081863462912
-    m_Localized: LANGUE
+  - m_Id: 26010793441665024
+    m_Localized: 
     m_Metadata:
       m_Items: []
-  - m_Id: 5440627449856
-    m_Localized: Retour au menu
+  - m_Id: 26010828573155328
+    m_Localized: 
     m_Metadata:
       m_Items: []
-  - m_Id: 5548504948736
-    m_Localized: NOUVEAU JEU
+  - m_Id: 26010892293021696
+    m_Localized: 
     m_Metadata:
       m_Items: []
-  - m_Id: 5637059289088
-    m_Localized: "CR\xC9DITS"
+  - m_Id: 26011212708487168
+    m_Localized: 
     m_Metadata:
       m_Items: []
-  - m_Id: 7444035994820608
-    m_Localized: SORTIR
+  - m_Id: 26011217104117760
+    m_Localized: 
     m_Metadata:
       m_Items: []
-  - m_Id: 7450411840217088
-    m_Localized: Bouge toi
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450443242971136
-    m_Localized: Sauter
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450445461757952
-    m_Localized: Attraper
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450621555417088
-    m_Localized: Dash
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450679436812288
-    m_Localized: Direction De Dash
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450728522752000
-    m_Localized: Esquive
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450782612496384
-    m_Localized: Attaque Principale
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450848580509696
-    m_Localized: Attaque Secondaire
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7452562041774080
-    m_Localized: D'interagir
+  - m_Id: 26012010431553536
+    m_Localized: 
     m_Metadata:
       m_Items: []
   references:

@@ -1,4 +1,3 @@
-using UnityEngine;
 
 /* The purpose of this script is:
 
@@ -8,14 +7,15 @@ using UnityEngine;
 
     SerializeField: https://docs.unity3d.com/ScriptReference/SerializeField.html
     C# Encapsulate Fields: https://docs.microsoft.com/en-us/visualstudio/ide/reference/encapsulate-field?view=vs-2019
-    C# Encapsulation: https://www.youtube.com/watch?v=_eyFoySmHPk&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B&index=30 [Spanish]
     C# Expression Body: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members
     C# Properties: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties
-    C# Properties: https://www.youtube.com/watch?v=MAMOyX59pNo&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B&index=56 [Spanish]
     Physics2D.OverlapCircle: https://docs.unity3d.com/ScriptReference/Physics2D.OverlapCircle.html
     Physics2D.Raycast: https://docs.unity3d.com/ScriptReference/Physics2D.Raycast.html
  
  */
+
+using Generics;
+using UnityEngine;
 
 namespace Core.CoreComponents
 {
@@ -24,7 +24,8 @@ namespace Core.CoreComponents
         // We use them to store the references to the objects that are responsible for performing the checks
         [SerializeField] private Transform groundCheck;
         [SerializeField] private Transform wallCheck;
-        [SerializeField] private Transform ledgeCheck;
+        [SerializeField] private Transform ledgeCheckHorizontal;
+        [SerializeField] private Transform ledgeCheckVertical;
         [SerializeField] private Transform ceilingCheck;
         
         // We use them to store the values that will be used to perform the checks
@@ -33,34 +34,64 @@ namespace Core.CoreComponents
         [SerializeField] private float wallCheckDistance = 0.5f;
         [SerializeField] private LayerMask layerGroundWalls;
         
+        // 
+        public Transform GroundCheck
+        {
+            get => GenericNotImplementedError<Transform>.TryGet(groundCheck, Core.transform.parent.name);
+            private set => groundCheck = value;
+        }
+        
+        public Transform WallCheck
+        {
+            get => GenericNotImplementedError<Transform>.TryGet(wallCheck, Core.transform.parent.name);
+            private set => wallCheck = value;
+        }
+        
+        public Transform CeilingCheck
+        {
+            get => GenericNotImplementedError<Transform>.TryGet(ceilingCheck, Core.transform.parent.name);
+            private set => ceilingCheck = value;
+        }
+        
+        public Transform LedgeCheckHorizontal
+        {
+            get => GenericNotImplementedError<Transform>.TryGet(ledgeCheckHorizontal, Core.transform.parent.name);
+            private set => ledgeCheckHorizontal = value;
+        }
+        
+        public Transform LedgeCheckVertical
+        {
+            get => GenericNotImplementedError<Transform>.TryGet(ledgeCheckVertical, Core.transform.parent.name);
+            private set => ledgeCheckVertical = value;
+        }
+        
         // We use them to access these properties from the outside, while maintaining the original private properties
-        public Transform GroundCheck => groundCheck;
-        public Transform WallCheck => wallCheck;
-        public Transform LedgeCheck => ledgeCheck;
-        public Transform CeilingCheck => ceilingCheck;
         public float GroundCheckRadius => groundCheckRadius;
-        public float CeilingCheckRadius => ceilingCheckRadius;
         public float WallCheckDistance => wallCheckDistance;
         public LayerMask LayerGroundWalls => layerGroundWalls;
         
         // We use it to detect if the object is touching a ceiling
-        public bool Ceiling => Physics2D.OverlapCircle(ceilingCheck.position, ceilingCheckRadius, 
+        public bool Ceiling => Physics2D.OverlapCircle(CeilingCheck.position, ceilingCheckRadius, 
             layerGroundWalls);
 
         // We use it to detect if the object is touching the ground
-        public bool Ground => Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius,
+        public bool Ground => Physics2D.OverlapCircle(GroundCheck.position, groundCheckRadius,
             layerGroundWalls);
 
         // We use it to detect if the object is touching a wall head-on
-        public bool WallFront => Physics2D.Raycast(wallCheck.position,
+        public bool WallFront => Physics2D.Raycast(WallCheck.position,
             Vector2.right * Core.Movement.FacingDirection, wallCheckDistance, layerGroundWalls);
 
         // We use it to detect if the object is touching a wall from behind
-        public bool WallBack => Physics2D.Raycast(wallCheck.position,
+        public bool WallBack => Physics2D.Raycast(WallCheck.position,
             Vector2.right * -Core.Movement.FacingDirection, wallCheckDistance, layerGroundWalls);
-
-        // We use it to detect if the object is touching a ledge
-        public bool Ledge => Physics2D.Raycast(ledgeCheck.position,
-            Vector2.right * Core.Movement.FacingDirection, wallCheckDistance, layerGroundWalls);
+        
+        // 
+        public bool LedgeHorizontal => Physics2D.Raycast(LedgeCheckHorizontal.position,
+                Vector2.right * Core.Movement.FacingDirection, wallCheckDistance, layerGroundWalls);
+        
+        // 
+        public bool LedgeVertical =>  Physics2D.Raycast(LedgeCheckVertical.position,
+                Vector2.down, wallCheckDistance, layerGroundWalls);
     }
 }

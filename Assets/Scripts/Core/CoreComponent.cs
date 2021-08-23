@@ -1,4 +1,3 @@
-using UnityEngine;
 
 /* The purpose of this script is:
  
@@ -10,16 +9,21 @@ using UnityEngine;
  * 
  */
 
+using UnityEngine;
+
 namespace Core
 {
     public class CoreComponent : MonoBehaviour
     {
         // We use it to store the reference to the core of the object
         protected Core Core;
-
+        
+        // 
         protected virtual void Awake()
         {
             Core = transform.parent.GetComponent<Core>();
+            
+            // 
             if (Core == null) { Debug.LogError("This component must have a Core object as its parent"); }
         }
     }

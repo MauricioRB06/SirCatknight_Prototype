@@ -1,16 +1,23 @@
-﻿// The purpose of this script is:
-/* Controlling the player character */
-
-/* Documentation and References:
- * 
- * Awake: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html
- * Start: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
- * Update: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html
- * Fixed Update: https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html
- * PlayerPrefs: https://docs.unity3d.com/ScriptReference/PlayerPrefs.html
- * SerializeField: https://docs.unity3d.com/ScriptReference/SerializeField.html
- * 
- */
+﻿
+// Copyright (c) 2021 MauricioRB06 <https://github.com/MauricioRB06>
+// MIT License < Please Read LICENSE.md >
+//
+//  The Purpose Of This Script Is:
+//
+//  Controlling the player character.
+// 
+//  Documentation and References:
+//
+//  Awake: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html
+//  Start: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Start.html
+//  Update: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html
+//  Fixed Update: https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html
+//  PlayerPrefs: https://docs.unity3d.com/ScriptReference/PlayerPrefs.html
+//  SerializeField: https://docs.unity3d.com/ScriptReference/SerializeField.html
+//  C# Protected: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/protected
+//  C# Read only: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/readonly
+//  C# Polymorphism: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual
+//  C# Polymorphism: https://www.youtube.com/watch?v=XzKL94OMDV4&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B&index=46 [ Spanish ]
 
 using _Development.Scripts.Mauricio;
 using Interfaces;
@@ -18,22 +25,24 @@ using Player.Data;
 using Player.Input;
 using Player.Inventory;
 using Player.PlayerStates;
+using Player.PlayerStates.BaseStates;
 using Player.PlayerStates.PlayerAbilityState;
 using Player.PlayerStates.PlayerGroundedState;
 using Player.PlayerStates.PlayerTouchingWallState;
+using StateMachine;
 using UnityEngine;
 
 namespace Player
 {
-    public class PlayerController : MonoBehaviour, IDamageableObject
+    public class PlayerController : MonoBehaviour
     {
         public static PlayerController Instance;
         
         // We use it to store the reference to the player's data file
-        [SerializeField] private PlayerData playerData;
+        [SerializeField] private DataPlayerController dataPlayerController;
         
-        // We use them to store the state machine for the player
-        private StateMachine.StateMachine StateMachine { get; set; }
+        // To stored the state machine for the player.
+        private PlayerStateMachine PlayerStateMachine { get; set; }
         
         // We use them to store player states
         public PlayerIdleState IdleState { get; private set; }
@@ -74,6 +83,7 @@ namespace Player
         
         private void Awake()
         {
+            // 
             if (Instance == null)
             {
                 Instance = this;
@@ -84,30 +94,67 @@ namespace Player
                 Destroy(gameObject);
             }
             
+            // 
             Core = GetComponentInChildren<Core.Core>();
+            PlayerStateMachine = new PlayerStateMachine();
             
-            StateMachine = new StateMachine.StateMachine();
+            // 
+            IdleState = new PlayerIdleState(this, PlayerStateMachine,
+                                                        dataPlayerController, "Idle");
             
-            IdleState = new PlayerIdleState(this, StateMachine, playerData, "Idle");
-            SleepState = new PlayerSleepState(this, StateMachine, playerData, "Sleep");
-            WalkState = new PlayerWalkState(this, StateMachine, playerData, "Walk");
-            RunState = new PlayerRunState(this, StateMachine, playerData, "Run");
-            JumpState = new PlayerJumpState(this, StateMachine, playerData, "InAir");
-            DodgeRoll = new PlayerDodgeRoll(this, StateMachine, playerData,"DodgeRoll");
-            PrimaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "Attack");
-            SecondaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "Attack");
-            InAirState = new PlayerInAirState(this, StateMachine, playerData, "InAir");
-            LandState = new PlayerLandState(this, StateMachine, playerData, "Landing");
-            WallSlideState = new PlayerWallSlideState(this, StateMachine, playerData, "WallSlide");
-            WallGrabState = new PlayerWallGrabState(this, StateMachine, playerData, "WallGrab");
-            WallClimbState = new PlayerWallClimbState(this, StateMachine, playerData, "WallClimb");
-            WallJumpState = new PlayerWallJumpState(this, StateMachine, playerData, "InAir");
-            LedgeClimbState = new PlayerLedgeClimbState(this, StateMachine, playerData, "LedgeClimb");
-            DashState = new PlayerDashState(this, StateMachine, playerData, "Dash");
-            CrouchIdleState = new PlayerCrouchIdleState(this, StateMachine, playerData, "CrouchIdle");
-            CrouchMoveState = new PlayerCrouchMoveState(this, StateMachine, playerData, "CrouchMove");
+            SleepState = new PlayerSleepState(this, PlayerStateMachine,
+                                                        dataPlayerController, "Sleep");
+            
+            WalkState = new PlayerWalkState(this, PlayerStateMachine,
+                                                        dataPlayerController, "Walk");
+            
+            RunState = new PlayerRunState(this, PlayerStateMachine,
+                                                        dataPlayerController, "Run");
+            
+            JumpState = new PlayerJumpState(this, PlayerStateMachine,
+                                                        dataPlayerController, "InAir");
+            
+            DodgeRoll = new PlayerDodgeRoll(this, PlayerStateMachine,
+                                                        dataPlayerController,"DodgeRoll");
+            
+            PrimaryAttackState = new PlayerAttackState(this, PlayerStateMachine,
+                                                        dataPlayerController, "Attack");
+            
+            SecondaryAttackState = new PlayerAttackState(this, PlayerStateMachine,
+                                                        dataPlayerController, "Attack");
+            
+            InAirState = new PlayerInAirState(this, PlayerStateMachine,
+                                                        dataPlayerController, "InAir");
+            
+            LandState = new PlayerLandState(this, PlayerStateMachine,
+                                                        dataPlayerController, "Landing");
+            
+            WallSlideState = new PlayerWallSlideState(this, PlayerStateMachine,
+                                                        dataPlayerController, "WallSlide");
+            
+            WallGrabState = new PlayerWallGrabState(this, PlayerStateMachine,
+                                                        dataPlayerController, "WallGrab");
+            
+            WallClimbState = new PlayerWallClimbState(this, PlayerStateMachine,
+                                                        dataPlayerController, "WallClimb");
+            
+            WallJumpState = new PlayerWallJumpState(this, PlayerStateMachine,
+                                                        dataPlayerController, "InAir");
+            
+            LedgeClimbState = new PlayerLedgeClimbState(this, PlayerStateMachine,
+                                                        dataPlayerController, "LedgeClimb");
+            
+            DashState = new PlayerDashState(this, PlayerStateMachine,
+                                                        dataPlayerController, "Dash");
+            
+            CrouchIdleState = new PlayerCrouchIdleState(this, PlayerStateMachine,
+                                                        dataPlayerController, "CrouchIdle");
+            
+            CrouchMoveState = new PlayerCrouchMoveState(this, PlayerStateMachine,
+                                                        dataPlayerController, "CrouchMove");
         }
-
+        
+        // 
         private void Start()
         {
             PlayerAnimator = GetComponent<Animator>();
@@ -122,24 +169,26 @@ namespace Player
             //
             PrimaryAttackState.SetWeapon(PlayerInventory.weapons[(int)CombatInputs.PrimaryAttackInput]);
             
-            StateMachine.Initialize(IdleState); 
+            PlayerStateMachine.Initialize(IdleState); 
         }
-
+        
         private void Update()
         {
             Core.LogicUpdate();
-            StateMachine.CurrentState.LogicUpdate();
+            PlayerStateMachine.CurrentState.LogicUpdate();
         }
-
-        private void FixedUpdate() { StateMachine.CurrentState.PhysicsUpdate(); }
         
-        public void Damage(float amount)
+        // 
+        private void FixedUpdate()
         {
-            Debug.Log($"Ohh no! { amount }");
-            playerHealth.TakeDamage(amount);
+            PlayerStateMachine.CurrentState.PhysicsUpdate();
         }
         
-        public bool CheckIfPlayerSleep() { return StateMachine.CurrentState == SleepState; }
+        // 
+        public bool CheckIfPlayerSleep()
+        {
+            return PlayerStateMachine.CurrentState == SleepState;
+        }
         
         // We use it to change the heightCollider and the offsetCollider of the character
         public void SetColliderHeight(float heightCollider)
@@ -160,10 +209,9 @@ namespace Player
         }
         
         // We use it to trigger events in the middle of an animation ( We call it inside the Animator component )
-        private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();
+        private void AnimationTrigger() => PlayerStateMachine.CurrentState.AnimationTrigger();
         
         // We use it to trigger events at the end of an animation ( We call it inside the Animator component )
-        private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
-        
+        private void AnimationFinishTrigger() => PlayerStateMachine.CurrentState.AnimationFinishTrigger();
     }
 }

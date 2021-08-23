@@ -16,6 +16,7 @@
 //
 //  C# Properties: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties
 
+using Interfaces;
 using UnityEngine;
 
 namespace Levels.General
@@ -110,7 +111,7 @@ namespace Levels.General
         {
             if (!collision.transform.CompareTag("Player")) return;
             
-            collision.transform.GetComponent<Player.PlayerController>().Damage(damageToGive);
+            collision.transform.GetComponent<IDamageableObject>().TakeDamage(damageToGive);
         }
         
         // Sets the object as static.

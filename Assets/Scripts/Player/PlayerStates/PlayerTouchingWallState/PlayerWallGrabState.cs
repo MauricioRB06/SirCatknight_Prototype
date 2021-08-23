@@ -3,14 +3,14 @@ using UnityEngine;
 
 namespace Player.PlayerStates.PlayerTouchingWallState
 {
-    public class PlayerWallGrabState : PlayerTouchingWallState
+    public class PlayerWallGrabState : BaseStates.PlayerTouchingWallState
     {   
         // We use it to save the position of the entity and prevent him from moving
         private Vector2 _holdPosition;
         
         // Class Constructor
-        public PlayerWallGrabState(PlayerController playerController, StateMachine.StateMachine stateMachine, PlayerData playerData,
-            string animBoolName) : base(playerController, stateMachine, playerData, animBoolName) { }
+        public PlayerWallGrabState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
+            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName) { }
 
         public override void Enter()
         {
@@ -30,11 +30,11 @@ namespace Player.PlayerStates.PlayerTouchingWallState
 
             if (YInput > 0)
             {
-                StateMachine.ChangeState(PlayerController.WallClimbState);
+                PlayerStateMachine.ChangeState(PlayerController.WallClimbState);
             }
             else if (YInput < 0 || !GrabInput)
             {
-                StateMachine.ChangeState(PlayerController.WallSlideState);
+                PlayerStateMachine.ChangeState(PlayerController.WallSlideState);
             }
         }
 

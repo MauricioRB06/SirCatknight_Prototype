@@ -19,96 +19,71 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 915271229440
-    m_Localized: "M. Catknight Project D\xE9velopp\xE9 Pour\nLe Cours De Programmation
-      Orient\xE9e Objet"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 831922020352
-    m_Localized: "\xC9quipe De Travail"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 758270042112
-    m_Localized: "Mauricio Rodriguez\nIng\xE9nieur m\xE9catronique\n\n> Concepteur
-      De Jeux\n> Programmeur Principal\n> Artiste 2D"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 893158858752
-    m_Localized: "Luis Vaca\nIng\xE9nieur \xC9lectronique\n\nArtiste 2D Principal
-      <\nProgrammeur <"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 812762439680
-    m_Localized: "Sergio Sanchez Moreno\nIng\xE9nieur Syst\xE8mes\n\n> Programmeur\n>
-      Artiste 2D"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 715119042560
-    m_Localized: "Mariam Fuentes\nIng\xE9nieur Industriel\n\nProgrammeur <\nArtiste
-      2D <"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 937215827968
-    m_Localized: "L\xE9onel Rodriguez\nIng\xE9nieur Industriel\n\n> Programmeur\n>
-      Artiste 2D"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 784509607936
-    m_Localized: "\xC9quipe De Soutien"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 835646562304
-    m_Localized: "Ivan Alexis\nIng\xE9nieur Agronome\n\n> \xC9crivain"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 7601704837120
-    m_Localized: 'Luisa Pacheco
-
-      Directeur Audiovisuel
-
-
-      Production SFX
-      <'
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 7687868424192
-    m_Localized: "Willian Quintero\n@ShundiZora\nIng\xE9nieur Chimiste\n\n> Compositeur
-      Cusical\n> Traduction Japonaise\n> Traduction Fran\xE7aise"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 7999551348736
-    m_Localized: 'Daniel Marmolejo
-
-      Designer Graphique
-
-
-      Artiste 2D <
-
-      Concepteur
-      D''interface Utilisateur <
-
-      Traduction En Anglais <'
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 8378317971456
-    m_Localized: "Enseignant De La Mati\xE8re"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 8439785496576
-    m_Localized: "David Alberto Herrera\n\nIng\xE9nieur Des Syst\xE8mes"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 8518470639616
-    m_Localized: "Projet R\xE9alis\xE9 Avec Unity Engine\nLangage De Programmation
-      C#"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 8582396026880
-    m_Localized: "Une Mention Sp\xE9ciale Pour Catalina\n( Ziel ) Et Pers\xE9e (
-      Mr. Cookie )\nQui Ont \xC9t\xE9 l'inspiration Pour\nLe Projet : 3"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 9255804116992
-    m_Localized: "Merci Beaucoup D'avoir Jou\xE9 :3"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   references:

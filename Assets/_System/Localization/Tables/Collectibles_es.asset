@@ -17,6 +17,72 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: caf5a71902b0e33409bb25b2da77ef1e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 19657817710043136
+    m_Localized: 'Bloqueado: Debes conseguir las 3 piezas del coleccionable en el
+      nivel Tutorial.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657853177077760
+    m_Localized: 'Bloqueado: Debes conseguir las 3 piezas del coleccionable en el
+      nivel Torre De Azucar'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657855655911424
+    m_Localized: 'Bloqueado: Debes conseguir las 3 piezas del coleccionable en el
+      nivel Valle De Los Samurais'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657857908252672
+    m_Localized: 'Bloqueado: Debes conseguir las 3 piezas del coleccionable en el
+      nivel Laberinto En El Cielo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657860458389504
+    m_Localized: 'Bloqueado: Debes conseguir las 3 piezas del coleccionable en el
+      nivel Minas Corruptas De Valmaril'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657911222050816
+    m_Localized: 'Bloqueado: Debes conseguir las 3 piezas del coleccionable en el
+      nivel Castillo De Meowvil'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658280593432576
+    m_Localized: Coleccionable obtenido en el nivel Turorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658282103382016
+    m_Localized: Coleccionable obtenido en lel nivel Torre De Azucar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658282808025088
+    m_Localized: Coleccionable obtenido en el nivel Valle De Los Samurais
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658283412004864
+    m_Localized: Coleccionable obtenido en el nivel Laberinto En El Cielo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658339611484160
+    m_Localized: Coleccionable obtenido en el nivel Minas Corruptas De Valmaril
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658341058519040
+    m_Localized: Coleccionable obtenido en el nivel Castillo De Meowvil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658575599804416
+    m_Localized: Aventuras Azucaradas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658574060494848
+    m_Localized: El Viaje Comienza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658578921693184
+    m_Localized: Sobre Las Nubes
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

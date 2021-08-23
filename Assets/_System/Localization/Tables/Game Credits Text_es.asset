@@ -21,8 +21,8 @@ MonoBehaviour:
   - m_Id: 915271229440
     m_Localized: 'Proyecto Sr. Catknight Desarrollado Para
 
-      La Materia De Programacion
-      Orientada a Objetos'
+      La Asignatura De
+      Programacion Orientada a Objetos'
     m_Metadata:
       m_Items: []
   - m_Id: 831922020352
@@ -31,7 +31,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 758270042112
     m_Localized: "Mauricio Rodriguez\nIng. Mecatronico\n\n> Dise\xF1ador De Juego\n>
-      Programador Principal\n> Artista 2D"
+      Dise\xF1ador De Niveles\n> Programador Principal\n> Artista 2D"
     m_Metadata:
       m_Items: []
   - m_Id: 893158858752
@@ -47,8 +47,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 812762439680
-    m_Localized: "Sergio S\xE1nchez Moreno\nIng. De Sistemas\n\n> Programador\n>
-      Artista 2D"
+    m_Localized: 'Sergio Sanchez Moreno
+
+      Ing. De Sistemas
+
+
+      > Programador
+
+      >
+      Artista 2D'
     m_Metadata:
       m_Items: []
   - m_Id: 715119042560
@@ -116,7 +123,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 7999551348736
     m_Localized: "Daniel Marmolejo\nDise\xF1ador Grafico\n\nArtista 2D <\nDise\xF1ador
-      de UI <\nTraducci\xF3n Al Ingles <"
+      de UI/UX <\nTraducci\xF3n Al Ingles <"
     m_Metadata:
       m_Items: []
   - m_Id: 8378317971456
@@ -140,12 +147,13 @@ MonoBehaviour:
   - m_Id: 8582396026880
     m_Localized: 'Una Mencion Especial Para Catalina
 
-      ( Ziel ) y Perseo ( Mr.
-      Cookie )
+      ( Ziel ) y Perseo ( Perseo
+      )
 
-      Quienes Fueron La Inspiracion Para
+      Quienes Fueron La Inspiracion Para El Proyecto
 
-      El Proyecto :3'
+      El Proyecto
+      :3'
     m_Metadata:
       m_Items: []
   - m_Id: 9255804116992

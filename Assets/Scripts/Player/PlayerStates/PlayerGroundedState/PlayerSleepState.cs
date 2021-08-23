@@ -2,11 +2,11 @@ using Player.Data;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
-    public class PlayerSleepState : PlayerGroundedState
+    public class PlayerSleepState : BaseStates.PlayerGroundedState
     {
         // Class Constructor
-        public PlayerSleepState(PlayerController playerController, StateMachine.StateMachine stateMachine, 
-            PlayerData playerData, string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
+        public PlayerSleepState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, 
+            DataPlayerController dataPlayerController, string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName)
         {
         }
         
@@ -18,7 +18,7 @@ namespace Player.PlayerStates.PlayerGroundedState
             
             if (XInput != 0)
             {
-                StateMachine.ChangeState(PlayerController.RunState);
+                PlayerStateMachine.ChangeState(PlayerController.RunState);
             }
         }
     }

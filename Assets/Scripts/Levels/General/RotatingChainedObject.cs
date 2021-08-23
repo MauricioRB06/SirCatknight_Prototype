@@ -17,6 +17,7 @@
 //
 //  C# Properties: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/properties
 
+using Interfaces;
 using UnityEngine;
 
 namespace Levels.General
@@ -100,13 +101,15 @@ namespace Levels.General
         {
             if (!collision.gameObject.CompareTag("Player")) return;
 
-            collision.transform.GetComponent<Player.PlayerController>().Damage(damageToGive);
+            collision.transform.GetComponent<IDamageableObject>().TakeDamage(damageToGive);
         }
 
         // Changes the direction of rotation of the object.
         public void ChangeRotationDirection() => rotationDirection = !rotationDirection;
 
+        
         // Allows you to change the state of the rotating object, to stop or resume rotation.
+        [ContextMenu("Detener objeto encadenado")]
         public void ChangeRotationState()
         {
             if (isItRotating)

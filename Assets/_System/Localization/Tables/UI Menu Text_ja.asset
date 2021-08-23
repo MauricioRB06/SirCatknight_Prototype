@@ -19,75 +19,11 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 113613905920
-    m_Localized: "\u7D99\u7D9A\u3059\u308B"
+    m_Localized: 
     m_Metadata:
       m_Items: []
-  - m_Id: 4487459282944
-    m_Localized: "\u97F3\u697D"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4544124329984
-    m_Localized: "\u97F3\u97FF\u52B9\u679C"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4929928994816
-    m_Localized: "\u8A2D\u5B9A"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5081863462912
-    m_Localized: "\u8A00\u8A9E"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5440627449856
-    m_Localized: "\u30E1\u30CB\u30E5\u30FC\u306B\u623B\u308B"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5548504948736
-    m_Localized: "\u65B0\u3057\u3044\u30B2\u30FC\u30E0"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5637059289088
-    m_Localized: "\u30AF\u30EC\u30B8\u30C3\u30C8"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7444035994820608
-    m_Localized: "\u51FA\u53E3"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450411840217088
-    m_Localized: "\u79FB\u52D5"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450443242971136
-    m_Localized: "\u30B8\u30E3\u30F3\u30D7"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450445461757952
-    m_Localized: "\u3064\u304B\u3080"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450621555417088
-    m_Localized: "\u30C0\u30C3\u30B7\u30E5"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450679436812288
-    m_Localized: "\u30C0\u30C3\u30B7\u30E5\u65B9\u5411"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450728522752000
-    m_Localized: "\u30C0\u30C3\u30B8"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450782612496384
-    m_Localized: "\u4E00\u6B21\u653B\u6483"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7450848580509696
-    m_Localized: "\u4E8C\u6B21\u653B\u6483"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7452562041774080
-    m_Localized: "\u5BFE\u8A71\u3057\u307E\u3059"
+  - m_Id: 26010793441665024
+    m_Localized: 
     m_Metadata:
       m_Items: []
   references:
