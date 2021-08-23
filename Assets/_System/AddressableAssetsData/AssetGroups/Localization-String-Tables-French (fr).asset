@@ -47,11 +47,6 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-fr
-  - m_GUID: e76ac5f9d3b371d4aaf41da6048e2986
-    m_Address: InGame Pause_fr
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-fr
   - m_GUID: bfed60aa1790662468518b6f1ddfddad
     m_Address: InGame GameOver_fr
     m_ReadOnly: 1
