@@ -17,6 +17,42 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: ee8e59d37a137e84a99fc1415d74ee3e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 20663656685568
+    m_Localized: PAUSA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20666139713536
+    m_Localized: Regresar al juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20669629374464
+    m_Localized: Configuraciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671944630272
+    m_Localized: Regresar al menu principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20760935178240
+    m_Localized: Salir al escritorio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20861594279936
+    m_Localized: "\xBFEst\xE1s seguro de que quieres salir?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20863506882560
+    m_Localized: "\xA1 Todo tu progreso no guardado se perdera !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20896994205696
+    m_Localized: Si :(
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20898369937408
+    m_Localized: No :)
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

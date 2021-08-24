@@ -52,6 +52,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ja
+  - m_GUID: ad600b0bb5c92474b8ebd22c6ea2dff7
+    m_Address: InGame Pause_ja
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ja
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 099765490df7a8b42afbca8e793739cc, type: 2}
   m_SchemaSet:

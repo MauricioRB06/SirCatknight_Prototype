@@ -73,7 +73,7 @@ namespace Enemies
         
         // ID parameters for the animator.
         private static readonly int YVelocity = Animator.StringToHash("yVelocity");
-
+        
         // 
         public virtual void Awake()
         {

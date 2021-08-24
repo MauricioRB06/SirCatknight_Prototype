@@ -17,6 +17,42 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: ee8e59d37a137e84a99fc1415d74ee3e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 20663656685568
+    m_Localized: PAUSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20666139713536
+    m_Localized: Resume Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20669629374464
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671944630272
+    m_Localized: Return To Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20760935178240
+    m_Localized: Exit To Desktop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20861594279936
+    m_Localized: Are you sure you want to leave?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20863506882560
+    m_Localized: All your unsaved progress will be lost !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20896994205696
+    m_Localized: Yes :(
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20898369937408
+    m_Localized: No :)
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

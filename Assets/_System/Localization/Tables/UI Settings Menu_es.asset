@@ -146,10 +146,6 @@ MonoBehaviour:
     m_Localized: SELECCIONA EL IDIOMA DEL JUEGO
     m_Metadata:
       m_Items: []
-  - m_Id: 22590683521024
-    m_Localized: INGLES
-    m_Metadata:
-      m_Items: []
   - m_Id: 22591350415360
     m_Localized: "ESPA\xD1OL"
     m_Metadata:
@@ -160,6 +156,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 22686208794624
     m_Localized: JAPONES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58929810415616
+    m_Localized: CONFIGURACIONES
     m_Metadata:
       m_Items: []
   references:

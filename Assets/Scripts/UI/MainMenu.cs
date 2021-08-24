@@ -90,17 +90,20 @@ namespace UI
         {
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0] ;
         }
-
+        
+        // 
         private void LanguageSpanish()
         {
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
         }
         
+        // 
         private void LanguageFrench()
         {
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[2];
         }
         
+        // 
         private void LanguageJapanese()
         {
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[3];

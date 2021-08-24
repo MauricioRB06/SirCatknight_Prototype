@@ -64,27 +64,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19658574060494848
-    m_Key: Collectable 0 Name
+    m_Key: Collectable 0 Tittle
     m_Metadata:
       m_Items: []
   - m_Id: 19658575599804416
-    m_Key: Collectable 1 Name
+    m_Key: Collectable 1 Tittle
     m_Metadata:
       m_Items: []
   - m_Id: 19658577139113984
-    m_Key: Collectable 2 Name
+    m_Key: Collectable 2 Tittle
     m_Metadata:
       m_Items: []
   - m_Id: 19658578921693184
-    m_Key: Collectable 3 Name
+    m_Key: Collectable 3 Tittle
     m_Metadata:
       m_Items: []
   - m_Id: 19658580771381248
-    m_Key: Collectable 4 Name
+    m_Key: Collectable 4 Tittle
     m_Metadata:
       m_Items: []
   - m_Id: 19658583489290240
-    m_Key: Collectable 5 Name
+    m_Key: Collectable 5 Tittle
     m_Metadata:
       m_Items: []
   - m_Id: 19658715320459264
@@ -109,6 +109,54 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 19658722870206464
     m_Key: Collectable 5 Story
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19693871724929024
+    m_Key: Menu Collectables Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19700774882418688
+    m_Key: Collectable 0 OST
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19700777164120064
+    m_Key: Collectable 1 OST A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19700924333858816
+    m_Key: Collectable 1 OST B
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19701090759647232
+    m_Key: Collectable 2 OST A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19701102373675008
+    m_Key: Collectable 2 OST B
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19701113480192000
+    m_Key: Collectable 3 OST A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19701129414352896
+    m_Key: Collectable 3 OST B
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19701140285988864
+    m_Key: Collectable 4 OST A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19701150251655168
+    m_Key: Collectable 4 OST B
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19701184917577728
+    m_Key: Collectable 5 OST A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19701203200548864
+    m_Key: Collectable 5 OST B
     m_Metadata:
       m_Items: []
   m_Metadata:
