@@ -25,7 +25,7 @@ namespace Levels.General
     [RequireComponent(typeof(Animator))]
     [RequireComponent(typeof(CircleCollider2D))]
     
-    public class Projectile : MonoBehaviour
+    public class LauncherProjectile : MonoBehaviour
     {
         [Header("SFX Settings")] [Space(5)]
         [Tooltip("Reproduces when the projectile explodes")]
@@ -44,6 +44,8 @@ namespace Levels.General
         
         // ID Parameters for animator.
         private static readonly int Crash = Animator.StringToHash("Crash");
+        private static readonly int LowKnockback = Animator.StringToHash("LowKnockback");
+        private static readonly int HighKnockback = Animator.StringToHash("HighKnockback");
         
         // Sets the initial configurations for the components and the behavior of the projectile.
         private void Awake()
@@ -96,9 +98,15 @@ namespace Levels.General
 
             if (collision.gameObject.CompareTag("Player"))
             {
-                collision.transform.GetComponentInChildren<IDamageableObject>().TakeDamage(10);
-                //collision.transform.GetComponentInChildren<IKnockbackableObject>().
-                    //KnockBack(Vector2.right, 10.0F, -1);
+                collision.transform.GetComponent<Player.PlayerController>().Core.Combat.TakeDamage(10);
+                
+                collision.transform.GetComponent<Player.PlayerController>()
+                    .PlayerAnimator.SetTrigger(LowKnockback);
+                
+                // NEED FIX
+                collision.transform.GetComponent<Player.PlayerController>().Core.Combat.KnockBack(
+                    new Vector2(1,1),10,
+                    -collision.transform.GetComponent<Player.PlayerController>().Core.Movement.FacingDirection);
             }
         }
         

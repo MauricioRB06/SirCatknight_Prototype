@@ -43,7 +43,9 @@ namespace Levels.General
         
         [Header("Damage Settings")] [Space(5)] 
         [Tooltip("If it is not a platform, it may cause damage to the player")]
-        [SerializeField] private float damageToGive = 5;
+        [Range(1.0F, 30.0f)][SerializeField] private float damageToGive = 5;
+        [Tooltip("If the damage applied is greater than this strength, a HighKnockback will be applied to the player")]
+        [Range(1.0F, 10.0f)][SerializeField] private float kockbackForce = 5;
         [Space(15)]
         
         [Header("SFX Settings")] [Space(5)]
@@ -55,15 +57,16 @@ namespace Levels.General
         
         // Navigates through the movementPoints to indicate to the object to which it should move.
         private int _movementPointIterator;
+        private static readonly int LowKnockback = Animator.StringToHash("LowKnockback");
+        private static readonly int HighKnockback = Animator.StringToHash("HighKnockback");
         
         // Sets the initial settings of the object.
         private void Awake()
         {
             if (isMovableDamageObject && movementPoints.Length < 2)
             {
-                Debug.LogError("<color=#D22323><b>" +
-                               "The object has been configured as movable, please add at least 2 points in the" +
-                               " movement route.</color></b>");
+                Debug.LogError($"<color=#D22323><b>The object: {gameObject.name} has been configured" +
+                               " as movable, please add at least 2 points in the movement route.</b></color>");
             }
             if (sfxDamageObject != null)
             {
@@ -111,6 +114,23 @@ namespace Levels.General
             if (!collision.transform.CompareTag("Player")) return;
             
             collision.transform.GetComponent<Player.PlayerController>().Core.Combat.TakeDamage(damageToGive);
+
+            if (damageToGive <= kockbackForce)
+            {
+                collision.transform.GetComponent<Player.PlayerController>()
+                    .PlayerAnimator.SetTrigger(LowKnockback);
+                collision.transform.GetComponent<Player.PlayerController>().Core.Combat.KnockBack(
+                    new Vector2(1,1),10,
+                    -collision.transform.GetComponent<Player.PlayerController>().Core.Movement.FacingDirection);
+            }
+            else
+            {
+                collision.transform.GetComponent<Player.PlayerController>()
+                    .PlayerAnimator.SetTrigger(HighKnockback);
+                collision.transform.GetComponent<Player.PlayerController>().Core.Combat.KnockBack(
+                    new Vector2(1,2),15,
+                    -collision.transform.GetComponent<Player.PlayerController>().Core.Movement.FacingDirection);
+            }
         }
         
         // Sets the object as static.

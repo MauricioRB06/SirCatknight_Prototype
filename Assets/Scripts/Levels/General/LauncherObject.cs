@@ -41,7 +41,7 @@ namespace Levels.General
         [Tooltip("Projectile launching point")]
         public Transform projectileLaunchPoint;
         [Tooltip("Projectile to be fired (ProjectilePrefab)")]
-        public GameObject projectile;
+        public GameObject[] projectile;
         [Tooltip("Projectile travel limit (It must be in a straight line with the launching point)")]
         public Transform projectileLimit;
         [Space(15)]
@@ -98,7 +98,7 @@ namespace Levels.General
                 Debug.LogError("<color=#D22323><b>" +
                                "The projectile launching point is empty, please add one</b></color>");
             }
-            else if (projectile == null)
+            else if (projectile.Length == 0)
             {
                 Debug.LogError("<color=#D22323><b>The projectile field is empty, please add one</b></color>");
             }
@@ -155,7 +155,7 @@ namespace Levels.General
         {
             Instantiate(sfxProjectileShot, sfxLaunchPoint.position, Quaternion.identity, sfxLaunchPoint);
             StartCoroutine(DestroySound());
-            Instantiate(projectile, projectileLaunchPoint.position, Quaternion.identity, transform);
+            Instantiate(projectile[Random.Range(0, projectile.Length - 1)], projectileLaunchPoint.position, Quaternion.identity, transform);
         }
         
         // Activated from the animator, it indicates to the launcher that he has fired and must wait.

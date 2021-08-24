@@ -20,7 +20,7 @@ namespace Core.CoreComponents
         }
         
         // 
-        public void TakeDamage(float amount)
+        public void TakeDamage(float damageAmount)
         {
             Debug.Log(Core.transform.parent.name + " Damaged!");
         }

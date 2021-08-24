@@ -35,8 +35,8 @@ namespace Levels.General
         {
             if (!collision.gameObject.CompareTag("Player")) return;
             
-            collision.transform.GetComponent<IDamageableObject>()
-                .TakeDamage(GetComponentInParent<ExplosiveObject>().DamageToGive);
+            collision.transform.GetComponent<Player.PlayerController>()
+                .Core.Combat.TakeDamage(GetComponentInParent<ExplosiveObject>().DamageToGive);
         }
     }
 }

@@ -41,6 +41,8 @@ namespace Levels.General
         [Header("Damage Settings")] [Space(5)]
         [Tooltip("Sets the amount of damage it causes when it collides")]
         [Range(5f, 50f)][SerializeField] private float damageToGive = 10f;
+        [Tooltip("If the damage applied is greater than this strength, a HighKnockback will be applied to the player")]
+        [Range(1.0F, 10.0f)][SerializeField] private float kockbackForce = 5;
         [Space(15)]
         
         [Header("VFX Settings")] [Space(5)]
@@ -55,6 +57,9 @@ namespace Levels.General
         [SerializeField] private Transform sfxAxis;
         [Tooltip("Insert an AudioPrefab here, will be used to give the pendulum swing sound effect")]
         [SerializeField] private GameObject sfxPendulum;
+        
+        private static readonly int LowKnockback = Animator.StringToHash("LowKnockback");
+        private static readonly int HighKnockback = Animator.StringToHash("HighKnockback");
         
         // Check that the components necessary for the operation are not empty and instantiate the sound effect.
         private void Awake()
@@ -108,7 +113,24 @@ namespace Levels.General
         {
             if (!collision.gameObject.CompareTag("Player")) return;
             
-            collision.transform.GetComponent<IDamageableObject>().TakeDamage(damageToGive);
+            collision.transform.GetComponent<Player.PlayerController>().Core.Combat.TakeDamage(damageToGive);
+            
+            if (damageToGive <= kockbackForce)
+            {
+                collision.transform.GetComponent<Player.PlayerController>()
+                    .PlayerAnimator.SetTrigger(LowKnockback);
+                collision.transform.GetComponent<Player.PlayerController>().Core.Combat.KnockBack(
+                    new Vector2(1,1),10,
+                    -collision.transform.GetComponent<Player.PlayerController>().Core.Movement.FacingDirection);
+            }
+            else
+            {
+                collision.transform.GetComponent<Player.PlayerController>()
+                    .PlayerAnimator.SetTrigger(HighKnockback);
+                collision.transform.GetComponent<Player.PlayerController>().Core.Combat.KnockBack(
+                    new Vector2(1,2),15,
+                    -collision.transform.GetComponent<Player.PlayerController>().Core.Movement.FacingDirection);
+            }
         }
         
         // Allows you to change the pendulum state, to stop or resume its oscillation.

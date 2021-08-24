@@ -222,6 +222,7 @@ MonoBehaviour:
   - {fileID: 2799096222356705766}
   - {fileID: 2799096223792141312}
   damageToGive: 5
+  kockbackForce: 5
   sfxDamageObject: {fileID: 1578518288508485794, guid: d85c1e94065aa4a458a351bc5cba7086,
     type: 3}
 --- !u!1 &2799096223227399279

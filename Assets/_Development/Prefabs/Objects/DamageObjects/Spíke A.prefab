@@ -153,5 +153,6 @@ MonoBehaviour:
   movementWaitingTime: 1
   movementSpeed: 1
   movementPoints: []
-  damageToGive: 10
+  damageToGive: 5
+  kockbackForce: 5
   sfxDamageObject: {fileID: 0}

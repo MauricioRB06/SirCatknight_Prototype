@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace _Development.Scripts.Mauricio
+namespace Levels.General
 {
     public class SpecialCamerasSystem : MonoBehaviour
     {

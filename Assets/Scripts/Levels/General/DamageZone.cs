@@ -97,7 +97,8 @@ namespace Levels.General
             if (!enableDamageZone) return;
             if(!collision.gameObject.CompareTag("Player")) return;
             
-            collision.transform.GetComponent<IDamageableObject>().TakeDamage(damagePerSecond * Time.deltaTime);
+            collision.transform.GetComponent<Player.PlayerController>()
+                .Core.Combat.TakeDamage(damagePerSecond * Time.deltaTime);
         }
         
         // Allows you to change the status of the zone, to enable or disable it.

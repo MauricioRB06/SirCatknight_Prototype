@@ -271,8 +271,8 @@ MonoBehaviour:
   launcherIsEnable: 1
   launcherRotationAxis: {fileID: 8858064816729738814}
   projectileLaunchPoint: {fileID: 8858064816235735996}
-  projectile: {fileID: 3286340749110514975, guid: 09e72d9237b393c459bc600fb5dec307,
-    type: 3}
+  projectile:
+  - {fileID: 3286340749110514975, guid: 09e72d9237b393c459bc600fb5dec307, type: 3}
   projectileLimit: {fileID: 8858064817182384915}
   launchAttackTime: 3
   projectileSpeed: 2
