@@ -14,7 +14,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TableCollectionName: InGame Pause
   m_TableCollectionNameGuidString: ee8e59d37a137e84a99fc1415d74ee3e
-  m_Entries: []
+  m_Entries:
+  - m_Id: 20663656685568
+    m_Key: Menu Pause Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20666139713536
+    m_Key: Button Resume Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20669629374464
+    m_Key: Button Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671944630272
+    m_Key: Button Return To Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20760935178240
+    m_Key: Button Exit To Desktop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20861594279936
+    m_Key: Option Text Are you sure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20863506882560
+    m_Key: Option Text your progress will be lost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20896994205696
+    m_Key: Button Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20898369937408
+    m_Key: Button No
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

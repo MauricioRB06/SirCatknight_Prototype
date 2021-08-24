@@ -84,5 +84,21 @@ MonoBehaviour:
     m_Localized: Sobre Las Nubes
     m_Metadata:
       m_Items: []
+  - m_Id: 19693871724929024
+    m_Localized: COLECCIONABLES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658715320459264
+    m_Localized: "El \xEDmpetu explorador de Perseo es alimentado por el deseo de
+      encontrar a Ziel. El camino est\xE1 lleno de sorpresas, sus enemigos resultaron
+      ser esas sabandijas que recorr\xEDan con melosos roces las pantorrillas de
+      Ziel. Ellos se la llevaron. Perseo tendr\xE1 que enfrentar a esos engre\xEDdos
+      gatos que nunca entendieron el cari\xF1o que se ten\xEDan. Pero antes de siquiera
+      darse cuenta y perdido en la imagen de su due\xF1a, lleg\xF3 a los muros de
+      un extra\xF1o castillo, \xBFSer\xE1 aqu\xED donde est\xE1 pasando la condena
+      mi amada?, pens\xF3. \xA1Es hora de encontrarla!, dijo mientras empujaba la
+      gran puerta de chocolate."
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

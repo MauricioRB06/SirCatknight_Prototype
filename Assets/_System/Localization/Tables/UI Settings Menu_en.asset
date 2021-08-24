@@ -146,10 +146,6 @@ MonoBehaviour:
     m_Localized: SELECT GAME LANGUAGE
     m_Metadata:
       m_Items: []
-  - m_Id: 22590683521024
-    m_Localized: ENGLISH
-    m_Metadata:
-      m_Items: []
   - m_Id: 22591350415360
     m_Localized: SPANISH
     m_Metadata:
@@ -160,6 +156,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 22686208794624
     m_Localized: JAPANESE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58929810415616
+    m_Localized: SETTINGS
     m_Metadata:
       m_Items: []
   references:

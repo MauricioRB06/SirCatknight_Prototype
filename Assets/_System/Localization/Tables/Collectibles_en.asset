@@ -84,5 +84,9 @@ MonoBehaviour:
     m_Localized: Above The Clouds
     m_Metadata:
       m_Items: []
+  - m_Id: 19693871724929024
+    m_Localized: COLLECTABLES
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

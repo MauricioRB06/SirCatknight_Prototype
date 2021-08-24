@@ -143,10 +143,6 @@ MonoBehaviour:
     m_Key: Menu Language Text
     m_Metadata:
       m_Items: []
-  - m_Id: 22590683521024
-    m_Key: Option English
-    m_Metadata:
-      m_Items: []
   - m_Id: 22591350415360
     m_Key: Option Spanish
     m_Metadata:
@@ -157,6 +153,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 22686208794624
     m_Key: Option Japanese
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58929810415616
+    m_Key: Menu Settings Name
     m_Metadata:
       m_Items: []
   m_Metadata:

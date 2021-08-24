@@ -6,8 +6,11 @@ namespace Player.PlayerStates.PlayerGroundedState
     public class PlayerRunState : BaseStates.PlayerGroundedState
     {
         // Class Constructor
-        public PlayerRunState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
-            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName) { }
+        public PlayerRunState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine,
+            DataPlayerController dataPlayerController, string animBoolName) :
+            base(playerController, playerStateMachine, dataPlayerController, animBoolName)
+        {
+        }
 
         public override void LogicUpdate()
         {

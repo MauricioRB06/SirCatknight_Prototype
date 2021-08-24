@@ -135,7 +135,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Continue
+    path: Text Continue
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves:
@@ -155,7 +155,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3935651977
+      path: 3232990058
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -207,7 +207,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Continue
+    path: Text Continue
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []
@@ -467,17 +467,17 @@ AnimationClip:
     - time: 0
       value: {fileID: -2967536910876002452, guid: 8ff95658f8bfc4648882cbbcbc3c23d4,
         type: 3}
-    - time: 0.16666667
+    - time: 0.083333336
       value: {fileID: -5663339238287548569, guid: 8ff95658f8bfc4648882cbbcbc3c23d4,
         type: 3}
-    - time: 0.33333334
+    - time: 0.16666667
       value: {fileID: -2967536910876002452, guid: 8ff95658f8bfc4648882cbbcbc3c23d4,
         type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
     script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_SampleRate: 30
+  m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -500,7 +500,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.36666667
+    m_StopTime: 0.18333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -592,7 +592,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Continue
+    path: Text Continue
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves:
@@ -612,7 +612,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3935651977
+      path: 3232990058
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -664,7 +664,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Continue
+    path: Text Continue
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []
