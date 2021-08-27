@@ -30,6 +30,8 @@ using Player.PlayerStates.PlayerAbilityState;
 using Player.PlayerStates.PlayerGroundedState;
 using Player.PlayerStates.PlayerTouchingWallState;
 using StateMachine;
+using UnityEditor;
+using UnityEditor.Animations;
 using UnityEngine;
 
 namespace Player
@@ -43,6 +45,9 @@ namespace Player
         
         // To stored the state machine for the player.
         private PlayerStateMachine PlayerStateMachine { get; set; }
+
+        public AnimatorController animatorA;
+        public AnimatorController animatorB;
         
         // We use them to store player states
         public PlayerIdleState IdleState { get; private set; }
@@ -213,5 +218,19 @@ namespace Player
         
         // We use it to trigger events at the end of an animation ( We call it inside the Animator component )
         private void AnimationFinishTrigger() => PlayerStateMachine.CurrentState.AnimationFinishTrigger();
+        
+        [ContextMenu("ChangeAnimator")]
+        public void ChangeAnimator()
+        {
+            if (PlayerAnimator.runtimeAnimatorController == animatorA)
+            {
+                PlayerAnimator.runtimeAnimatorController = animatorB;
+            }
+            else
+            {
+                PlayerAnimator.runtimeAnimatorController = animatorA;
+            }
+        }
+        
     }
 }

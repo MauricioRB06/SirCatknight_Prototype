@@ -62,14 +62,39 @@
       "dependencies": {}
     },
     "com.unity.2d.tilemap.extras": {
+<<<<<<< Updated upstream
       "version": "2.0.0",
+||||||| constructed merge base
+      "version": "file:com.unity.2d.tilemap.extras",
+=======
+      "version": "https://github.com/Unity-Technologies/2d-extras.git#master",
+>>>>>>> Stashed changes
       "depth": 0,
+<<<<<<< Updated upstream
       "source": "registry",
+||||||| constructed merge base
+      "source": "embedded",
+=======
+      "source": "git",
+>>>>>>> Stashed changes
       "dependencies": {
         "com.unity.modules.tilemap": "1.0.0",
+<<<<<<< Updated upstream
         "com.unity.2d.tilemap": "1.0.0"
       },
       "url": "https://packages.unity.com"
+||||||| constructed merge base
+        "com.unity.2d.tilemap": "1.0.0",
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      }
+=======
+        "com.unity.2d.tilemap": "1.0.0",
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "hash": "c8cf55faeeadf1bd063bcadee238c9e3a3b0fb75"
+>>>>>>> Stashed changes
     },
     "com.unity.addressables": {
       "version": "1.18.2",
@@ -210,6 +235,16 @@
       "dependencies": {
         "com.unity.ugui": "1.0.0",
         "com.unity.modules.physics": "1.0.0"
+      }
+    },
+    "com.unity.render-pipelines.universal": {
+      "version": "11.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.mathematics": "1.1.0",
+        "com.unity.render-pipelines.core": "11.0.0",
+        "com.unity.shadergraph": "11.0.0"
       }
     },
     "com.unity.scriptablebuildpipeline": {

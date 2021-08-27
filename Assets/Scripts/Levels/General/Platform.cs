@@ -125,6 +125,7 @@ namespace Levels.General
             isMovablePlatform = false;
             _platformAnimator.SetBool(Falling, false);
             _platformAnimator.SetBool(Fall, true);
+
             _vibrate = false;
             _platformRigidBody2D.isKinematic = false;
             
@@ -169,7 +170,6 @@ namespace Levels.General
                                                RigidbodyConstraints2D.FreezeRotation;
             
             _platformTriggerCollider.isTrigger = true;
-            _platformTriggerCollider.offset = new Vector2(0f, 0.2f);
             _platformCollisionCollider.isTrigger = false;
             
             _platformSpriteColor = _platformSpriteRenderer.material.color;
@@ -261,12 +261,14 @@ namespace Levels.General
         // If an entity collides on the platform, it matches it to move the entity with it.
         private void OnCollisionEnter2D(Collision2D collision)
         {
+            if (!collision.transform.CompareTag("Player")) return;
             collision.transform.SetParent(transform);
         }
         
         // If an entity stops colliding with the platform, it disengages from the entity.
         private void OnCollisionExit2D(Collision2D collision)
         {
+            if (!collision.transform.CompareTag("Player")) return;
             collision.transform.SetParent(null);
         }
         

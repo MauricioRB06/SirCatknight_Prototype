@@ -9,6 +9,7 @@ TagManager:
   - Boss Music
   - LevelSpawn
   - Platfom
+  - Ground
   layers:
   - Default
   - TransparentFX

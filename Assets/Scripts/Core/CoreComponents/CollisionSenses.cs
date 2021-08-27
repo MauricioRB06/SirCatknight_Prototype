@@ -33,6 +33,7 @@ namespace Core.CoreComponents
         [SerializeField] private float ceilingCheckRadius = 0.2f;
         [SerializeField] private float wallCheckDistance = 0.5f;
         [SerializeField] private LayerMask layerGroundWalls;
+        [SerializeField] private LayerMask layerBlockingVolume;
         
         // 
         public Transform GroundCheck
@@ -72,7 +73,7 @@ namespace Core.CoreComponents
         
         // We use it to detect if the object is touching a ceiling
         public bool Ceiling => Physics2D.OverlapCircle(CeilingCheck.position, ceilingCheckRadius, 
-            layerGroundWalls);
+            layerGroundWalls | layerBlockingVolume);
 
         // We use it to detect if the object is touching the ground
         public bool Ground => Physics2D.OverlapCircle(GroundCheck.position, groundCheckRadius,

@@ -1939,7 +1939,7 @@ Animator:
   m_GameObject: {fileID: 225787429}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3de7de2fbb139ee4b91db31f0336b852, type: 2}
+  m_Controller: {fileID: 9100000, guid: e6e1697301ddfb04cab9b66e1f55f7cc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2015,6 +2015,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataPlayerController: {fileID: 11400000, guid: 97ee086e618d50c4dbefcf4cd7135726,
     type: 2}
+  animatorA: {fileID: 9100000, guid: e6e1697301ddfb04cab9b66e1f55f7cc, type: 2}
+  animatorB: {fileID: 9100000, guid: 3de7de2fbb139ee4b91db31f0336b852, type: 2}
 --- !u!114 &225787438
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -133,7 +133,6 @@ namespace Levels.General
 
         
         // Allows you to change the state of the rotating object, to stop or resume rotation.
-        [ContextMenu("Detener objeto encadenado")]
         public void ChangeRotationState()
         {
             if (isItRotating)
