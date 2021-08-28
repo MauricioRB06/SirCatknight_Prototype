@@ -56,6 +56,9 @@ TagManager:
   - name: Ground and Walls
     uniqueID: 2287366829
     locked: 0
+  - name: Damageable Objects
+    uniqueID: 2035777425
+    locked: 0
   - name: Enemys
     uniqueID: 1667960627
     locked: 0

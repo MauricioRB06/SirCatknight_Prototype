@@ -35,19 +35,19 @@ namespace Levels.General
                 
                 if (damageToGive <= kockbackForce)
                 {
-                    collision.transform.GetComponent<Player.PlayerController>()
+                    collision.transform.GetComponent<PlayerController>()
                         .PlayerAnimator.SetTrigger(LowKnockback);
                     collision.transform.GetComponent<Player.PlayerController>().Core.Combat.KnockBack(
                         new Vector2(1,1),10,
-                        -collision.transform.GetComponent<Player.PlayerController>().Core.Movement.FacingDirection);
+                        -collision.transform.GetComponent<PlayerController>().Core.Movement.FacingDirection);
                 }
                 else
                 {
                     collision.transform.GetComponent<Player.PlayerController>()
                         .PlayerAnimator.SetTrigger(HighKnockback);
-                    collision.transform.GetComponent<Player.PlayerController>().Core.Combat.KnockBack(
+                    collision.transform.GetComponent<PlayerController>().Core.Combat.KnockBack(
                         new Vector2(1,2),15,
-                        -collision.transform.GetComponent<Player.PlayerController>().Core.Movement.FacingDirection);
+                        -collision.transform.GetComponent<PlayerController>().Core.Movement.FacingDirection);
                 }
                 
                 Destroy(gameObject);

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4479331459676672810
+--- !u!1 &1988523359583988948
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4479331459676672807}
-  - component: {fileID: 4479331459676672804}
-  - component: {fileID: 4479331459676672805}
+  - component: {fileID: 1988523359583988953}
+  - component: {fileID: 1988523359583988954}
+  - component: {fileID: 1988523359583988955}
   m_Layer: 0
-  m_Name: FX Explosion Particles
+  m_Name: Particles Level 0 Bomb Exposion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4479331459676672807
+--- !u!4 &1988523359583988953
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4479331459676672810}
+  m_GameObject: {fileID: 1988523359583988948}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 21.45, y: -0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!198 &4479331459676672804
+--- !u!198 &1988523359583988954
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4479331459676672810}
+  m_GameObject: {fileID: 1988523359583988948}
   serializedVersion: 8
   lengthInSec: 0.5
   simulationSpeed: 0.7
@@ -284,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1539,35 +1539,27 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 5986030973748356752, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: -8229547184769128832, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: -5600206312213581617, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: -6791683995040084648, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: 3815954189206336483, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: 414142242131383766, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: -3690502768834906923, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: -2607899094266565235, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: -49130668184793455, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: -4267625059466997343, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: -2330519403281856691, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: -111295651734395277, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: -4796932125324312052, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: 2242682996795912811, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: 4348620978117878488, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: 3430514259879084230, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: 7788287979965792003, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: 2021115022299344576, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: -5876230404456235001, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: -3243584503436245985, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: -7061159883300251746, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: 497560801652076451, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: -222035745519106718, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: -5197271548307897853, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: -3806839202968226997, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: -1022405923287117064, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
     flipU: 0
     flipV: 0
@@ -4826,14 +4818,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!199 &4479331459676672805
+--- !u!199 &1988523359583988955
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4479331459676672810}
+  m_GameObject: {fileID: 1988523359583988948}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0

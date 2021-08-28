@@ -100,7 +100,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -3.25}
   serializedVersion: 2
   m_Radius: 0.5
 --- !u!114 &7904129174029066578
@@ -121,7 +121,7 @@ MonoBehaviour:
   damageToGive: 10
   kockbackForce: 5
   rotationAxis: {fileID: 7904129174578454845}
-  vfxParticles: {fileID: 2954109119583838314, guid: 8fb56da4bb08e774280dcf377bcfa565,
+  vfxParticles: {fileID: 8061272473795051639, guid: f12c6e9f15018f6418c33755e6558eab,
     type: 3}
   sfxAxis: {fileID: 7904129174189539236}
   sfxChainedObject: {fileID: 1073632178937245045, guid: 6eb98c77fc272c04b816a58f40edd739,

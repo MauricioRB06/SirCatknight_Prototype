@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4479331459676672810
+--- !u!1 &8061272473795051639
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4479331459676672807}
-  - component: {fileID: 4479331459676672804}
-  - component: {fileID: 4479331459676672805}
+  - component: {fileID: 8061272473795051624}
+  - component: {fileID: 8061272473795051625}
+  - component: {fileID: 8061272473795051638}
   m_Layer: 0
-  m_Name: FX Explosion Particles
+  m_Name: Particles Level 0 Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4479331459676672807
+--- !u!4 &8061272473795051624
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4479331459676672810}
+  m_GameObject: {fileID: 8061272473795051639}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,22 +32,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!198 &4479331459676672804
+--- !u!198 &8061272473795051625
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4479331459676672810}
+  m_GameObject: {fileID: 8061272473795051639}
   serializedVersion: 8
-  lengthInSec: 0.5
-  simulationSpeed: 0.7
+  lengthInSec: 0.25
+  simulationSpeed: 1
   stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 0
+  looping: 1
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -115,7 +115,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.6
+      scalar: 0.25
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -600,14 +600,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1
+    maxNumParticles: 5
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -660,7 +660,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 19
+    type: 4
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -747,7 +747,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.3
       mode: 0
       spread: 0
       speed:
@@ -977,7 +977,7 @@ ParticleSystem:
         serializedVersion: 2
         minMaxState: 0
         scalar: 1
-        minScalar: 30
+        minScalar: 1
         maxCurve:
           serializedVersion: 2
           m_Curve:
@@ -1539,35 +1539,13 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 5986030973748356752, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: -1254674940511746242, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: -5600206312213581617, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: -3186917868207261130, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: 3815954189206336483, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: -279546096545648153, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
-    - sprite: {fileID: -3690502768834906923, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: -49130668184793455, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: -2330519403281856691, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: -4796932125324312052, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: 4348620978117878488, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: 7788287979965792003, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: -5876230404456235001, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: -7061159883300251746, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: 497560801652076451, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: -222035745519106718, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: -5197271548307897853, guid: 416b2f9318fea1f4495746d68d183451,
-        type: 3}
-    - sprite: {fileID: -3806839202968226997, guid: 416b2f9318fea1f4495746d68d183451,
+    - sprite: {fileID: 2168038187493609901, guid: 0f2fa413aa9c1014cae92915925a1833,
         type: 3}
     flipU: 0
     flipV: 0
@@ -4826,14 +4804,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!199 &4479331459676672805
+--- !u!199 &8061272473795051638
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4479331459676672810}
+  m_GameObject: {fileID: 8061272473795051639}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -4865,8 +4843,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -530293007
-  m_SortingLayer: 6
+  m_SortingLayerID: 135042913
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
