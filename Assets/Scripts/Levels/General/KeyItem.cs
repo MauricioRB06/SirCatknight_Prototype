@@ -47,11 +47,6 @@ namespace Levels.General
         [SerializeField] private KeyType keyType;
         [Space(15)]
         
-        [Header("VFX Settings")] [Space(5)]
-        [Tooltip("Insert an ParticlesPrefab here")]
-        [SerializeField] private GameObject vfxPickupKey;
-        [Space(15)]
-        
         [Header("SFX Settings")] [Space(5)]
         [Tooltip("Insert an AudioPrefab here")]
         [SerializeField] private GameObject sfxPickupKey;
@@ -66,14 +61,7 @@ namespace Levels.General
             _keySpriteRenderer = GetComponent<SpriteRenderer>();
             _keyCollider = GetComponent<PolygonCollider2D>();
             
-            if (vfxPickupKey == null)
-            {
-                Debug.LogError("<color=#D22323><b>" +
-                               $"The vfx of the {keyType.ToString()} cannot be empty, please add one," +
-                               " the key will be deactivated</b></color>");
-                _keyCollider.enabled = false;
-            }
-            else if (sfxPickupKey == null)
+            if (sfxPickupKey == null)
             {
                 Debug.LogError("<color=#D22323><b>" +
                                $"The sfx of the {keyType.ToString()} cannot be empty, please add one," +
@@ -101,7 +89,6 @@ namespace Levels.General
 
             _keySpriteRenderer.enabled = false;
             _keyCollider.enabled = false;
-            Instantiate(vfxPickupKey, keyPosition, Quaternion.identity, keyTransform);
             Instantiate(sfxPickupKey, keyPosition, Quaternion.identity, keyTransform);
             Destroy(gameObject, 0.4f);
         }

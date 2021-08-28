@@ -31,11 +31,6 @@ namespace Levels.General
         [Range(1.0f, 3.0f)][SerializeField] private int shieldAmountToGive = 1;
         [Space(15)]
         
-        [Header("VFX Settings")][Space(5)]
-        [Tooltip("Insert an ParticlesPrefab here ")]
-        [SerializeField] private GameObject vfxItemPickUp;
-        [Space(15)]
-        
         [Header("SFX Settings")][Space(5)]
         [Tooltip("Insert here an AudioPrefab")]
         [SerializeField] private GameObject sfxItemPickUp;
@@ -49,12 +44,6 @@ namespace Levels.General
             _shieldItemCollider = GetComponent<CircleCollider2D>();
             
             if (!_shieldItemCollider.isTrigger) _shieldItemCollider.isTrigger = true;
-            
-            if (vfxItemPickUp == null)
-            {
-                Debug.LogError("<color=#D22323><b>" +
-                               "The particles effect of the shield item is empty, please add one.</b></color>");
-            }
             
             if (sfxItemPickUp == null)
             {
@@ -75,8 +64,7 @@ namespace Levels.General
             _shieldItemCollider.enabled = false;
             
             Instantiate(sfxItemPickUp, shieldItemPosition, Quaternion.identity, shieldItemTransform);
-            Instantiate(vfxItemPickUp, shieldItemPosition, Quaternion.identity);
-            
+
             collision.GetComponent<PlayerHealth>().TakeShield(shieldAmountToGive);
             Destroy(gameObject, 0.5f);
         }

@@ -32,11 +32,6 @@ namespace Levels.General
         [Range(1.0f, 99.0f)][SerializeField] private float healthToGive = 5;
         [Space(15)]
         
-        [Header("VFX Settings")][Space(5)]
-        [Tooltip("Insert an ParticlesPrefab here ")]
-        [SerializeField] private GameObject vfxItemPickUp;
-        [Space(15)]
-        
         [Header("SFX Settings")][Space(5)]
         [Tooltip("Insert an AudioPrefab here ")]
         [SerializeField] private GameObject sfxItemPickUp;
@@ -50,12 +45,6 @@ namespace Levels.General
             _healthItemCollider = GetComponent<CircleCollider2D>();
             
             if (!_healthItemCollider.isTrigger) _healthItemCollider.isTrigger = true;
-            
-            if (vfxItemPickUp == null)
-            {
-                Debug.LogError(
-                    "<color=#D22323><b>The particles effect of the health item is empty, please add one.</b></color>");
-            }
             
             if (sfxItemPickUp == null)
             {
@@ -76,7 +65,6 @@ namespace Levels.General
             _healthItemCollider.enabled = false;
             
             Instantiate(sfxItemPickUp, healthItemPosition, Quaternion.identity, healthItemTransform);
-            Instantiate(vfxItemPickUp, healthItemPosition, Quaternion.identity);
             
             collision.GetComponent<PlayerHealth>().CureHealth(healthToGive);
             Destroy(gameObject, 0.5f);
