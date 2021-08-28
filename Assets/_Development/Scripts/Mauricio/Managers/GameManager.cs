@@ -48,7 +48,7 @@ namespace _Development.Scripts.Mauricio
             }
             else if (newGameState == GameState.GameOver)
             {
-                SceneManager.LoadScene("Main_Menu");
+                SceneManager.LoadScene("MainMenu");
             }
 
             currentGameState = newGameState;

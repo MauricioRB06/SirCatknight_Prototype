@@ -1,15 +1,18 @@
-﻿using Player.Data;
+﻿
+using Player.Data;
+using StateMachine;
 
 namespace Player.PlayerStates.PlayerTouchingWallState
 {
     public class PlayerWallClimbState : BaseStates.PlayerTouchingWallState
     {
         // Class Constructor
-        public PlayerWallClimbState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
-            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName)
+        public PlayerWallClimbState(PlayerController playerController, PlayerStateMachine playerStateMachine,
+            DataPlayerController dataPlayerController, string animationBoolName)
+            : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
         }
-
+        
         public override void LogicUpdate()
         {
             base.LogicUpdate();

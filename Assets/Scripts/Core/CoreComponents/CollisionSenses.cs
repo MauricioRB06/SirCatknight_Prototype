@@ -70,6 +70,7 @@ namespace Core.CoreComponents
         public float GroundCheckRadius => groundCheckRadius;
         public float WallCheckDistance => wallCheckDistance;
         public LayerMask LayerGroundWalls => layerGroundWalls;
+        public LayerMask LayerBlockingVolume => layerBlockingVolume;
         
         // We use it to detect if the object is touching a ceiling
         public bool Ceiling => Physics2D.OverlapCircle(CeilingCheck.position, ceilingCheckRadius, 

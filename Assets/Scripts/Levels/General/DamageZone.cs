@@ -22,7 +22,7 @@ namespace Levels.General
     // Components required for this Script to work.
     [RequireComponent(typeof(PolygonCollider2D))]
     
-    public class DamageZone : MonoBehaviour
+    public class DamageZone : MonoBehaviour, IInteractableObject
     {
         [Header("Damage Settings")] [Space(5)]
         [Tooltip("Sets whether the zone is active or not")]
@@ -39,37 +39,38 @@ namespace Levels.General
         private PolygonCollider2D _damageZoneCollider;
         
         // Coroutine that makes the sprites of the damage zone appear smoothly.
-        private static IEnumerator ChildFadeIn(Renderer childSpriteRenderer, Color childSpriteColor)
+        private static IEnumerator ChildFadeIn(SpriteRenderer childSpriteRenderer, Color childSpriteColor)
         {
             for (var childSpriteAlpha = 0.0f; childSpriteAlpha <= 1.0f; childSpriteAlpha += 0.1f)
             {
                 childSpriteColor.a = childSpriteAlpha;
-                childSpriteRenderer.material.color = childSpriteColor;
+                childSpriteRenderer.color = childSpriteColor;
                 yield return new WaitForSeconds(0.05f);
             }
             
             childSpriteColor.a = 1;
-            childSpriteRenderer.material.color = childSpriteColor;
+            childSpriteRenderer.color = childSpriteColor;
         }
         
         // Coroutine that makes the sprites in the damage area disappear smoothly.
-        private static IEnumerator ChildFadeOut(Renderer childSpriteRenderer, Color childSpriteColor)
+        private static IEnumerator ChildFadeOut(SpriteRenderer childSpriteRenderer, Color childSpriteColor)
         {
             for (var childSpriteAlpha = 1.0f; childSpriteAlpha >= 0.0f; childSpriteAlpha -= 0.1f)
             {
                 childSpriteColor.a = childSpriteAlpha;
-                childSpriteRenderer.material.color = childSpriteColor;
+                childSpriteRenderer.color = childSpriteColor;
                 yield return new WaitForSeconds(0.05f);
             }
             
             childSpriteColor.a = 0;
-            childSpriteRenderer.material.color = childSpriteColor;
+            childSpriteRenderer.color = childSpriteColor;
         }
         
         // Sets the initial settings for the damage zone and verify that no components are missing.
         private void Awake()
         {
             _damageZoneCollider = GetComponent<PolygonCollider2D>();
+            
             if (!_damageZoneCollider.isTrigger) _damageZoneCollider.isTrigger = true;
             
             if (transform.childCount == 0)
@@ -84,11 +85,6 @@ namespace Levels.General
                 Debug.LogError("<color=#D22323><b>" +
                                "The damage zone sound effect is empty, please add one</b></color>");
             }
-            else
-            {
-                var damageZone = transform;
-                Instantiate(sfxDamageZone, damageZone.position, Quaternion.identity, damageZone);
-            }
         }
         
         // As long as the player remains inside, damage is applied per second.
@@ -97,23 +93,22 @@ namespace Levels.General
             if (!enableDamageZone) return;
             if(!collision.gameObject.CompareTag("Player")) return;
             
-            collision.transform.GetComponent<Player.PlayerController>()
+            collision.transform.GetComponent<PlayerController>()
                 .Core.Combat.TakeDamage(damagePerSecond * Time.deltaTime);
         }
         
-        // Allows you to change the status of the zone, to enable or disable it.
-        [ContextMenu("zona fuego")]
-        public void ChangeDamageState()
+        public void OnInteractable()
         {
             if (enableDamageZone)
             {
                 enableDamageZone = false;
                 _damageZoneCollider.enabled = false;
+                sfxDamageZone.SetActive(false);
                 
                 foreach (Transform child in transform)
                 {
                     var childSpriteRenderer = child.GetComponent<SpriteRenderer>();
-                    var childSpriteColor = childSpriteRenderer.material.color;
+                    var childSpriteColor = childSpriteRenderer.color;
                     StartCoroutine(ChildFadeOut(childSpriteRenderer, childSpriteColor));
                 }
             }
@@ -121,11 +116,12 @@ namespace Levels.General
             {
                 enableDamageZone = true;
                 _damageZoneCollider.enabled = true;
+                sfxDamageZone.SetActive(true);
                 
                 foreach (Transform child in transform)
                 {
                     var childSpriteRenderer = child.GetComponent<SpriteRenderer>();
-                    var childSpriteColor = childSpriteRenderer.material.color;
+                    var childSpriteColor = childSpriteRenderer.color;
                     StartCoroutine(ChildFadeIn(childSpriteRenderer, childSpriteColor));
                 }
             }

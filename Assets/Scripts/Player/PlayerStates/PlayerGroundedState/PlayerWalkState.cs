@@ -6,7 +6,7 @@ namespace Player.PlayerStates.PlayerGroundedState
     {
         // Class Constructor
         public PlayerWalkState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
-            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName)
+            string animationBoolName) : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
         }
         
@@ -24,7 +24,7 @@ namespace Player.PlayerStates.PlayerGroundedState
             {
                 PlayerStateMachine.ChangeState(PlayerController.IdleState);
             }
-            else if (YInput == -1)
+            else if (YInput == -1 && controllerCanCrouch)
             {
                 PlayerStateMachine.ChangeState(PlayerController.CrouchMoveState);
             }

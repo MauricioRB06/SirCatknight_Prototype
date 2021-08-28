@@ -20,9 +20,14 @@ namespace Player.PlayerStates.BaseStates
         // We use it to switch between GrabState and ClimbState
         protected int YInput;
         
+        // 
+        protected bool controllerCanWallSlide;
+        protected bool controllerCanLedgeClimb;
+        
         // Class constructor
-        protected PlayerTouchingWallState(PlayerController playerController, PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
-            string animBoolName): base(playerController, playerStateMachine, dataPlayerController, animBoolName)
+        protected PlayerTouchingWallState(PlayerController playerController, PlayerStateMachine playerStateMachine,
+            DataPlayerController dataPlayerController, string animationBoolName)
+            : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
         }
 
@@ -33,6 +38,9 @@ namespace Player.PlayerStates.BaseStates
             _isGrounded = Core.CollisionSenses.Ground;
             _isTouchingWall = Core.CollisionSenses.WallFront;
             _isTouchingLedge = Core.CollisionSenses.LedgeHorizontal;
+            
+            controllerCanWallSlide = PlayerController.InputHandler.ControllerCanWallSlide;
+            controllerCanLedgeClimb = PlayerController.InputHandler.ControllerCanLedgeClimb;
         }
 
         public override void Enter()
@@ -63,7 +71,7 @@ namespace Player.PlayerStates.BaseStates
             {
                 PlayerStateMachine.ChangeState(PlayerController.InAirState);
             }
-            else if(_isTouchingWall && !_isTouchingLedge)
+            else if(_isTouchingWall && !_isTouchingLedge && controllerCanLedgeClimb)
             {
                 PlayerStateMachine.ChangeState(PlayerController.LedgeClimbState);
             }

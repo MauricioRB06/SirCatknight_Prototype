@@ -46,8 +46,8 @@ namespace Player.Input
         
         // We use them to check if the Dodge button is pressed
         public bool DodgeRollInput { get; private set; }
-        public bool DodgeRollInputStop { get; private set; }
-        
+        private float _dodgeRollInputTime;
+
         // We use them to get a reference to the control scheme we are using 
         private PlayerInput _playerInput;
         
@@ -70,6 +70,35 @@ namespace Player.Input
         // We use it to store the amount of attack inputs the player has
         public bool[] AttackInputs { get; private set; }
         
+        // 
+        public bool Interact { get; private set; }
+        
+        // 
+        private bool ControllerCanMove { get; set; }
+        private bool ControllerCanJump { get; set; }
+        private bool ControllerCanAttack { get; set; }
+        private bool ControllerCanDash { get; set; }
+        private bool ControllerCanDodgeRoll { get; set; }
+        private bool ControllerCanGrab { get; set; }
+        public bool ControllerCanCrouch { get; private set; }
+        public bool ControllerCanWallSlide { get; private set; }
+        public bool ControllerCanLedgeClimb { get; private set; }
+        
+        // 
+        private void Awake()
+        {
+            ControllerCanMove = true;
+            ControllerCanCrouch = true;
+            ControllerCanJump = true;
+            ControllerCanAttack = true;
+            ControllerCanDash = true;
+            ControllerCanDodgeRoll = true;
+            ControllerCanGrab = true;
+            ControllerCanWallSlide = true;
+            ControllerCanLedgeClimb = true;
+        }
+        
+        // 
         private void Start()
         {
             var attackInputCounter = Enum.GetValues(typeof(CombatInputs)).Length;
@@ -78,15 +107,19 @@ namespace Player.Input
             _playerInput = GetComponent<PlayerInput>();
             _playerCamera = Camera.main;
         }
-
+        
+        // 
         private void Update()
         {
             CheckJumpInputHoldTime();
             CheckDashInputHoldTime();
         }
-
+        
+        // 
         public void OnMoveInput(InputAction.CallbackContext context)
         {
+            if (!ControllerCanMove) return;
+            
             RawMovementInput = context.ReadValue<Vector2>();
             
             /* We use a minimum tolerance of movement of the controls, to make sure that the player really wants to
@@ -96,9 +129,12 @@ namespace Player.Input
             NormInputX = Mathf.RoundToInt(RawMovementInput.x);
             NormInputY = Mathf.RoundToInt(RawMovementInput.y);
         }
-
+        
+        // 
         public void OnJumpInput(InputAction.CallbackContext context)
         {
+            if (!ControllerCanJump) return;
+            
             if (context.started)
             {
                 JumpInput = true;
@@ -112,15 +148,21 @@ namespace Player.Input
             }
         }
         
+        // 
         public void OnGrabInput(InputAction.CallbackContext context)
         {
+            if (!ControllerCanGrab) return;
+            
             if (context.started) GrabInput = true;
 
             if (context.canceled) GrabInput = false;
         }
-
+        
+        // 
         public void OnDashInput(InputAction.CallbackContext context)
         {
+            if (!ControllerCanDash) return;
+            
             if (context.started)
             {
                 DashInput = true;
@@ -133,8 +175,11 @@ namespace Player.Input
             }
         }
         
+        // 
         public void OnDashDirectionInput(InputAction.CallbackContext context)
         {
+            if (!ControllerCanDash) return;
+            
             RawDashDirectionInput = context.ReadValue<Vector2>();
 
             if(_playerInput.currentControlScheme == "Keyboard")
@@ -147,21 +192,23 @@ namespace Player.Input
             DashDirectionInput = Vector2Int.RoundToInt(RawDashDirectionInput.normalized);
         }
         
+        // 
         public void OnDodgeRollInput(InputAction.CallbackContext context)
         {
+            if (!ControllerCanDodgeRoll) return;
+
             if (context.started)
             {
                 DodgeRollInput = true;
-                DodgeRollInputStop = false;
-            }
-            else if (context.canceled)
-            {
-                DodgeRollInputStop = true;
+                _dodgeRollInputTime = Time.time;
             }
         }
         
+        // 
         public void OnPrimaryAttackInput(InputAction.CallbackContext context)
         {
+            if (!ControllerCanAttack) return;
+            
             if (context.started)
             {
                 AttackInputs[(int)CombatInputs.PrimaryAttackInput] = true;
@@ -172,8 +219,11 @@ namespace Player.Input
             }
         }
         
+        // 
         public void OnSecondaryAttackInput(InputAction.CallbackContext context)
         {
+            if (!ControllerCanAttack) return;
+            
             if (context.started)
             {
                 AttackInputs[(int)CombatInputs.SecondaryAttackInput] = true;
@@ -181,6 +231,19 @@ namespace Player.Input
             else if (context.canceled)
             {
                 AttackInputs[(int)CombatInputs.SecondaryAttackInput] = false;
+            }
+        }
+        
+        // 
+        public void OnInteract(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                Interact = true;
+            }
+            else if (context.canceled)
+            {
+                Interact = false;
             }
         }
         
@@ -193,6 +256,9 @@ namespace Player.Input
         //We use it to set the DodgeRollInput to false, after using it
         public void UseDodgeRollInput() => DodgeRollInput = false;
         
+        //
+        public float DodgeRollInputTime() => _dodgeRollInputTime;
+        
         // We use it to prevent unwanted jumps from being made
         private void CheckJumpInputHoldTime()
         {
@@ -203,5 +269,16 @@ namespace Player.Input
         {
             if(Time.time >= _dashInputStartTime + inputHoldTime) { DashInput = false; }
         }
+        
+        // 
+        public void ChangeControllerCanMove() => ControllerCanMove = !ControllerCanMove;
+        public void ChangeControllerCanCrouch() => ControllerCanCrouch = !ControllerCanCrouch;
+        public void ChangeControllerCanJump() => ControllerCanJump = !ControllerCanJump;
+        public void ChangeControllerCanAttack() => ControllerCanAttack = !ControllerCanAttack;
+        public void ChangeControllerCanDash() => ControllerCanDash = !ControllerCanDash;
+        public void ChangeControllerCanDodgeRoll() => ControllerCanDodgeRoll = !ControllerCanDodgeRoll;
+        public void ChangeControllerCanGrab() => ControllerCanGrab = !ControllerCanGrab;
+        public void ChangeControllerCanWallSlide() => ControllerCanWallSlide = !ControllerCanWallSlide;
+        public void ChangeControllerCanLedgeClimb() => ControllerCanLedgeClimb = !ControllerCanLedgeClimb;
     }
 }

@@ -35,25 +35,12 @@ namespace Player.PlayerStates.BaseStates
         // Generate id parameters for the animator
         private static readonly int ClimbLedge = Animator.StringToHash("LedgeClimbUp");
         private static readonly int IsTouchingCeiling = Animator.StringToHash("TouchingCeiling");
-
+        
         // Class Constructor
-        public PlayerLedgeClimbState(PlayerController playerController, PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
-            string animBoolName): base(playerController, playerStateMachine, dataPlayerController, animBoolName)
+        public PlayerLedgeClimbState(PlayerController playerController, PlayerStateMachine playerStateMachine,
+            DataPlayerController dataPlayerController, string animationBoolName)
+            : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
-        }
-
-        public override void AnimationFinishTrigger()
-        {
-            base.AnimationFinishTrigger();
-            
-            PlayerController.PlayerAnimator.SetBool(ClimbLedge, false);
-        }
-
-        public override void AnimationTrigger()
-        {
-            base.AnimationTrigger();
-
-            _isHanging = true;
         }
         
         public override void Enter()
@@ -91,6 +78,7 @@ namespace Player.PlayerStates.BaseStates
 
             if (IsAnimationFinished)
             {
+                Debug.Log(_isTouchingCeiling);
                 if (_isTouchingCeiling)
                 {
                     PlayerStateMachine.ChangeState(PlayerController.CrouchIdleState);
@@ -130,8 +118,9 @@ namespace Player.PlayerStates.BaseStates
         // We use it to throw lightning from the corner and check if we have full room to stand up
         private void CheckForSpace()
         {
-            _isTouchingCeiling = Physics2D.Raycast(_cornerPos + Vector2.up * 0.015f + Vector2.right * (Core.Movement.FacingDirection * 0.015f),
-                Vector2.up, DataPlayerController.normalColliderHeight, Core.CollisionSenses.LayerGroundWalls);
+            _isTouchingCeiling = Physics2D.Raycast(_cornerPos + Vector2.up * 0.015f + Vector2.right * (Core.Movement.FacingDirection * 1f),
+                Vector2.up, DataPlayerController.normalColliderHeight,
+                Core.CollisionSenses.LayerGroundWalls | Core.CollisionSenses.LayerBlockingVolume);
             
             PlayerController.PlayerAnimator.SetBool(IsTouchingCeiling, _isTouchingCeiling);
         }
@@ -144,7 +133,8 @@ namespace Player.PlayerStates.BaseStates
             
             // First we detect the distance from the wall
             var xWallHit = Physics2D.Raycast(wallCheckPosition, Vector2.right * Core.Movement.FacingDirection,
-                Core.CollisionSenses.WallCheckDistance, Core.CollisionSenses.LayerGroundWalls);
+                Core.CollisionSenses.WallCheckDistance,
+                Core.CollisionSenses.LayerGroundWalls | Core.CollisionSenses.LayerBlockingVolume);
             var xWallDistance = xWallHit.distance;
             
             // We save that distance from the wall to use to check the ground clearance
@@ -152,7 +142,8 @@ namespace Player.PlayerStates.BaseStates
             
             // Determine the distance from the ground
             var yFloorHit = Physics2D.Raycast(ledgeCheckPosition + (Vector3)(_detectedCornerPosition),
-                Vector2.down, ledgeCheckPosition.y - wallCheckPosition.y + 0.015f,Core.CollisionSenses.LayerGroundWalls);
+                Vector2.down, ledgeCheckPosition.y - wallCheckPosition.y + 0.015f,
+                Core.CollisionSenses.LayerGroundWalls | Core.CollisionSenses.LayerBlockingVolume);
             var yFloorDistance = yFloorHit.distance;
             
             // Finally we get the exact position of the corner
@@ -160,6 +151,20 @@ namespace Player.PlayerStates.BaseStates
                 ledgeCheckPosition.y - yFloorDistance);
             
             return _detectedCornerPosition;
+        }
+        
+        public override void AnimationTrigger()
+        {
+            base.AnimationTrigger();
+
+            _isHanging = true;
+        }
+        
+        public override void AnimationFinishTrigger()
+        {
+            base.AnimationFinishTrigger();
+            
+            PlayerController.PlayerAnimator.SetBool(ClimbLedge, false);
         }
     }
 }

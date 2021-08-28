@@ -65,6 +65,9 @@ TagManager:
   - name: PickUpObjects
     uniqueID: 3615571261
     locked: 0
+  - name: Interactable Objects
+    uniqueID: 2541703905
+    locked: 0
   - name: Player
     uniqueID: 3764674289
     locked: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
   walkVelocity: 3
   jumpForce: 15
   amountOfJumps: 2
-  dodgeRollImpulse: 30
+  dodgeRollImpulse: 15
   dodgeRollLifeTime: 0.4
   wallJumpVelocity: 20
   wallJumpAngle: {x: 1, y: 2}

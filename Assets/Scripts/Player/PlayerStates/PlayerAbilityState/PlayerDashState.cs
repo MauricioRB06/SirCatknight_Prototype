@@ -1,5 +1,7 @@
-﻿using Player.AfterImage;
+﻿
+using Player.AfterImage;
 using Player.Data;
+using StateMachine;
 using UnityEngine;
 
 /* Documentation:
@@ -35,20 +37,22 @@ namespace Player.PlayerStates.PlayerAbilityState
         private Vector2 _lastAfterImagePosition;
         
         // Class Constructor
-        public PlayerDashState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
-            string animationBoolName) : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
+        public PlayerDashState(PlayerController playerController, PlayerStateMachine playerStateMachine,
+            DataPlayerController dataPlayerController, string animationBoolName)
+            : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
         }
+        
         public override void Enter()
         {
             base.Enter();
-
+            
             CanDash = false;
             PlayerController.InputHandler.UseDashInput();
             
             _isHolding = true;
             _dashDirection = Vector2.right * Core.Movement.FacingDirection;
-
+            
             Time.timeScale = DataPlayerController.dashHoldTimeScale;
             StartTime = Time.unscaledTime;
 
@@ -62,18 +66,17 @@ namespace Player.PlayerStates.PlayerAbilityState
             // We only call you when you are jumping in positive Y
             if(Core.Movement.CurrentVelocity.y > 0)
             {
-                /* Why this?
-                 
-                  As we apply so much force so that the movement is fast, if we do not limit the movement,
-                  we generate that the entity shoots out a great distance since we are applying a physical
-                  force to the rigid body of the entity, with this what we achieve is once we leave the board
-                  after the timeout expires or we stop pressing the button, the movement is cut off to cut the
-                  distance traveled 
-                */
+                // Why this?
+                //
+                //  As we apply so much force so that the movement is fast, if we do not limit the movement,
+                //  we generate that the entity shoots out a great distance since we are applying a physical
+                //  force to the rigid body of the entity, with this what we achieve is once we leave the board
+                //  after the timeout expires or we stop pressing the button, the movement is cut off to cut the
+                //  distance traveled
                 Core.Movement.SetVelocityY(Core.Movement.CurrentVelocity.y * DataPlayerController.dashEndYLimiter);
             }
         }
-
+        
         public override void LogicUpdate()
         {
             base.LogicUpdate();
@@ -120,7 +123,8 @@ namespace Player.PlayerStates.PlayerAbilityState
         // We use it to check if the necessary space between images has already been covered, to put another
         private void CheckIfShouldPlaceAfterImage()
         {
-            if(Vector2.Distance(PlayerController.transform.position, _lastAfterImagePosition) >= DataPlayerController.distanceBetweenAfterImages)
+            if(Vector2.Distance(PlayerController.transform.position, _lastAfterImagePosition)
+               >= DataPlayerController.distanceBetweenAfterImages)
             {
                 PlaceAfterImage();
             }

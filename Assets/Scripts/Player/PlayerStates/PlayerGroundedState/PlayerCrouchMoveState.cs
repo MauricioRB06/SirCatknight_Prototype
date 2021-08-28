@@ -6,7 +6,7 @@ namespace Player.PlayerStates.PlayerGroundedState
     {
         // Class Constructor
         public PlayerCrouchMoveState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
-            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName)
+            string animationBoolName) : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
         }
 

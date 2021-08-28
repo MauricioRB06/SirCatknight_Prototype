@@ -1,4 +1,6 @@
-﻿using Player.Data;
+﻿
+using Player.Data;
+using StateMachine;
 using UnityEngine;
 
 // The purpose of this Script is:
@@ -9,8 +11,11 @@ namespace Player.PlayerStates.PlayerGroundedState
     public class PlayerIdleState : BaseStates.PlayerGroundedState
     {
         // Class constructor
-        public PlayerIdleState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
-            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName) { }
+        public PlayerIdleState(PlayerController playerController, PlayerStateMachine playerStateMachine,
+            DataPlayerController dataPlayerController, string animationBoolName)
+            : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
+        {
+        }
 
         public override void Enter()
         {
@@ -31,7 +36,7 @@ namespace Player.PlayerStates.PlayerGroundedState
             {
                 PlayerStateMachine.ChangeState(PlayerController.RunState);
             }
-            else if (YInput == -1)
+            else if (YInput == -1 && controllerCanCrouch)
             {
                 PlayerStateMachine.ChangeState(PlayerController.CrouchIdleState);
             }

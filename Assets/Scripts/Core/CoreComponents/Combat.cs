@@ -8,10 +8,10 @@ namespace Core.CoreComponents
         [SerializeField] private float maxKnockbackTime = 0.2f;
         
         // 
-        private bool isKnockBackActive;
+        private bool _isKnockbackActive;
         
         // 
-        private float knockBackStartTime;
+        private float _knockbackStartTime;
         
         // 
         public void LogicUpdate()
@@ -30,17 +30,17 @@ namespace Core.CoreComponents
         {
             Core.Movement.SetVelocity(strength, angle, direction);
             Core.Movement.CanSetVelocity = false;
-            isKnockBackActive = true;
-            knockBackStartTime = Time.time;
+            _isKnockbackActive = true;
+            _knockbackStartTime = Time.time;
         }
         
         // 
         private void CheckKnockBack()
         {
-            if (isKnockBackActive && Core.Movement.CurrentVelocity.y <= 0.01f &&
-                (Core.CollisionSenses.Ground || Time.time >= knockBackStartTime + maxKnockbackTime))
+            if (_isKnockbackActive && Core.Movement.CurrentVelocity.y <= 0.01f &&
+                (Core.CollisionSenses.Ground || Time.time >= _knockbackStartTime + maxKnockbackTime))
             {
-                isKnockBackActive = false;
+                _isKnockbackActive = false;
                 Core.Movement.CanSetVelocity = true;
             }
         }

@@ -30,8 +30,10 @@ namespace Player.Data
         [Range(0f, 2f)] public int amountOfJumps = 1;
 
         [Header(("Dodge Roll"))]
-        public float dodgeRollImpulse = 30f;
-        public float dodgeRollLifeTime = 0.4f;
+        public float dodgeRollImpulse = 80f;
+        public float dodgeRollInputMaxTime = 1f;
+        public float dodgeRollCooldown = 1f;
+        public float dodgeRollLifeTime = 0.01f;
 
         [Header("Wall Jump State")]
         public float wallJumpVelocity = 20;

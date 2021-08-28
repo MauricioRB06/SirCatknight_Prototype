@@ -47,10 +47,14 @@ namespace Player.PlayerStates.BaseStates
         // Generate id parameters for the animator
         private static readonly int YVelocity = Animator.StringToHash("yVelocity");
         private static readonly int XVelocity = Animator.StringToHash("xVelocity");
-
+        
+        // 
+        protected bool controllerCanWallSlide;
+        
         // Class constructor
-        public PlayerInAirState(PlayerController playerController, PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
-            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName)
+        public PlayerInAirState(PlayerController playerController, PlayerStateMachine playerStateMachine,
+            DataPlayerController dataPlayerController, string animationBoolName)
+            : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
         }
         
@@ -66,8 +70,11 @@ namespace Player.PlayerStates.BaseStates
             _isTouchingWall = Core.CollisionSenses.WallFront;
             _isTouchingWallBack = Core.CollisionSenses.WallBack;
             _isTouchingLedge = Core.CollisionSenses.LedgeHorizontal;
-  
-            if(!_wallJumpCoyoteTime && !_isTouchingWall && !_isTouchingWallBack && (_oldIsTouchingWall || _oldIsTouchingWallBack))
+            
+            controllerCanWallSlide = PlayerController.InputHandler.ControllerCanWallSlide;
+            
+            if(!_wallJumpCoyoteTime && !_isTouchingWall && !_isTouchingWallBack &&
+               (_oldIsTouchingWall || _oldIsTouchingWallBack))
             {
                 StartWallJumpCoyoteTime();
             }
@@ -105,13 +112,13 @@ namespace Player.PlayerStates.BaseStates
 
             CheckJumpLimiter();
             
-            if (PlayerController.InputHandler.AttackInputs[(int) CombatInputs.PrimaryAttackInput])
+            if (PlayerController.InputHandler.AttackInputs[(int)CombatInputs.PrimaryAttackInput])
             {
-                PlayerStateMachine.ChangeState((PlayerController.PrimaryAttackState));
+                PlayerStateMachine.ChangeState(PlayerController.PrimaryAttackState);
             }
-            else if (PlayerController.InputHandler.AttackInputs[(int) CombatInputs.SecondaryAttackInput])
+            else if (PlayerController.InputHandler.AttackInputs[(int)CombatInputs.SecondaryAttackInput])
             {
-                PlayerStateMachine.ChangeState((PlayerController.SecondaryAttackState));
+                PlayerStateMachine.ChangeState(PlayerController.SecondaryAttackState);
             }
             else if (_isGrounded && Core.Movement.CurrentVelocity.y < 0.01f)
             {            
@@ -145,8 +152,11 @@ namespace Player.PlayerStates.BaseStates
                             break;
                         
                         case true when _xInput == Core.Movement.FacingDirection && Core.Movement.CurrentVelocity.y <= 0:
-                            
-                            PlayerStateMachine.ChangeState(PlayerController.WallSlideState);
+
+                            if (controllerCanWallSlide)
+                            {
+                                PlayerStateMachine.ChangeState(PlayerController.WallSlideState);
+                            }
                             break;
                         
                         default:

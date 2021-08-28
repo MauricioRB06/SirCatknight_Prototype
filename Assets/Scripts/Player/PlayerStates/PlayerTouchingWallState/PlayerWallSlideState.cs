@@ -6,7 +6,7 @@ namespace Player.PlayerStates.PlayerTouchingWallState
     {
         // Class Constructor
         public PlayerWallSlideState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
-            string animBoolName): base(playerController, playerStateMachine, dataPlayerController, animBoolName)
+            string animationBoolName): base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
         }
 

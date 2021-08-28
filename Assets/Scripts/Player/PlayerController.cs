@@ -77,8 +77,8 @@ namespace Player
         public Transform DashDirectionIndicator { get; private set; }
         private CapsuleCollider2D PlayerCollider { get; set; }
         public PlayerInventory PlayerInventory { get; private set; }
-        public PlayerHealth playerHealth { get; private set; }
-        public PlayerSounds playerSounds { get; private set; }
+        public PlayerHealth PlayerHealth { get; private set; }
+        public PlayerSounds PlayerSounds { get; private set; }
 
         // We use it to set a new heightCollider for the player depending on whether he is crouched or not
         private Vector2 _updateCollider;
@@ -168,8 +168,8 @@ namespace Player
             DashDirectionIndicator = transform.Find("DashDirectionIndicator");
             PlayerCollider = GetComponent<CapsuleCollider2D>();
             PlayerInventory = GetComponent<PlayerInventory>();
-            playerHealth = GetComponent<PlayerHealth>();
-            playerSounds = GetComponent<PlayerSounds>();
+            PlayerHealth = GetComponent<PlayerHealth>();
+            PlayerSounds = GetComponent<PlayerSounds>();
 
             //
             PrimaryAttackState.SetWeapon(PlayerInventory.weapons[(int)CombatInputs.PrimaryAttackInput]);

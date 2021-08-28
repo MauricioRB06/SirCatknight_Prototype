@@ -1,15 +1,18 @@
-﻿using Player.Data;
+﻿
+using Player.Data;
+using StateMachine;
 
 namespace Player.PlayerStates.PlayerGroundedState
 {
     public class PlayerCrouchIdleState : BaseStates.PlayerGroundedState
     {
         // Class Constructor
-        public PlayerCrouchIdleState(PlayerController playerController,StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
-            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName)
+        public PlayerCrouchIdleState(PlayerController playerController,PlayerStateMachine playerStateMachine,
+            DataPlayerController dataPlayerController, string animationBoolName)
+            : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
         }
-
+        
         public override void Enter()
         {
             base.Enter();

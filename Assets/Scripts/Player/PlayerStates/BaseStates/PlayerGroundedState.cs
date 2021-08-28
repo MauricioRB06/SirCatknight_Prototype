@@ -1,5 +1,6 @@
 ﻿using Player.Data;
 using StateMachine;
+using UnityEngine;
 
 // The purpose of this script is:
 /* Insert Here */
@@ -27,6 +28,7 @@ namespace Player.PlayerStates.BaseStates
         private bool _isGrounded;
         private bool _isTouchingWall;
         private bool _isTouchingLedge;
+        protected bool controllerCanCrouch;
         protected bool IsTouchingCeiling;
         
         // We use them to verify controls for skills
@@ -34,10 +36,11 @@ namespace Player.PlayerStates.BaseStates
         private bool _grabInput;
         private bool _dashInput;
         private bool _dodgeRollInput;
-        
+
         // Class constructor
         protected PlayerGroundedState(PlayerController playerController, PlayerStateMachine playerStateMachine, 
-            DataPlayerController dataPlayerController, string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName)
+            DataPlayerController dataPlayerController, string animationBoolName)
+            : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
         }
 
@@ -48,6 +51,7 @@ namespace Player.PlayerStates.BaseStates
             _isGrounded = Core.CollisionSenses.Ground;
             _isTouchingWall = Core.CollisionSenses.WallFront;
             _isTouchingLedge = Core.CollisionSenses.LedgeHorizontal;
+            controllerCanCrouch = PlayerController.InputHandler.ControllerCanCrouch;
             IsTouchingCeiling = Core.CollisionSenses.Ceiling;
         }
 
@@ -58,6 +62,7 @@ namespace Player.PlayerStates.BaseStates
             _isSleeping = PlayerController.CheckIfPlayerSleep();
             PlayerController.JumpState.ResetAmountOfJumpsLeft();
             PlayerController.DashState.ResetCanDash();
+            PlayerController.DodgeRoll.ResetCanDodgeRoll();
             Core.Movement.RestoreGravityScale(DataPlayerController.restoreGravityScale);
         }
 
@@ -99,7 +104,8 @@ namespace Player.PlayerStates.BaseStates
             {
                 PlayerStateMachine.ChangeState(PlayerController.DashState);
             }
-            else if (_dodgeRollInput && !_isSleeping)
+            else if (_dodgeRollInput && PlayerController.DodgeRoll.CheckIfCanDodgeRoll()
+                                     && !IsTouchingCeiling && !_isSleeping && XInput != 0)
             {
                 PlayerStateMachine.ChangeState(PlayerController.DodgeRoll);
             }

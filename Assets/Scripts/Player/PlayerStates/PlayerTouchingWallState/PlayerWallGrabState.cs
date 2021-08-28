@@ -1,4 +1,6 @@
-﻿using Player.Data;
+﻿
+using Player.Data;
+using StateMachine;
 using UnityEngine;
 
 namespace Player.PlayerStates.PlayerTouchingWallState
@@ -9,9 +11,12 @@ namespace Player.PlayerStates.PlayerTouchingWallState
         private Vector2 _holdPosition;
         
         // Class Constructor
-        public PlayerWallGrabState(PlayerController playerController, StateMachine.PlayerStateMachine playerStateMachine, DataPlayerController dataPlayerController,
-            string animBoolName) : base(playerController, playerStateMachine, dataPlayerController, animBoolName) { }
-
+        public PlayerWallGrabState(PlayerController playerController, PlayerStateMachine playerStateMachine,
+            DataPlayerController dataPlayerController, string animationBoolName)
+            : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
+        {
+        }
+        
         public override void Enter()
         {
             base.Enter();
@@ -32,7 +37,7 @@ namespace Player.PlayerStates.PlayerTouchingWallState
             {
                 PlayerStateMachine.ChangeState(PlayerController.WallClimbState);
             }
-            else if (YInput < 0 || !GrabInput)
+            else if ((YInput < 0 || !GrabInput) && controllerCanWallSlide)
             {
                 PlayerStateMachine.ChangeState(PlayerController.WallSlideState);
             }
