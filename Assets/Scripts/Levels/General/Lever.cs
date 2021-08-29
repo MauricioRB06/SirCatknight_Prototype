@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Levels.General
 {
-    public class Lever: MonoBehaviour
+    public class Lever: MonoBehaviour, IInteractableObject
     {
         private Animator _leverAnimator;
         private BoxCollider2D _leverCollider;
@@ -19,12 +19,23 @@ namespace Levels.General
             _leverCollider = GetComponent<BoxCollider2D>();
         }
         
-        private void OnTriggerStay2D(Collider2D collision)
+        /*private void OnTriggerStay2D(Collider2D collision)
         {
             if (!collision.transform.CompareTag("Player")) return;
 
-            if (!collision.GetComponent<PlayerInputHandler>().Interact) return;
+            if (!collision.GetComponent<PlayerInputHandler>().InteractInput) return;
             
+            _leverAnimator.SetTrigger(Interact);
+            _leverCollider.enabled = false;
+            
+            var interactable = objectToInteract.GetComponent<IInteractableObject>();
+            interactable?.OnInteractable();
+            
+            leverLight.SetActive(false);
+        }*/
+
+        public void OnInteractable()
+        {
             _leverAnimator.SetTrigger(Interact);
             _leverCollider.enabled = false;
             

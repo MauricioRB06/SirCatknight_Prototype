@@ -18,7 +18,13 @@ MonoBehaviour:
   jumpForce: 15
   amountOfJumps: 2
   dodgeRollImpulse: 15
+  dodgeRollInputMaxTime: 1
+  dodgeRollCooldown: 1
   dodgeRollLifeTime: 0.4
+  interactionRadius: 0.3
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 8192
   wallJumpVelocity: 20
   wallJumpAngle: {x: 1, y: 2}
   wallJumpTime: 0.4

@@ -78,7 +78,6 @@ namespace Player.PlayerStates.BaseStates
 
             if (IsAnimationFinished)
             {
-                Debug.Log(_isTouchingCeiling);
                 if (_isTouchingCeiling)
                 {
                     PlayerStateMachine.ChangeState(PlayerController.CrouchIdleState);

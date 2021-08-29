@@ -6,16 +6,17 @@ using UnityEngine;
 
 namespace Player.PlayerStates.PlayerAbilityState
 {
-    public class PlayerDodgeRoll : BaseStates.PlayerAbilityState
+    public class PlayerDodgeRollState : BaseStates.PlayerAbilityState
     {
         private bool CanDodgeRoll { get; set; }
         private float _lastDodgeRollTime;
-        
+
+        private int _dodgeInput;
         // We use it to save the position of the last image of the AfterImagePool
         private Vector2 _lastAfterImagePosition;
         
-        // Class Constructor
-        public PlayerDodgeRoll(PlayerController playerController, PlayerStateMachine playerStateMachine,
+        // Class constructor
+        public PlayerDodgeRollState(PlayerController playerController, PlayerStateMachine playerStateMachine,
             DataPlayerController dataPlayerController, string animationBoolName)
             : base(playerController, playerStateMachine, dataPlayerController, animationBoolName)
         {
@@ -24,7 +25,6 @@ namespace Player.PlayerStates.PlayerAbilityState
         public override void Enter()
         {
             base.Enter();
-            Debug.Log("Dodge");
             CanDodgeRoll = false;
             PlayerController.InputHandler.UseDodgeRollInput();
         }
@@ -34,8 +34,8 @@ namespace Player.PlayerStates.PlayerAbilityState
             base.LogicUpdate();
             
             if (IsExitingState) return;
-            
-            Core.Movement.SetVelocity(DataPlayerController.dodgeRollImpulse, new Vector2(1,0), XInput);
+            if (XInput != 0) _dodgeInput = XInput;
+            Core.Movement.SetVelocity(DataPlayerController.dodgeRollImpulse, new Vector2(1,0), _dodgeInput);
             PlaceAfterImage();
             CheckIfShouldPlaceAfterImage();
             

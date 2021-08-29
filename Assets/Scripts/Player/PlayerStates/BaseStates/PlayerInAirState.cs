@@ -26,6 +26,7 @@ namespace Player.PlayerStates.BaseStates
         // We use them to verify controls for skills
         private bool _grabInput;
         private bool _dashInput;
+        private bool _dodgeRollInput;
 
         // We use them to verify possible status changes
         private bool _isGrounded;
@@ -109,6 +110,7 @@ namespace Player.PlayerStates.BaseStates
             _jumpInputStop = PlayerController.InputHandler.JumpInputStop;
             _grabInput = PlayerController.InputHandler.GrabInput;
             _dashInput = PlayerController.InputHandler.DashInput;
+            _dodgeRollInput = PlayerController.InputHandler.DodgeRollInput;
 
             CheckJumpLimiter();
             
@@ -164,6 +166,10 @@ namespace Player.PlayerStates.BaseStates
                             if(_dashInput && PlayerController.DashState.CheckIfCanDash())
                             {
                                 PlayerStateMachine.ChangeState(PlayerController.DashState);
+                            }
+                            else if (_dodgeRollInput && PlayerController.DodgeRollState.CheckIfCanDodgeRoll() && _xInput != 0)
+                            {
+                                PlayerStateMachine.ChangeState(PlayerController.DodgeRollState);
                             }
                             else
                             {

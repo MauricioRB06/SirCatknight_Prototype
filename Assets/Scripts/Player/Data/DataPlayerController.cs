@@ -18,46 +18,60 @@ namespace Player.Data
     
     public class DataPlayerController : ScriptableObject
     {
-        [Header("Idle State")]
+        [Header("Settings Idle State")][Space(3)]
         public float sleepTime = 10f;
+        [Space(10)]
         
-        [Header("Move State")]
+        [Header("Settings Move State")][Space(3)]
         public float runVelocity = 6f;
         public float walkVelocity = 3f;
-
-        [Header("Jump State")]
+        [Space(10)]
+        
+        [Header("Settings Jump State")][Space(3)]
         public float jumpForce = 15f;
         [Range(0f, 2f)] public int amountOfJumps = 1;
-
-        [Header(("Dodge Roll"))]
-        public float dodgeRollImpulse = 80f;
+        [Space(10)]
+        
+        [Header(("Settings Dodge Roll State"))][Space(3)]
+        public float dodgeRollImpulse = 100f;
         public float dodgeRollInputMaxTime = 1f;
         public float dodgeRollCooldown = 1f;
-        public float dodgeRollLifeTime = 0.01f;
-
-        [Header("Wall Jump State")]
+        public float dodgeRollLifeTime = 0.002f;
+        [Space(10)]
+        
+        [Header(("Settings Interact State "))][Space(3)]
+        public float interactionRadius = 0.3f;
+        public LayerMask interactableLayer;  
+        [Space(10)]
+        
+        [Header("Settings Wall Jump State")][Space(3)]
         public float wallJumpVelocity = 20;
         public Vector2 wallJumpAngle = new Vector2(1, 2);
         
         // We use it to avoid that after jumping the player can return to the wall immediately after.
         public float wallJumpTime = 0.4f;
+        [Space(10)]
         
-        [Header("In Air State")]  
+        [Header("Settings In Air State")][Space(3)]
         public float coyoteTime = 0.2f;
         // We use it to limit the jump the moment the player releases the button before completing a full jump.
         public float jumpHeightLimiter = 0.5f;
-
-        [Header("Wall Slide State")]  
+        [Space(10)]
+        
+        [Header("Settings Wall Slide State")][Space(3)] 
         public float wallSlideVelocity = 4f;
-
-        [Header("Wall Climb State")]  
+        [Space(10)]
+        
+        [Header("Settings Wall Climb State")][Space(3)]
         public float wallClimbVelocity = 3f;
-
-        [Header("Ledge Climb State")] 
+        [Space(10)]
+        
+        [Header("Settings Ledge Climb State")][Space(3)]
         public Vector2 startOffset;
         public Vector2 stopOffset;
-
-        [Header("Dash State")] 
+        [Space(10)]
+        
+        [Header("Settings Dash State")][Space(3)]
         public float dashCooldown = 5f;
         
         /* We use it to modify the time scale of the game and make the effect of slow motion, as well as to know
@@ -76,13 +90,15 @@ namespace Player.Data
         
         // We use it to separate the images from the AfterImagePool.
         public float distanceBetweenAfterImages = 0.5f;
+        [Space(10)]
         
-        [Header("Crouch States")]
+        [Header("Settings Crouch States")][Space(3)]
         public float crouchMovementVelocity = 3f;
         public float crouchColliderHeight = 1.3f;
         public float normalColliderHeight = 1.6f;
-
-        [Header("Attack State")]
+        [Space(10)]
+        
+        [Header("Settings Attack State")][Space(3)]
         public float decreaseGravityScale = 0.75f;
         public float restoreGravityScale = 3.0f;
     }

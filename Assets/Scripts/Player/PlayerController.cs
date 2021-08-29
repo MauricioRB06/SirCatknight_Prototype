@@ -19,18 +19,16 @@
 //  C# Polymorphism: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual
 //  C# Polymorphism: https://www.youtube.com/watch?v=XzKL94OMDV4&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B&index=46 [ Spanish ]
 
+using System;
 using _Development.Scripts.Mauricio;
-using Interfaces;
 using Player.Data;
 using Player.Input;
 using Player.Inventory;
-using Player.PlayerStates;
 using Player.PlayerStates.BaseStates;
 using Player.PlayerStates.PlayerAbilityState;
 using Player.PlayerStates.PlayerGroundedState;
 using Player.PlayerStates.PlayerTouchingWallState;
 using StateMachine;
-using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
 
@@ -42,6 +40,10 @@ namespace Player
         
         // We use it to store the reference to the player's data file
         [SerializeField] private DataPlayerController dataPlayerController;
+        public DataPlayerController DataPlayerController => dataPlayerController;
+        
+        [SerializeField] private Transform interactPosition;
+        public Transform InteractPosition => interactPosition;
         
         // To stored the state machine for the player.
         private PlayerStateMachine PlayerStateMachine { get; set; }
@@ -55,7 +57,8 @@ namespace Player
         public PlayerWalkState WalkState { get; private set; }
         public PlayerRunState RunState { get; private set; }
         public PlayerJumpState JumpState { get; private set; }
-        public PlayerDodgeRoll DodgeRoll { get; private set; }
+        public PlayerDodgeRollState DodgeRollState { get; private set; }
+        public PlayerInteractState InteractState { get; private set; }
         public PlayerAttackState PrimaryAttackState { get; private set; }
         public PlayerAttackState SecondaryAttackState { get; private set; }
         public PlayerInAirState InAirState { get; private set; }
@@ -119,8 +122,11 @@ namespace Player
             JumpState = new PlayerJumpState(this, PlayerStateMachine,
                                                         dataPlayerController, "InAir");
             
-            DodgeRoll = new PlayerDodgeRoll(this, PlayerStateMachine,
+            DodgeRollState = new PlayerDodgeRollState(this, PlayerStateMachine,
                                                         dataPlayerController,"DodgeRoll");
+            
+            InteractState = new PlayerInteractState(this, PlayerStateMachine,
+                                                        dataPlayerController,"Interact");
             
             PrimaryAttackState = new PlayerAttackState(this, PlayerStateMachine,
                                                         dataPlayerController, "Attack");
@@ -232,5 +238,36 @@ namespace Player
             }
         }
         
+        // Delete this in final build, only for testing an development
+        public void OnDrawGizmos()
+        {
+            // To view the interaction range.
+            Gizmos.DrawWireSphere(InteractPosition.position, DataPlayerController.interactionRadius);
+
+            if (Core == null) return;
+            
+            // To view wallCheck distance
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(Core.CollisionSenses.WallCheck.position,
+                Core.CollisionSenses.WallCheck.position + (Vector3)(Vector2.right * Core.Movement.FacingDirection
+                    * Core.CollisionSenses.WallCheckDistance));
+            
+            // To view groundCheck radius
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(Core.CollisionSenses.GroundCheck.position,Core.CollisionSenses.GroundCheckRadius);
+            
+            // To view ceilingCheck distance
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawLine(Core.CollisionSenses.CeilingCheck.position,
+                Core.CollisionSenses.CeilingCheck.position + (Vector3)(Vector2.up * Core.Movement.FacingDirection
+                    * Core.CollisionSenses.WallCheckDistance));
+            
+            // To view ledgeCheck distance
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawLine(Core.CollisionSenses.LedgeCheckHorizontal.position,
+                Core.CollisionSenses.LedgeCheckHorizontal.position + (Vector3)(Vector2.right
+                 * Core.Movement.FacingDirection * Core.CollisionSenses.WallCheckDistance));
+            
+        }
     }
 }

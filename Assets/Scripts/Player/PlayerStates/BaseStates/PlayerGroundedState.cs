@@ -36,6 +36,7 @@ namespace Player.PlayerStates.BaseStates
         private bool _grabInput;
         private bool _dashInput;
         private bool _dodgeRollInput;
+        private bool _interactInput;
 
         // Class constructor
         protected PlayerGroundedState(PlayerController playerController, PlayerStateMachine playerStateMachine, 
@@ -62,7 +63,7 @@ namespace Player.PlayerStates.BaseStates
             _isSleeping = PlayerController.CheckIfPlayerSleep();
             PlayerController.JumpState.ResetAmountOfJumpsLeft();
             PlayerController.DashState.ResetCanDash();
-            PlayerController.DodgeRoll.ResetCanDodgeRoll();
+            PlayerController.DodgeRollState.ResetCanDodgeRoll();
             Core.Movement.RestoreGravityScale(DataPlayerController.restoreGravityScale);
         }
 
@@ -76,14 +77,15 @@ namespace Player.PlayerStates.BaseStates
             _grabInput = PlayerController.InputHandler.GrabInput;
             _dashInput = PlayerController.InputHandler.DashInput;
             _dodgeRollInput = PlayerController.InputHandler.DodgeRollInput;
+            _interactInput = PlayerController.InputHandler.InteractInput;
 
-            if (PlayerController.InputHandler.AttackInputs[(int) CombatInputs.PrimaryAttackInput] && !IsTouchingCeiling
-                && !_isSleeping)
+            if (PlayerController.InputHandler.AttackInputs[(int) CombatInputs.PrimaryAttackInput]
+                && !IsTouchingCeiling && !_isSleeping)
             {
                 PlayerStateMachine.ChangeState((PlayerController.PrimaryAttackState));
             }
-            else if (PlayerController.InputHandler.AttackInputs[(int) CombatInputs.SecondaryAttackInput] && !IsTouchingCeiling
-                && !_isSleeping)
+            else if (PlayerController.InputHandler.AttackInputs[(int) CombatInputs.SecondaryAttackInput]
+                     && !IsTouchingCeiling && !_isSleeping)
             {
                 PlayerStateMachine.ChangeState((PlayerController.SecondaryAttackState));
             }
@@ -104,10 +106,14 @@ namespace Player.PlayerStates.BaseStates
             {
                 PlayerStateMachine.ChangeState(PlayerController.DashState);
             }
-            else if (_dodgeRollInput && PlayerController.DodgeRoll.CheckIfCanDodgeRoll()
+            else if (_dodgeRollInput && PlayerController.DodgeRollState.CheckIfCanDodgeRoll()
                                      && !IsTouchingCeiling && !_isSleeping && XInput != 0)
             {
-                PlayerStateMachine.ChangeState(PlayerController.DodgeRoll);
+                PlayerStateMachine.ChangeState(PlayerController.DodgeRollState);
+            }
+            else if (_interactInput && !_isSleeping)
+            {
+                PlayerStateMachine.ChangeState(PlayerController.InteractState);
             }
         }
     }

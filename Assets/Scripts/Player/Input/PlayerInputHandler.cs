@@ -46,7 +46,6 @@ namespace Player.Input
         
         // We use them to check if the Dodge button is pressed
         public bool DodgeRollInput { get; private set; }
-        private float _dodgeRollInputTime;
 
         // We use them to get a reference to the control scheme we are using 
         private PlayerInput _playerInput;
@@ -66,12 +65,13 @@ namespace Player.Input
         // We use it to control the behavior of Dash and Jump skills based on the time the player presses the button
         private float _jumpInputStartTime;
         private float _dashInputStartTime;
+        private float _dodgeRollInputStartTime;
         
         // We use it to store the amount of attack inputs the player has
         public bool[] AttackInputs { get; private set; }
         
         // 
-        public bool Interact { get; private set; }
+        public bool InteractInput { get; private set; }
         
         // 
         private bool ControllerCanMove { get; set; }
@@ -113,6 +113,7 @@ namespace Player.Input
         {
             CheckJumpInputHoldTime();
             CheckDashInputHoldTime();
+            CheckDodgeRollInputHoldTime();
         }
         
         // 
@@ -200,7 +201,19 @@ namespace Player.Input
             if (context.started)
             {
                 DodgeRollInput = true;
-                _dodgeRollInputTime = Time.time;
+                _dodgeRollInputStartTime = Time.time;
+            }
+            if (context.performed)
+            {
+                if (Time.time > _dodgeRollInputStartTime +
+                    GetComponent<PlayerController>().DataPlayerController.dodgeRollInputMaxTime)
+                {
+                    DodgeRollInput = false;
+                }
+            }
+            if (context.canceled)
+            {
+                DodgeRollInput = false;
             }
         }
         
@@ -239,11 +252,11 @@ namespace Player.Input
         {
             if (context.started)
             {
-                Interact = true;
+                InteractInput = true;
             }
             else if (context.canceled)
             {
-                Interact = false;
+                InteractInput = false;
             }
         }
         
@@ -255,19 +268,33 @@ namespace Player.Input
         
         //We use it to set the DodgeRollInput to false, after using it
         public void UseDodgeRollInput() => DodgeRollInput = false;
-        
-        //
-        public float DodgeRollInputTime() => _dodgeRollInputTime;
+        public void UseInteractInput() => InteractInput = false;
         
         // We use it to prevent unwanted jumps from being made
         private void CheckJumpInputHoldTime()
         {
-            if (Time.time >= _jumpInputStartTime + inputHoldTime) { JumpInput = false; }
+            if (Time.time >= _jumpInputStartTime + inputHoldTime)
+            {
+                JumpInput = false;
+            }
         }
         
+        // 
         private void CheckDashInputHoldTime()
         {
-            if(Time.time >= _dashInputStartTime + inputHoldTime) { DashInput = false; }
+            if (Time.time >= _dashInputStartTime + inputHoldTime)
+            {
+                DashInput = false;
+            }
+        }
+        
+        // 
+        private void CheckDodgeRollInputHoldTime()
+        {
+            if (Time.time >= _dodgeRollInputStartTime + inputHoldTime)
+            {
+                DodgeRollInput = false;
+            }
         }
         
         // 
