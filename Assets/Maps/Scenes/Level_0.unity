@@ -23801,6 +23801,7 @@ MonoBehaviour:
   dataPlayerController: {fileID: 11400000, guid: 97ee086e618d50c4dbefcf4cd7135726,
     type: 2}
   interactPosition: {fileID: 511811421}
+  dashInteractPosition: {fileID: 1411981280}
   animatorA: {fileID: 9100000, guid: e6e1697301ddfb04cab9b66e1f55f7cc, type: 2}
   animatorB: {fileID: 9100000, guid: 3de7de2fbb139ee4b91db31f0336b852, type: 2}
 --- !u!114 &1040496780

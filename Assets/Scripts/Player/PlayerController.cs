@@ -45,6 +45,8 @@ namespace Player
         [SerializeField] private Transform interactPosition;
         public Transform InteractPosition => interactPosition;
         
+        [SerializeField] private Transform dashInteractPosition;
+        
         // To stored the state machine for the player.
         private PlayerStateMachine PlayerStateMachine { get; set; }
 
@@ -171,7 +173,7 @@ namespace Player
             PlayerAnimator = GetComponent<Animator>();
             InputHandler = GetComponent<PlayerInputHandler>();
             PlayerRigidBody2D = GetComponent<Rigidbody2D>();
-            DashDirectionIndicator = transform.Find("DashDirectionIndicator");
+            DashDirectionIndicator = dashInteractPosition;
             PlayerCollider = GetComponent<CapsuleCollider2D>();
             PlayerInventory = GetComponent<PlayerInventory>();
             PlayerHealth = GetComponent<PlayerHealth>();
