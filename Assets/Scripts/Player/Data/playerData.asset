@@ -16,7 +16,7 @@ MonoBehaviour:
   runVelocity: 6
   walkVelocity: 3
   jumpForce: 15
-  amountOfJumps: 2
+  amountOfJumps: 1
   dodgeRollImpulse: 15
   dodgeRollInputMaxTime: 1
   dodgeRollCooldown: 1

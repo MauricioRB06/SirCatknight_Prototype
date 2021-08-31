@@ -45,7 +45,7 @@ namespace Levels.General
         }
 
         // If it detects a collision with the character, it applies an upward force to the character.
-        private void OnCollisionEnter2D(Collision2D collision)
+        private void OnTriggerEnter2D(Collider2D collision)
         {
             if (!collision.transform.CompareTag("Player")) return;
             
