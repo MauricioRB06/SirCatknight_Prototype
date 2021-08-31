@@ -13,6 +13,7 @@
 
 using System;
 using System.Collections;
+using Player;
 using UnityEngine;
 
 namespace Levels.General
@@ -57,53 +58,60 @@ namespace Levels.General
         }
         
         // Coroutine that makes the player's sprites appear smoothly and Teleports the player.
-        private IEnumerator PlayerFadeIn(Renderer playerSpriteRenderer, Color playerSpriteColor)
+        private IEnumerator PlayerFadeIn(SpriteRenderer playerSpriteRenderer, Color playerSpriteColor)
         {
             var teleportTransform = transform;
             
             for (var playerSpriteAlpha = 0.0f; playerSpriteAlpha <= 1.0f; playerSpriteAlpha += 0.1f)
             {
                 playerSpriteColor.a = playerSpriteAlpha;
-                playerSpriteRenderer.material.color = playerSpriteColor;
+                playerSpriteRenderer.color = playerSpriteColor;
                 yield return new WaitForSeconds(0.05f);
                 
                 if (Math.Abs(playerSpriteAlpha - 0.7f) < 0.1f)
                 {
-                    Instantiate(sfxTeleportOut, teleportTransform.position, Quaternion.identity, teleportTransform);
+                    if (sfxTeleportOut != null)
+                    {
+                        Instantiate(sfxTeleportOut, teleportTransform.position, Quaternion.identity, teleportTransform);
+                    }
                 }
             }
             
             playerSpriteColor.a = 1;
-            playerSpriteRenderer.material.color = playerSpriteColor;
+            playerSpriteRenderer.color = playerSpriteColor;
             
-            Destroy(transform.GetChild(1).gameObject);
+            if (sfxTeleportOut != null)
+            {
+                Destroy(transform.GetChild(1).gameObject);
+            }
         }
         
         // Coroutine that makes the sprites of player disappear smoothly.
-        private IEnumerator PlayerFadeOut(Renderer playerSpriteRenderer, Color playerSpriteColor, GameObject player)
+        private IEnumerator PlayerFadeOut(SpriteRenderer playerSpriteRenderer, Color playerSpriteColor, GameObject player)
         {
             for (var playerSpriteAlpha = 1.0f; playerSpriteAlpha >= 0.0f; playerSpriteAlpha -= 0.1f)
             {
                 playerSpriteColor.a = playerSpriteAlpha;
-                playerSpriteRenderer.material.color = playerSpriteColor;
+                playerSpriteRenderer.color = playerSpriteColor;
                 yield return new WaitForSeconds(0.05f);
             }
             
             playerSpriteColor.a = 0;
-            playerSpriteRenderer.material.color = playerSpriteColor;
+            playerSpriteRenderer.color = playerSpriteColor;
             
             StartCoroutine(PlayerFadeIn(playerSpriteRenderer, playerSpriteColor));
             
-            if (sfxTeleport == null)
+            if (sfxTeleport == null && sfxTeleportIn != null)
             {
                 Destroy(transform.GetChild(0).gameObject);
             }
-            else
+            else if (sfxTeleportIn != null)
             {
                 Destroy(transform.GetChild(1).gameObject);
             }
             
             player.transform.position = destination.transform.position;
+            player.GetComponent<PlayerController>().Core.Movement.SetVelocityZero();
         }
         
         // Set the initial configuration for the teleport and check the necessary components.
@@ -114,7 +122,7 @@ namespace Levels.General
                 Debug.LogError("<color=#D22323><b>" +
                                "The teleport destination cannot be empty, please add one</b></color>");
             }
-            else if (sfxTeleportIn == null)
+            /*else if (sfxTeleportIn == null)
             {
                 Debug.LogError("<color=#D22323><b>" +
                                "The sound effect when using teleportation is empty, please add one</b></color>");
@@ -128,14 +136,18 @@ namespace Levels.General
             {
                 _teleportCollider = GetComponent<CircleCollider2D>();
                 if (!_teleportCollider.isTrigger) _teleportCollider.isTrigger = true;
-            }
+            }*/
             else
             {
                 _teleportCollider = GetComponent<CircleCollider2D>();
                 if (!_teleportCollider.isTrigger) _teleportCollider.isTrigger = true;
                 
                 var teleportTransform = transform;
-                Instantiate(sfxTeleport, teleportTransform.position, Quaternion.identity, teleportTransform);
+                
+                if (sfxTeleport != null)
+                {
+                    Instantiate(sfxTeleport, teleportTransform.position, Quaternion.identity, teleportTransform);
+                }
             }
         }
         
@@ -146,12 +158,18 @@ namespace Levels.General
             if (!collision.gameObject.CompareTag("Player")) return;
 
             var playerSpriteRenderer = collision.GetComponent<SpriteRenderer>();
-            var playerSpriteColor = playerSpriteRenderer.material.color;
+            var playerSpriteColor = playerSpriteRenderer.color;
             var teleportTransform = transform;
-            
-            Instantiate(sfxTeleportIn, teleportTransform.position, Quaternion.identity, teleportTransform);
-            StartCoroutine(PlayerFadeOut(playerSpriteRenderer, playerSpriteColor, collision.gameObject));
 
+            if (sfxTeleportIn != null)
+            {
+                Instantiate(sfxTeleportIn, teleportTransform.position, Quaternion.identity, teleportTransform);
+            }
+            
+            StartCoroutine(PlayerFadeOut(playerSpriteRenderer, playerSpriteColor, collision.gameObject));
+            
+            collision.GetComponent<PlayerController>().Core.Movement.SetVelocityZero();
+                
             if (destroyWhenUsed)
             {
                 destination.GetComponent<TeleportObject>().DestroyTeleport();

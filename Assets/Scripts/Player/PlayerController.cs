@@ -182,7 +182,7 @@ namespace Player
             //
             PrimaryAttackState.SetWeapon(PlayerInventory.weapons[(int)CombatInputs.PrimaryAttackInput]);
             
-            PlayerStateMachine.Initialize(IdleState); 
+            PlayerStateMachine.Initialize(SleepState); 
         }
         
         private void Update()

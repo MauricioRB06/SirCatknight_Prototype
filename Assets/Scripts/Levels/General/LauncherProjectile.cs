@@ -71,7 +71,7 @@ namespace Levels.General
             
             switch (orientationProjectile)
             {
-                case 1:
+                case -1:
                 {
                     transform.Translate(Vector2.left * (projectileSpeed * Time.deltaTime));
                 

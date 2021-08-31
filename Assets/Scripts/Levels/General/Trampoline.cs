@@ -11,6 +11,7 @@
 //  Unity OnCollisionEnter2D: https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnCollisionEnter2D.html
 //  Unity Instantiate: https://docs.unity3d.com/ScriptReference/Object.Instantiate.html
 
+using Player;
 using UnityEngine;
 
 namespace Levels.General
@@ -55,9 +56,11 @@ namespace Levels.General
             else
             {
                 _trampolineAnimator.SetTrigger(Jump);
+                
                 Instantiate(trampolineSfx, transform.position, Quaternion.identity);
-                collision.gameObject.GetComponent<Rigidbody2D>().
-                    AddForce(Vector2.up * trampolineForce, ForceMode2D.Impulse);
+                
+                collision.gameObject.GetComponent<PlayerController>().
+                    Core.Movement.SetVelocityY(trampolineForce);
             }
         }
     }

@@ -30,8 +30,8 @@ MonoBehaviour:
   wallJumpTime: 0.4
   coyoteTime: 0.2
   jumpHeightLimiter: 0.5
-  wallSlideVelocity: 4
-  wallClimbVelocity: 3
+  wallSlideVelocity: 6
+  wallClimbVelocity: 4
   startOffset: {x: 0.675, y: 0.5}
   stopOffset: {x: 0.4, y: 1}
   dashCooldown: 5
