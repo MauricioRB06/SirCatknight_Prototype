@@ -64,7 +64,7 @@ namespace UI
         // 
         public void NewGame()
         {
-            SceneManager.LoadScene("Mauricio");
+            SceneManager.LoadScene("Level_0");
         }
         
         // 
