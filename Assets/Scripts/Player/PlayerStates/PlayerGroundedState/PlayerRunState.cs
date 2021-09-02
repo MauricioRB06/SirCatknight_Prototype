@@ -17,7 +17,6 @@ namespace Player.PlayerStates.PlayerGroundedState
             base.LogicUpdate();
 
             Core.Movement.CheckIfShouldFlip(XInput);
-
             Core.Movement.SetVelocityX(DataPlayerController.runVelocity * XInput);
             
             if (IsExitingState) return;

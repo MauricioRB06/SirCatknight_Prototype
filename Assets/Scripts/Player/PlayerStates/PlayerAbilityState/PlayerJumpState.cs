@@ -21,7 +21,7 @@ namespace Player.PlayerStates.PlayerAbilityState
         public override void Enter()
         {
             base.Enter();
-            
+            PlayerController.JumpDust();
             PlayerController.InputHandler.UseJumpInput();
             Core.Movement.SetVelocityY(DataPlayerController.jumpForce);
             IsAbilityDone = true;

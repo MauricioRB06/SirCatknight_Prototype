@@ -858,7 +858,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LedgeClimb
+  m_Name: Perseo Fishcalibur LedgeClimb
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 7917730199866638917}
@@ -1068,7 +1068,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Perseo Base LowKnockback
+  m_Name: Perseo Fishcalibur LowKnockback
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1413,7 +1413,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Perseo Base Jump/Fall Blend Tree
+  m_Name: Perseo Fishcalibur Jump/Fall Blend Tree
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:

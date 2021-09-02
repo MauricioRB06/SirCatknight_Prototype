@@ -42,16 +42,24 @@ namespace Player
         [SerializeField] private DataPlayerController dataPlayerController;
         public DataPlayerController DataPlayerController => dataPlayerController;
         
+        
+        [SerializeField] private AnimatorController playerAnimatorBase;
+        
+        
         [SerializeField] private Transform interactPosition;
         public Transform InteractPosition => interactPosition;
         
-        [SerializeField] private Transform dashInteractPosition;
+        
+        [SerializeField] private Transform dashIndicatorPosition;
+        
+        [SerializeField] private Transform jumpDustPosition;
+        [SerializeField] private Transform wallSlideDustPosition;
         
         // To stored the state machine for the player.
         private PlayerStateMachine PlayerStateMachine { get; set; }
 
-        public AnimatorController animatorA;
-        public AnimatorController animatorB;
+        
+        public ParticleSystem dustParticles;
         
         // We use them to store player states
         public PlayerIdleState IdleState { get; private set; }
@@ -173,7 +181,7 @@ namespace Player
             PlayerAnimator = GetComponent<Animator>();
             InputHandler = GetComponent<PlayerInputHandler>();
             PlayerRigidBody2D = GetComponent<Rigidbody2D>();
-            DashDirectionIndicator = dashInteractPosition;
+            DashDirectionIndicator = dashIndicatorPosition;
             PlayerCollider = GetComponent<CapsuleCollider2D>();
             PlayerInventory = GetComponent<PlayerInventory>();
             PlayerHealth = GetComponent<PlayerHealth>();
@@ -214,7 +222,8 @@ namespace Player
             PlayerCollider.size = _updateCollider;
             PlayerCollider.offset = centerCollider;
         }
-
+        
+        // 
         public static void Die(string typeOfDeath)
         {
             Debug.Log($"Death by: {typeOfDeath}");
@@ -227,17 +236,25 @@ namespace Player
         // We use it to trigger events at the end of an animation ( We call it inside the Animator component )
         private void AnimationFinishTrigger() => PlayerStateMachine.CurrentState.AnimationFinishTrigger();
         
-        [ContextMenu("ChangeAnimator")]
-        public void ChangeAnimator()
+        // 
+        public void ChangeAnimatorWeapon(Animator weaponAnimator)
         {
-            if (PlayerAnimator.runtimeAnimatorController == animatorA)
-            {
-                PlayerAnimator.runtimeAnimatorController = animatorB;
-            }
-            else
-            {
-                PlayerAnimator.runtimeAnimatorController = animatorA;
-            }
+            PlayerAnimator.runtimeAnimatorController = playerAnimatorBase;
+        }
+        
+        // 
+        public void ResetAnimator() => PlayerAnimator.runtimeAnimatorController = playerAnimatorBase;
+        
+        // 
+        public void JumpDust()
+        {
+            Instantiate(dustParticles, jumpDustPosition.position, Quaternion.identity);
+        }
+        
+        // 
+        public void WallSlideDust()
+        {
+            Instantiate(dustParticles, wallSlideDustPosition.position, Quaternion.Euler(0,0,0));
         }
         
         // Delete this in final build, only for testing an development
