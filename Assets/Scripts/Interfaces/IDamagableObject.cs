@@ -17,6 +17,6 @@ namespace Interfaces
     public interface IDamageableObject
     {
         // 
-        void TakeDamage(float amount);
+        void TakeDamage(float damageAmount);
     }
 }

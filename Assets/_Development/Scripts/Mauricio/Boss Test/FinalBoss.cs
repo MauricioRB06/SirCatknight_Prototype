@@ -21,9 +21,9 @@ public class FinalBoss : MonoBehaviour, IDamageableObject
       }
    }
 
-   public void TakeDamage(float damage)
+   public void TakeDamage(float damageAmount)
    {
-      Debug.Log(damage + "Damage Taken");
-      _healthBoss -= damage;
+      Debug.Log(damageAmount + "Damage Taken");
+      _healthBoss -= damageAmount;
    }
 }

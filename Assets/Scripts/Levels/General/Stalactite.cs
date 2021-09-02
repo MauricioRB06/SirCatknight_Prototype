@@ -30,7 +30,7 @@ namespace Levels.General
         {
             if (collision.transform.CompareTag("Player"))
             {
-                Instantiate(crashParticles, transform.position, Quaternion.identity);
+                Instantiate(crashParticles, transform.position + new Vector3(0,1,0), Quaternion.identity);
                 collision.transform.GetComponent<PlayerController>().Core.Combat.TakeDamage(damageToGive);
                 
                 if (damageToGive <= kockbackForce)

@@ -1,4 +1,5 @@
 ﻿
+using Player;
 using Player.Input;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace Levels.General
     
     public class PickupableWeapon : MonoBehaviour
     {
+        [SerializeField] private RuntimeAnimatorController weaponPlayerAnimator;
         private enum WeaponType
         { 
             Fishcalibur
@@ -21,14 +23,15 @@ namespace Levels.General
         {
             if (!collision.transform.CompareTag("Player")) return;
             
-            collision.GetComponent<PlayerInputHandler>().ChangeControllerCanAttack();
-            
             switch (weaponType.ToString())
             {
                 case "Fishcalibur":
-                    Debug.Log($"You Pickup: {gameObject.name}");
+                    
+                    collision.GetComponent<PlayerInputHandler>().ChangeControllerCanAttack();
+                    collision.GetComponent<PlayerController>().ChangeAnimatorWeapon(weaponPlayerAnimator);
                     break;
             }
+            
             Destroy(gameObject);
         }
     }

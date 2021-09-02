@@ -812,6 +812,42 @@ TextureImporter:
   - first:
       213: -7124806098513614467
     second: Level 0 Checkpoint Flag 16
+  - first:
+      213: -6822298804547092221
+    second: Level 0 DeathZone LavaComplement 0
+  - first:
+      213: -3403018439751450042
+    second: Level 0 DeathZone LavaComplement 1
+  - first:
+      213: -7195680704064403043
+    second: Level 0 DeathZone LavaComplement 2
+  - first:
+      213: 2037714557303079568
+    second: Level 0 DeathZone LavaComplement 3
+  - first:
+      213: -4010009568737615255
+    second: Level 0 DeathZone LavaComplement 4
+  - first:
+      213: -6194088873754683671
+    second: Level 0 DeathZone LavaComplement 5
+  - first:
+      213: 3104932078455194805
+    second: Level 0 DeathZone LavaComplement 6
+  - first:
+      213: -1773903618430756292
+    second: Level 0 DeathZone LavaComplement 7
+  - first:
+      213: 3066285474969969728
+    second: Level 0 DeathZone LavaComplement 8
+  - first:
+      213: -3214336782401031106
+    second: Level 0 DeathZone LavaComplement 9
+  - first:
+      213: 4890802882892743641
+    second: Level 0 DeathZone LavaComplement 10
+  - first:
+      213: 6445914011153964367
+    second: Level 0 DeathZone LavaComplement 11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -6434,6 +6470,258 @@ TextureImporter:
       bones: []
       spriteID: d792f8c2a9a9f1d90800000000000000
       internalID: -7124806098513614467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 0 DeathZone LavaComplement 0
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301066322635251a0800000000000000
+      internalID: -6822298804547092221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 0 DeathZone LavaComplement 1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642c28e42cc06c0d0800000000000000
+      internalID: -3403018439751450042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 0 DeathZone LavaComplement 2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99cb15268ec32c90800000000000000
+      internalID: -7195680704064403043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 0 DeathZone LavaComplement 3
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09241b5f79a674c10800000000000000
+      internalID: 2037714557303079568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 0 DeathZone LavaComplement 4
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9622a7d0b859958c0800000000000000
+      internalID: -4010009568737615255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 0 DeathZone LavaComplement 5
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e617acacfc2a0aa0800000000000000
+      internalID: -6194088873754683671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 0 DeathZone LavaComplement 6
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b48904564fe61b20800000000000000
+      internalID: 3104932078455194805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 0 DeathZone LavaComplement 7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a97adbe04d167e0800000000000000
+      internalID: -1773903618430756292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 0 DeathZone LavaComplement 8
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0446683c462ad8a20800000000000000
+      internalID: 3066285474969969728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 0 DeathZone LavaComplement 9
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34b3880ab16463d0800000000000000
+      internalID: -3214336782401031106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 0 DeathZone LavaComplement 10
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d347453f4f9fd340800000000000000
+      internalID: 4890802882892743641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 0 DeathZone LavaComplement 11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d9b8724ac747950800000000000000
+      internalID: 6445914011153964367
       vertices: []
       indices: 
       edges: []

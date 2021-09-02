@@ -14,14 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDetails:
   - attackName: Left Slash
-    movementSpeed: 3
-    damageAmount: 10
-    cooldown: 2
-  - attackName: Right Slash
-    movementSpeed: 4
-    damageAmount: 15
-    cooldown: 2
-  - attackName: Up Slash
-    movementSpeed: 2
-    damageAmount: 20
+    movementSpeed: 0.1
+    damageAmount: 3
     cooldown: 1
+    knockBackStrenght: 0
+    knockBackAngle: {x: 0, y: 0}
+  - attackName: Right Slash
+    movementSpeed: 0.1
+    damageAmount: 4
+    cooldown: 0.75
+    knockBackStrenght: 0
+    knockBackAngle: {x: 0, y: 0}
+  - attackName: Up Slash
+    movementSpeed: 0.1
+    damageAmount: 5
+    cooldown: 0.5
+    knockBackStrenght: 0
+    knockBackAngle: {x: 0, y: 0}

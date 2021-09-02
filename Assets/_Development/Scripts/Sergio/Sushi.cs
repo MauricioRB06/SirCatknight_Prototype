@@ -31,7 +31,7 @@ public class Sushi : MonoBehaviour, IDamageableObject
             TakeDamage(0);
         }
     }
-    public void TakeDamage(float amount)
+    public void TakeDamage(float damageAmount)
     {
         Instantiate(sushiParticle, transform.position, Quaternion.identity);
         Destroy(gameObject, 0f);

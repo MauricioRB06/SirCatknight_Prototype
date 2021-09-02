@@ -237,9 +237,13 @@ namespace Player
         private void AnimationFinishTrigger() => PlayerStateMachine.CurrentState.AnimationFinishTrigger();
         
         // 
-        public void ChangeAnimatorWeapon(Animator weaponAnimator)
+        public void RestorePlayer() => PlayerStateMachine.ChangeState(IdleState);
+        
+        // 
+        public void ChangeAnimatorWeapon(RuntimeAnimatorController weaponAnimator)
         {
-            PlayerAnimator.runtimeAnimatorController = playerAnimatorBase;
+            PlayerAnimator.runtimeAnimatorController = weaponAnimator;
+            PlayerStateMachine.ChangeState(IdleState);
         }
         
         // 

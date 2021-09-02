@@ -122,21 +122,6 @@ namespace Levels.General
                 Debug.LogError("<color=#D22323><b>" +
                                "The teleport destination cannot be empty, please add one</b></color>");
             }
-            /*else if (sfxTeleportIn == null)
-            {
-                Debug.LogError("<color=#D22323><b>" +
-                               "The sound effect when using teleportation is empty, please add one</b></color>");
-            }
-            else if (sfxTeleportOut == null)
-            {
-                Debug.LogError("<color=#D22323><b>" +
-                               "The sound effect when using teleportation is empty, please add one</b></color>");
-            }
-            else if (sfxTeleport == null)
-            {
-                _teleportCollider = GetComponent<CircleCollider2D>();
-                if (!_teleportCollider.isTrigger) _teleportCollider.isTrigger = true;
-            }*/
             else
             {
                 _teleportCollider = GetComponent<CircleCollider2D>();
