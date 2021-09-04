@@ -20,6 +20,7 @@
 //  C# Polymorphism: https://www.youtube.com/watch?v=XzKL94OMDV4&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B&index=46 [ Spanish ]
 
 using _Development.Scripts.Mauricio;
+using _Development.Scripts.Mauricio.Managers;
 using Player.Data;
 using Player.Input;
 using Player.Inventory;

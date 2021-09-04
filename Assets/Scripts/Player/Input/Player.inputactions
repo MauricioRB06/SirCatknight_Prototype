@@ -76,6 +76,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "3d0beafe-2027-4230-8d7f-56ec7486c92f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -419,6 +427,39 @@
                     "action": "DashDirection",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4cc29614-4fba-4d60-89d5-8ce9824cfc68",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df23c40d-01bd-4665-a8da-34ee41c4b1b2",
+                    "path": "<XInputController>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox One",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ba7eefad-03b6-4004-8961-ef785abca4ae",
+                    "path": "<DualShockGamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualShock 4",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -451,9 +492,17 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Pause",
+                    "name": "Navigate",
+                    "type": "Value",
+                    "id": "e2232190-5e31-47cb-91b5-8e18caf21d14",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Submit",
                     "type": "Button",
-                    "id": "681adeb1-c999-448b-ba36-1f6a80ad2cd0",
+                    "id": "d50f8103-ff6d-4e4f-9f46-0d3d17f14793",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -464,7 +513,7 @@
                     "name": "",
                     "id": "afd51359-fafa-41fd-bc30-f093f98c848f",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "",
+                    "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "Keyboard",
                     "action": "Click",
@@ -499,7 +548,7 @@
                     "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard",
                     "action": "Point",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -517,12 +566,122 @@
                 },
                 {
                     "name": "",
-                    "id": "646dadb7-8bb9-4b2d-b23a-ea5c504fcd24",
-                    "path": "",
+                    "id": "b0869543-4071-4c50-a8be-9c1902106052",
+                    "path": "<DualShockGamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualShock 4",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fb058bc9-b6e6-418c-8d75-28b7a3bf8171",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox One",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "09799bf3-0fb0-43e9-b2a6-509854778e85",
+                    "path": "<DualShockGamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualShock 4",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "WASD",
+                    "id": "4932b42a-3d5b-4b7b-b230-89d01cc2bdb3",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pause",
+                    "action": "Navigate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "f25dddb3-2f13-4c0c-9a72-b0ff21a19dbc",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "57a0375d-b24e-4164-95f3-fa01f3ce0b8f",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "ac1cec54-0b1b-444c-a064-fed7214cb5b7",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "264f53ec-42de-4001-a8e0-a65bc739c49e",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2bfa4758-12a1-4941-a2b1-bdff1c13dac8",
+                    "path": "<XInputController>/dpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox One",
+                    "action": "Navigate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "61c3cf50-6134-4a0b-9c8d-d77d394767d2",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox One",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c8055226-6f5a-4dac-bd0b-c2e84411df06",
+                    "path": "<DualShockGamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DualShock 4",
+                    "action": "Submit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

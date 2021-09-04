@@ -1,23 +1,34 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace _Development.Scripts.Mauricio
+namespace _Development.Scripts.Mauricio.Managers
 {
     public enum GameState
     {
         MainMenu,
         InGame,
-        PauseMenu,
+        PauseGame,
+        ResumeGame,
         GameOver
     }
     
     public class GameManager : MonoBehaviour
     {
+        public enum CursorStates
+        {
+            BasicCursor,
+            ClickableCursor
+        }
+        
+        [SerializeField] private CursorStates currentCursor = CursorStates.BasicCursor;
+        [SerializeField] private Texture2D[] cursors;
+        
         public static GameManager Instance;
-
+        
         public GameState currentGameState = GameState.MainMenu;
-
-        private Transform containerTest;
+        
+        //private Transform containerTest;
         
         private void Awake()
         {
@@ -30,8 +41,32 @@ namespace _Development.Scripts.Mauricio
             {
                 Destroy(gameObject);
             }
-        }
 
+            Cursor.SetCursor(cursors[(int)currentCursor], Vector2.zero, CursorMode.Auto);
+        }
+        
+        // 
+        public void ChangeCursor(CursorStates newCursorState)
+        {
+            Cursor.SetCursor(cursors[(int)newCursorState], Vector2.zero, CursorMode.Auto);
+        }
+        
+        // 
+        public void InGame() => ChangeGameState(GameState.InGame);
+        
+        // 
+        public void GameOver() => ChangeGameState(GameState.GameOver);
+
+        // 
+        public void MainMenu() => ChangeGameState(GameState.MainMenu);
+        
+        // 
+        public void PauseGame() => ChangeGameState(GameState.PauseGame);
+        
+        // 
+        public void ResumeGame() => ChangeGameState(GameState.ResumeGame);
+        
+        // 
         private void ChangeGameState(GameState newGameState)
         {
             if (newGameState == GameState.MainMenu)
@@ -42,9 +77,15 @@ namespace _Development.Scripts.Mauricio
             {
                 //TODO: Create InGame State
             }
-            else if (newGameState == GameState.PauseMenu)
+            else if (newGameState == GameState.PauseGame)
             {
-                //TODO: Create PauseMenu State
+                Time.timeScale = 0;
+                AudioListener.pause = true;
+            }
+            else if (newGameState == GameState.ResumeGame)
+            {
+                Time.timeScale = 1;
+                AudioListener.pause = false;
             }
             else if (newGameState == GameState.GameOver)
             {
@@ -53,26 +94,6 @@ namespace _Development.Scripts.Mauricio
 
             currentGameState = newGameState;
             Debug.Log("GameState: " + currentGameState);
-        }
-        
-        public void InGame()
-        {
-            ChangeGameState(GameState.InGame);
-        }
-        
-        public void GameOver()
-        {
-            ChangeGameState(GameState.GameOver);
-        }
-        
-        public void MainMenu()
-        {
-            ChangeGameState(GameState.MainMenu);
-        }
-        
-        public void PauseMenu()
-        {
-            ChangeGameState(GameState.PauseMenu);
         }
     }
 }

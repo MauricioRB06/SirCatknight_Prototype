@@ -1,4 +1,5 @@
 ﻿using System;
+using _Development.Scripts.Mauricio.Managers;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -73,6 +74,8 @@ namespace Player.Input
         // 
         public bool InteractInput { get; private set; }
         
+        public bool IsPause { get; private set; }
+        
         // 
         private bool ControllerCanMove { get; set; }
         private bool ControllerCanJump { get; set; }
@@ -120,6 +123,7 @@ namespace Player.Input
         public void OnMoveInput(InputAction.CallbackContext context)
         {
             if (!ControllerCanMove) return;
+            if (IsPause) return;
             
             RawMovementInput = context.ReadValue<Vector2>();
             
@@ -135,6 +139,7 @@ namespace Player.Input
         public void OnJumpInput(InputAction.CallbackContext context)
         {
             if (!ControllerCanJump) return;
+            if (IsPause) return;
             
             if (context.started)
             {
@@ -153,6 +158,7 @@ namespace Player.Input
         public void OnGrabInput(InputAction.CallbackContext context)
         {
             if (!ControllerCanGrab) return;
+            if (IsPause) return;
             
             if (context.started) GrabInput = true;
 
@@ -163,6 +169,7 @@ namespace Player.Input
         public void OnDashInput(InputAction.CallbackContext context)
         {
             if (!ControllerCanDash) return;
+            if (IsPause) return;
             
             if (context.started)
             {
@@ -180,6 +187,7 @@ namespace Player.Input
         public void OnDashDirectionInput(InputAction.CallbackContext context)
         {
             if (!ControllerCanDash) return;
+            if (IsPause) return;
             
             RawDashDirectionInput = context.ReadValue<Vector2>();
 
@@ -197,7 +205,8 @@ namespace Player.Input
         public void OnDodgeRollInput(InputAction.CallbackContext context)
         {
             if (!ControllerCanDodgeRoll) return;
-
+            if (IsPause) return;
+            
             if (context.started)
             {
                 DodgeRollInput = true;
@@ -221,6 +230,7 @@ namespace Player.Input
         public void OnPrimaryAttackInput(InputAction.CallbackContext context)
         {
             if (!ControllerCanAttack) return;
+            if (IsPause) return;
             
             if (context.started)
             {
@@ -236,6 +246,7 @@ namespace Player.Input
         public void OnSecondaryAttackInput(InputAction.CallbackContext context)
         {
             if (!ControllerCanAttack) return;
+            if (IsPause) return;
             
             if (context.started)
             {
@@ -250,6 +261,8 @@ namespace Player.Input
         // 
         public void OnInteract(InputAction.CallbackContext context)
         {
+            if (IsPause) return;
+            
             if (context.started)
             {
                 InteractInput = true;
@@ -257,6 +270,25 @@ namespace Player.Input
             else if (context.canceled)
             {
                 InteractInput = false;
+            }
+        }
+        
+        public void Pause(InputAction.CallbackContext context)
+        {
+            if (context.canceled)
+            {
+                if (GameManager.Instance.currentGameState == GameState.PauseGame)
+                {
+                    IsPause = false;
+                    NormInputX = 0;
+                    NormInputY = 0;
+                    GameManager.Instance.ResumeGame();
+                }
+                else
+                {
+                    IsPause = true;
+                    GameManager.Instance.PauseGame();
+                }
             }
         }
         
