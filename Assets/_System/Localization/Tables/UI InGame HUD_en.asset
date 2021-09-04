@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 10396278784
-    m_Localized: 'Collectables:   / '
+    m_Localized: 'Collectables:   /'
     m_Metadata:
       m_Items: []
   references:

@@ -17,6 +17,151 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: caf5a71902b0e33409bb25b2da77ef1e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 23525986946162688
+    m_Localized: Hero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657817710043136
+    m_Localized: "Verrouille: Dois obtenir les trois pi\xE8ces de collection au niveau
+      Tutoriel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657853177077760
+    m_Localized: "Verrouille: Dois obtenir les trois pi\xE8ces de collection au niveau
+      La tour du sucre"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657855655911424
+    m_Localized: "Verrouille: Dois obtenir les trois pi\xE8ces de collection au niveau
+      Val des Samourais"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657857908252672
+    m_Localized: "Verrouille: Dois obtenir les trois pi\xE8ces de collection au niveau
+      Labyrinthe du ciel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657860458389504
+    m_Localized: "Verrouille: Dois obtenir les trois pi\xE8ces de collection au niveau
+      Les mines corrompues de Valmaril"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657911222050816
+    m_Localized: "Verrouille: Dois obtenir les trois pi\xE8ces de collection au niveau
+      Le ch\xE2teau de Miauvil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658280593432576
+    m_Localized: Objet de collection obtint au niveau Tutoriel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658282103382016
+    m_Localized: Objet de collection obtint au niveau  La tour du sucre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658282808025088
+    m_Localized: Objet de collection obtint au niveau Val des Samourais
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658283412004864
+    m_Localized: Objet de collection obtint au niveau Labyrinthe du ciel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658339611484160
+    m_Localized: Objet de collection obtint au niveau Les mines corrompues de Valmaril
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658341058519040
+    m_Localized: "Objet de collection obtint au niveau Le ch\xE2teau de Miauvil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658574060494848
+    m_Localized: Le voyage commence
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658575599804416
+    m_Localized: "Les aventures sucr\xE9es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658577139113984
+    m_Localized: Les labyrinthes orientals
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658578921693184
+    m_Localized: Sur les nuages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658580771381248
+    m_Localized: Le voyage dans les profondeurs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658583489290240
+    m_Localized: "\xC0 nouveau ensemble"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658715320459264
+    m_Localized: "La fougue du explorateur de Perseo est aliment\xE9 par le souhait
+      de rancontrer \xE0 Ziel.\r\nLe chemin est plein des est\xE1 lleno de surprises,
+      ses ennemis sont conu la enl\xE9vent.\r\nEntre ses pens\xE9es et d\xE9sillusions
+      sans m\xEAme s'en rendre compte et perdue dans l'image de Ziel, Il a arriv\xE9
+      aux murs d'un tour bizarre , - Il pensait: C'est ici que Ziel purge sa peine
+      ? Il est tempps de la trouver !\r\n\r\n-  Il dit pendant pousse la grande porte
+      du chocolat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23523673372270592
+    m_Localized: "Perseo est tomb\xE9 dans la profondeur de leurs r\xEAves. Sa derni\xE8re
+      remembrance le harc\xE8le : Ziel, sa ma\xEEtresse, elle a \xE9t\xE9 enlever
+      par Miauvil et a emport\xE9 \xE0 son ch\xE2teau. Perseo est d\xE9termin\xE9
+      \xE0 la r\xE9cup\xE9rer et revenir \xE0 ses bras doux et accueillant, l\xE0
+      o\xF9 il faut. le doux et craintif f\xE9lin c'a rempli de courage et il est
+      p\xEAt pour l'aventure. tu l'es aussi ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23525937218494464
+    m_Localized: COLECCIONABLE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526032815071232
+    m_Localized: Overture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526035025469440
+    m_Localized: Mobius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526041203679232
+    m_Localized: "\u8272\u306E\u8FF7\u5BAE (Iro no Meikyuu)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526042344529920
+    m_Localized: "\u732B\u306E\u6012\u308A (Neko no ikari)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526044290686976
+    m_Localized: Le vals du ciel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526045163102208
+    m_Localized: Galem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526046907932672
+    m_Localized: La mine lumineuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526049185439744
+    m_Localized: Viento oscuro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23565702571663360
+    m_Localized: Perseo's sonata
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23565703817371648
+    m_Localized: "Finalit\xE9"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

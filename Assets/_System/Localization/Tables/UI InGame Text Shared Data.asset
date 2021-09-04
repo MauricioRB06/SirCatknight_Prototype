@@ -40,19 +40,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3498755373047808
-    m_Key: Message Collectable Pickup
+    m_Key: Message Fishcalibur Pickup
     m_Metadata:
       m_Items: []
   - m_Id: 3498800503758848
-    m_Key: Message Pressed The Button
+    m_Key: Message Collectable Pickup
     m_Metadata:
       m_Items: []
   - m_Id: 19816527711346688
-    m_Key: Message Activated The Lever
+    m_Key: Message Pressed The Button
     m_Metadata:
       m_Items: []
   - m_Id: 19816529053523968
-    m_Key: Activated The Lever
+    m_Key: Message Activated The Lever
     m_Metadata:
       m_Items: []
   m_Metadata:

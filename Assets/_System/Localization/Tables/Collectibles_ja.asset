@@ -17,6 +17,78 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: caf5a71902b0e33409bb25b2da77ef1e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 23525986946162688
+    m_Localized: Hero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657817710043136
+    m_Localized: "\u5BC6\uFF1A\u30C1\u30E5\u30FC\u30C8\u30EA\u30A2\u30EB\u30EC\u30D9\u30EB\u306E\u53CE\u96C6\u7269\u306E\uFF13\u3064\u306E\u5207\u308C\u3092\u624B\u306B\u5165\u308C\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657853177077760
+    m_Localized: "\u5BC6\uFF1A\u7802\u7CD6\u306E\u5854\u30EC\u30D9\u30EB\u306E\u53CE\u96C6\u7269\u306E\uFF13\u3064\u306E\u5207\u308C\u3092\u624B\u306B\u5165\u308C\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657855655911424
+    m_Localized: "\u5BC6\uFF1A\u4F8D\u306E\u6751\u30EB\u30EC\u30D9\u30EB\u306E\u53CE\u96C6\u7269\u306E\uFF13\u3064\u306E\u5207\u308C\u3092\u624B\u306B\u5165\u308C\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657857908252672
+    m_Localized: "\u5BC6\uFF1A\u7A7A\u306E\u8FF7\u5BAE\u30EB\u30EC\u30D9\u30EB\u306E\u53CE\u96C6\u7269\u306E\uFF13\u3064\u306E\u5207\u308C\u3092\u624B\u306B\u5165\u308C\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657860458389504
+    m_Localized: "\u5BC6\uFF1A\u30D0\u30EB\u30DE\u30EA\u30EB\u306E\u8150\u6557\u3057\u305F\u9271\u5C71\u30EB\u30EC\u30D9\u30EB\u306E\u53CE\u96C6\u7269\u306E\uFF13\u3064\u306E\u5207\u308C\u3092\u624B\u306B\u5165\u308C\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19657911222050816
+    m_Localized: "\u5BC6\uFF1A\u30DF\u30A2\u30A6\u30D3\u30EB\u30EB\u306E\u57CE\u30EC\u30D9\u30EB\u306E\u53CE\u96C6\u7269\u306E\uFF13\u3064\u306E\u5207\u308C\u3092\u624B\u306B\u5165\u308C\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23525937218494464
+    m_Localized: "\u53CE\u96C6\u7269"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526032815071232
+    m_Localized: Overture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526035025469440
+    m_Localized: Mobius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526041203679232
+    m_Localized: "\u8272\u306E\u8FF7\u5BAE (Iro no Meikyuu)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526042344529920
+    m_Localized: "\u732B\u306E\u6012\u308A (Neko no ikari)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526044290686976
+    m_Localized: Le vals du ciel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526045163102208
+    m_Localized: Galem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526046907932672
+    m_Localized: La mine lumineuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526049185439744
+    m_Localized: Viento oscuro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23565702571663360
+    m_Localized: Perseo's sonata
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23565703817371648
+    m_Localized: "Finalit\xE9"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

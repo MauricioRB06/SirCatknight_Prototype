@@ -111,52 +111,72 @@ MonoBehaviour:
     m_Key: Collectable 5 Story
     m_Metadata:
       m_Items: []
-  - m_Id: 19693871724929024
+  - m_Id: 23523673372270592
+    m_Key: Journey start story
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23524412207308800
+    m_Key: Final Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23525937218494464
     m_Key: Menu Collectables Name
     m_Metadata:
       m_Items: []
-  - m_Id: 19700774882418688
-    m_Key: Collectable 0 OST
+  - m_Id: 23525986946162688
+    m_Key: Collectable 0 OST Main Menu
     m_Metadata:
       m_Items: []
-  - m_Id: 19700777164120064
+  - m_Id: 23526032815071232
+    m_Key: Collectable 0 OST Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526035025469440
     m_Key: Collectable 1 OST A
     m_Metadata:
       m_Items: []
-  - m_Id: 19700924333858816
+  - m_Id: 23526036707385344
     m_Key: Collectable 1 OST B
     m_Metadata:
       m_Items: []
-  - m_Id: 19701090759647232
+  - m_Id: 23526041203679232
     m_Key: Collectable 2 OST A
     m_Metadata:
       m_Items: []
-  - m_Id: 19701102373675008
+  - m_Id: 23526042344529920
     m_Key: Collectable 2 OST B
     m_Metadata:
       m_Items: []
-  - m_Id: 19701113480192000
+  - m_Id: 23526044290686976
     m_Key: Collectable 3 OST A
     m_Metadata:
       m_Items: []
-  - m_Id: 19701129414352896
+  - m_Id: 23526045163102208
     m_Key: Collectable 3 OST B
     m_Metadata:
       m_Items: []
-  - m_Id: 19701140285988864
+  - m_Id: 23526046907932672
     m_Key: Collectable 4 OST A
     m_Metadata:
       m_Items: []
-  - m_Id: 19701150251655168
+  - m_Id: 23526047746793472
     m_Key: Collectable 4 OST B
     m_Metadata:
       m_Items: []
-  - m_Id: 19701184917577728
+  - m_Id: 23526049185439744
     m_Key: Collectable 5 OST A
     m_Metadata:
       m_Items: []
-  - m_Id: 19701203200548864
+  - m_Id: 23526049957191680
     m_Key: Collectable 5 OST B
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23565702571663360
+    m_Key: Collectable OST Credits A
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23565703817371648
+    m_Key: Collectable OST Credits B
     m_Metadata:
       m_Items: []
   m_Metadata:

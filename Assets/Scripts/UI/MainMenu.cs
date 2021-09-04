@@ -86,25 +86,25 @@ namespace UI
         }
         
         // 
-        private void LanguageEnglish()
+        public void LanguageEnglish()
         {
-            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0] ;
+            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
         }
         
         // 
-        private void LanguageSpanish()
+        public void LanguageSpanish()
         {
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
         }
         
         // 
-        private void LanguageFrench()
+        public void LanguageFrench()
         {
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[2];
         }
         
         // 
-        private void LanguageJapanese()
+        public void LanguageJapanese()
         {
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[3];
         }

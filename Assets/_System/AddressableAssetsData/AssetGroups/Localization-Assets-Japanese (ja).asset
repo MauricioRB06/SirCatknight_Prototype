@@ -17,17 +17,11 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 562058e81bf36c24b80a8fad0b049162
   m_SerializeEntries:
-  - m_GUID: 265ab8fac15629e478748884f2283044
-    m_Address: Menu_Button_Jp2
+  - m_GUID: a5288538f27b2ff469b0f682c40129d8
+    m_Address: Button Japanese True
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-ja
-  - m_GUID: 415ed9b6c7d11364fb08c5889dce2c23
-    m_Address: Menu_Button_En1
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-ja
-    - Locale-es
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 099765490df7a8b42afbca8e793739cc, type: 2}
   m_SchemaSet:

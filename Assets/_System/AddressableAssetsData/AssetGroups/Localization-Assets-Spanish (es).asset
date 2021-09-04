@@ -17,11 +17,18 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 4c011a5a829a2b9408d5075aee6bc296
   m_SerializeEntries:
-  - m_GUID: cb72460eb7fd0d742a5d7ab4a2112aed
-    m_Address: Menu_Button_Es2
+  - m_GUID: 29586e771d9519647bfb82d431fd0e92
+    m_Address: Button Spanish True
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-es
+  - m_GUID: 0c6b79c7b35281142b8c95c9cb73e6d2
+    m_Address: Button English False
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    - Locale-fr
+    - Locale-ja
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 099765490df7a8b42afbca8e793739cc, type: 2}
   m_SchemaSet:

@@ -19,43 +19,45 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 113613905920
-    m_Localized: 
+    m_Localized: NOUVELLE PARTIE
     m_Metadata:
       m_Items: []
   - m_Id: 26010638629904384
-    m_Localized: 
+    m_Localized: CONTINUER
     m_Metadata:
       m_Items: []
   - m_Id: 26010704157515776
-    m_Localized: 
+    m_Localized: "G\xC9N\xC9RIQUE"
     m_Metadata:
       m_Items: []
   - m_Id: 26010749757988864
-    m_Localized: 
+    m_Localized: COLECCIONABLE
     m_Metadata:
       m_Items: []
   - m_Id: 26010793441665024
-    m_Localized: 
+    m_Localized: CONFIGURATION
     m_Metadata:
       m_Items: []
   - m_Id: 26010828573155328
-    m_Localized: 
+    m_Localized: "D\xC9CONNECTER"
     m_Metadata:
       m_Items: []
   - m_Id: 26010892293021696
-    m_Localized: 
+    m_Localized: 'Veux-tu vraiment
+
+      abandonner l''aventure ?'
     m_Metadata:
       m_Items: []
   - m_Id: 26011212708487168
-    m_Localized: 
+    m_Localized: Oui :(
     m_Metadata:
       m_Items: []
   - m_Id: 26011217104117760
-    m_Localized: 
+    m_Localized: Non :)
     m_Metadata:
       m_Items: []
   - m_Id: 26012010431553536
-    m_Localized: 
+    m_Localized: Retourner au menu
     m_Metadata:
       m_Items: []
   references:

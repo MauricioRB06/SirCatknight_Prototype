@@ -20,12 +20,12 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 19657817710043136
     m_Localized: 'Bloqueado: Debes conseguir las 3 piezas del coleccionable en el
-      nivel Tutorial.'
+      nivel Tutorial'
     m_Metadata:
       m_Items: []
   - m_Id: 19657853177077760
     m_Localized: 'Bloqueado: Debes conseguir las 3 piezas del coleccionable en el
-      nivel Torre De Azucar'
+      nivel La Torre De Azucar'
     m_Metadata:
       m_Items: []
   - m_Id: 19657855655911424
@@ -40,12 +40,12 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 19657860458389504
     m_Localized: 'Bloqueado: Debes conseguir las 3 piezas del coleccionable en el
-      nivel Minas Corruptas De Valmaril'
+      nivel Las Minas Corruptas De Valmaril'
     m_Metadata:
       m_Items: []
   - m_Id: 19657911222050816
     m_Localized: 'Bloqueado: Debes conseguir las 3 piezas del coleccionable en el
-      nivel Castillo De Meowvil'
+      nivel El Castillo De Miauvil'
     m_Metadata:
       m_Items: []
   - m_Id: 19658280593432576
@@ -53,7 +53,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19658282103382016
-    m_Localized: Coleccionable obtenido en lel nivel Torre De Azucar
+    m_Localized: Coleccionable obtenido en lel nivel La Torre De Azucar
     m_Metadata:
       m_Items: []
   - m_Id: 19658282808025088
@@ -65,11 +65,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19658339611484160
-    m_Localized: Coleccionable obtenido en el nivel Minas Corruptas De Valmaril
+    m_Localized: Coleccionable obtenido en el nivel Las Minas Corruptas De Valmaril
     m_Metadata:
       m_Items: []
   - m_Id: 19658341058519040
-    m_Localized: Coleccionable obtenido en el nivel Castillo De Meowvil
+    m_Localized: Coleccionable obtenido en el nivel El Castillo De Miauvil
     m_Metadata:
       m_Items: []
   - m_Id: 19658575599804416
@@ -84,20 +84,138 @@ MonoBehaviour:
     m_Localized: Sobre Las Nubes
     m_Metadata:
       m_Items: []
-  - m_Id: 19693871724929024
-    m_Localized: COLECCIONABLES
+  - m_Id: 23525986946162688
+    m_Localized: Hero
     m_Metadata:
       m_Items: []
   - m_Id: 19658715320459264
     m_Localized: "El \xEDmpetu explorador de Perseo es alimentado por el deseo de
-      encontrar a Ziel. El camino est\xE1 lleno de sorpresas, sus enemigos resultaron
-      ser esas sabandijas que recorr\xEDan con melosos roces las pantorrillas de
-      Ziel. Ellos se la llevaron. Perseo tendr\xE1 que enfrentar a esos engre\xEDdos
-      gatos que nunca entendieron el cari\xF1o que se ten\xEDan. Pero antes de siquiera
-      darse cuenta y perdido en la imagen de su due\xF1a, lleg\xF3 a los muros de
-      un extra\xF1o castillo, \xBFSer\xE1 aqu\xED donde est\xE1 pasando la condena
-      mi amada?, pens\xF3. \xA1Es hora de encontrarla!, dijo mientras empujaba la
-      gran puerta de chocolate."
+      encontrar a Ziel. \r\nEl camino est\xE1 lleno de sorpresas, sus enemigos conocidos
+      son quienes la raptaron.\r\n Entre pensamiento y desilusiones sin siquiera
+      darse cuenta y perdido en la imagen de Ziel, lleg\xF3 a los muros de una\r\n
+      extra\xF1a torre, - pens\xF3: \xBFSer\xE1 aqu\xED donde Ziel est\xE1 pasando
+      su condena? \xA1Es hora de encontrarla!, \r\n- Dijo mientras empujaba la gran
+      puerta de chocolate."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658577139113984
+    m_Localized: Laberintos Orientales
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658580771381248
+    m_Localized: Viaje a Lo Profundo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658583489290240
+    m_Localized: Nuevamente Juntos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23523673372270592
+    m_Localized: "Perseo ha ca\xEDdo en la profundidad de sus sue\xF1os. Su ultimo
+      recuerdo lo atormenta: Ziel, su due\xF1a, fue raptada\r\npor Miauvil y llevada
+      a su castillo. Perseo est\xE1 decidido a recuperarla y volver a su suaves y
+      acogedores brazos,\r\njusto donde pertenece. El dulce y temeroso felino se
+      llen\xF3 de valor y est\xE1 listo para la aventura, \xBFt\xFA tambi\xE9n lo
+      est\xE1s?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658716159320064
+    m_Localized: "Mientras escalaba las pegajosas paredes de la torre en busca de
+      Miauriam, Perseo sinti\xF3 el peso de su armadura, mir\xF3 su espada notando
+      el esqueleto forjado de un pez, este le recordaba a ese juguete viscoso con
+      forma de pez dulce que se hund\xEDa entre sus dientes. Los dem\xE1s gatos se
+      lo quitaban y constantemente deb\xEDa enfurecerse para espantar a aquellos
+      ladronzuelos, escaladores perpetuos de rascadores donde Perseo no se molestaba
+      en ir. Cuando finalmente decid\xEDa regresar con el juguete al lado de Ziel,
+      los dem\xE1s gatos lo encrucijaban con garrazos y mordidas; Ziel al notar su
+      demora acudi\xF3 a su rescate, pues a\xF1oraba su sonado ronroneo. Con su delicada
+      mano tom\xF3 a Perseo, lo acarici\xF3, le dio un par de golosinas que ten\xEDa
+      preparadas para los dem\xE1s gatos y mantuvo su ronroneo por horas. San\xF3
+      el dolor que esos pretenciosos gatos causaron y ahora estaba solo para ella."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658716964626432
+    m_Localized: "Perseo sali\xF3 de la torre de Miauriam, ahora se adentra al bosque;
+      arboles frondosos lo rodean y uno que otro roedor por el camino lo distrae,
+      y hace que pierda el rumbo. Ya no sabe cu\xE1l es la direcci\xF3n por tomar
+      ni como llego ah\xED, pareciera como si ese sitio estuviera improvisado para
+      \xE9l, de repente de un salto y dispuestos a atarcar, los ninjas de Manekineko
+      aparecen a su alrededor. Fue como aquella vez en el parque, donde jugueteando
+      entre los toboganes Perseo se encontr\xF3 con un h\xE1mster amigable para jugar,
+      mientras tanto iban saliendo m\xE1s h\xE1msteres de la arena. De repente 50
+      h\xE1msteres emergieron de la nada, Perseo no sab\xEDa que quer\xEDan, pero
+      se sent\xEDa intimidado. Estaba muy lejos de Ziel como para pedir ayuda. Fue
+      asi que arrojando garrazos de arena hizo un giro para llenar de arena el cuerpo
+      peludo de esos h\xE1msteres. Eso le dio suficiente tiempo para lograr escabullirse
+      hasta donde estaba Ziel. Los h\xE1msteres lo observaban desde lejos como previ\xE9ndolo
+      de su venganza. Mientras tanto Perseo gozaba de la seguridad en brazos de Ziel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658719514763264
+    m_Localized: "Perseo va de campamento con Ziel, mientras caminan por el sendero
+      Perseo vislumbra unos cuantos hongos que se le hac\xEDan extra\xF1amente conocidos
+      y apetitosos. Los efectos de consumirlos llegar\xEDan en unas cuantas horas,
+      pues en medio de la fogata del campamento Perseo siente como la confusi\xF3n
+      se apodera de \xE9l, de repente recuerda que esto ya lo vivi\xF3, y que solo
+      ha ca\xEDdo en un trance producto de aquellos champi\xF1ones que no debi\xF3
+      comer en la mina de Valmaril. No despertaba, solo quedaba seguir con su recuerdo.
+      Luego de que el fuego se presentara en forma de Miaushroom atacando a Ziel,
+      Perseo y el irrealismo de su mente lo lleva a buscar c\xF3mo proteger a Ziel,
+      en su camino la oscuridad era menos que indistinguible. Ahora se hallaba en
+      lo profundo un hoyo, la oscuridad y tranquilidad eran abismales, Ziel pensaba
+      que no era reto para Perseo escalar hasta el borde y salir. - F\xE1cil -. Solo
+      las horas y el despertar de Perseo lo dir\xEDan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23524412207308800
+    m_Localized: "Tras so\xF1ar con aquella vez en el castillo cuando enfrento a
+      Miauvil y rescato a Ziel de sus garras, de repente, nuestro h\xE9roe despierta
+      debajo del \xE1rbol m\xE1s grande del campamento en los brazos de Ziel. Ella
+      lo mira con dulzura y los ojos entrecerrados de Perseo la observan imperturbablemente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23525937218494464
+    m_Localized: COLECCIONABLES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526032815071232
+    m_Localized: Overture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526035025469440
+    m_Localized: Mobius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526041203679232
+    m_Localized: "\u8272\u306E\u8FF7\u5BAE (Iro no Meikyuu)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526042344529920
+    m_Localized: "\u732B\u306E\u6012\u308A (Neko no ikari)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526044290686976
+    m_Localized: Le vals du ciel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526045163102208
+    m_Localized: Galem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526046907932672
+    m_Localized: La mine lumineuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526049185439744
+    m_Localized: Viento oscuro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23565702571663360
+    m_Localized: Perseo's sonata
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23565703817371648
+    m_Localized: "Finalit\xE9"
     m_Metadata:
       m_Items: []
   references:

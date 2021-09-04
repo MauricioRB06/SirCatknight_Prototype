@@ -53,6 +53,10 @@ MonoBehaviour:
     m_Address: Assets/_System/Localization/Tables/InGame GameOver Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: df925427f18519b4199539b46ef01498
+    m_Address: Assets/_System/Localization/Tables/InGame Tutorial Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 099765490df7a8b42afbca8e793739cc, type: 2}
   m_SchemaSet:

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
   m_Name: Language Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: Language
+  m_TableCollectionName: Language Flags
   m_TableCollectionNameGuidString: d7a0c03c58545834ba33f75b9f695413
   m_Entries:
   - m_Id: 1833081413632
@@ -27,15 +27,16 @@ MonoBehaviour:
     m_Key: Japanese
     m_Metadata:
       m_Items: []
-  - m_Id: 27043403450195968
+  - m_Id: 31108494797742080
     m_Key: French
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items:
     - id: 0
+    - id: 1
   m_KeyGenerator:
-    id: 1
+    id: 2
   references:
     version: 1
     00000000:
@@ -47,19 +48,34 @@ MonoBehaviour:
           - en
           - ja
           - es
+          - fr
         - m_KeyId: 2252713140224
           m_TableCodes:
           - en
           - ja
           - es
+          - fr
         - m_KeyId: 2434397806592
           m_TableCodes:
           - en
           - ja
           - es
+          - fr
         m_TypeString: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
     00000001:
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 31108494797742080
+          m_TableCodes:
+          - en
+          - es
+          - fr
+          - ja
+        m_TypeString: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    00000002:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
         asm: Unity.Localization}
       data:
