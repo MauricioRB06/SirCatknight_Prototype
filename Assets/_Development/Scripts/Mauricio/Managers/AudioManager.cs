@@ -70,7 +70,7 @@ namespace _Development.Scripts.Mauricio
         } 
         
         // 
-        public void WorldMusicVolume(float sliderWorldMusicVolume)
+        public void EnviromentMusicVolume(float sliderWorldMusicVolume)
         {
             musicMixer.SetFloat("MusicWorldVolume", sliderWorldMusicVolume);
         }

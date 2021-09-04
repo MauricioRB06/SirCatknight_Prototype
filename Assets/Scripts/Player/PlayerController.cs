@@ -19,7 +19,6 @@
 //  C# Polymorphism: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual
 //  C# Polymorphism: https://www.youtube.com/watch?v=XzKL94OMDV4&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B&index=46 [ Spanish ]
 
-using System;
 using _Development.Scripts.Mauricio;
 using Player.Data;
 using Player.Input;
@@ -29,7 +28,6 @@ using Player.PlayerStates.PlayerAbilityState;
 using Player.PlayerStates.PlayerGroundedState;
 using Player.PlayerStates.PlayerTouchingWallState;
 using StateMachine;
-using UnityEditor.Animations;
 using UnityEngine;
 
 namespace Player
@@ -43,8 +41,7 @@ namespace Player
         public DataPlayerController DataPlayerController => dataPlayerController;
         
         
-        [SerializeField] private AnimatorController playerAnimatorBase;
-        
+        [SerializeField] private Animator playerAnimatorBase;
         
         [SerializeField] private Transform interactPosition;
         public Transform InteractPosition => interactPosition;
@@ -247,7 +244,8 @@ namespace Player
         }
         
         // 
-        public void ResetAnimator() => PlayerAnimator.runtimeAnimatorController = playerAnimatorBase;
+        public void ResetAnimator() => PlayerAnimator.runtimeAnimatorController
+            = playerAnimatorBase.runtimeAnimatorController;
         
         // 
         public void JumpDust()

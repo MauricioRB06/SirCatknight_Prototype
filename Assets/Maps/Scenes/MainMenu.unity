@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option A
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d8998e012f56a5449be8a54196b97b8d, type: 2}
   m_sharedMaterial: {fileID: 1029849585239905781, guid: d8998e012f56a5449be8a54196b97b8d,
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -35557,13 +35557,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 549eb0def92184c4aad6ef561862f26c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullScreen: {fileID: 945527324}
-  resolution: {fileID: 1860580945}
-  antialiasing: {fileID: 1730139311}
-  masterVolume: {fileID: 0}
-  worldMusicVolume: {fileID: 0}
-  bossMusicVolume: {fileID: 0}
-  sfxVolume: {fileID: 0}
+  fullScreenToggle: {fileID: 945527324}
+  resolutionDropdown: {fileID: 1860580945}
+  antialiasingDropdown: {fileID: 1730139311}
+  masterVolumeSlider: {fileID: 1075308265}
+  enviromentMusicVolumeSlider: {fileID: 414812177}
+  bossMusicVolumeSlider: {fileID: 554846729}
+  sfxVolumeSlider: {fileID: 1046505772}
 --- !u!1 &1749012806
 GameObject:
   m_ObjectHideFlags: 0
@@ -37756,13 +37756,7 @@ MonoBehaviour:
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
-    m_Options:
-    - m_Text: Option A
-      m_Image: {fileID: 0}
-    - m_Text: Option B
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
+    m_Options: []
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -39322,8 +39316,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -42367,8 +42361,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -44688,8 +44682,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
