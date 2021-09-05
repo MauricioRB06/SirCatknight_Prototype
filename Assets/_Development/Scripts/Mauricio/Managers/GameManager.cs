@@ -23,6 +23,7 @@ namespace _Development.Scripts.Mauricio.Managers
         
         [SerializeField] private CursorStates currentCursor = CursorStates.BasicCursor;
         [SerializeField] private Texture2D[] cursors;
+        [SerializeField] private GameObject pauseCanvas;
         
         public static GameManager Instance;
         
@@ -41,7 +42,7 @@ namespace _Development.Scripts.Mauricio.Managers
             {
                 Destroy(gameObject);
             }
-
+            pauseCanvas.SetActive(false);
             Cursor.SetCursor(cursors[(int)currentCursor], Vector2.zero, CursorMode.Auto);
         }
         
@@ -79,11 +80,13 @@ namespace _Development.Scripts.Mauricio.Managers
             }
             else if (newGameState == GameState.PauseGame)
             {
+                pauseCanvas.SetActive(true);
                 Time.timeScale = 0;
                 AudioListener.pause = true;
             }
             else if (newGameState == GameState.ResumeGame)
             {
+                pauseCanvas.SetActive(false);
                 Time.timeScale = 1;
                 AudioListener.pause = false;
             }
