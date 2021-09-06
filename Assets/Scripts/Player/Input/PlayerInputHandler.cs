@@ -119,6 +119,18 @@ namespace Player.Input
             CheckJumpInputHoldTime();
             CheckDashInputHoldTime();
             CheckDodgeRollInputHoldTime();
+
+            switch (Device)
+            {
+                case "Xbox Controller":
+                case "Wireless Controller":
+                    Cursor.visible = false;
+                    break;
+                case "Keyboard":
+                case "Mouse":
+                    Cursor.visible = true;
+                    break;
+            }
         }
         
         // 

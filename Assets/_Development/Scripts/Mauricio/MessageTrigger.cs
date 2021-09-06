@@ -148,8 +148,6 @@ namespace _Development.Scripts.Mauricio
                     spritesXboxGamepad.SetActive(false);
                 }
             }
-
-            Debug.Log(collision.GetComponent<PlayerController>().InputHandler.Device);
         }
 
         // 
