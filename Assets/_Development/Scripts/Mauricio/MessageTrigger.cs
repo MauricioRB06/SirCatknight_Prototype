@@ -1,5 +1,6 @@
 
 using System.Collections;
+using Player;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,28 +9,42 @@ namespace _Development.Scripts.Mauricio
 {
     public class MessageTrigger : MonoBehaviour
     {
-        [SerializeField] private GameObject messageTextBox;
-        [SerializeField] private GameObject messageSpritesContainer;
-        [SerializeField] private GameObject messageTextContainer;
+        [SerializeField] private GameObject textBox;
+        [SerializeField] private GameObject spritesKeyboard;
+        [SerializeField] private GameObject spritesXboxGamepad;
+        [SerializeField] private GameObject spritesDualShock4;
+        [SerializeField] private GameObject text;
         [SerializeField] private GameObject objectToReveal;
+
+        private GameObject _inputSelector;
         
         // 
         private void Awake()
         {
+            
             StartCoroutine(SpritesFadeOut(transform.GetComponent<SpriteRenderer>(),
                 transform.GetComponent<SpriteRenderer>().color));
             
-            if (messageTextBox != null)
+            if (textBox != null)
             {
-                messageTextBox.SetActive(false);
+                textBox.SetActive(false);
             }
-            if (messageSpritesContainer != null)
+            if (spritesKeyboard != null)
             {
-                messageSpritesContainer.SetActive(false);
+                _inputSelector = spritesKeyboard;
+                spritesKeyboard.SetActive(false);
             }
-            if (messageTextContainer != null)
+            if (spritesXboxGamepad != null)
             {
-                messageTextContainer.SetActive(false);
+                spritesXboxGamepad.SetActive(false);
+            }
+            if (spritesDualShock4 != null)
+            {
+                spritesDualShock4.SetActive(false);
+            }
+            if (text != null)
+            {
+                text.SetActive(false);
             }
             if (objectToReveal != null)
             {
@@ -42,17 +57,17 @@ namespace _Development.Scripts.Mauricio
         {
             if (!collision.transform.CompareTag("Player")) return;
             
-            if (messageTextBox != null)
+            if (textBox != null)
             {
-                messageTextBox.SetActive(true);
+                textBox.SetActive(true);
             }
-            if (messageSpritesContainer != null)
+            if (_inputSelector != null)
             {
-                messageSpritesContainer.SetActive(true);
+                _inputSelector.SetActive(true);
             }
-            if (messageTextContainer != null)
+            if (text != null)
             {
-                messageTextContainer.SetActive(true);
+                text.SetActive(true);
             }
             if (objectToReveal != null)
             {
@@ -67,15 +82,15 @@ namespace _Development.Scripts.Mauricio
             StartCoroutine(SpritesFadeIn(transform.GetComponent<SpriteRenderer>(),
                 transform.GetComponent<SpriteRenderer>().color));
             
-            if (messageTextBox != null)
+            if (textBox != null)
             {
-                StartCoroutine(SpritesFadeIn(messageTextBox.GetComponent<SpriteRenderer>(),
-                    messageTextBox.GetComponent<SpriteRenderer>().color));
+                StartCoroutine(SpritesFadeIn(textBox.GetComponent<SpriteRenderer>(),
+                    textBox.GetComponent<SpriteRenderer>().color));
             }
             
-            if (messageTextContainer != null)
+            if (text != null)
             {
-                foreach (Transform child in messageTextContainer.transform)
+                foreach (Transform child in text.transform)
                 {
                     var childSpriteRenderer = child.GetComponent<TMP_Text>();
                     var childSpriteColor = childSpriteRenderer.color;
@@ -83,9 +98,9 @@ namespace _Development.Scripts.Mauricio
                 }
             }
             
-            if (messageSpritesContainer != null)
+            if (_inputSelector != null)
             {
-                foreach (Transform child in messageSpritesContainer.transform)
+                foreach (Transform child in _inputSelector.transform)
                 {
                     var childSpriteRenderer = child.GetComponent<SpriteRenderer>();
                     var childSpriteColor = childSpriteRenderer.color;
@@ -93,7 +108,48 @@ namespace _Development.Scripts.Mauricio
                 }
             }
         }
-        
+
+        private void OnTriggerStay2D(Collider2D collision)
+        {
+            if (!collision.transform.CompareTag("Player")) return;
+
+            if (collision.GetComponent<PlayerController>().InputHandler.Device == "Mouse" ||
+                collision.GetComponent<PlayerController>().InputHandler.Device == "Keyboard")
+            {
+                if (_inputSelector != null)
+                {
+                    _inputSelector = spritesKeyboard;
+                    
+                    spritesKeyboard.SetActive(true);
+                    spritesXboxGamepad.SetActive(false);
+                    spritesDualShock4.SetActive(false);
+                }
+            }
+            else if (collision.GetComponent<PlayerController>().InputHandler.Device == "Xbox Controller")
+            {
+                if (_inputSelector != null)
+                {
+                    _inputSelector = spritesXboxGamepad;
+                
+                    spritesXboxGamepad.SetActive(true);
+                    spritesKeyboard.SetActive(false);
+                    spritesDualShock4.SetActive(false); 
+                }
+            }
+            else if (collision.GetComponent<PlayerController>().InputHandler.Device == "PS4 Controller" ||
+                     collision.GetComponent<PlayerController>().InputHandler.Device == "Wireless Controller")
+            {
+                if (_inputSelector != null)
+                {
+                    _inputSelector = spritesDualShock4;
+                
+                    spritesDualShock4.SetActive(true);
+                    spritesKeyboard.SetActive(false);
+                    spritesXboxGamepad.SetActive(false);
+                }
+            }
+        }
+
         // 
         private void OnTriggerExit2D(Collider2D collision)
         {
@@ -102,36 +158,36 @@ namespace _Development.Scripts.Mauricio
             StartCoroutine(SpritesFadeOut(transform.GetComponent<SpriteRenderer>(),
                 transform.GetComponent<SpriteRenderer>().color));
             
-            if (messageTextBox != null)
+            if (textBox != null)
             {
-                StartCoroutine(SpritesFadeOut(messageTextBox.GetComponent<SpriteRenderer>(),
-                    messageTextBox.GetComponent<SpriteRenderer>().color));
+                StartCoroutine(SpritesFadeOut(textBox.GetComponent<SpriteRenderer>(),
+                    textBox.GetComponent<SpriteRenderer>().color));
             }
             
-            if (messageTextContainer != null)
+            if (text != null)
             {
-                foreach (Transform child in messageTextContainer.transform)
+                foreach (Transform child in text.transform)
                 {
                     var childSpriteRenderer = child.GetComponent<TMP_Text>();
                     var childSpriteColor = childSpriteRenderer.color;
                     StartCoroutine(TextFadeOut(childSpriteRenderer, childSpriteColor));
                 }
-                messageTextContainer.SetActive(false);
+                text.SetActive(false);
             }
             
-            if (messageSpritesContainer != null)
+            if (_inputSelector != null)
             {
-                foreach (Transform child in messageSpritesContainer.transform)
+                foreach (Transform child in _inputSelector.transform)
                 {
                     var childSpriteRenderer = child.GetComponent<SpriteRenderer>();
                     var childSpriteColor = childSpriteRenderer.color;
                     StartCoroutine(SpritesFadeOut(childSpriteRenderer, childSpriteColor));
                 }
                 
-                messageSpritesContainer.SetActive(false);
+                _inputSelector.SetActive(false);
             }
             
-            messageTextBox.SetActive(false);
+            textBox.SetActive(false);
         }
         
         // Coroutine that makes the sprites of the damage zone appear smoothly.

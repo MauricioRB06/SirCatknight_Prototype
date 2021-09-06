@@ -39,23 +39,17 @@ MonoBehaviour:
 
       Ing. Electronico
 
+      
 
-      Artista 2D Principal
-      <
+      Artista 2D
+      Principal <
 
       Programador <'
     m_Metadata:
       m_Items: []
   - m_Id: 812762439680
-    m_Localized: 'Sergio Sanchez Moreno
-
-      Ing. De Sistemas
-
-
-      > Programador
-
-      >
-      Artista 2D'
+    m_Localized: "Sergio S\xE1nchez Moreno\r\nIng. De Sistemas\r\n\r\n> Programador\r\n>
+      Artista 2D"
     m_Metadata:
       m_Items: []
   - m_Id: 715119042560
@@ -63,11 +57,12 @@ MonoBehaviour:
 
       Ing. Industrial
 
+      
 
-      Programadora <
+      Programadora
+      <
 
-      Artista
-      2D <'
+      Artista 2D <'
     m_Metadata:
       m_Items: []
   - m_Id: 937215827968
@@ -75,6 +70,7 @@ MonoBehaviour:
 
       Ing. Industrial
 
+      
 
       > Programador
 
@@ -87,12 +83,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 835646562304
-    m_Localized: 'Ivan Alexis
-
-      Ing. Agronomico
-
-
-      > Ecritor'
+    m_Localized: "Ivan Alexis\r\nIng. Agr\xF3nomo\r\n\r\n> Escritor"
     m_Metadata:
       m_Items: []
   - m_Id: 7601704837120
@@ -100,30 +91,20 @@ MonoBehaviour:
 
       Realizadora Audiovisual
 
+      
 
       Produccion
       SFX <'
     m_Metadata:
       m_Items: []
   - m_Id: 7687868424192
-    m_Localized: 'Willian Quintero
-
-      @ShundiZora
-
-      Ing. Quimico
-
-
-      >
-      Compositor Musical
-
-      > Traduccion Al Japones
-
-      > Traduccion Al Frances'
+    m_Localized: "Willian Quintero\r\n@ShundiZora\r\nIng. Quimico\r\n\r\n> Compositor
+      Musical\r\n> Traducci\xF3n Al Japones\r\n> Traducci\xF3n Al Frances"
     m_Metadata:
       m_Items: []
   - m_Id: 7999551348736
-    m_Localized: "Daniel Marmolejo\nDise\xF1ador Grafico\n\nArtista 2D <\nDise\xF1ador
-      de UI/UX <\nTraducci\xF3n Al Ingles <"
+    m_Localized: "Daniel Marmolejo\r\nDise\xF1ador Grafico\r\n\r\nArtista 2D <\r\nDise\xF1ador
+      de UI/UX <\r\nTraducci\xF3n Al Ingles <"
     m_Metadata:
       m_Items: []
   - m_Id: 8378317971456
@@ -133,6 +114,7 @@ MonoBehaviour:
   - m_Id: 8439785496576
     m_Localized: 'David Alberto Herrera
 
+      
 
       Ingeniero De Sistemas'
     m_Metadata:
@@ -147,13 +129,12 @@ MonoBehaviour:
   - m_Id: 8582396026880
     m_Localized: 'Una Mencion Especial Para Catalina
 
-      ( Ziel ) y Perseo ( Perseo
-      )
+      ( Ziel ) y Perseo (
+      Perseo )
 
-      Quienes Fueron La Inspiracion Para El Proyecto
+      Quienes Fueron La Inspiracion Para El
 
-      El Proyecto
-      :3'
+      Proyecto :3'
     m_Metadata:
       m_Items: []
   - m_Id: 9255804116992

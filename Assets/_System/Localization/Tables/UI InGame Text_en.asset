@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3498755373047808
-    m_Localized: 'You Picked Up: Fishcalibur'
+    m_Localized: 'You Pick Up: Fishcalibur'
     m_Metadata:
       m_Items: []
   - m_Id: 3498800503758848

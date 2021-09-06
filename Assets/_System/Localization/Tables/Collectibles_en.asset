@@ -34,13 +34,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19657857908252672
-    m_Localized: 'Locked: You must get the 3 pieces of the collectible in the Labyrinth
-      In The Sky level'
+    m_Localized: 'Locked: You must get the 3 pieces of the collectible in the Sky
+      Labyrinth level'
     m_Metadata:
       m_Items: []
   - m_Id: 19657860458389504
-    m_Localized: 'Locked: You must get the 3 pieces of the collectible in the Corrupt
-      Mines Of Valmaril level'
+    m_Localized: 'Locked: You must get the 3 pieces of the collectible in the Valmaril
+      Corrupt Mines Level'
     m_Metadata:
       m_Items: []
   - m_Id: 19657911222050816
@@ -61,11 +61,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19658283412004864
-    m_Localized: Collectible obtained in the Labyrinth In The Sky level
+    m_Localized: Collectible obtained in the Sky Labyrinth level
     m_Metadata:
       m_Items: []
   - m_Id: 19658339611484160
-    m_Localized: Collectible obtained in the Corrupt Mines Of Valmaril level
+    m_Localized: Collectible obtained in the Valmaril Corrupt Mines level
     m_Metadata:
       m_Items: []
   - m_Id: 19658341058519040
@@ -77,15 +77,92 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19658575599804416
-    m_Localized: Sugary Adventures
+    m_Localized: Sweet Adventures
     m_Metadata:
       m_Items: []
   - m_Id: 19658578921693184
     m_Localized: Above The Clouds
     m_Metadata:
       m_Items: []
-  - m_Id: 19693871724929024
+  - m_Id: 23525986946162688
+    m_Localized: Hero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658577139113984
+    m_Localized: Oriental Laberynths
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658580771381248
+    m_Localized: Journey into the Deep
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658583489290240
+    m_Localized: Again together
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19658715320459264
+    m_Localized: "Perseo's explorer impetus is fuled by his wishes of findning Ziel.\r\nThe
+      road ahead  is full of surprises, the enemies who kidnapped her are old acquaintances
+      of him\r\nBetween thoughts and disappointments without even noticing he has
+      lost Ziel's image, he made it to the walls \r\nof an strange tower, - he thought:
+      \xBF Could it be...here's the place where Zeil is being held captive? \r\n\xA1It's
+      time to find her!\r\n\n-He said as he pushed the big chocolate door."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23523673372270592
+    m_Localized: "Paseo has fallen into the depth of his dreams.His last memory torments
+      him. Zeiel his owner,\r\nwas kidnapped by Meowvill and has been taken to his
+      castle.Perseo has decided to rescue her and to be back\r\ninto her soft and
+      cozy arms, right where hi belongs. The sweet but fierce felined, has built
+      himself with valor \r\nand courage and he's ready for the afventure ... \xBFAre
+      you too? castle.Perseo has decided to rescue her and to be back\ninto her soft
+      and cozy arms, right where hi belongs. The sweet but fierce felined, has built
+      himself with valor \nand courage and he's ready for the afventure ... \xBFAre
+      you too?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526035025469440
+    m_Localized: Mobius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526032815071232
+    m_Localized: Overture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23525937218494464
     m_Localized: COLLECTABLES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526041203679232
+    m_Localized: "\u8272\u306E\u8FF7\u5BAE (Iro no Meikyuu)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526042344529920
+    m_Localized: "\u732B\u306E\u6012\u308A (Neko no ikari)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526044290686976
+    m_Localized: Le vals du ciel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526045163102208
+    m_Localized: Galem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526046907932672
+    m_Localized: La mine lumineuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23526049185439744
+    m_Localized: Viento oscuro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23565702571663360
+    m_Localized: Perseo's sonata
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23565703817371648
+    m_Localized: "Finalit\xE9"
     m_Metadata:
       m_Items: []
   references:

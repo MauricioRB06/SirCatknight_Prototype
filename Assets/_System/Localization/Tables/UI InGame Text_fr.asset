@@ -19,27 +19,43 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 96194961408
-    m_Localized: 
+    m_Localized: "Sant\xE9 ++"
     m_Metadata:
       m_Items: []
   - m_Id: 840193187840
-    m_Localized: 
+    m_Localized: Bouclier ++
     m_Metadata:
       m_Items: []
   - m_Id: 929783521280
-    m_Localized: 
+    m_Localized: "Tu as arriv\xE9 au poste de contr\xF4le !"
     m_Metadata:
       m_Items: []
   - m_Id: 1330356330496
-    m_Localized: 
+    m_Localized: "Tu as obtenu une cl\xE9 !"
     m_Metadata:
       m_Items: []
   - m_Id: 2751654961152
-    m_Localized: 
+    m_Localized: "Tu as besoin d'une cl\xE9 pour ouvrir cette porte !"
     m_Metadata:
       m_Items: []
   - m_Id: 4222513487872
-    m_Localized: 
+    m_Localized: "Tu as ouvert une ci\xE9 !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3498755373047808
+    m_Localized: "Tu as ramass\xE9 : Poissoncalibur !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3498800503758848
+    m_Localized: "Tu as ramass\xE9 : Un pi\xE9ce de collection !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19816527711346688
+    m_Localized: "Tu as press\xE9 le bouton !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19816529053523968
+    m_Localized: "Tu as activ\xE9 le levier !"
     m_Metadata:
       m_Items: []
   references:

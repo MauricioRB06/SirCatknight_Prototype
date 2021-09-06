@@ -1,4 +1,5 @@
 ﻿using System;
+using _Development.Scripts.Mauricio.Managers;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -73,6 +74,8 @@ namespace Player.Input
         // 
         public bool InteractInput { get; private set; }
         
+        public bool IsPause { get; private set; }
+        
         // 
         private bool ControllerCanMove { get; set; }
         private bool ControllerCanJump { get; set; }
@@ -84,6 +87,7 @@ namespace Player.Input
         public bool ControllerCanWallSlide { get; private set; }
         public bool ControllerCanLedgeClimb { get; private set; }
         
+        public string Device { get; private set; }
         // 
         private void Awake()
         {
@@ -106,6 +110,7 @@ namespace Player.Input
             
             _playerInput = GetComponent<PlayerInput>();
             _playerCamera = Camera.main;
+            Device = "Keyboard";
         }
         
         // 
@@ -114,12 +119,27 @@ namespace Player.Input
             CheckJumpInputHoldTime();
             CheckDashInputHoldTime();
             CheckDodgeRollInputHoldTime();
+
+            switch (Device)
+            {
+                case "Xbox Controller":
+                case "Wireless Controller":
+                    Cursor.visible = false;
+                    break;
+                case "Keyboard":
+                case "Mouse":
+                    Cursor.visible = true;
+                    break;
+            }
         }
         
         // 
         public void OnMoveInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanMove) return;
+            if (IsPause) return;
             
             RawMovementInput = context.ReadValue<Vector2>();
             
@@ -134,7 +154,10 @@ namespace Player.Input
         // 
         public void OnJumpInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanJump) return;
+            if (IsPause) return;
             
             if (context.started)
             {
@@ -152,7 +175,10 @@ namespace Player.Input
         // 
         public void OnGrabInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanGrab) return;
+            if (IsPause) return;
             
             if (context.started) GrabInput = true;
 
@@ -162,7 +188,10 @@ namespace Player.Input
         // 
         public void OnDashInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanDash) return;
+            if (IsPause) return;
             
             if (context.started)
             {
@@ -179,7 +208,10 @@ namespace Player.Input
         // 
         public void OnDashDirectionInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanDash) return;
+            if (IsPause) return;
             
             RawDashDirectionInput = context.ReadValue<Vector2>();
 
@@ -196,8 +228,11 @@ namespace Player.Input
         // 
         public void OnDodgeRollInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanDodgeRoll) return;
-
+            if (IsPause) return;
+            
             if (context.started)
             {
                 DodgeRollInput = true;
@@ -220,7 +255,10 @@ namespace Player.Input
         // 
         public void OnPrimaryAttackInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanAttack) return;
+            if (IsPause) return;
             
             if (context.started)
             {
@@ -233,23 +271,12 @@ namespace Player.Input
         }
         
         // 
-        public void OnSecondaryAttackInput(InputAction.CallbackContext context)
-        {
-            if (!ControllerCanAttack) return;
-            
-            if (context.started)
-            {
-                AttackInputs[(int)CombatInputs.SecondaryAttackInput] = true;
-            }
-            else if (context.canceled)
-            {
-                AttackInputs[(int)CombatInputs.SecondaryAttackInput] = false;
-            }
-        }
-        
-        // 
         public void OnInteract(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
+            if (IsPause) return;
+            
             if (context.started)
             {
                 InteractInput = true;
@@ -257,6 +284,27 @@ namespace Player.Input
             else if (context.canceled)
             {
                 InteractInput = false;
+            }
+        }
+        
+        public void Pause(InputAction.CallbackContext context)
+        {
+            Device = context.control.device.displayName;
+            
+            if (context.canceled)
+            {
+                if (GameManager.Instance.currentGameState == GameState.PauseGame)
+                {
+                    IsPause = false;
+                    NormInputX = 0;
+                    NormInputY = 0;
+                    GameManager.Instance.ResumeGame();
+                }
+                else
+                {
+                    IsPause = true;
+                    GameManager.Instance.PauseGame();
+                }
             }
         }
         

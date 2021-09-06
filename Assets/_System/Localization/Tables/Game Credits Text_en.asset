@@ -26,7 +26,7 @@ MonoBehaviour:
     m_Localized: 'Sr. Catknight Project Developed For
 
       Object Oriented Programming
-      Course'
+      Subject'
     m_Metadata:
       m_Items: []
   - m_Id: 831922020352
@@ -62,8 +62,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 812762439680
-    m_Localized: "Sergio S\xE1nchez Moreno\nSystems Engineer\n\n> Programmer\n> 2D
-      Artist"
+    m_Localized: "Sergio S\xE1nchez Moreno\r\nSystems Engineer\r\n\r\n> Programmer\r\n>
+      2D Artist"
     m_Metadata:
       m_Items: []
   - m_Id: 715119042560
@@ -71,11 +71,12 @@ MonoBehaviour:
 
       Industrial Engineer
 
+      
 
-      Programmer <
+      Programmer
+      <
 
-      2D
-      Artist <'
+      2D Artist <'
     m_Metadata:
       m_Items: []
   - m_Id: 937215827968
@@ -83,11 +84,12 @@ MonoBehaviour:
 
       Industrial Engineer
 
-
-      > Programmer
+      
 
       >
-      2D Artist'
+      Programmer
+
+      > 2D Artist'
     m_Metadata:
       m_Items: []
   - m_Id: 835646562304
@@ -95,6 +97,7 @@ MonoBehaviour:
 
       Agronomic Engineer
 
+      
 
       > Writer'
     m_Metadata:
@@ -104,9 +107,10 @@ MonoBehaviour:
 
       Audiovisual Director
 
+      
 
-      SFX production
-      <'
+      SFX
+      production <'
     m_Metadata:
       m_Items: []
   - m_Id: 7687868424192
@@ -116,6 +120,7 @@ MonoBehaviour:
 
       Chemical Engineer
 
+      
 
       >
       Musical Composer
@@ -128,24 +133,26 @@ MonoBehaviour:
   - m_Id: 7999551348736
     m_Localized: 'Daniel marmolejo
 
-      Graphic Design
+      Graphic Designer
 
+      
 
-      2D Artist <
+      2D Artist
+      <
 
-      UI/UX
-      Designer <
+      UI/UX Designer <
 
       English Translation <'
     m_Metadata:
       m_Items: []
   - m_Id: 8378317971456
-    m_Localized: Teacher Of The Course
+    m_Localized: Subject Teacher
     m_Metadata:
       m_Items: []
   - m_Id: 8439785496576
     m_Localized: 'David Alberto Herrera
 
+      
 
       Systems Engineer'
     m_Metadata:
@@ -159,12 +166,12 @@ MonoBehaviour:
   - m_Id: 8582396026880
     m_Localized: 'A Special Mention For Catalina
 
-      ( Ziel ) And Perseus ( Perseus
+      ( Ziel ) And Perseus ( Perseo
       )
 
-      Who Were The Inspiration For The Project
+      Who Were The Inspiration For The
 
-      Project :3 '
+      Project :3'
     m_Metadata:
       m_Items: []
   - m_Id: 784509607936

@@ -84,11 +84,6 @@ namespace Player.PlayerStates.BaseStates
             {
                 PlayerStateMachine.ChangeState((PlayerController.PrimaryAttackState));
             }
-            else if (PlayerController.InputHandler.AttackInputs[(int) CombatInputs.SecondaryAttackInput]
-                     && !IsTouchingCeiling && !_isSleeping)
-            {
-                PlayerStateMachine.ChangeState((PlayerController.SecondaryAttackState));
-            }
             else if (_jumpInput && PlayerController.JumpState.CanJump() && !IsTouchingCeiling && !_isSleeping)
             {
                 PlayerStateMachine.ChangeState(PlayerController.JumpState);

@@ -1,0 +1,534 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: InGame Tutorial_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: df925427f18519b4199539b46ef01498, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 54155452416
+    m_Localized: Perseo despierta, soy yo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 762221076480
+    m_Localized: Pepperoni...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 775240196096
+    m_Localized: Miauvil te ha hechizado y
+    m_Metadata:
+      m_Items: []
+  - m_Id: 786380267520
+    m_Localized: ha raptado a Ziel, debes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 797654556672
+    m_Localized: ir a rescatarla, puedes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 809734152192
+    m_Localized: usar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 824196112384
+    m_Localized: para moverte.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1327042830336
+    m_Localized: "\xBFNo recuerdas nada?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1337981575168
+    m_Localized: Estabas luchando con el,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1364720263168
+    m_Localized: cuando te lanzo uno de
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1374522351616
+    m_Localized: sus hechizos y caiste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1384622235648
+    m_Localized: utiliza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1394185248768
+    m_Localized: para saltar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1558702628864
+    m_Localized: Ziel grito con todas sus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1759156805632
+    m_Localized: fuerzas pero no logro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1772075261952
+    m_Localized: despertarte, no pudimos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1780493230080
+    m_Localized: hacer nada, debes tener
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1789691338752
+    m_Localized: cuidado, hay muchos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1797710848000
+    m_Localized: peligros alli afuera.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1950345764864
+    m_Localized: Miauvil debe haberla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2005207261184
+    m_Localized: llevado a su castillo, es un
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2012329189376
+    m_Localized: camino largo pero ella esta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2023800610816
+    m_Localized: esperando por ti, si te
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2031585239040
+    m_Localized: encuentras lugares estrechos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2039604748288
+    m_Localized: usa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2047120941056
+    m_Localized: para agacharte.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2230357499904
+    m_Localized: En algunas ocaciones tendras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2431247884288
+    m_Localized: que escalar para poder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2439409999872
+    m_Localized: avanzar en tu aventura,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2446955552768
+    m_Localized: usa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2454102646784
+    m_Localized: para agarrarte de
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2461681754112
+    m_Localized: las paredes y
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2469298610176
+    m_Localized: para subir,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2477020323840
+    m_Localized: salta entre paredes con
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2853064843264
+    m_Localized: Al quedar colgando de
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2860979494912
+    m_Localized: una garra, puedes usar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2868231446528
+    m_Localized: para subir o
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2893162389504
+    m_Localized: para dejarte caer, tambien
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2900074602496
+    m_Localized: puedes usar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2907116838912
+    m_Localized: para
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2914872107008
+    m_Localized: saltar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3075627196416
+    m_Localized: Vas a encontrar algunas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3107910754304
+    m_Localized: plataformas que puedes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3115288535040
+    m_Localized: usar para avanzar, pero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3124482449408
+    m_Localized: cuidado, algunas no son
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3132942360576
+    m_Localized: muy estables...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3439634063360
+    m_Localized: Puedes usar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3539114565632
+    m_Localized: para
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3559914119168
+    m_Localized: esquivar obstaculos y
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3568004931584
+    m_Localized: peligros por el camino.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3659814051840
+    m_Localized: Usa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3696216416256
+    m_Localized: para activar la
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3704978317312
+    m_Localized: embestida, mientras lo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3712557424640
+    m_Localized: mantienes presionado usa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3720144920576
+    m_Localized: para indicar la direccion,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3727493341184
+    m_Localized: luego suelta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3736485928960
+    m_Localized: para lanzarte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3744534798336
+    m_Localized: o espera y se realizara solo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4442202742784
+    m_Localized: En estas tierras todo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4566148620288
+    m_Localized: Intentara atacarte, para
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4578433736704
+    m_Localized: impedir que llegues
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4586855899136
+    m_Localized: al castillo de Miuavil,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4595475193856
+    m_Localized: debes tener cuidado.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4833107681280
+    m_Localized: Toma esto para curarte,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4867668746240
+    m_Localized: por el camino encontraras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4875520483328
+    m_Localized: objetos, que te ayudaran
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4883137339392
+    m_Localized: a restablecer tu salud
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4891660165120
+    m_Localized: "cuando sufras da\xF1os."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5016616869888
+    m_Localized: Algunos objetos pueden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5024401498112
+    m_Localized: explotar si te acercas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5031951245312
+    m_Localized: mucho a ellos, ten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5039534546944
+    m_Localized: cuidado, algunos tardan,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5046987825152
+    m_Localized: pero otros lo hacen rapido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5214894202880
+    m_Localized: Hay zonas por las que no
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5222406201344
+    m_Localized: podras pasar facilemente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5231298125824
+    m_Localized: "sin sufrir da\xF1o, pero "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5239019839488
+    m_Localized: puedes interactuar con
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5247911763968
+    m_Localized: algunos objetos, acercate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5259886501888
+    m_Localized: a la palanca y presiona
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5476413251584
+    m_Localized: Puedes conseguir piezas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5484231434240
+    m_Localized: de escudo o armadura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5491613409280
+    m_Localized: que evitaran que te hagan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5498894721024
+    m_Localized: "da\xF1o directamente, puedes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5506176032768
+    m_Localized: llevar un maximo de 3.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5631199846400
+    m_Localized: Necesitaras tu arma si
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5639219355648
+    m_Localized: quieres enfrentar a Miauvil,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5646802657280
+    m_Localized: te regreso a Pezcalibur, usa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5654583091200
+    m_Localized: para atacar, mas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5662439022592
+    m_Localized: adelante encontraras un
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5670190096384
+    m_Localized: lugar para practicar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6458081714176
+    m_Localized: Algunas zonas necesitan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6467208519680
+    m_Localized: una llave para poder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6475496464384
+    m_Localized: entrar en ellas, deberas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6485697011712
+    m_Localized: encontrarlas si quieres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6493448085504
+    m_Localized: rescatar a Ziel, esta llave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6500997832704
+    m_Localized: deberia servir para algo...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6700143386624
+    m_Localized: El poder de Miauvil ha
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6708062232576
+    m_Localized: generado que en algunas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6715947524096
+    m_Localized: zonas se creen portales
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6723832815616
+    m_Localized: magicos, los podras usar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6731684552704
+    m_Localized: para llegar a sitios algo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6739502735360
+    m_Localized: complejos de alcanzar...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7295797469184
+    m_Localized: Algunos objetos te pueden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7305834438656
+    m_Localized: ayudar a llegar mas alto,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7313115750400
+    m_Localized: cuando no puedas llegar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7320162181120
+    m_Localized: a algun sitio con tus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7326537523200
+    m_Localized: habilidades, seguramente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7333818834944
+    m_Localized: hallaras algo que te ayude.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7499141521408
+    m_Localized: Se rumorea que algunos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7507194585088
+    m_Localized: poetas escribieron sobre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7515012767744
+    m_Localized: tu batalla con Miauvil, si
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7522524766208
+    m_Localized: encuenrtas los fragmentos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7531550908416
+    m_Localized: podras ver estos relatos,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7540916789248
+    m_Localized: quiza deberias darle una
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7549204733952
+    m_Localized: buena paliza a ese cofre...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7724694413312
+    m_Localized: Puedes deslizarte por las
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7733078827008
+    m_Localized: paredes si saltas hacia ellas y
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7740930564096
+    m_Localized: utilizas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7748484505600
+    m_Localized: "en la direcci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7756336242688
+    m_Localized: en la que se encuentra la
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7764083122176
+    m_Localized: pared, pero ten cuidado,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7772136185856
+    m_Localized: no olvides agarrarte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7957964824576
+    m_Localized: Ahora esta preparado para
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7969272668160
+    m_Localized: ir al rescate de Ziel y
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7977455755264
+    m_Localized: traerla de vuelta, te deseo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7985580122112
+    m_Localized: suerte, la necesitaras si
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7993192783872
+    m_Localized: quieres vencer a Miauvil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8001719803904
+    m_Localized: Ahora ve Sir Catknight...
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 26012010431553536
-    m_Localized: Regresar al menu
+    m_Localized: "Regresar al men\xFA"
     m_Metadata:
       m_Items: []
   - m_Id: 26011217104117760
@@ -47,11 +47,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 26010793441665024
-    m_Localized: CONFIGURACION
+    m_Localized: "CONFIGURACI\xD3N"
     m_Metadata:
       m_Items: []
   - m_Id: 26010704157515776
-    m_Localized: CREDITOS
+    m_Localized: "CR\xC9DITOS"
     m_Metadata:
       m_Items: []
   - m_Id: 26010638629904384

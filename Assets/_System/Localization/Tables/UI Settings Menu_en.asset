@@ -147,19 +147,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 22591350415360
-    m_Localized: SPANISH
+    m_Localized: ENGLISH
     m_Metadata:
       m_Items: []
-  - m_Id: 22592055058432
-    m_Localized: FRENCH
+  - m_Id: 3765570791710720
+    m_Localized: "ESPA\xD1OL"
     m_Metadata:
       m_Items: []
-  - m_Id: 22686208794624
-    m_Localized: JAPANESE
+  - m_Id: 3765615154864128
+    m_Localized: "FRAN\xC7AIS"
     m_Metadata:
       m_Items: []
-  - m_Id: 58929810415616
+  - m_Id: 3765638575857664
+    m_Localized: "\u65E5\u672C\u8A9E"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3765715046408192
     m_Localized: SETTINGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4111677640056832
+    m_Localized: Hello
     m_Metadata:
       m_Items: []
   references:

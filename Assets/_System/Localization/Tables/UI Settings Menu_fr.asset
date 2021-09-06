@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 21483521482752
-    m_Localized: 
+    m_Localized: "CONFIGURATION DU \xC9CRAN"
     m_Metadata:
       m_Items: []
   - m_Id: 21782759907328
@@ -28,6 +28,146 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 21783401635840
     m_Localized: DUALSHOCK 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21357830774784
+    m_Localized: "\xC9CRAN"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21386352041984
+    m_Localized: MANETTES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21424503431168
+    m_Localized: AUDIO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21446347366400
+    m_Localized: LANGUE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21527578451968
+    m_Localized: "MODE DU \xC9CRAN"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21533286899712
+    m_Localized: "\xC9CRAN PLEIN"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21535463743488
+    m_Localized: "R\xC9SOLUTION"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21620859772928
+    m_Localized: "ANTICR\xC9NELAGE"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21622508134400
+    m_Localized: bas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21623946780672
+    m_Localized: haut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21768532828160
+    m_Localized: CONFIGURATION DE LA MANETTE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21782088818688
+    m_Localized: SOURIS / CLAVIER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21784106278912
+    m_Localized: Interagir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21784672509952
+    m_Localized: Esquiver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21785272295424
+    m_Localized: Charger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21785943384064
+    m_Localized: Sauter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21786551558144
+    m_Localized: Pauser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21787222646784
+    m_Localized: Attaque principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22186457473024
+    m_Localized: Attaque secondaire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22187124367360
+    m_Localized: S'accrocher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22187795456000
+    m_Localized: Escalader
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22188432990208
+    m_Localized: Bouger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22189032775680
+    m_Localized: Se baisser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22189607395328
+    m_Localized: CONFIGURATION DE SON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22434823184384
+    m_Localized: "VOLUME G\xC9N\xC9RAL"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22435494273024
+    m_Localized: VOLUME MUSIQUE AMBIANT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22436098252800
+    m_Localized: VOLUME MUSIQUE DE LA BATAILLE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22436769341440
+    m_Localized: VOLUME EFFETS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22588766724096
+    m_Localized: "S\xC9LECTIONE LA LANGUE DU JEU"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22591350415360
+    m_Localized: ENGLISH
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3765570791710720
+    m_Localized: "ESPA\xD1OL"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3765615154864128
+    m_Localized: "FRAN\xC7AIS"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3765638575857664
+    m_Localized: "\u65E5\u672C\u8A9E"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3765715046408192
+    m_Localized: CONFIGURATION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4111677640056832
+    m_Localized: Bonjour
     m_Metadata:
       m_Items: []
   references:

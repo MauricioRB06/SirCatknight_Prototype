@@ -17,6 +17,18 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 6392ab94cb2f6fb4cb1c6dafe46e10c3, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 19999362818048
+    m_Localized: TU AS PERDU !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20001707433984
+    m_Localized: "R\xE9essayer \xE0 nouveau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20031935782912
+    m_Localized: 'Retourner au menu '
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

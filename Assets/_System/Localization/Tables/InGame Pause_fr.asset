@@ -17,6 +17,42 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: ee8e59d37a137e84a99fc1415d74ee3e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 20663656685568
+    m_Localized: PAUSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20666139713536
+    m_Localized: Reprendre au jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20669629374464
+    m_Localized: Configurations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671944630272
+    m_Localized: Retourner au menu principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20760935178240
+    m_Localized: "D\xE9connecter au bureau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20861594279936
+    m_Localized: "Es-tu s\xFBr qui voudrais d\xE9connecter ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20863506882560
+    m_Localized: "Tout ton progr\xE9s non sauvegard\xE9 se perdra !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20896994205696
+    m_Localized: Oui :(
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20898369937408
+    m_Localized: Non :)
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
