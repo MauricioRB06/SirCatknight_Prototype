@@ -118,10 +118,6 @@ namespace Player.PlayerStates.BaseStates
             {
                 PlayerStateMachine.ChangeState(PlayerController.PrimaryAttackState);
             }
-            else if (PlayerController.InputHandler.AttackInputs[(int)CombatInputs.SecondaryAttackInput])
-            {
-                PlayerStateMachine.ChangeState(PlayerController.SecondaryAttackState);
-            }
             else if (_isGrounded && Core.Movement.CurrentVelocity.y < 0.01f)
             {            
                 PlayerStateMachine.ChangeState(PlayerController.LandState);

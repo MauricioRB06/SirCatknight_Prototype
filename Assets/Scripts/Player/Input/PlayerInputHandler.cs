@@ -87,6 +87,7 @@ namespace Player.Input
         public bool ControllerCanWallSlide { get; private set; }
         public bool ControllerCanLedgeClimb { get; private set; }
         
+        public string Device { get; private set; }
         // 
         private void Awake()
         {
@@ -109,6 +110,7 @@ namespace Player.Input
             
             _playerInput = GetComponent<PlayerInput>();
             _playerCamera = Camera.main;
+            Device = "Keyboard";
         }
         
         // 
@@ -122,6 +124,8 @@ namespace Player.Input
         // 
         public void OnMoveInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanMove) return;
             if (IsPause) return;
             
@@ -138,6 +142,8 @@ namespace Player.Input
         // 
         public void OnJumpInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanJump) return;
             if (IsPause) return;
             
@@ -157,6 +163,8 @@ namespace Player.Input
         // 
         public void OnGrabInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanGrab) return;
             if (IsPause) return;
             
@@ -168,6 +176,8 @@ namespace Player.Input
         // 
         public void OnDashInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanDash) return;
             if (IsPause) return;
             
@@ -186,6 +196,8 @@ namespace Player.Input
         // 
         public void OnDashDirectionInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanDash) return;
             if (IsPause) return;
             
@@ -204,6 +216,8 @@ namespace Player.Input
         // 
         public void OnDodgeRollInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanDodgeRoll) return;
             if (IsPause) return;
             
@@ -229,6 +243,8 @@ namespace Player.Input
         // 
         public void OnPrimaryAttackInput(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (!ControllerCanAttack) return;
             if (IsPause) return;
             
@@ -243,24 +259,10 @@ namespace Player.Input
         }
         
         // 
-        public void OnSecondaryAttackInput(InputAction.CallbackContext context)
-        {
-            if (!ControllerCanAttack) return;
-            if (IsPause) return;
-            
-            if (context.started)
-            {
-                AttackInputs[(int)CombatInputs.SecondaryAttackInput] = true;
-            }
-            else if (context.canceled)
-            {
-                AttackInputs[(int)CombatInputs.SecondaryAttackInput] = false;
-            }
-        }
-        
-        // 
         public void OnInteract(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (IsPause) return;
             
             if (context.started)
@@ -275,6 +277,8 @@ namespace Player.Input
         
         public void Pause(InputAction.CallbackContext context)
         {
+            Device = context.control.device.displayName;
+            
             if (context.canceled)
             {
                 if (GameManager.Instance.currentGameState == GameState.PauseGame)

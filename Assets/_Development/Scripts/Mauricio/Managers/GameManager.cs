@@ -28,9 +28,7 @@ namespace _Development.Scripts.Mauricio.Managers
         public static GameManager Instance;
         
         public GameState currentGameState = GameState.MainMenu;
-        
-        //private Transform containerTest;
-        
+
         private void Awake()
         {
             if (Instance == null)
@@ -44,6 +42,7 @@ namespace _Development.Scripts.Mauricio.Managers
             }
             pauseCanvas.SetActive(false);
             Cursor.SetCursor(cursors[(int)currentCursor], Vector2.zero, CursorMode.Auto);
+            Cursor.lockState = CursorLockMode.Confined;
         }
         
         // 
