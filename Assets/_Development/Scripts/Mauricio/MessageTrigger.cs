@@ -136,7 +136,8 @@ namespace _Development.Scripts.Mauricio
                     spritesDualShock4.SetActive(false); 
                 }
             }
-            else if (collision.GetComponent<PlayerController>().InputHandler.Device == "PS4 Controller")
+            else if (collision.GetComponent<PlayerController>().InputHandler.Device == "PS4 Controller" ||
+                     collision.GetComponent<PlayerController>().InputHandler.Device == "Wireless Controller")
             {
                 if (_inputSelector != null)
                 {
