@@ -1,6 +1,5 @@
 ﻿
 using Interfaces;
-using Player.Input;
 using UnityEngine;
 
 namespace Levels.General

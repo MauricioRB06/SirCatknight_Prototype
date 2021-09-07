@@ -45,7 +45,7 @@ namespace Levels.General
         [Tooltip("If it is not a platform, it may cause damage to the player")]
         [Range(1.0F, 30.0f)][SerializeField] private float damageToGive = 5;
         [Tooltip("If the damage applied is greater than this strength, a HighKnockback will be applied to the player")]
-        [Range(1.0F, 10.0f)][SerializeField] private float kockbackForce = 5;
+        [Range(1.0F, 10.0f)][SerializeField] private float knockbackForce = 5;
         [Space(15)]
         
         [Header("SFX Settings")] [Space(5)]
@@ -115,7 +115,7 @@ namespace Levels.General
             
             collision.transform.GetComponent<Player.PlayerController>().Core.Combat.TakeDamage(damageToGive);
 
-            if (damageToGive <= kockbackForce)
+            if (damageToGive <= knockbackForce)
             {
                 collision.transform.GetComponent<Player.PlayerController>()
                     .PlayerAnimator.SetTrigger(LowKnockback);
