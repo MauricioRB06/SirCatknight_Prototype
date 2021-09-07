@@ -170,11 +170,17 @@ namespace Player
         
         private string SceneTrigger(string sceneName)
         {
+            Debug.Log($"Player has been loaded in {sceneName}");
             if (sceneName == "Credits" || sceneName == "MainMenu")
             {
                 Destroy(gameObject, 0.01f);
             }
             return sceneName;
+        }
+        
+        private void OnEnable()
+        {
+            LevelManager.Instance.DelegatelevelChange += SceneTrigger;
         }
         
         private void OnDisable()
@@ -186,7 +192,6 @@ namespace Player
         // 
         private void Start()
         {
-            LevelManager.Instance.DelegatelevelChange += SceneTrigger;
             PlayerAnimator = GetComponent<Animator>();
             InputHandler = GetComponent<PlayerInputHandler>();
             PlayerRigidBody2D = GetComponent<Rigidbody2D>();

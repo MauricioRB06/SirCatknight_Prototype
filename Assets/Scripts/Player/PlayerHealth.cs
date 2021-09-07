@@ -6,11 +6,18 @@ namespace Player
 {
     public class PlayerHealth : MonoBehaviour
     {
+        public delegate float HealtChangeDelegate(float sceneName);
+        public event HealtChangeDelegate DelegateHealthChange;
+        
+        
+        public delegate float ShieldChangeDelegate(int sceneName);
+        public event ShieldChangeDelegate DelegateShieldChange;
+        
+        
+        
         [SerializeField] private float healthAmount;
         [SerializeField] private int shieldAmount;
         [SerializeField] private float maxHealth;
-        [SerializeField] private Image healthImage;
-        [SerializeField] private Image shieldImage;
         
         private void Start()
         {
@@ -19,17 +26,6 @@ namespace Player
         
         private void Update()
         {
-            healthImage.fillAmount = healthAmount / 100;
-
-            shieldImage.fillAmount = shieldAmount switch
-            {
-                0 => 0f,
-                1 => 0.318f,
-                2 => 0.658f,
-                3 => 1f,
-                _ => shieldImage.fillAmount
-            };
-
             if (healthAmount > maxHealth) healthAmount = maxHealth;
 
             if (!(healthAmount <= 0)) return;
@@ -77,6 +73,9 @@ namespace Player
             {
                 healthAmount -= damageAmount;
             }
+            
+            DelegateHealthChange?.Invoke(healthAmount);
+            DelegateShieldChange?.Invoke(shieldAmount);
         }
         
         public void CureHealth (float healthToGive)
