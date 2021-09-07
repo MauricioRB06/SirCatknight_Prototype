@@ -170,6 +170,7 @@ namespace Player
         
         private string SceneTrigger(string sceneName)
         {
+            Debug.Log($"Player has been loaded in {sceneName}");
             if (sceneName == "Credits" || sceneName == "MainMenu")
             {
                 Destroy(gameObject, 0.01f);
