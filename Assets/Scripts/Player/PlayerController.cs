@@ -177,11 +177,6 @@ namespace Player
             return sceneName;
         }
         
-        private void OnEnable()
-        {
-            LevelManager.Instance.DelegatelevelChange += SceneTrigger;
-        }
-        
         private void OnDisable()
         {
             LevelManager.Instance.DelegatelevelChange -= SceneTrigger;
@@ -191,6 +186,7 @@ namespace Player
         // 
         private void Start()
         {
+            LevelManager.Instance.DelegatelevelChange += SceneTrigger;
             PlayerAnimator = GetComponent<Animator>();
             InputHandler = GetComponent<PlayerInputHandler>();
             PlayerRigidBody2D = GetComponent<Rigidbody2D>();
