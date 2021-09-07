@@ -22,11 +22,12 @@ namespace Levels.General
     
     public class MainCamera : MonoBehaviour
     {
-        
         // When the camera is created, it automatically sets the tag.
         private void Awake()
         {
-            gameObject.tag = "MainCamera";
+            var o = gameObject;
+            o.tag = "MainCamera";
+            DontDestroyOnLoad(o);
         }
     }
 }

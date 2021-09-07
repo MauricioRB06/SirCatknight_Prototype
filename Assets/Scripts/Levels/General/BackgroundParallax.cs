@@ -61,6 +61,14 @@ namespace Levels.General
             _startPositionBackgroundSpriteX = backgroundSpritePosition.x;
             _startPositionBackgroundSpriteY = backgroundSpritePosition.y;
         }
+
+        private void Start()
+        {
+            if (parallaxCamera == null)
+            {
+                parallaxCamera = GameObject.FindWithTag("MainCamera");
+            }
+        }
         
         // Based on the active parallax axes, it performs a background shift.
         private void Update()

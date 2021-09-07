@@ -1,6 +1,7 @@
 
 using System.Collections;
 using _Development.Scripts.Mauricio;
+using _Development.Scripts.Mauricio.Managers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
@@ -87,7 +88,7 @@ namespace UI
         // 
         public void NewGame()
         {
-            SceneManager.LoadScene("Level_0");
+            LevelManager.Instance.ChangeLevel("Level_0");
             //TODO crear nuevo archivo de guardado y borrar el anterior si existe
             // borrar preferencias
         }

@@ -1,31 +1,19 @@
-using System.Threading.Tasks;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace _Development.Scripts.Mauricio.LevelManager
+namespace _Development.Scripts.Mauricio.Managers
 {
     public class LevelManager : MonoBehaviour
     {
         public static LevelManager Instance;
-
+        public delegate string LevelChangeDelegate(string sceneName);
+        public event LevelChangeDelegate DelegatelevelChange;
+        
         [SerializeField] private GameObject loadingCanvas;
         [SerializeField] private Image progressBar;
         private float _target;
-            
-        /* Dont Delete This, Work in Progress
-         
-        [SerializeField] private string sceneName;
-        [SerializeField] private Animator levelMusicAnimator;
-        private static readonly int FadeOut = Animator.StringToHash("FadeOut");
-
-        private IEnumerator ChangeScene()
-        {
-            levelMusicAnimator.SetTrigger(FadeOut);
-            yield return new WaitForSeconds(3.0f);
-            SceneManager.LoadScene(sceneName);
-        }
-        */
         
         private void Awake()
         {
@@ -39,55 +27,13 @@ namespace _Development.Scripts.Mauricio.LevelManager
                 Destroy(gameObject);
             }
         }
-
-        public async void LoadScene(string sceneName)
+        
+        // 
+        public string ChangeLevel(string sceneName)
         {
-            _target = 0;
-            progressBar.fillAmount = 0;
-
-            if (sceneName == "Credits" || sceneName == "Main_Menu")
-            {
-                var scene = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
-                scene.allowSceneActivation = false;
-                
-                loadingCanvas.SetActive(true);
-
-                do
-                {
-                    await Task.Delay(100);
-                    _target = scene.progress;
-
-                } while(scene.progress < 0.9f);
-            
-                //await Task.Delay(3000);
-            
-                scene.allowSceneActivation = true;
-                loadingCanvas.SetActive(false);
-            }
-            else
-            {
-                var scene = SceneManager.LoadSceneAsync(sceneName);
-                scene.allowSceneActivation = false;
-                    
-                loadingCanvas.SetActive(true);
-
-                do
-                {
-                    await Task.Delay(100);
-                    _target = scene.progress;
-
-                } while(scene.progress < 0.9f);
-            
-                //await Task.Delay(3000);
-            
-                scene.allowSceneActivation = true;
-                loadingCanvas.SetActive(false);
-            }
-        }
-
-        private void Update()
-        {
-            progressBar.fillAmount = Mathf.MoveTowards(progressBar.fillAmount, _target, 2 * Time.deltaTime);
+            SceneManager.LoadScene(sceneName);
+            DelegatelevelChange?.Invoke(sceneName);
+            return sceneName;
         }
     }
 }
