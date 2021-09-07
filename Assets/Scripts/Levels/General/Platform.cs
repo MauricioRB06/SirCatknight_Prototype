@@ -21,6 +21,7 @@
 //  Unity OnCollisionExit2D: https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnCollisionExit2D.html
 
 using System.Collections;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 namespace Levels.General
@@ -263,6 +264,8 @@ namespace Levels.General
         private void OnCollisionEnter2D(Collision2D collision)
         {
             if (!collision.transform.CompareTag("Player")) return;
+            if (!platformReturn) return;
+            
             collision.transform.SetParent(transform);
         }
         
@@ -270,6 +273,8 @@ namespace Levels.General
         private void OnCollisionExit2D(Collision2D collision)
         {
             if (!collision.transform.CompareTag("Player")) return;
+            if (!platformReturn) return;
+            
             collision.transform.SetParent(null);
         }
         
