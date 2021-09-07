@@ -12,7 +12,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Falling
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: False
+    m_ConditionEvent: Fall
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2800293549071989764}
@@ -121,7 +121,7 @@ AnimatorStateTransition:
     m_ConditionEvent: Falling
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: False
+    m_ConditionEvent: Fall
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2746069610475686794}
@@ -152,7 +152,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: False
+  - m_Name: Fall
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
