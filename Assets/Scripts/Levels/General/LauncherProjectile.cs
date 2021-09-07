@@ -99,6 +99,7 @@ namespace Levels.General
             if (collision.gameObject.CompareTag("Player"))
             {
                 collision.transform.GetComponent<Player.PlayerController>().Core.Combat.TakeDamage(10);
+                collision.transform.GetComponent<Player.PlayerController>().PlayerHealth.TakeDamage(10);
                 
                 collision.transform.GetComponent<Player.PlayerController>()
                     .PlayerAnimator.SetTrigger(LowKnockback);

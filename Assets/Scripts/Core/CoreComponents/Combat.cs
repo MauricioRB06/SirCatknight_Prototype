@@ -1,4 +1,5 @@
-﻿using Interfaces;
+﻿
+using Interfaces;
 using UnityEngine;
 
 namespace Core.CoreComponents
@@ -22,7 +23,7 @@ namespace Core.CoreComponents
         // 
         public void TakeDamage(float damageAmount)
         {
-            Debug.Log(Core.transform.parent.name + " Damaged!");
+            
         }
         
         // 

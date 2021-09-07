@@ -18,6 +18,8 @@ namespace Levels.General
         [Header("Key Settings")] [Space(5)]
         [Tooltip("Select the type of key")]
         [SerializeField] private WeaponType weaponType;
+
+        [SerializeField] private GameObject swordUI;
         
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -32,6 +34,7 @@ namespace Levels.General
                     break;
             }
             
+            swordUI.SetActive(true);
             Destroy(gameObject);
         }
     }

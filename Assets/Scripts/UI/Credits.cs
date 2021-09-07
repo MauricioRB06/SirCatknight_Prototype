@@ -1,6 +1,7 @@
+
 using System.Collections;
+using _Development.Scripts.Mauricio.Managers;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 /* Documentation
  *
@@ -12,19 +13,16 @@ namespace UI
 {
     public class Credits : MonoBehaviour
     {
-        public FadePanel fadePanel;
         private void Start()
         {
-            fadePanel.FadeIn();
             StartCoroutine(FinishCredits());
         }
 
         private IEnumerator FinishCredits()
         {
-            yield return new WaitForSecondsRealtime(207f);
-            fadePanel.FadeOut();
-            yield return new WaitForSecondsRealtime(3f);
-            SceneManager.LoadScene("Main_Menu");
+            yield return new WaitForSecondsRealtime(122f);
+            yield return new WaitForSecondsRealtime(2.5f);
+            LevelManager.Instance.ChangeLevel("MainMenu");
         }
     }
 }

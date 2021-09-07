@@ -1,3 +1,4 @@
+using _Development.Scripts.Mauricio.Managers;
 using UnityEngine;
 
 namespace _Development.Scripts.Mauricio.Boss_Test

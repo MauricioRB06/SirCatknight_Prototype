@@ -13,7 +13,7 @@ namespace UI
         private void Start()
         {
             slider.onValueChanged.AddListener(text =>
-                sliderText.text = (text * 100).ToString("0"));
+                sliderText.text = text.ToString("0"));
         }
     }
 }

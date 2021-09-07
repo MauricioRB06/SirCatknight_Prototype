@@ -42,17 +42,16 @@ namespace Player.AfterImage
             GrowPool();
         }
         
-        private string SceneTrigger(string scenename)
+        private string SceneTrigger(string sceneName)
         {
-            Debug.Log($"player loaded in " + scenename);
-            if (scenename == "Credits" || scenename == "MainMenu")
+            if (sceneName == "Credits" || sceneName == "MainMenu")
             {
                 Destroy(gameObject, 0.1f);
             }
-            return scenename;
+            return sceneName;
         }
         
-        private void OnEnable()
+        private void Start()
         {
             LevelManager.Instance.DelegatelevelChange += SceneTrigger;
         }
