@@ -1,64 +1,73 @@
 fileFormatVersion: 2
-guid: 776d0f4ce23f69c4ea3d74d6fe8ecf61
+guid: 8f34d07fb95131c4889c69ffe2c94bfb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6746322481404566964
-    second: Level 2 Interactable_0
+      213: -4762271794687924884
+    second: Level 2 Damage_0
   - first:
-      213: 8501917038451078237
-    second: Level 2 Interactable_1
+      213: 3120694641296073059
+    second: Level 2 Damage_1
   - first:
-      213: 7635574263555707273
-    second: Level 2 Interactable_2
+      213: 4304413327042665061
+    second: Level 2 Damage_10
   - first:
-      213: 1498035772840632134
-    second: Level 2 Interactable_3
+      213: -3463118760448874335
+    second: Level 2 Damage_15
   - first:
-      213: -6824185057446881751
-    second: Level 2 Interactable_4
+      213: 4169778133559167184
+    second: Level 2 Damage_17
   - first:
-      213: -6147966138151519726
-    second: Level 2 Interactable_5
+      213: -3872454906938525853
+    second: Level 2 Damage_19
   - first:
-      213: 6039932512180859032
-    second: Level 2 Interactable_6
+      213: -5313260208813397206
+    second: Level 2 Damage_21
   - first:
-      213: -6402743209655568329
-    second: Level 2 Interactable_7
+      213: 4069376472872856527
+    second: Level 2 Damage_23
   - first:
-      213: -4612478561861501138
-    second: Level 2 Interactable_8
+      213: 697044919788831903
+    second: Level 2 Damage_25
   - first:
-      213: 7280557250457483170
-    second: Level 2 Interactable_9
+      213: -1122921064741666779
+    second: Level 2 Damage_27
   - first:
-      213: 4121209586306286937
-    second: Level 2 Interactable_10
+      213: -5697358344757410476
+    second: Level 2 Damage_28
   - first:
-      213: 135476015170861127
-    second: Level 2 Interactable_11
+      213: -5900823032022784013
+    second: Level 2 Damage_29
   - first:
-      213: -3872542765683650315
-    second: Level 2 Interactable_12
+      213: -850983182401193556
+    second: Level 2 Damage_30
   - first:
-      213: 3942139488658093918
-    second: Level 2 Interactable_13
+      213: -4025442824905054872
+    second: Level 2 Damage_31
   - first:
-      213: -1826288730026686563
-    second: Level 2 Interactable_14
+      213: 8307534577306771425
+    second: Level 2 Damage_32
   - first:
-      213: -8414676749214504978
-    second: Level 2 Interactable_15
+      213: 2299494876892140029
+    second: Level 2 Damage_47
   - first:
-      213: 2924846828065704659
-    second: Level 2 Interactable_16
+      213: -6724147359295084692
+    second: Level 2 Damage_50
   - first:
-      213: 6638210324521564077
-    second: Level 2 Interactable_17
+      213: 8221297593580955878
+    second: Level 2 Damage_53
   - first:
-      213: -406587021070800386
-    second: Level 2 Interactable_18
+      213: 8537688656827628837
+    second: Level 2 Damage_57
+  - first:
+      213: -7215705254025731779
+    second: Level 2 Damage_73
+  - first:
+      213: 8235122724912141864
+    second: Level 2 Damage_77
+  - first:
+      213: 5812951977597610275
+    second: Level 2 Damage_81
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -184,241 +193,73 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Level 2 Interactable_0
+      name: Level 2 Damage_0
       rect:
         serializedVersion: 2
         x: 32
-        y: 512
+        y: 384
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4226ab527f3062a0800000000000000
-      internalID: -6746322481404566964
+      spriteID: c65a3c9c80309edb0800000000000000
+      internalID: -4762271794687924884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level 2 Interactable_1
+      name: Level 2 Damage_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 512
+        y: 384
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d54b7ba5080ecf570800000000000000
-      internalID: 8501917038451078237
+      spriteID: 361eaeafd3fee4b20800000000000000
+      internalID: 3120694641296073059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level 2 Interactable_2
+      name: Level 2 Damage_10
       rect:
         serializedVersion: 2
-        x: 96
-        y: 512
+        x: 416
+        y: 384
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9815a53765207f960800000000000000
-      internalID: 7635574263555707273
+      spriteID: 56ad5dc7d195cbb30800000000000000
+      internalID: 4304413327042665061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level 2 Interactable_3
+      name: Level 2 Damage_15
       rect:
         serializedVersion: 2
         x: 128
-        y: 512
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64f5ef439971ac410800000000000000
-      internalID: 1498035772840632134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level 2 Interactable_4
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 512
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9269959a8df9b41a0800000000000000
-      internalID: -6824185057446881751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level 2 Interactable_5
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 512
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21a3954ee590eaaa0800000000000000
-      internalID: -6147966138151519726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level 2 Interactable_6
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 512
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8907fdf6e9622d350800000000000000
-      internalID: 6039932512180859032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level 2 Interactable_7
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 416
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7387f6859f2e427a0800000000000000
-      internalID: -6402743209655568329
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level 2 Interactable_8
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 416
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2ff32a9f2f2dffb0800000000000000
-      internalID: -4612478561861501138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level 2 Interactable_9
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 416
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a7b968ce3cb90560800000000000000
-      internalID: 7280557250457483170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level 2 Interactable_10
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 416
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95588bc984a713930800000000000000
-      internalID: 4121209586306286937
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Level 2 Interactable_11
-      rect:
-        serializedVersion: 2
-        x: 33
         y: 352
         width: 64
         height: 64
@@ -429,19 +270,250 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74838dfc7be41e100800000000000000
-      internalID: 135476015170861127
+      spriteID: 1a82474f5d780ffc0800000000000000
+      internalID: -3463118760448874335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level 2 Interactable_12
+      name: Level 2 Damage_17
       rect:
         serializedVersion: 2
-        x: 38
-        y: 192
-        width: 22
+        x: 192
+        y: 352
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d84cfabe170ed930800000000000000
+      internalID: 4169778133559167184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 2 Damage_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367f53f77c6424ac0800000000000000
+      internalID: -3872454906938525853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 2 Damage_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ba57eadf18346b0800000000000000
+      internalID: -5313260208813397206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 2 Damage_23
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 352
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb2be27754597830800000000000000
+      internalID: 4069376472872856527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 2 Damage_25
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 352
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94018459a66ca900800000000000000
+      internalID: 697044919788831903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 2 Damage_27
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5200549bd359a60f0800000000000000
+      internalID: -1122921064741666779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 2 Damage_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45580a675caeee0b0800000000000000
+      internalID: -5697358344757410476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 2 Damage_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7a6dd57b01c1ea0800000000000000
+      internalID: -5900823032022784013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 2 Damage_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca93527ed43b034f0800000000000000
+      internalID: -850983182401193556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 2 Damage_31
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865a3e51411c228c0800000000000000
+      internalID: -4025442824905054872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 2 Damage_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef15afceaa4a4370800000000000000
+      internalID: 8307534577306771425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level 2 Damage_47
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 128
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -450,19 +522,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f0dae94fd6f14ac0800000000000000
-      internalID: -3872542765683650315
+      spriteID: df19cf3486279ef10800000000000000
+      internalID: 2299494876892140029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level 2 Interactable_13
+      name: Level 2 Damage_50
       rect:
         serializedVersion: 2
-        x: 101
-        y: 192
-        width: 22
+        x: 192
+        y: 160
+        width: 128
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -471,19 +543,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5771848afa45b630800000000000000
-      internalID: 3942139488658093918
+      spriteID: c67e5df4a970fa2a0800000000000000
+      internalID: -6724147359295084692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level 2 Interactable_14
+      name: Level 2 Damage_53
       rect:
         serializedVersion: 2
-        x: 166
-        y: 192
-        width: 22
+        x: 352
+        y: 160
+        width: 128
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -492,19 +564,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d97c57d7318b7a6e0800000000000000
-      internalID: -1826288730026686563
+      spriteID: 6e8aa226a9ae71270800000000000000
+      internalID: 8221297593580955878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level 2 Interactable_15
+      name: Level 2 Damage_57
       rect:
         serializedVersion: 2
-        x: 230
-        y: 192
-        width: 22
+        x: 512
+        y: 160
+        width: 128
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -513,19 +585,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee7a4575410193b80800000000000000
-      internalID: -8414676749214504978
+      spriteID: 52db7194996fb7670800000000000000
+      internalID: 8537688656827628837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level 2 Interactable_16
+      name: Level 2 Damage_73
       rect:
         serializedVersion: 2
-        x: 36
+        x: 32
         y: 32
-        width: 22
+        width: 128
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -534,19 +606,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dac84191b4279820800000000000000
-      internalID: 2924846828065704659
+      spriteID: d3160e94d4aacdb90800000000000000
+      internalID: -7215705254025731779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level 2 Interactable_17
+      name: Level 2 Damage_77
       rect:
         serializedVersion: 2
-        x: 102
+        x: 192
         y: 32
-        width: 22
+        width: 128
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -555,19 +627,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da730719e19af1c50800000000000000
-      internalID: 6638210324521564077
+      spriteID: 826922c9c78094270800000000000000
+      internalID: 8235122724912141864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level 2 Interactable_18
+      name: Level 2 Damage_81
       rect:
         serializedVersion: 2
-        x: 166
+        x: 352
         y: 32
-        width: 22
+        width: 128
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -576,8 +648,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef96ace22438b5af0800000000000000
-      internalID: -406587021070800386
+      spriteID: 3292c197601cba050800000000000000
+      internalID: 5812951977597610275
       vertices: []
       indices: 
       edges: []

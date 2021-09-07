@@ -130,7 +130,7 @@ namespace Levels.General
             _platformRigidBody2D.isKinematic = false;
             
             if (!platformReturn) yield break;
-
+            
             yield return new WaitForSeconds(returnTime);
             _platformRigidBody2D.velocity = Vector2.zero;
             transform.gameObject.SetActive(false);
@@ -246,6 +246,7 @@ namespace Levels.General
                     _vibrate = true;
                     _platformAnimator.SetBool(Falling, true);
                     StartCoroutine(PlatformFall());
+                    collision.transform.SetParent(null);
                     Destroy(gameObject, destroyTime);
                     break;
                 }
