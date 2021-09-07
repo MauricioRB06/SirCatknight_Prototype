@@ -34,7 +34,7 @@ MonoBehaviour:
   wallClimbVelocity: 4
   startOffset: {x: 0.675, y: 0.5}
   stopOffset: {x: 0.4, y: 1}
-  dashCooldown: 5
+  dashCooldown: 0
   dashMaxHoldTime: 1
   dashHoldTimeScale: 0.25
   dashLifeTime: 0.2
