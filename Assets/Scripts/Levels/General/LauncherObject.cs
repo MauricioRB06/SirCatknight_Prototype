@@ -48,7 +48,7 @@ namespace Levels.General
         
         [Header("Projectile Settings")] [Space(5)]
         [Tooltip("Waiting time between each attack (in seconds)")]
-        [Range(2.0f, 8.0f)][SerializeField] private float launchAttackTime = 3.0f;
+        [Range(0.5f, 8.0f)][SerializeField] private float launchAttackTime = 3.0f;
         [Tooltip("Projectile launch velocity")]
         [Range(2.0f, 10.0f)][SerializeField] private float projectileSpeed = 2.0f;
         [Space(15)]
