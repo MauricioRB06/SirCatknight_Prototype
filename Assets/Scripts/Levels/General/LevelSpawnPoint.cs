@@ -1,11 +1,11 @@
 using Player;
 using UnityEngine;
 
-namespace Levels.General
+namespace _Development.Scripts.Mauricio
 {
     public class LevelSpawnPoint : MonoBehaviour
     {
-        private GameObject _player;
+        private GameObject player;
         private bool _isNewLevelLoading;
         
         private void Start()
@@ -17,8 +17,8 @@ namespace Levels.General
         {
             if (!_isNewLevelLoading) return;
             
-            _player = GameObject.FindGameObjectWithTag("Player");
-            _player.GetComponent<PlayerRespawn>().LoadNewLevel();
+            player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<PlayerRespawn>().LoadNewLevel();
             _isNewLevelLoading = false;
         }
     }

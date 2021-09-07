@@ -4,7 +4,7 @@ using Cinemachine;
 
 namespace Levels.General
 {
-    public class FindPlayerCamera : MonoBehaviour
+    public class FindMainCamera : MonoBehaviour
     {
         private CinemachineVirtualCamera _virtualCamera;
 
@@ -15,8 +15,12 @@ namespace Levels.General
         
         private void Update()
         {
-            if (_virtualCamera.Follow != null) return;
-            _virtualCamera.Follow = GameObject.FindWithTag("Player").transform;
+            
+            if (_virtualCamera.Follow == null)
+            {
+                Debug.Log("null");
+                _virtualCamera.Follow = GameObject.FindWithTag("Player").transform;
+            }
         }
     }
 }

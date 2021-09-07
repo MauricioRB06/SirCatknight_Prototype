@@ -1,10 +1,12 @@
-
-using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.SceneManagement;
 
-namespace _Development.Scripts.Mauricio.Managers
+/* The Purpose of this Script is:
+ 
+ 
+ */
+
+namespace _Development.Scripts.Mauricio
 {
     public class AudioManager : MonoBehaviour
     {
@@ -14,15 +16,19 @@ namespace _Development.Scripts.Mauricio.Managers
         [SerializeField] private AudioMixer sfxMixer;
         
         // 
-        private GameObject _objectLevelMusic;
-        private GameObject _objectBossMusic;
+        private GameObject objectLevelMusic;
+        private GameObject objectBossMusic;
         
         // 
         public AudioSource LevelMusic { get; private set; }
         public AudioSource BossMusic { get; private set; }
         
+        
         private Animator _audioFadeOut;
         
+        [Range(-80.0f, 20.0f)] public float allMusicVolume;
+        [Range(-80.0f, 20.0f)] public float sfxVolume;
+
         private void Awake()
         {
             if (Instance == null)
@@ -30,23 +36,11 @@ namespace _Development.Scripts.Mauricio.Managers
                 Instance = this;
                 DontDestroyOnLoad(gameObject);
                 
-                if (SceneManager.GetActiveScene().name == "Credits" ||
-                    SceneManager.GetActiveScene().name == "MainMenu")
-                {
-                    _objectLevelMusic =  GameObject.FindWithTag("Level Music");
-                    _objectBossMusic = GameObject.FindWithTag("Level Music");
+                objectLevelMusic =  GameObject.FindWithTag("Level Music");
+                objectBossMusic = GameObject.FindWithTag("Boss Music");
             
-                    LevelMusic = _objectLevelMusic.GetComponent<AudioSource>();
-                    BossMusic = _objectBossMusic.GetComponent<AudioSource>();
-                }
-                else
-                {
-                    _objectLevelMusic =  GameObject.FindWithTag("Level Music");
-                    _objectBossMusic = GameObject.FindWithTag("Boss Music");
-            
-                    LevelMusic = _objectLevelMusic.GetComponent<AudioSource>();
-                    BossMusic = _objectBossMusic.GetComponent<AudioSource>(); 
-                }
+                LevelMusic = objectLevelMusic.GetComponent<AudioSource>();
+                BossMusic = objectBossMusic.GetComponent<AudioSource>();
             }
             else
             {
@@ -54,64 +48,26 @@ namespace _Development.Scripts.Mauricio.Managers
             }
         }
 
-        private IEnumerator PlayMusicInLevel()
-        {
-            yield return new WaitForSeconds(0.1f);
-            _objectLevelMusic =  GameObject.FindWithTag("Level Music");
-            _objectBossMusic = GameObject.FindWithTag("Boss Music");
-            
-            LevelMusic = _objectLevelMusic.GetComponent<AudioSource>();
-            BossMusic = _objectBossMusic.GetComponent<AudioSource>();
-            
-            PlaySound(LevelMusic);
-        }
-        
-        private IEnumerator PlayMusicInUI()
-        {
-            yield return new WaitForSeconds(0.1f);
-            _objectLevelMusic =  GameObject.FindWithTag("Level Music");
-            _objectBossMusic = GameObject.FindWithTag("Level Music");
-            
-            LevelMusic = _objectLevelMusic.GetComponent<AudioSource>();
-            BossMusic = _objectBossMusic.GetComponent<AudioSource>();
-            
-            PlaySound(LevelMusic);
-        }
-        
-        private string SceneTrigger(string sceneName)
-        {
-            if (sceneName == "Credits" || sceneName == "MainMenu")
-            {
-                StartCoroutine(PlayMusicInUI());
-            }
-            else
-            {
-                StartCoroutine(PlayMusicInLevel());
-            }
-            
-            return sceneName;
-        }
-        
-        private void OnDisable()
-        {
-            LevelManager.Instance.DelegatelevelChange -= SceneTrigger;
-        }
-        
         public static void PlaySound(AudioSource sourceAudio) => sourceAudio.Play();
         public static void StopAudio(AudioSource sourceAudio) => sourceAudio.Stop();
-
+        
         private void Start()
         {
-            LevelManager.Instance.DelegatelevelChange += SceneTrigger;
             PlaySound(LevelMusic);
         }
 
+        /*private void Update()
+        {
+            WorldMusicVolume();
+            SfxVolume();
+        }*/
+        
         // 
         public void MasterVolume(float sliderMasterVolume)
-        {
+        { 
             musicMixer.SetFloat("MusicMasterVolume", sliderMasterVolume);
             sfxMixer.SetFloat("SFXMasterVolume", sliderMasterVolume);
-        }
+        } 
         
         // 
         public void EnviromentMusicVolume(float sliderWorldMusicVolume)
@@ -122,7 +78,7 @@ namespace _Development.Scripts.Mauricio.Managers
         // 
         public void BossMusicVolume(float sliderBossMusicVolume)
         {
-            musicMixer.SetFloat("MusicBossFightVolume", sliderBossMusicVolume);
+            musicMixer.SetFloat("MusicBoosFightVolume", sliderBossMusicVolume);
         }
         
         // 

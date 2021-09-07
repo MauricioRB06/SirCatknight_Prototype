@@ -11,7 +11,6 @@
 //  Unity Awake: https://docs.unity3d.com/ScriptReference/MonoBehaviour.Awake.html
 //  Unity OnTriggerEnter2D: https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnTriggerEnter2D.html
 
-using _Development.Scripts.Mauricio.Managers;
 using Player;
 using UnityEngine;
 
@@ -47,7 +46,6 @@ namespace Levels.General
             if(!collision.gameObject.CompareTag("Player")) return;
             
             PlayerController.Die(typeOfDeath.ToString());
-            GameManager.Instance.GameOver();
         }
     }
 }

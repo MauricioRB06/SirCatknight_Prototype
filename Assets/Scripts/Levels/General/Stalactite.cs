@@ -32,7 +32,6 @@ namespace Levels.General
             {
                 Instantiate(crashParticles, transform.position + new Vector3(0,1,0), Quaternion.identity);
                 collision.transform.GetComponent<PlayerController>().Core.Combat.TakeDamage(damageToGive);
-                collision.transform.GetComponent<Player.PlayerController>().PlayerHealth.TakeDamage(damageToGive);
                 
                 if (damageToGive <= kockbackForce)
                 {

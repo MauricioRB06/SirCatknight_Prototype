@@ -95,9 +95,6 @@ namespace Levels.General
             
             collision.transform.GetComponent<PlayerController>()
                 .Core.Combat.TakeDamage(damagePerSecond * Time.deltaTime);
-            
-            collision.transform.GetComponent<Player.PlayerController>().
-                PlayerHealth.TakeDamage(damagePerSecond * Time.deltaTime);
         }
         
         public void OnInteractable()

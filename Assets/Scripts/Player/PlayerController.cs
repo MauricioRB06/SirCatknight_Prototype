@@ -19,6 +19,7 @@
 //  C# Polymorphism: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual
 //  C# Polymorphism: https://www.youtube.com/watch?v=XzKL94OMDV4&list=PLU8oAlHdN5BmpIQGDSHo5e1r4ZYWQ8m4B&index=46 [ Spanish ]
 
+using System;
 using _Development.Scripts.Mauricio.Managers;
 using Player.Data;
 using Player.Input;
@@ -168,13 +169,14 @@ namespace Player
                                                         dataPlayerController, "CrouchMove");
         }
         
-        private string SceneTrigger(string sceneName)
+        private string SceneTrigger(string scenename)
         {
-            if (sceneName == "Credits" || sceneName == "MainMenu")
+            Debug.Log($"player loaded in " + scenename);
+            if (scenename == "Credits" || scenename == "MainMenu")
             {
-                Destroy(gameObject, 0.01f);
+                Destroy(gameObject, 0.1f);
             }
-            return sceneName;
+            return scenename;
         }
         
         private void OnEnable()
