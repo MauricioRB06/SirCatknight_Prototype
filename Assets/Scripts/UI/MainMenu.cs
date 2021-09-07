@@ -103,7 +103,7 @@ namespace UI
         // 
         public void Credits()
         {
-            SceneManager.LoadScene("Credits");
+            LevelManager.Instance.ChangeLevel("Credits");
         }
         
         // 

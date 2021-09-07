@@ -22,7 +22,6 @@ namespace Levels.General
         
         private string SceneTrigger(string scenename)
         {
-            Debug.Log($"player loaded in " + scenename);
             if (scenename == "Credits" || scenename == "MainMenu")
             {
                 Destroy(gameObject, 0.1f);
@@ -30,7 +29,7 @@ namespace Levels.General
             return scenename;
         }
         
-        private void OnEnable()
+        private void Start()
         {
             LevelManager.Instance.DelegatelevelChange += SceneTrigger;
         }

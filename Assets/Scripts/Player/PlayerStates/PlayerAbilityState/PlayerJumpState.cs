@@ -1,4 +1,5 @@
 ﻿//using _Development.Scripts.Mauricio;
+
 using StateMachine;
 using Player.Data;
 
@@ -25,7 +26,6 @@ namespace Player.PlayerStates.PlayerAbilityState
             PlayerController.InputHandler.UseJumpInput();
             Core.Movement.SetVelocityY(DataPlayerController.jumpForce);
             IsAbilityDone = true;
-            //AudioManager.PlaySound(PlayerController.playerSounds.PlayerJump);
             _amountOfJumpsLeft--;
             PlayerController.InAirState.SetIsJumping();
         }

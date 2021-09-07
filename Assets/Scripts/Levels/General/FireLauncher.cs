@@ -40,6 +40,7 @@ namespace Levels.General
             if (!collision.transform.CompareTag("Player")) return;
             
             collision.GetComponent<PlayerController>().Core.Combat.TakeDamage(damageToGive);
+            collision.transform.GetComponent<Player.PlayerController>().PlayerHealth.TakeDamage(damageToGive);
             
             if (damageToGive <= knockbackForce)
             {

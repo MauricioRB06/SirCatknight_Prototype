@@ -44,6 +44,8 @@ namespace Levels.General
             {
                 collision.transform.GetComponent<Player.PlayerController>()
                     .Core.Combat.TakeDamage(GetComponentInParent<ExplosiveObject>().DamageToGive);
+                collision.transform.GetComponent<Player.PlayerController>().
+                    PlayerHealth.TakeDamage(GetComponentInParent<ExplosiveObject>().DamageToGive);
             
                 if (GetComponentInParent<ExplosiveObject>().DamageToGive <= kockbackForce)
                 {

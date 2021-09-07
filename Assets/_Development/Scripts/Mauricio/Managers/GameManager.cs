@@ -91,7 +91,7 @@ namespace _Development.Scripts.Mauricio.Managers
             }
             else if (newGameState == GameState.GameOver)
             {
-                SceneManager.LoadScene("MainMenu");
+                LevelManager.Instance.ChangeLevel(SceneManager.GetActiveScene().name);
             }
 
             currentGameState = newGameState;
