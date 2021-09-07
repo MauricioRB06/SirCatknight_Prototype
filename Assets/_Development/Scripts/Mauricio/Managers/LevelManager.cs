@@ -1,7 +1,6 @@
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 namespace _Development.Scripts.Mauricio.Managers
 {
@@ -11,8 +10,6 @@ namespace _Development.Scripts.Mauricio.Managers
         public delegate string LevelChangeDelegate(string sceneName);
         public event LevelChangeDelegate DelegatelevelChange;
         
-        [SerializeField] private GameObject loadingCanvas;
-        [SerializeField] private Image progressBar;
         private float _target;
         
         private void Awake()

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _Development.Scripts.Mauricio.Managers;
 using UnityEngine;
 
 /* Documentation:
@@ -39,6 +40,26 @@ namespace Player.AfterImage
             }
             
             GrowPool();
+        }
+        
+        private string SceneTrigger(string scenename)
+        {
+            Debug.Log($"player loaded in " + scenename);
+            if (scenename == "Credits" || scenename == "MainMenu")
+            {
+                Destroy(gameObject, 0.1f);
+            }
+            return scenename;
+        }
+        
+        private void OnEnable()
+        {
+            LevelManager.Instance.DelegatelevelChange += SceneTrigger;
+        }
+        
+        private void OnDisable()
+        {
+            LevelManager.Instance.DelegatelevelChange -= SceneTrigger;
         }
         
         // We use them to create game objects for the group, we will only create a maximum of 10 objects

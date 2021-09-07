@@ -169,19 +169,19 @@ namespace Player
                                                         dataPlayerController, "CrouchMove");
         }
         
-        private void OnEnable()
-        {
-            LevelManager.Instance.DelegatelevelChange += SceneTrigger;
-        }
-
         private string SceneTrigger(string scenename)
         {
             Debug.Log($"player loaded in " + scenename);
-            if (scenename == "Credits")
+            if (scenename == "Credits" || scenename == "MainMenu")
             {
                 Destroy(gameObject, 0.1f);
             }
             return scenename;
+        }
+        
+        private void OnEnable()
+        {
+            LevelManager.Instance.DelegatelevelChange += SceneTrigger;
         }
         
         private void OnDisable()
