@@ -390,7 +390,6 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -3065,129 +3064,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Perseo UI ControlSchemes Climb 0: 112638626228632427
-      Perseo UI ControlSchemes Climb 4: 3407555486031277942
-      Perseo UI ControlSchemes Climb 1: 8775433937981378429
-      Perseo UI Attack 7: 2597180322204090758
-      Perseo UI Attack 18: -4740077549472672965
-      Perseo UI Decoration Tv 1: -8361968802264371652
-      Perseo UI ControlSchemes Interact 1: -7482728400412428171
-      Perseo UI Decoration Music 4: 5259007945728488513
-      Perseo UI ControlSchemes DashIndicator 0: 8146556532555340125
-      Perseo UI ControlSchemes Climb 7: -5044797026099868700
-      Perseo UI ControlSchemes DodgeRoll 2: -3430946875717984172
-      Perseo UI Attack 9: -2943583425334787921
-      Perseo UI Button Yes 4: -2689204818619992973
-      Perseo UI ControlSchemes Jump 8: -6180589833914687548
-      Perseo UI ControlSchemes Movement 1: 3997808638816936391
-      Perseo UI Attack 4: 7151028429942059496
-      Perseo UI ControlSchemes DodgeRoll 0: -2770790468827489096
-      Perseo UI ControlSchemes Dash 1: 8442094574626021791
-      Perseo UI ControlSchemes Dash 5: 287501505930303548
-      Perseo UI Decoration Tv 4: 1190250128187700582
-      Perseo UI ControlSchemes Jump 9: -5611487074812016027
-      Perseo UI Idle 3: 3852967971493311363
-      Perseo UI MainMenu Run 1: 608040979929469695
-      Perseo UI ControlSchemes DashIndicator 7: 5006295400903352038
-      Perseo UI ControlSchemes Interact 0: 7311378302743623683
-      Perseo UI Button Yes 2: -4425867681607819175
-      Perseo UI Button Yes 5: 1687254322219498517
-      Perseo UI Attack 12: 2635599816921863627
-      Perseo UI ControlSchemes Movement 2: -7586204420092232568
-      Perseo UI Decoration TextBox: -5043634848991846689
-      Perseo UI ControlSchemes Movement 0: -5312919622343573374
-      Perseo UI Button Yes 3: -7017747696816257723
-      Perseo UI ControlSchemes DashIndicator 2: 627872654229544636
-      Perseo UI ControlSchemes Dash 3: -1192108265012125425
-      Perseo UI ControlSchemes Interact 2: -4263002517540808761
-      Perseo UI Decoration Tv 5: -6244514769682514289
-      Perseo UI Attack 3: -7593768530793739768
-      Perseo UI MainMenu Run 4: 3579379135704747225
-      Perseo UI ControlSchemes Climb 6: -6129091964945791124
-      Perseo UI ControlSchemes Climb 9: -8105253871684254005
-      Perseo UI Decoration Tv 2: -9059879497527346966
-      Perseo UI ControlSchemes Grab 0: -5643618893791324630
-      Perseo UI ControlSchemes Jump 7: 7682297780295896328
-      Perseo UI ControlSchemes Jump 5: 3657270051678074563
-      Perseo UI Attack 10: -981501221528379636
-      Perseo UI ControlSchemes Grab 9: -5943504501141808529
-      Perseo UI ControlSchemes DashIndicator 3: -6065362169148003940
-      Perseo UI ControlSchemes Dash 4: -2677006838393235157
-      Perseo UI ControlSchemes Climb 11: 486970651729424693
-      Perseo UI ControlSchemes Jump 0: 3684396732285062787
-      Perseo UI ControlSchemes DodgeRoll 1: 2065501796787572822
-      Perseo UI Attack 0: 8206788160499622833
-      Perseo UI Button Yes 7: 1525742839962265888
-      Perseo UI ControlSchemes Jump 10: 809313598150996588
-      Perseo UI ControlSchemes Interact 3: -4346185847090063883
-      Perseo UI ControlSchemes Jump 3: -3144639917349504573
-      Perseo UI ControlSchemes Movement 4: -979515937803139406
-      Perseo UI Attack 11: 3564862660390778334
-      Perseo UI ControlSchemes Jump 12: -3527219345862025830
-      Perseo UI MainMenu Run 2: 1491587392265293533
-      Perseo UI ControlSchemes Climb 3: -41515941266287458
-      Perseo UI ControlSchemes Grab 5: -6369832422762279921
-      Perseo UI MainMenu Run 0: -4173076431581138414
-      Perseo UI Decoration Music 1: -4154975025082210095
-      Perseo UI Decoration Tv 3: -3858666668916387133
-      Perseo UI ControlSchemes Grab 11: 8828617606397647940
-      Perseo UI Attack 6: 6349700656500919082
-      Perseo UI Decoration Music 0: -6288787676367972635
-      Perseo UI Perseo UI ControlSchemes Crouch 3: 5396736111891606531
-      Perseo UI ControlSchemes DashIndicator 1: 462889237859705992
-      Perseo UI Attack 13: 7552911491972298389
-      Perseo UI Attack 16: -8605072178848629044
-      Perseo UI ControlSchemes Grab 3: -4006098626952184274
-      Perseo UI Decoration Tv 6: -7935348925768962722
-      Perseo UI Attack 14: 4842833931964446852
-      Perseo UI Attack 17: -731436224371213137
-      Perseo UI Button Yes 0: -792892217881556210
-      Perseo UI Attack 1: 93090009913050347
-      Perseo UI Button Yes 6: -6513479521794491816
-      Perseo UI Decoration Tv 0: 6051245642871884044
-      Perseo UI ControlSchemes DashIndicator 5: 7190257680257795963
-      Perseo UI ControlSchemes Jump 6: -2864735738534276919
-      Perseo UI Attack 15: -6187479198510763494
-      Perseo UI Idle 4: -6583018982971701994
-      Perseo UI ControlSchemes Jump 4: 6014416848004786135
-      Perseo UI ControlSchemes Jump 2: -1691929601613007987
-      Perseo UI Decoration Music 3: 2808688795425075605
-      Perseo UI Perseo UI ControlSchemes Crouch 1: -7256188198980024142
-      Perseo UI Perseo UI ControlSchemes Crouch 0: 5100038586741411998
-      Perseo UI Attack 2: 9088685938663874878
-      Perseo UI Attack 8: 6844949606190559179
-      Perseo UI Attack 5: -6578260625737410527
-      Perseo UI ControlSchemes Grab 4: 5920419749811290891
-      Perseo UI ControlSchemes Interact 6: -375761626682251557
-      Perseo UI ControlSchemes Grab 8: -1222387882387151694
-      Perseo UI MainMenu Run 3: -558779613132720625
-      Perseo UI ControlSchemes DashIndicator 4: -5678786220919241677
-      Perseo UI ControlSchemes Interact 5: -2838171668361043599
-      Perseo UI ControlSchemes Grab 10: 4318625054584540588
-      Perseo UI ControlSchemes Climb 5: -5111454081557738248
-      Perseo UI ControlSchemes Movement 3: -4642332864064989622
-      Perseo UI Idle 2: -1364877159399681747
-      Perseo UI Perseo UI ControlSchemes Crouch 2: 3927505329293178306
-      Perseo UI Idle 1: 1231767148146749636
-      Perseo UI Decoration Music 2: -1185797557048893858
-      Perseo UI ControlSchemes Grab 7: 1304494843412713996
-      Perseo UI ControlSchemes Climb 2: -6771685886437624490
-      Perseo UI ControlSchemes Dash 0: 3373467714235640514
-      Perseo UI ControlSchemes Movement 5: 5731166598687072291
-      Perseo UI MainMenu Run 5: -3904252567167676220
-      Perseo UI ControlSchemes Dash 2: 2124892861717234580
-      Perseo UI ControlSchemes Climb 10: 2653678964712397555
-      Perseo UI ControlSchemes Grab 6: 8065743412064725031
-      Perseo UI Idle 0: 6286486288671153895
-      Perseo UI ControlSchemes Jump 1: 2641655084884183572
-      Perseo UI ControlSchemes DashIndicator 6: 8005649711054299402
-      Perseo UI ControlSchemes Interact 7: 5674611943738675303
-      Perseo UI ControlSchemes Climb 8: -5610173195236272471
-      Perseo UI ControlSchemes Grab 1: 9009754091275896261
-      Perseo UI ControlSchemes Interact 4: 5690671570919450887
-      Perseo UI ControlSchemes Grab 2: 3567859654408321673
-      Perseo UI Button Yes 1: -4754203820038275478
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

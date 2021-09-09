@@ -78,7 +78,6 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -214,12 +213,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -135, y: -148.5}
-        - {x: -135, y: 69.5}
-        - {x: 18, y: 88.5}
-        - {x: 135, y: 148.5}
-        - {x: 135, y: -148.5}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: bcb866fc6cbc9ec80800000000000000
@@ -240,12 +234,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -135, y: -148.5}
-        - {x: -135, y: 74.5}
-        - {x: 7, y: 93.5}
-        - {x: 135, y: 148.5}
-        - {x: 135, y: -148.5}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 6d38c12b7d3f398e0800000000000000
@@ -266,12 +255,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -135, y: -148.5}
-        - {x: -135, y: 148.5}
-        - {x: -13, y: 90.5}
-        - {x: 135, y: 67.5}
-        - {x: 135, y: -148.5}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: ba9201b7237f17be0800000000000000
@@ -292,12 +276,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -135, y: -148.5}
-        - {x: -135, y: 148.5}
-        - {x: -6, y: 92.5}
-        - {x: 135, y: 70.5}
-        - {x: 135, y: -148.5}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 811d38dd4732bb4e0800000000000000
@@ -318,13 +297,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 65.5, y: -181}
-        - {x: -44.5, y: -64}
-        - {x: -106.5, y: 63}
-        - {x: -130.5, y: 198}
-        - {x: 130.5, y: 198}
-        - {x: 130.5, y: -198}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 7df82c7ff6913e050800000000000000
@@ -345,13 +318,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 67.5, y: -186}
-        - {x: -18.5, y: -99}
-        - {x: -89.5, y: 23}
-        - {x: -130.5, y: 198}
-        - {x: 130.5, y: 198}
-        - {x: 130.5, y: -198}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 28dfe6ffa284dd4d0800000000000000
@@ -372,13 +339,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 36.5, y: -69}
-        - {x: -40.5, y: -167}
-        - {x: -130.5, y: -198}
-        - {x: -130.5, y: 198}
-        - {x: 130.5, y: 198}
-        - {x: 96.5, y: 49}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 6844a48fb9ee52270800000000000000
@@ -399,13 +360,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 38.5, y: -71}
-        - {x: -57.5, y: -182}
-        - {x: -130.5, y: -198}
-        - {x: -130.5, y: 198}
-        - {x: 130.5, y: 198}
-        - {x: 108.5, y: 74}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: cf1b2d9bc525fa490800000000000000
@@ -423,7 +378,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -444,7 +399,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -465,7 +420,7 @@ TextureImporter:
         width: 64
         height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -486,7 +441,7 @@ TextureImporter:
         width: 64
         height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -507,7 +462,7 @@ TextureImporter:
         width: 92
         height: 92
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -528,7 +483,7 @@ TextureImporter:
         width: 146
         height: 85
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -549,7 +504,7 @@ TextureImporter:
         width: 103
         height: 131
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -570,7 +525,7 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -591,7 +546,7 @@ TextureImporter:
         width: 98
         height: 122
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -613,25 +568,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Main Menu Button Collectables Normal: 8225242648115037318
-      Main Menu Shield Decoration: 9187027861124208711
-      Main Menu Button NewGame Image: 8142449831229705454
-      Main Menu Button Credits Normal: -3108248818304483966
-      Main Menu Button Settings Normal: -1715229468362692942
-      Main Menu Button Exit Normal: 7439623193937825641
-      Main Menu Button Continue Image: -1030903120634746334
-      Main Menu Button Continue Highlighted: -1964937827577507560
-      Main Menu Button Exit Hihglighted: -4892271810205684475
-      Main Menu Button Credits Hihglighted: 5828530311436341207
-      Main Menu Button NewGame Normal: -8292873184082490421
-      Main Menu Button Continue Normal: -1481131006243100245
-      Main Menu Button Collectables Hihglighted: -7732871476963790340
-      Main Menu Button Settings Hihglighted: -1740653288792828999
-      Main Menu Shield: -6778678782687401082
-      Main Menu Button Collectables Image: 806361443526494580
-      Main Menu Button Credits Image: 2875797475453266834
-      Main Menu Button NewGame Highlighted: -1687737327602072618
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

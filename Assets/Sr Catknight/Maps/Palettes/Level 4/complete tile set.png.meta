@@ -273,7 +273,6 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2291,90 +2290,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      complete tile set_8: -2488484138832584955
-      complete tile set_72: -2616700089938794942
-      complete tile set_3: 8900843190236344874
-      complete tile set_74: -4741723510710645568
-      complete tile set_77: 7212199379333628179
-      complete tile set_52: -8619332705346153472
-      complete tile set_75: 2245401628786673310
-      complete tile set_76: -3521597137628954394
-      complete tile set_32: -6104592816448712425
-      complete tile set_53: -528227954088587694
-      complete tile set_35: -6345458896399879074
-      complete tile set_13: 3364101216503615594
-      complete tile set_12: 278340313396296000
-      complete tile set_33: 4233953981046814309
-      complete tile set_68: 8024688532625456465
-      complete tile set_5: 7321176023179507520
-      complete tile set_7: 7166796692018400012
-      complete tile set_45: 1588950111015314895
-      complete tile set_14: -917700502353849691
-      complete tile set_78: 3887869021729802950
-      complete tile set_15: -1755655356718560686
-      complete tile set_17: 5011984501485892531
-      complete tile set_19: -3032041212051677661
-      complete tile set_56: -2056077347591837435
-      complete tile set_49: 7647649686097183091
-      complete tile set_57: 6134706548166418508
-      complete tile set_47: 171981032337941750
-      complete tile set_60: 2433596545069527231
-      complete tile set_69: 149286970388164336
-      complete tile set_9: -8371060477310309127
-      complete tile set_26: -1438286936822604430
-      complete tile set_58: -4059146625170704786
-      complete tile set_63: -3621994521129428346
-      complete tile set_1: -8997923186123540109
-      complete tile set_55: -5716496451316005351
-      complete tile set_4: 5284663661554607901
-      complete tile set_82: -7061359208740617775
-      complete tile set_67: 9222614604619468363
-      complete tile set_10: 6116035148205373974
-      complete tile set_36: 5407413573638716387
-      complete tile set_34: 9062459892939320529
-      complete tile set_6: 3783373294861572180
-      complete tile set_37: -1716619750810050954
-      complete tile set_28: -9163407267610806275
-      complete tile set_54: 7965940376546080040
-      complete tile set_18: -4687695116529980569
-      complete tile set_23: -640751087870972060
-      complete tile set_31: 5212238819444554910
-      complete tile set_42: -91669830582867686
-      complete tile set_64: -7734507982276809626
-      complete tile set_39: 1630070550309122826
-      complete tile set_71: 1307529031956368070
-      complete tile set_0: -1385014542202592993
-      complete tile set_61: -3991514841952558567
-      complete tile set_59: -1383143447675866247
-      complete tile set_41: 9200866028857032884
-      complete tile set_44: -1692757960427502728
-      complete tile set_70: 5583875254734397635
-      complete tile set_11: -4261659488390642371
-      complete tile set_40: -1712377322763621540
-      complete tile set_51: 6424330174198760603
-      complete tile set_48: -311637659575486941
-      complete tile set_16: 5021315821768505452
-      complete tile set_30: -4955560867608858368
-      complete tile set_25: 8455277694069611171
-      complete tile set_29: -6768449090247485598
-      complete tile set_80: 2484364208031668226
-      complete tile set_27: -2613729141268262882
-      complete tile set_65: 5142548690146168274
-      complete tile set_73: 1869232905343815989
-      complete tile set_20: -3599375233391032051
-      complete tile set_21: 1633985410224086152
-      complete tile set_43: -6699587208377300742
-      complete tile set_2: 7704136532083767524
-      complete tile set_62: 5547680205574708585
-      complete tile set_38: 6092161569126991322
-      complete tile set_24: 7856499453896182662
-      complete tile set_79: 203234827096151110
-      complete tile set_46: -8288186373090300112
-      complete tile set_50: 7495087410355826418
-      complete tile set_22: -1839967713013871847
-      complete tile set_66: -4321391389714301358
-      complete tile set_81: -2505006938743706039
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
