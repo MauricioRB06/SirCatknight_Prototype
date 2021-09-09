@@ -54,6 +54,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -376,6 +377,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      FX Undulations_6: 4384487968133932462
+      FX Undulations_0: -5732279654085309787
+      FX Undulations_2: 8037730184189506893
+      FX Undulations_8: 41329592836528894
+      FX Undulations_3: -5115058663732246267
+      FX Undulations_4: -5524991808401811197
+      FX Undulations_9: -2460221014263800812
+      FX Undulations_5: 4207668937755405019
+      FX Undulations_1: 6223180286914673923
+      FX Undulations_7: -4396276248112906148
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

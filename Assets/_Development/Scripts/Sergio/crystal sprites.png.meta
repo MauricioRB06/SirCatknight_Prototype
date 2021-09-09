@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -266,6 +267,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      crystal sprites_0: -583396525262295429
+      crystal sprites_4: -901820541766752871
+      crystal sprites_1: -6236666087617930127
+      crystal sprites_5: 1211549345029396849
+      crystal sprites_3: 4690611765100635278
+      crystal sprites_2: 8807886813724695227
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
