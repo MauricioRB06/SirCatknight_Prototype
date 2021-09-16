@@ -16,515 +16,87 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: df925427f18519b4199539b46ef01498
   m_Entries:
   - m_Id: 54155452416
-    m_Key: Text Movement 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 762221076480
-    m_Key: Text Movement 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 775240196096
-    m_Key: Text Movement 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 786380267520
-    m_Key: Text Movement 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 797654556672
-    m_Key: Text Movement 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 809734152192
-    m_Key: Text Movement 5
-    m_Metadata:
-      m_Items: []
-  - m_Id: 824196112384
-    m_Key: Text Movement 6
+    m_Key: Text Movement
     m_Metadata:
       m_Items: []
   - m_Id: 1327042830336
-    m_Key: Text Jump 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1337981575168
-    m_Key: Text Jump 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1364720263168
-    m_Key: Text Jump 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1374522351616
-    m_Key: Text Jump 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1384622235648
-    m_Key: Text Jump 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1394185248768
-    m_Key: Text Jump 5
+    m_Key: Text Jump
     m_Metadata:
       m_Items: []
   - m_Id: 1558702628864
-    m_Key: Text Damage Objects 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1759156805632
-    m_Key: Text Damage Objects 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1772075261952
-    m_Key: Text Damage Objects 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1780493230080
-    m_Key: Text Damage Objects 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1789691338752
-    m_Key: Text Damage Objects 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1797710848000
-    m_Key: Text Damage Objects 5
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1950345764864
-    m_Key: Text Crouch 0
+    m_Key: Text Damage Objects
     m_Metadata:
       m_Items: []
   - m_Id: 2005207261184
-    m_Key: Text Crouch 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2012329189376
-    m_Key: Text Crouch 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2023800610816
-    m_Key: Text Crouch 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2031585239040
-    m_Key: Text Crouch 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2039604748288
-    m_Key: Text Crouch 5
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2047120941056
-    m_Key: Text Crouch 6
+    m_Key: Text Crouch
     m_Metadata:
       m_Items: []
   - m_Id: 2230357499904
-    m_Key: Text Grab and Climb 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2431247884288
-    m_Key: Text Grab and Climb 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2439409999872
-    m_Key: Text Grab and Climb 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2446955552768
-    m_Key: Text Grab and Climb 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2454102646784
-    m_Key: Text Grab and Climb 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2461681754112
-    m_Key: Text Grab and Climb 5
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2469298610176
-    m_Key: Text Grab and Climb 6
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2477020323840
-    m_Key: Text Grab and Climb 7
+    m_Key: Text Grab and Climb
     m_Metadata:
       m_Items: []
   - m_Id: 2853064843264
-    m_Key: Text Ledge Climb 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2860979494912
-    m_Key: Text Ledge Climb 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2868231446528
-    m_Key: Text Ledge Climb 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2893162389504
-    m_Key: Text Ledge Climb 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2900074602496
-    m_Key: Text Ledge Climb 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2907116838912
-    m_Key: Text Ledge Climb 5
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2914872107008
-    m_Key: Text Ledge Climb 6
+    m_Key: Text Ledge Climb
     m_Metadata:
       m_Items: []
   - m_Id: 3075627196416
-    m_Key: Text Platforms 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3107910754304
-    m_Key: Text Platforms 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3115288535040
-    m_Key: Text Platforms 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3124482449408
-    m_Key: Text Platforms 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3132942360576
-    m_Key: Text Platforms 4
+    m_Key: Text Platforms
     m_Metadata:
       m_Items: []
   - m_Id: 3439634063360
-    m_Key: Text DodgeRoll 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3539114565632
-    m_Key: Text DodgeRoll 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3559914119168
-    m_Key: Text DodgeRoll 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3568004931584
-    m_Key: Text DodgeRoll 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3659814051840
-    m_Key: Text Dash 0
+    m_Key: Text DodgeRoll
     m_Metadata:
       m_Items: []
   - m_Id: 3696216416256
-    m_Key: Text Dash 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3704978317312
-    m_Key: Text Dash 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3712557424640
-    m_Key: Text Dash 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3720144920576
-    m_Key: Text Dash 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3727493341184
-    m_Key: Text Dash 5
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3736485928960
-    m_Key: Text Dash 6
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3744534798336
-    m_Key: Text Dash 7
+    m_Key: Text Dash
     m_Metadata:
       m_Items: []
   - m_Id: 4442202742784
-    m_Key: Text Launchers 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4566148620288
-    m_Key: Text Launchers 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4578433736704
-    m_Key: Text Launchers 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4586855899136
-    m_Key: Text Launchers 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4595475193856
-    m_Key: Text Launchers 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4833107681280
-    m_Key: Text Health Items 0
+    m_Key: Text Launchers
     m_Metadata:
       m_Items: []
   - m_Id: 4867668746240
-    m_Key: Text Health Items 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4875520483328
-    m_Key: Text Health Items 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4883137339392
-    m_Key: Text Health Items 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4891660165120
-    m_Key: Text Health Items 4
+    m_Key: Text Health Items
     m_Metadata:
       m_Items: []
   - m_Id: 5016616869888
-    m_Key: Text Explosive Objects 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5024401498112
-    m_Key: Text Explosive Objects 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5031951245312
-    m_Key: Text Explosive Objects 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5039534546944
-    m_Key: Text Explosive Objects 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5046987825152
-    m_Key: Text Explosive Objects 4
+    m_Key: Text Explosive Objects
     m_Metadata:
       m_Items: []
   - m_Id: 5214894202880
-    m_Key: Text Interactable and DamageZone 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5222406201344
-    m_Key: Text Interactable and DamageZone 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5231298125824
-    m_Key: Text Interactable and DamageZone 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5239019839488
-    m_Key: Text Interactable and DamageZone 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5247911763968
-    m_Key: Text Interactable and DamageZone 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5259886501888
-    m_Key: Text Interactable and DamageZone 5
+    m_Key: Text Interactable and DamageZone
     m_Metadata:
       m_Items: []
   - m_Id: 5476413251584
-    m_Key: Text Shield 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5484231434240
-    m_Key: Text Shield 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5491613409280
-    m_Key: Text Shield 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5498894721024
-    m_Key: Text Shield 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5506176032768
-    m_Key: Text Shield 4
+    m_Key: Text Shield
     m_Metadata:
       m_Items: []
   - m_Id: 5631199846400
-    m_Key: Text Fishcalibur 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5639219355648
-    m_Key: Text Fishcalibur 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5646802657280
-    m_Key: Text Fishcalibur 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5654583091200
-    m_Key: Text Fishcalibur 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5662439022592
-    m_Key: Text Fishcalibur 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5670190096384
-    m_Key: Text Fishcalibur 5
+    m_Key: Text Fishcalibur
     m_Metadata:
       m_Items: []
   - m_Id: 6458081714176
-    m_Key: Text Keys 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6467208519680
-    m_Key: Text Keys 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6475496464384
-    m_Key: Text Keys 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6485697011712
-    m_Key: Text Keys 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6493448085504
-    m_Key: Text Keys 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6500997832704
-    m_Key: Text Keys 5
+    m_Key: Text Keys
     m_Metadata:
       m_Items: []
   - m_Id: 6700143386624
-    m_Key: Text Teleporters 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6708062232576
-    m_Key: Text Teleporters 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6715947524096
-    m_Key: Text Teleporters 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6723832815616
-    m_Key: Text Teleporters 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6731684552704
-    m_Key: Text Teleporters 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6739502735360
-    m_Key: Text Teleporters 5
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7295797469184
-    m_Key: Text Trampoline 0
+    m_Key: Text Teleporters
     m_Metadata:
       m_Items: []
   - m_Id: 7305834438656
-    m_Key: Text Trampoline 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7313115750400
-    m_Key: Text Trampoline 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7320162181120
-    m_Key: Text Trampoline 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7326537523200
-    m_Key: Text Trampoline 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7333818834944
-    m_Key: Text Trampoline 5
+    m_Key: Text Trampoline
     m_Metadata:
       m_Items: []
   - m_Id: 7499141521408
-    m_Key: Text Damageable and Collectables 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7507194585088
-    m_Key: Text Damageable and Collectables 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7515012767744
-    m_Key: Text Damageable and Collectables 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7522524766208
-    m_Key: Text Damageable and Collectables 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7531550908416
-    m_Key: Text Damageable and Collectables 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7540916789248
-    m_Key: Text Damageable and Collectables 5
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7549204733952
-    m_Key: Text Damageable and Collectables 6
+    m_Key: Text Damageable and Collectables
     m_Metadata:
       m_Items: []
   - m_Id: 7724694413312
-    m_Key: Text WallSlide 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7733078827008
-    m_Key: Text WallSlide 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7740930564096
-    m_Key: Text WallSlide 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7748484505600
-    m_Key: Text WallSlide 3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7756336242688
-    m_Key: Text WallSlide 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7764083122176
-    m_Key: Text WallSlide 5
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7772136185856
-    m_Key: Text WallSlide 6
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7957964824576
-    m_Key: Text End Tutorial 0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7969272668160
-    m_Key: Text End Tutorial 1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7977455755264
-    m_Key: Text End Tutorial 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7985580122112
-    m_Key: Text End Tutorial 3
+    m_Key: Text WallSlide
     m_Metadata:
       m_Items: []
   - m_Id: 7993192783872
-    m_Key: Text End Tutorial 4
-    m_Metadata:
-      m_Items: []
-  - m_Id: 8001719803904
-    m_Key: Text End Tutorial 5
+    m_Key: Text End Tutorial
     m_Metadata:
       m_Items: []
   m_Metadata:

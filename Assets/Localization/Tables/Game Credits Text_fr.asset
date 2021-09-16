@@ -24,12 +24,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 831922020352
-    m_Localized: 
+    m_Localized: "L'\xE9quipe du travail"
     m_Metadata:
       m_Items: []
   - m_Id: 758270042112
-    m_Localized: "Mauricio Rodriguez\nIng. M\xE9catronique\n\n> Dessinateur du Jeu\n>
-      Dessinateur des Niveaux\n> Programmeur Principale\n> Artiste 2D"
+    m_Localized: "Mauricio Rodriguez\r\nIng. M\xE9catronique\r\n\r\n> Dessinateur
+      du Jeu\r\n> Dessinateur des Niveaux\r\n> Programmeur Principale\r\n> Artiste
+      2D"
     m_Metadata:
       m_Items: []
   - m_Id: 893158858752
@@ -48,7 +49,6 @@ MonoBehaviour:
       Ing. Industriel
 
 
-
       Programmeuse <
 
       Artiste
@@ -61,7 +61,6 @@ MonoBehaviour:
       Ing. Industriel
 
 
-
       > Programmeur
 
       >
@@ -69,7 +68,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 784509607936
-    m_Localized: "\xC9quipe de appui"
+    m_Localized: "L'\xE9quipe de appui"
     m_Metadata:
       m_Items: []
   - m_Id: 835646562304
@@ -82,7 +81,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7687868424192
-    m_Localized: "Willian Quintero\r\n@ShundiZora\r\nIng. Chimiste\r\n\r\n> Compositeur\r\n>
+    m_Localized: "Willian Quintero\r\nIng. Chimiste\r\n\r\n@ShundiZora\r\n\r\n> Compositeur\r\n>
       Traducteur au Japonnais\r\n> Traducteur au Fra\xE7ais"
     m_Metadata:
       m_Items: []
@@ -92,9 +91,8 @@ MonoBehaviour:
       Dessinateur Graphique
 
 
-
-      Artiste
-      2D <
+      Artiste 2D
+      <
 
       Dessinateur de UI/UX <
 
@@ -110,13 +108,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8518470639616
-    m_Localized: "Projet A R\xE9alis\xE9 Avec Unity Engine\r\nLangue De La Programmation
+    m_Localized: "Projet A R\xE9alis\xE9 Avec Unity Engine\r\nLangue De La Programmation:
       C#"
     m_Metadata:
       m_Items: []
   - m_Id: 8582396026880
     m_Localized: "Une Mention Sp\xE9cial Pour Catalina\r\n( Ziel ) et Perseo ( Perseo
-      )\r\nLequels \xE9taient  La inspiration Pour Le\r\nProjet :3"
+      )\r\nLequels \xE9taient  La inspiration Pour Le\r\nProjet:3"
     m_Metadata:
       m_Items: []
   - m_Id: 9255804116992

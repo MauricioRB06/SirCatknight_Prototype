@@ -16,11 +16,157 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: df925427f18519b4199539b46ef01498, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - id: 0
   m_TableData:
   - m_Id: 54155452416
-    m_Localized: 
+    m_Localized: 'Perseo... wake up, it''s me Pepperoni...
+
+      
+
+      Meowvil
+      casted an spell on you and kidnapped Ziel,you must rescue her, you can use
+      [ X ] to move.'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - id: 0
+  - m_Id: 1327042830336
+    m_Localized: "\xBF Don't you remember?\r\n\r\nYou were fighting him, when he
+      casted an spell and you fell.\r\n\r\nUse [ X ] to jump."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 1558702628864
+    m_Localized: Ziel screamed with all her strenght, but she couldn't wake you up,
+      you must be carefull there are many dangers out there.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 2005207261184
+    m_Localized: Meowvil must have taken to his castle, it is a long way but she's
+      waiting for you, if you you find narrow places  use [ X ] to crouch.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 2230357499904
+    m_Localized: On some occasions, you will have to climb to be able to advance
+      in your adventure, use [ X ] to grab hold of the walls and [ X ] to climb.
+      Also you can jump between walls with [ X ]
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 2853064843264
+    m_Localized: When you're hanging from any place you can use [ X ] to pull  yourself
+      up or [ X ] to let yourself fall, you can also use [ X ] to jump.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 3075627196416
+    m_Localized: You will find some platforms that you can use to advance, but be
+      careful, some are not too stable ...
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 3439634063360
+    m_Localized: You can use [ X ] to dodge obstacles and dangers along the way.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 3696216416256
+    m_Localized: Use [ X ] to activate the dash, while holding down, use [ X ] to
+      indicate the direction, then release [ X ] to launch yourself or wait and it
+      will be done automatically.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 4442202742784
+    m_Localized: In these lands, everything will try to attack you, to prevent you
+      from getting  Meowvil's Castle you must be careful.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 4867668746240
+    m_Localized: Take this to heal you, along the way you will find objects that
+      will help you restore your health when you suffer damage.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 5016616869888
+    m_Localized: Some objects may explode if you get too close to them, be careful,
+      some take time, but others don't.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 5214894202880
+    m_Localized: There are areas where you will not be able to go through without
+      being hurt, but you can interact with some objects, get near to to the lever
+      and press [ X ]
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 5476413251584
+    m_Localized: You can get shield or armor parts that will prevent you from getting
+      damage directly, you can wear a maximum of 3.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 5631199846400
+    m_Localized: Will you need your weapon, if  you want to face Meowvil. I'll return
+      to you Fishcalibur, use [ X ] to attack,  you will find a place to practice.
+      Just ahead
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 6458081714176
+    m_Localized: Some areas need a key to be able go through them, you should find
+      them if you want rescue Ziel, this key should be good for something...
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 6700143386624
+    m_Localized: Meowvil power has generated  some magic portals throught some areas,
+      you can use them to get to some places that might be complex to reach.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 7305834438656
+    m_Localized: Some objects can help you reach higher, when you can't do it only
+      with your skills, you will surely find something to help you.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 7499141521408
+    m_Localized: 'It is rumored that some poets wrote about your battle with Meowvill,
+      if you find the fragments, you will be able to see these stories.
+
+      
+
+      Maybe
+      you should hit this chest with all your strenght.'
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 7724694413312
+    m_Localized: You can slide down the walls if you jump into them and you use [
+      X ] in the same direction where the wall is, but be careful, don't forget to
+      grab aswell.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 7993192783872
+    m_Localized: 'Now  you''re ready to rescue Ziel and bring her back, I wish you
+      luck, you will need it if you want to defeat Meowvil.
+
+      
+
+      Now
+      go head Sir Catknight ...'
+    m_Metadata:
+      m_Items:
+      - id: 0
   references:
     version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00a0ea87bc00000000a0ea9b0c00000000a0eaf93401000000a0eae96a01000000a0aadfd201000000a0aa4b0702000000a0ea479802000000a0aa19cc02000000a02ada2003000000a0aa975c03000000a0ea470a04000000a0aa576d04000000a0aa059004000000a0ea2fbe04000000a0aa13fb04000000a0aa1d1f05000000a0aaa3df05000000a0aaff1706000000a0aa05a506000000a0aa07d206000000a0aa8b0607000000a06a0f45070000

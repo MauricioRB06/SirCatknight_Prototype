@@ -16,7 +16,151 @@ MonoBehaviour:
     m_Code: fr
   m_SharedData: {fileID: 11400000, guid: df925427f18519b4199539b46ef01498, type: 2}
   m_Metadata:
-    m_Items: []
-  m_TableData: []
+    m_Items:
+    - id: 0
+  m_TableData:
+  - m_Id: 54155452416
+    m_Localized: "Perseo... debout, c'est moi, Pepperoni...\r\n\r\nMiaouvil t'a ensorcel\xE9
+      et a enlev\xE9 \xE0 Ziel, dois aller \xE0 la sauver, peux utilise [ X ] pour
+      d\xE9placer."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 1327042830336
+    m_Localized: "Tu ne rappeles rien ?\r\n\r\nTu s'\xE9tais battu contre lui, quand
+      il t'a lanc\xE9 son sort et tu as tomb\xE8.\r\n\r\nUtilise [ X ] pour souter."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 1558702628864
+    m_Localized: "Ziel a cri\xE9 avec toutes ses  forces, mais elle ne t'\xE9ussit
+      pas \xE0 r\xE9veiller, nous ne pouvions rien faire; tu dois faire attention,
+      il y a beaucoup des risques dehors."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 2005207261184
+    m_Localized: "Miaouvil doit l'a emmen\xE9 dans son ch\xE2teau, c'est un large
+      chemin, mais, elle  attend pour toi, si te trouves lieux \xE9troits utilise
+      [ X ] pour te braisser."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 2230357499904
+    m_Localized: Quelques fois, tu auras qui escalader pour peux avancer dans t'aventure,
+      utilice [ X ] pour prendre des murs et [ X ] pour monter, tu peux sauter entre
+      les musr avec [ X ] aussi.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 2853064843264
+    m_Localized: Quand tu es suspendu d'un griffe, tu peux utiliser [ X ] pour monter
+      ou [ X ] pour tomber du mur, tu peux utiliser [ X ] pour sauter aussi.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 3075627196416
+    m_Localized: "Tu d\xE9couvriras quelques plate-forme qui peux utiliser pour avancer.
+      Attention !, quelques ne sont pas tr\xE8s stables ..."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 3439634063360
+    m_Localized: Tu peux utiliser [ X ] pour esquiver obstacles et risques sur la
+      route.
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 3696216416256
+    m_Localized: "Utilise [ X ] pour activer la charge, pendant que tu le  maintiens
+      sous pression, utilise [ X ] pour indiquer la direction, apr\xE8s lib\xE9re-le
+      [ X ] pour te ruer ou attends et se r\xE9alisera seule."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 4442202742784
+    m_Localized: "Dans ces terres, tout essayera de t'attaquer pour emp\xEAcher que
+      tu arrives au ch\xE2teaual de Miaouvil, dois faire attention."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 4867668746240
+    m_Localized: "Prends \xE7a pour te soigner, sur la route trouveras objets qui
+      t'aideont  \xE0 r\xE9tablir ta sant\xE9 quand tu souffriras des plaies."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 5016616869888
+    m_Localized: "Quelques objets peuvent exploser si tu t'approches tr\xE8s pr\xE9s
+      d'eux, fais attention, Quelques sont en retard, mais autres sont tr\xE9s rapides."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 5214894202880
+    m_Localized: "Il y a des zones o\xF9 tu ne pourras pas passer facilement sans
+      \xEAtre bless\xE9, mais  tu peux interagir avec quelques objets, approche \xE0
+      la manette et presse [ X ]"
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 5476413251584
+    m_Localized: "Tu peux obtenir les pi\xE9ces du bouclier ou d'armature qui emp\xEAcheront
+      de blesser directament, tu peux portent un maximum de 3."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 5631199846400
+    m_Localized: "Tu n\xE9cessiteras ta arme si tu veux opposer \xE0 Miaouvil, Je
+      te rends \xE0 Poissoncalibur,  utilise [ X ] pour attaquer, plus tard trouveras
+      une  place pour practiquer."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 6458081714176
+    m_Localized: "Certains zones n\xE9cessitent d'une cl\xE9 pour pouvoir les saisir,
+      tu devras les trouver si tu veux sauver \xE0 Ziel, cette cl\xE9 devrait servir
+      pour quelque chose..."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 6700143386624
+    m_Localized: "Le pouvoir de Miaouvil a g\xE9n\xE9r\xE9 que en quelques zones
+      se cr\xE9ent portails magiques, tu les pourras utiliser pour arriver aux endroits
+      complexes de atteindre."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 7305834438656
+    m_Localized: "Certains objets peuvent t'aider \xE0 attendre plus haut, quand
+      tu ne peux pas arriver \xE0 quelque part avec tes aptitudes, tu trouves s\xFBrement
+      quelque chose qui t'aidera."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 7499141521408
+    m_Localized: "Se raconte que quelques po\xE8tes as \xE9crit sur  ta bataille
+      avec Miauvil, si tu d\xE9couvrirais les fragments, tu pourras voir ces r\xE9cits.\r\n\r\nPeut-\xEAtre.
+      tu devrais donner-le une bonne racl\xE9e \xE0 ce coffre..."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 7724694413312
+    m_Localized: "Tu peux te glisser pour les murs si tu sautes vers eux et utilises
+      [ X ] \xE0 la direction dans laquelle le mur, mais fais attention, n'oublie
+      pas t'accrocher."
+    m_Metadata:
+      m_Items:
+      - id: 0
+  - m_Id: 7993192783872
+    m_Localized: "Maintenant tu es pr\xEAt pour aller au sauvetage de Ziel et ramener-la,
+      je te d\xE9sire bonne chance, tu la n\xE9cesiteras si tu voudrais battre \xE0
+      Miaouvil.\r\n\r\nMaintenant va Sir Catknight..."
+    m_Metadata:
+      m_Items:
+      - id: 0
   references:
     version: 1
+    00000000:
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00a0ea87bc00000000a0ea9b0c00000000a0eaf93401000000a0eae96a01000000a0aadfd201000000a0aa4b0702000000a0ea479802000000a0aa19cc02000000a02ada2003000000a0aa975c03000000a0ea470a04000000a0aa576d04000000a0aa059004000000a0ea2fbe04000000a0aa13fb04000000a0aa1d1f05000000a0aaa3df05000000a0aaff1706000000a0aa05a506000000a0aa07d206000000a0aa8b0607000000a06a0f45070000

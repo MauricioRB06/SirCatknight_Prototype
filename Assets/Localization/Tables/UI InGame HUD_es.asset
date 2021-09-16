@@ -22,5 +22,25 @@ MonoBehaviour:
     m_Localized: 'Coleccionables:   /'
     m_Metadata:
       m_Items: []
+  - m_Id: 8428604969623552
+    m_Localized: Miauriam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8428607318433792
+    m_Localized: Manekineko
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8428609566580736
+    m_Localized: Miukahan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8428612653588480
+    m_Localized: Miaushroom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8428614733963264
+    m_Localized: Miauvil
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

@@ -19,10 +19,8 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 915271229440
-    m_Localized: 'Proyecto Sr. Catknight Desarrollado Para
-
-      La Asignatura De
-      Programacion Orientada a Objetos'
+    m_Localized: "Proyecto Sr. Catknight Desarrollado Para La Asignatura De\r\nProgramaci\xF3n
+      Orientada a Objetos."
     m_Metadata:
       m_Items: []
   - m_Id: 831922020352
@@ -30,21 +28,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 758270042112
-    m_Localized: "Mauricio Rodriguez\nIng. Mecatronico\n\n> Dise\xF1ador De Juego\n>
-      Dise\xF1ador De Niveles\n> Programador Principal\n> Artista 2D"
+    m_Localized: "Mauricio Rodr\xEDguez\r\nIng. Mecatr\xF3nico\r\n\r\n> Dise\xF1ador
+      De Juego\r\n> Dise\xF1ador De Niveles\r\n> Programador Principal\r\n> Artista
+      2D"
     m_Metadata:
       m_Items: []
   - m_Id: 893158858752
-    m_Localized: 'Luis Vaca
-
-      Ing. Electronico
-
-      
-
-      Artista 2D
-      Principal <
-
-      Programador <'
+    m_Localized: "Luis Vaca\r\nIng. Electr\xF3nico\r\n\r\nArtista 2D Principal <\r\nProgramador
+      <"
     m_Metadata:
       m_Items: []
   - m_Id: 812762439680
@@ -57,25 +48,16 @@ MonoBehaviour:
 
       Ing. Industrial
 
-      
 
-      Programadora
-      <
+      Programadora <
 
-      Artista 2D <'
+      Artista
+      2D <'
     m_Metadata:
       m_Items: []
   - m_Id: 937215827968
-    m_Localized: 'Leonel Rodriguez
-
-      Ing. Industrial
-
-      
-
-      > Programador
-
-      >
-      Artista 2D'
+    m_Localized: "Leonel Rodr\xEDguez\r\nIng. Industrial\r\n\r\n> Programador\r\n>
+      Artista 2D"
     m_Metadata:
       m_Items: []
   - m_Id: 784509607936
@@ -83,28 +65,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 835646562304
-    m_Localized: "Ivan Alexis\r\nIng. Agr\xF3nomo\r\n\r\n> Escritor"
+    m_Localized: "Iv\xE1n Alexis\r\nIng. Agr\xF3nomo\r\n\r\n> Escritor"
     m_Metadata:
       m_Items: []
   - m_Id: 7601704837120
-    m_Localized: 'Luisa Pacheco
-
-      Realizadora Audiovisual
-
-      
-
-      Produccion
-      SFX <'
+    m_Localized: "Luisa Pacheco\r\nRealizadora Audiovisual\r\n\r\nProducci\xF3n Efectos
+      de Sonido <"
     m_Metadata:
       m_Items: []
   - m_Id: 7687868424192
-    m_Localized: "Willian Quintero\r\n@ShundiZora\r\nIng. Quimico\r\n\r\n> Compositor
-      Musical\r\n> Traducci\xF3n Al Japones\r\n> Traducci\xF3n Al Frances"
+    m_Localized: "Willian Quintero\r\nIng. Qu\xEDmico\r\n\r\n@ShundiZora\r\n\r\n>
+      Compositor Musical\r\n> Traducci\xF3n Al Japones\r\n> Traducci\xF3n Al Frances"
     m_Metadata:
       m_Items: []
   - m_Id: 7999551348736
-    m_Localized: "Daniel Marmolejo\r\nDise\xF1ador Grafico\r\n\r\nArtista 2D <\r\nDise\xF1ador
-      de UI/UX <\r\nTraducci\xF3n Al Ingles <"
+    m_Localized: "Daniel Marmolejo\r\nDise\xF1ador Gr\xE1fico\r\n\r\nArtista 2D <\r\nDise\xF1ador
+      de UI/UX <\r\nTraducci\xF3n Al Ingl\xE9s <"
     m_Metadata:
       m_Items: []
   - m_Id: 8378317971456
@@ -114,27 +90,18 @@ MonoBehaviour:
   - m_Id: 8439785496576
     m_Localized: 'David Alberto Herrera
 
-      
 
       Ingeniero De Sistemas'
     m_Metadata:
       m_Items: []
   - m_Id: 8518470639616
-    m_Localized: 'Proyecto Realizado Con Unity Engine
-
-      Lenguaje De Programacion
-      C#'
+    m_Localized: "Proyecto Realizado Con Unity Engine\r\nLenguaje De Programaci\xF3n:
+      C#"
     m_Metadata:
       m_Items: []
   - m_Id: 8582396026880
-    m_Localized: 'Una Mencion Especial Para Catalina
-
-      ( Ziel ) y Perseo (
-      Perseo )
-
-      Quienes Fueron La Inspiracion Para El
-
-      Proyecto :3'
+    m_Localized: "Una Menci\xF3n Especial Para Catalina\r\n( Ziel ) y Perseo ( Perseo
+      )\r\nQuienes Fueron La Inspiraci\xF3n Para Este\r\nProyecto :3"
     m_Metadata:
       m_Items: []
   - m_Id: 9255804116992

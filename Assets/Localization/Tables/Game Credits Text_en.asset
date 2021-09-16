@@ -26,11 +26,11 @@ MonoBehaviour:
     m_Localized: 'Sr. Catknight Project Developed For
 
       Object Oriented Programming
-      Subject'
+      Subject.'
     m_Metadata:
       m_Items: []
   - m_Id: 831922020352
-    m_Localized: Work Team
+    m_Localized: Team Work
     m_Metadata:
       m_Items: []
   - m_Id: 758270042112
@@ -71,12 +71,11 @@ MonoBehaviour:
 
       Industrial Engineer
 
-      
 
-      Programmer
-      <
+      Programmer <
 
-      2D Artist <'
+      2D
+      Artist <'
     m_Metadata:
       m_Items: []
   - m_Id: 937215827968
@@ -84,12 +83,11 @@ MonoBehaviour:
 
       Industrial Engineer
 
-      
+
+      > Programmer
 
       >
-      Programmer
-
-      > 2D Artist'
+      2D Artist'
     m_Metadata:
       m_Items: []
   - m_Id: 835646562304
@@ -97,30 +95,28 @@ MonoBehaviour:
 
       Agronomic Engineer
 
-      
 
       > Writer'
     m_Metadata:
       m_Items: []
   - m_Id: 7601704837120
-    m_Localized: 'Luisa pacheco
+    m_Localized: 'Luisa Pacheco
 
       Audiovisual Director
 
-      
 
-      SFX
-      production <'
+      SFX production
+      <'
     m_Metadata:
       m_Items: []
   - m_Id: 7687868424192
     m_Localized: 'Willian Quintero
 
-      @ShundiZora
-
       Chemical Engineer
 
-      
+
+      @ShundiZora
+
 
       >
       Musical Composer
@@ -131,28 +127,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7999551348736
-    m_Localized: 'Daniel marmolejo
+    m_Localized: 'Daniel Marmolejo
 
       Graphic Designer
 
-      
 
-      2D Artist
-      <
+      2D Artist <
 
-      UI/UX Designer <
+      UI/UX
+      Designer <
 
       English Translation <'
     m_Metadata:
       m_Items: []
   - m_Id: 8378317971456
-    m_Localized: Subject Teacher
+    m_Localized: Tutor
     m_Metadata:
       m_Items: []
   - m_Id: 8439785496576
     m_Localized: 'David Alberto Herrera
 
-      
 
       Systems Engineer'
     m_Metadata:
@@ -160,16 +154,16 @@ MonoBehaviour:
   - m_Id: 8518470639616
     m_Localized: 'Project Made With Unity Engine
 
-      Programming Language C#'
+      Programming Language: C#'
     m_Metadata:
       m_Items: []
   - m_Id: 8582396026880
-    m_Localized: 'A Special Mention For Catalina
+    m_Localized: 'A Special Mention to Catalina
 
-      ( Ziel ) And Perseus ( Perseo
+      ( Ziel ) And Perseo ( Perseo
       )
 
-      Who Were The Inspiration For The
+      Who Were The Inspiration For This
 
       Project :3'
     m_Metadata:

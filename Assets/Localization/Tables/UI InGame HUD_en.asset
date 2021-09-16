@@ -22,5 +22,25 @@ MonoBehaviour:
     m_Localized: 'Collectables:   /'
     m_Metadata:
       m_Items: []
+  - m_Id: 8428604969623552
+    m_Localized: Meowriam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8428607318433792
+    m_Localized: Manekineko
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8428609566580736
+    m_Localized: Meowkahan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8428612653588480
+    m_Localized: Meowushroom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8428614733963264
+    m_Localized: Meowvil
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

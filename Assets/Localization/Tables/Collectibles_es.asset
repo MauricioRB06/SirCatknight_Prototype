@@ -88,14 +88,14 @@ MonoBehaviour:
     m_Localized: Hero
     m_Metadata:
       m_Items: []
-  - m_Id: 19658715320459264
+  - m_Id: 28071359626780672
     m_Localized: "El \xEDmpetu explorador de Perseo es alimentado por el deseo de
-      encontrar a Ziel. \r\nEl camino est\xE1 lleno de sorpresas, sus enemigos conocidos
-      son quienes la raptaron.\r\n Entre pensamiento y desilusiones sin siquiera
-      darse cuenta y perdido en la imagen de Ziel, lleg\xF3 a los muros de una\r\n
-      extra\xF1a torre, - pens\xF3: \xBFSer\xE1 aqu\xED donde Ziel est\xE1 pasando
-      su condena? \xA1Es hora de encontrarla!, \r\n- Dijo mientras empujaba la gran
-      puerta de chocolate."
+      encontrar a Ziel.\r\n\r\nEl camino est\xE1 lleno de sorpresas, sus enemigos
+      conocidos, son quienes la raptaron.\r\n\r\nEntre pensamiento y desilusiones
+      sin siquiera darse cuenta y perdido en la imagen de Ziel, lleg\xF3 a los muros
+      de \r\nuna extra\xF1a torre, - pens\xF3: \xBFSer\xE1 aqu\xED donde Ziel est\xE1
+      pasando su condena? \xA1Es hora de encontrarla!\r\n\r\n- Dijo mientras empujaba
+      la gran puerta de chocolate."
     m_Metadata:
       m_Items: []
   - m_Id: 19658577139113984
@@ -111,67 +111,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 23523673372270592
-    m_Localized: "Perseo ha ca\xEDdo en la profundidad de sus sue\xF1os. Su ultimo
+    m_Localized: "Perseo ha ca\xEDdo en la profundidad de sus sue\xF1os. Su \xFAltimo
       recuerdo lo atormenta: Ziel, su due\xF1a, fue raptada\r\npor Miauvil y llevada
-      a su castillo. Perseo est\xE1 decidido a recuperarla y volver a su suaves y
-      acogedores brazos,\r\njusto donde pertenece. El dulce y temeroso felino se
+      a su castillo. Perseo est\xE1 decidido a recuperarla y volver a sus suaves
+      y acogedores brazos,\r\njusto donde pertenece. El dulce y temeroso felino se
       llen\xF3 de valor y est\xE1 listo para la aventura, \xBFt\xFA tambi\xE9n lo
       est\xE1s?"
     m_Metadata:
       m_Items: []
-  - m_Id: 19658716159320064
-    m_Localized: "Mientras escalaba las pegajosas paredes de la torre en busca de
-      Miauriam, Perseo sinti\xF3 el peso de su armadura, mir\xF3 su espada notando
-      el esqueleto forjado de un pez, este le recordaba a ese juguete viscoso con
-      forma de pez dulce que se hund\xEDa entre sus dientes. Los dem\xE1s gatos se
-      lo quitaban y constantemente deb\xEDa enfurecerse para espantar a aquellos
-      ladronzuelos, escaladores perpetuos de rascadores donde Perseo no se molestaba
-      en ir. Cuando finalmente decid\xEDa regresar con el juguete al lado de Ziel,
-      los dem\xE1s gatos lo encrucijaban con garrazos y mordidas; Ziel al notar su
-      demora acudi\xF3 a su rescate, pues a\xF1oraba su sonado ronroneo. Con su delicada
-      mano tom\xF3 a Perseo, lo acarici\xF3, le dio un par de golosinas que ten\xEDa
-      preparadas para los dem\xE1s gatos y mantuvo su ronroneo por horas. San\xF3
-      el dolor que esos pretenciosos gatos causaron y ahora estaba solo para ella."
+  - m_Id: 23526049957191680
+    m_Localized: Lobrego
     m_Metadata:
       m_Items: []
-  - m_Id: 19658716964626432
-    m_Localized: "Perseo sali\xF3 de la torre de Miauriam, ahora se adentra al bosque;
-      arboles frondosos lo rodean y uno que otro roedor por el camino lo distrae,
-      y hace que pierda el rumbo. Ya no sabe cu\xE1l es la direcci\xF3n por tomar
-      ni como llego ah\xED, pareciera como si ese sitio estuviera improvisado para
-      \xE9l, de repente de un salto y dispuestos a atarcar, los ninjas de Manekineko
-      aparecen a su alrededor. Fue como aquella vez en el parque, donde jugueteando
-      entre los toboganes Perseo se encontr\xF3 con un h\xE1mster amigable para jugar,
-      mientras tanto iban saliendo m\xE1s h\xE1msteres de la arena. De repente 50
-      h\xE1msteres emergieron de la nada, Perseo no sab\xEDa que quer\xEDan, pero
-      se sent\xEDa intimidado. Estaba muy lejos de Ziel como para pedir ayuda. Fue
-      asi que arrojando garrazos de arena hizo un giro para llenar de arena el cuerpo
-      peludo de esos h\xE1msteres. Eso le dio suficiente tiempo para lograr escabullirse
-      hasta donde estaba Ziel. Los h\xE1msteres lo observaban desde lejos como previ\xE9ndolo
-      de su venganza. Mientras tanto Perseo gozaba de la seguridad en brazos de Ziel."
+  - m_Id: 23526047746793472
+    m_Localized: "Lumi\xE8re"
     m_Metadata:
       m_Items: []
-  - m_Id: 19658719514763264
-    m_Localized: "Perseo va de campamento con Ziel, mientras caminan por el sendero
-      Perseo vislumbra unos cuantos hongos que se le hac\xEDan extra\xF1amente conocidos
-      y apetitosos. Los efectos de consumirlos llegar\xEDan en unas cuantas horas,
-      pues en medio de la fogata del campamento Perseo siente como la confusi\xF3n
-      se apodera de \xE9l, de repente recuerda que esto ya lo vivi\xF3, y que solo
-      ha ca\xEDdo en un trance producto de aquellos champi\xF1ones que no debi\xF3
-      comer en la mina de Valmaril. No despertaba, solo quedaba seguir con su recuerdo.
-      Luego de que el fuego se presentara en forma de Miaushroom atacando a Ziel,
-      Perseo y el irrealismo de su mente lo lleva a buscar c\xF3mo proteger a Ziel,
-      en su camino la oscuridad era menos que indistinguible. Ahora se hallaba en
-      lo profundo un hoyo, la oscuridad y tranquilidad eran abismales, Ziel pensaba
-      que no era reto para Perseo escalar hasta el borde y salir. - F\xE1cil -. Solo
-      las horas y el despertar de Perseo lo dir\xEDan."
+  - m_Id: 23526036707385344
+    m_Localized: Friandise
     m_Metadata:
       m_Items: []
   - m_Id: 23524412207308800
     m_Localized: "Tras so\xF1ar con aquella vez en el castillo cuando enfrento a
       Miauvil y rescato a Ziel de sus garras, de repente, nuestro h\xE9roe despierta
       debajo del \xE1rbol m\xE1s grande del campamento en los brazos de Ziel. Ella
-      lo mira con dulzura y los ojos entrecerrados de Perseo la observan imperturbablemente."
+      lo mira con dulzura, y los ojos entrecerrados de Perseo la observan imperturbablemente."
     m_Metadata:
       m_Items: []
   - m_Id: 23525937218494464
@@ -216,6 +180,96 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 23565703817371648
     m_Localized: "Finalit\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28071361543577600
+    m_Localized: "Mientras escalaba las pegajosas paredes de la torre en busca de
+      Miauriam, Perseo sinti\xF3 el peso de su armadura, mir\xF3 su espada notando
+      el esqueleto forjado de un pez, este le recordaba a ese juguete viscoso con
+      forma de pez dulce que se hund\xEDa entre sus dientes. Los dem\xE1s gatos se
+      lo quitaban y constantemente deb\xEDa enfurecerse para espantar a aquellos
+      ladronzuelos, escaladores perpetuos de rascadores donde Perseo no se molestaba
+      en ir. Cuando finalmente decid\xEDa regresar con el juguete al lado de Ziel,
+      los dem\xE1s gatos lo encrucijaban con garrazos y mordidas; Ziel al notar su
+      demora acudi\xF3 a su rescate, pues a\xF1oraba su sonado ronroneo. Con su delicada
+      mano tom\xF3 a Perseo, lo acarici\xF3, le dio un par de golosinas que ten\xEDa
+      preparadas para los dem\xE1s gatos y mantuvo su ronroneo por horas. San\xF3
+      el dolor que esos pretenciosos gatos causaron y ahora estaba solo para ella."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28071428648247296
+    m_Localized: "Perseo, luego de lanzarse de la torre de az\xFAcar, ahora se adentra
+      al bosque; \xE1rboles frondosos lo rodean y uno que otro roedor por el camino
+      lo distrae, y hace que pierda el rumbo. Ya no sabe cu\xE1l es la direcci\xF3n
+      que debe tomar ni como llego all\xED, pareciera como si ese sitio estuviera
+      improvisado para \xE9l, de repente de un salto y dispuestos a atacar, los ninjas
+      de Manekineko aparecen a su alrededor. Fue como aquella vez en el parque, donde
+      jugueteando entre los toboganes Perseo se encontr\xF3 con un h\xE1mster amigable
+      para jugar, mientras tanto iban saliendo m\xE1s h\xE1msteres de la arena. De
+      repente 50 h\xE1msteres emergieron de la nada, Perseo no sab\xEDa qu\xE9 quer\xEDan,
+      pero se sent\xEDa intimidado. Estaba muy lejos de Ziel como para pedir ayuda.
+      Fue as\xED que arrojando garrazos, hizo un giro para llenar de arena el peludo
+      cuerpo de esos malhechores. Eso le dio suficiente tiempo para lograr escabullirse
+      hasta donde estaba Ziel. Los h\xE1msteres sobrevivientes lo observaban desde
+      lejos como previendo su venganza. Mientras tanto Perseo gozaba de la seguridad
+      en brazos de Ziel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28071429688434688
+    m_Localized: "Perseo mira la entrada a la imponente ciudad de las nubes, est\xE1
+      en ruinas y su enemigo yace ante \xE9l. Miukahan arroja a Perseo hacia las
+      ruinas, quien es cubierto por un mont\xF3n de escombros tal cual hubieran ca\xEDdo
+      cientos de almohadas encima de \xE9l, esto le record\xF3 aquel d\xEDa en que
+      Ziel lo llevo de compras al centro comercial. Perseo llevaba varios d\xEDas
+      en los que no hab\xEDa podido conciliar el sue\xF1o, pues los pretenciosos
+      gatos acud\xEDan a despertarlo cada vez que este se dorm\xEDa, le lanzaban
+      todo tipo de cosas, lo que tuvieran a sus garras, ya no pod\xEDa cerrar sus
+      ojos frente a las rufianadas cometidas. En el centro comercial, en la estanter\xEDa
+      m\xE1s alta en la secci\xF3n de camas para mascotas, vislumbro un rascador
+      de tres niveles, aquel rascador apenas y se sosten\xEDa en la punta de la estanter\xEDa.
+      Ziel, de nuevo, no hallaba a Perseo. De repente el coordinador de la tienda
+      dijo:\r\n\r\n- Hel\xF3 ah\xED en la punta m\xE1s alta de la estanter\xEDa.
+      Al menos seis metros separaban a Ziel de Perseo, el elevador industrial sube
+      apenas 3 metros y Perseo se sent\xEDa en las nubes. No recordar\xEDa ni como
+      llego a casa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28071450093723648
+    m_Localized: "Perseo se encontraba de campamento con Ziel, mientras caminaban
+      por el sendero Perseo vislumbra unos cuantos hongos que se le hac\xEDan extra\xF1amente
+      conocidos y apetitosos. Los efectos de consumirlos llegar\xEDan unas horas
+      m\xE1s tarde, pues en medio de la fogata del campamento Perseo siente como
+      la confusi\xF3n se apodera de \xE9l, de repente recuerda que esto ya lo vivi\xF3
+      y que solo ha ca\xEDdo en un trance como aquella vez, producto de esos champi\xF1ones
+      que no debi\xF3 comer, sab\xEDa que no despertar\xEDa, solo quedaba seguir
+      con su recuerdo.\r\n\r\nLuego de que el fuego se presentara con la forma de
+      Miaushroom atacando a Ziel, Perseo y el irrealismo de su mente lo llevar\xEDan
+      a buscar c\xF3mo protegerla, as\xED que emprendi\xF3 camino, el cual se tornaba
+      cada vez mas difuso, hasta que cay\xF3 en un profundo hoyo, la oscuridad y
+      tranquilidad eran abismales, sabia que ahora se encontraba en las minas de
+      Valmaril, la guarida de Miaushroom.\r\n\r\nMientras tanto Ziel pensaba que
+      para Perseo no ser\xEDa un reto escalar hasta el borde y salir. - Ser\xE1 f\xE1cil
+      dijo\r\n\r\n- Solo las horas y el despertar de Perseo lo dir\xEDan."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28071461741305856
+    m_Localized: "Perseo no lograba salir de aquel hoyo, pero se da cuenta de que
+      arriba no era la \xFAnica salida; somnoliento y delirante, dudaba de todo,
+      hasta de aquel t\xFAnel que frente a \xE9l se present\xF3 por horas. Con un
+      maullido se despidi\xF3 de Ziel y se aventur\xF3 a sumergirse en el t\xFAnel,
+      pensaba: - A alg\xFAn sitio ha de llevarme-.\r\n\r\nZiel deb\xEDa buscar la
+      manera de hallar a Perseo, supuso que este habr\xEDa de adentrarse a un pasadizo
+      hacia un castillo abandonado de la cual hab\xEDa escuchado antes de partir
+      al campamento. Fue as\xED como Ziel dentro del castillo y en la b\xFAsqueda
+      de Perseo quedo atrapada en una Jaula luego de accionar un sistema contra invasores
+      de la manera m\xE1s torpe.\r\n\r\nElla gritaba con todas sus fuerzas para que
+      Perseo la escuchara, y este, ya dentro del castillo no encontraba el lugar
+      de procedencia de la voz. Cuando de repente entro en aquel lobby y vio a Ziel
+      dentro de una jaula colgante y sobre esta yac\xEDan un gato merodeador que
+      inmediatamente Perseo reconoci\xF3, \xA1era Miauvil!\r\n\r\nAhora Perseo, veloz
+      y decidido, hizo frente a Miauvil. De tres maullidos y un par de zarpazos lo
+      ech\xF3, y aprovechando sus u\xF1as desenfundadas, hizo el corte a la polea
+      liberando a Ziel de su encierro."
     m_Metadata:
       m_Items: []
   references:

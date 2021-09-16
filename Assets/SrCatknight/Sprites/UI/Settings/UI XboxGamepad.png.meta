@@ -1,0 +1,2874 @@
+fileFormatVersion: 2
+guid: 0a9890026685be349a04c08238701cfb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8343133060173568161
+    second: UI XboxGamepad A 0
+  - first:
+      213: 2487987921682008029
+    second: UI XboxGamepad A 1
+  - first:
+      213: -4271551391796590192
+    second: UI XboxGamepad X 0
+  - first:
+      213: 1839101990668610995
+    second: UI XboxGamepad X 1
+  - first:
+      213: 5987155128577699616
+    second: UI XboxGamepad B 0
+  - first:
+      213: -1502896021479436196
+    second: UI XboxGamepad B 1
+  - first:
+      213: -7671389481695386406
+    second: UI XboxGamepad Y 0
+  - first:
+      213: -6299232449996191254
+    second: UI XboxGamepad Y 1
+  - first:
+      213: 5892073362974363663
+    second: UI XboxGamepad LB 0
+  - first:
+      213: -2278192779289771736
+    second: UI XboxGamepad LB 1
+  - first:
+      213: 4218179559558435044
+    second: UI XboxGamepad A 2
+  - first:
+      213: -6807628027546205644
+    second: UI XboxGamepad A 3
+  - first:
+      213: 5464521423993342665
+    second: UI XboxGamepad X 2
+  - first:
+      213: 9048609439123001120
+    second: UI XboxGamepad X 3
+  - first:
+      213: 5078936113757727311
+    second: UI XboxGamepad B 2
+  - first:
+      213: -4744206693456175371
+    second: UI XboxGamepad B 3
+  - first:
+      213: -437321119808460240
+    second: UI XboxGamepad Y 2
+  - first:
+      213: -6988104561965811885
+    second: UI XboxGamepad Y 3
+  - first:
+      213: 929689933604645004
+    second: UI XboxGamepad RB 0
+  - first:
+      213: 2965861168596257231
+    second: UI XboxGamepad RB 1
+  - first:
+      213: -4172046713525836439
+    second: UI XboxGamepad Menu 0
+  - first:
+      213: 508211031445838403
+    second: UI XboxGamepad Menu 1
+  - first:
+      213: 8528936900129951598
+    second: UI XboxGamepad Share 0
+  - first:
+      213: -2407742655385969850
+    second: UI XboxGamepad Share 1
+  - first:
+      213: 5018826186414291688
+    second: UI XboxGamepad RT 0
+  - first:
+      213: 1660265397784706200
+    second: UI XboxGamepad RT 1
+  - first:
+      213: -929688375578130889
+    second: UI XboxGamepad LT 0
+  - first:
+      213: 4512186081676890482
+    second: UI XboxGamepad LT 1
+  - first:
+      213: -5135771501619758535
+    second: UI Xbox Logo 0
+  - first:
+      213: 7672532969481587447
+    second: UI Xbox Logo 1
+  - first:
+      213: 1800668414359864261
+    second: UI XboxGamepad_30
+  - first:
+      213: -2526252469487272507
+    second: UI XboxGamepad_31
+  - first:
+      213: 4455182220581166174
+    second: UI XboxGamepad_32
+  - first:
+      213: -7990648777580397578
+    second: UI XboxGamepad_33
+  - first:
+      213: -7459778063683422557
+    second: UI XboxGamepad_34
+  - first:
+      213: 792953922716673546
+    second: UI XboxGamepad_35
+  - first:
+      213: 7914348102659379834
+    second: UI XboxGamepad_36
+  - first:
+      213: -2959622834144600080
+    second: UI XboxGamepad_37
+  - first:
+      213: 4455841299052331995
+    second: UI XboxGamepad_38
+  - first:
+      213: 1949928285564383021
+    second: UI XboxGamepad_39
+  - first:
+      213: -1189731398389523359
+    second: UI XboxGamepad Dpad Dark 0
+  - first:
+      213: -4793174570594378016
+    second: UI XboxGamepad_41
+  - first:
+      213: 9082694849810480838
+    second: UI XboxGamepad Dpad Dark 1
+  - first:
+      213: -3930373937852654194
+    second: UI XboxGamepad_43
+  - first:
+      213: -59682677171201312
+    second: UI XboxGamepad Dpad Dark 2
+  - first:
+      213: -6408711080490962275
+    second: UI XboxGamepad_45
+  - first:
+      213: -6484519857031689782
+    second: UI XboxGamepad Dpad Dark 3
+  - first:
+      213: 5640707669172385296
+    second: UI XboxGamepad_47
+  - first:
+      213: 4262611142605292188
+    second: UI XboxGamepad Dpad Dark 4
+  - first:
+      213: -4843288525670005448
+    second: UI XboxGamepad_49
+  - first:
+      213: -6532827361524403862
+    second: UI XboxGamepad_50
+  - first:
+      213: -5670731386935868217
+    second: UI XboxGamepad_51
+  - first:
+      213: -3356109686601718504
+    second: UI XboxGamepad_52
+  - first:
+      213: -3504080860296465724
+    second: UI XboxGamepad_53
+  - first:
+      213: 6340852519652794311
+    second: UI XboxGamepad_54
+  - first:
+      213: -4744172258725755741
+    second: UI XboxGamepad_55
+  - first:
+      213: -5378602484022750509
+    second: UI XboxGamepad_56
+  - first:
+      213: 7217286968301806252
+    second: UI XboxGamepad_57
+  - first:
+      213: 5127748577118393253
+    second: UI XboxGamepad_58
+  - first:
+      213: 210034571052174291
+    second: UI XboxGamepad_59
+  - first:
+      213: -8500626499312593220
+    second: UI XboxGamepad Dpad Light 0
+  - first:
+      213: 5750150147367426486
+    second: UI XboxGamepad_61
+  - first:
+      213: -7570818849778111686
+    second: UI XboxGamepad Dpad Light 1
+  - first:
+      213: 2113780639250585614
+    second: UI XboxGamepad_63
+  - first:
+      213: -5130634266601951237
+    second: UI XboxGamepad Dpad Light 2
+  - first:
+      213: 1916204838490934070
+    second: UI XboxGamepad_65
+  - first:
+      213: 5589900980225458773
+    second: UI XboxGamepad Dpad Light 3
+  - first:
+      213: -4531253084604397289
+    second: UI XboxGamepad_67
+  - first:
+      213: -7747757635201567029
+    second: UI XboxGamepad Dpad Light 4
+  - first:
+      213: -3334653455889413276
+    second: UI XboxGamepad_69
+  - first:
+      213: 884125657474755260
+    second: UI XboxGamepad_70
+  - first:
+      213: -4477497645561827175
+    second: UI XboxGamepad_71
+  - first:
+      213: -6082582602252253273
+    second: UI XboxGamepad_72
+  - first:
+      213: 1469211370008902460
+    second: UI XboxGamepad_73
+  - first:
+      213: 7588891753806122147
+    second: UI XboxGamepad Buttons Simple B 0
+  - first:
+      213: -6382319404354966693
+    second: UI XboxGamepad_75
+  - first:
+      213: 6243405441765329411
+    second: UI XboxGamepad Buttons Simple A 0
+  - first:
+      213: -1460829518163681017
+    second: UI XboxGamepad_77
+  - first:
+      213: 7381244780232563396
+    second: UI XboxGamepad_78
+  - first:
+      213: 8149808236269122720
+    second: UI XboxGamepad_79
+  - first:
+      213: -2994865289760705976
+    second: UI XboxGamepad_80
+  - first:
+      213: 3532366057814876847
+    second: UI XboxGamepad_81
+  - first:
+      213: -1073376385290537535
+    second: UI XboxGamepad_82
+  - first:
+      213: -819707598778208199
+    second: UI XboxGamepad_83
+  - first:
+      213: 6194335805038158485
+    second: UI XboxGamepad_84
+  - first:
+      213: 8636630273597742080
+    second: UI XboxGamepad Buttons Simple B 1
+  - first:
+      213: 4281763934939697068
+    second: UI XboxGamepad_86
+  - first:
+      213: 2355516743298218762
+    second: UI XboxGamepad Buttons Simple A 1
+  - first:
+      213: -7648941624964216301
+    second: UI XboxGamepad_88
+  - first:
+      213: 1905434790052081132
+    second: UI XboxGamepad_89
+  - first:
+      213: -2658034322678127056
+    second: UI XboxGamepad_90
+  - first:
+      213: 6663291938377826762
+    second: UI XboxGamepad_91
+  - first:
+      213: -1717942172533033456
+    second: UI XboxGamepad_92
+  - first:
+      213: -7161482078775064689
+    second: UI XboxGamepad_93
+  - first:
+      213: -2963535374970490634
+    second: UI XboxGamepad_94
+  - first:
+      213: -9151606433258743383
+    second: UI XboxGamepad_95
+  - first:
+      213: -8311815840466416655
+    second: UI XboxGamepad Buttons Simple B 2
+  - first:
+      213: -74545315126756479
+    second: UI XboxGamepad_97
+  - first:
+      213: 8831888409346002813
+    second: UI XboxGamepad_98
+  - first:
+      213: 8165407866912212573
+    second: UI XboxGamepad_99
+  - first:
+      213: 8406877016482791074
+    second: UI XboxGamepad_100
+  - first:
+      213: -8692566088041362045
+    second: UI XboxGamepad Buttons Simple A 2
+  - first:
+      213: -812680079321398232
+    second: UI XboxGamepad_102
+  - first:
+      213: -5051311603984128256
+    second: UI XboxGamepad_103
+  - first:
+      213: -7223068401848464859
+    second: UI XboxGamepad_104
+  - first:
+      213: 9189719968399626365
+    second: UI XboxGamepad_105
+  - first:
+      213: 5491817687130777864
+    second: UI XboxGamepad_106
+  - first:
+      213: 8234856930711551662
+    second: UI XboxGamepad_107
+  - first:
+      213: -6430466903332959057
+    second: UI XboxGamepad_108
+  - first:
+      213: 1459031214464910628
+    second: UI XboxGamepad_109
+  - first:
+      213: 5218234299666134983
+    second: UI XboxGamepad Buttons Simple B 3
+  - first:
+      213: -5329024872453347347
+    second: UI XboxGamepad_111
+  - first:
+      213: 4327078192912653834
+    second: UI XboxGamepad_112
+  - first:
+      213: -7936848410697332160
+    second: UI XboxGamepad_113
+  - first:
+      213: 1326214038931614070
+    second: UI XboxGamepad_114
+  - first:
+      213: 5307950966598474111
+    second: UI XboxGamepad Buttons Simple A 3
+  - first:
+      213: 6246917833865880464
+    second: UI XboxGamepad_116
+  - first:
+      213: 3037683225808486587
+    second: UI XboxGamepad_117
+  - first:
+      213: 2385081405219933682
+    second: UI XboxGamepad_118
+  - first:
+      213: -7185671405566095512
+    second: UI XboxGamepad_119
+  - first:
+      213: 4057824367850342503
+    second: UI XboxGamepad_120
+  - first:
+      213: -3701826118739510572
+    second: UI XboxGamepad Buttons Simple B 4
+  - first:
+      213: -5220004617526085519
+    second: UI XboxGamepad_122
+  - first:
+      213: 6489648870735447841
+    second: UI XboxGamepad_123
+  - first:
+      213: -4150682083175869184
+    second: UI XboxGamepad_124
+  - first:
+      213: 3744809937414540356
+    second: UI XboxGamepad_125
+  - first:
+      213: 7914004368398266483
+    second: UI XboxGamepad Buttons Simple A 4
+  - first:
+      213: -7472604316866475137
+    second: UI XboxGamepad_127
+  - first:
+      213: 712735215450968480
+    second: UI XboxGamepad_128
+  - first:
+      213: -4211630793164697814
+    second: UI XboxGamepad_129
+  - first:
+      213: -3724939249001551282
+    second: UI XboxGamepad_130
+  - first:
+      213: -8773296329135435710
+    second: UI XboxGamepad_131
+  - first:
+      213: 200115389091962582
+    second: UI XboxGamepad Buttons Simple D 0
+  - first:
+      213: -2582756634326852229
+    second: UI XboxGamepad_133
+  - first:
+      213: 3153327371131974700
+    second: UI XboxGamepad Buttons Simple C 0
+  - first:
+      213: 8481989576451702429
+    second: UI XboxGamepad_135
+  - first:
+      213: 8999086337986531737
+    second: UI XboxGamepad_136
+  - first:
+      213: 8250476086420431353
+    second: UI XboxGamepad_137
+  - first:
+      213: 1532833834855029688
+    second: UI XboxGamepad_138
+  - first:
+      213: -993568833273957797
+    second: UI XboxGamepad_139
+  - first:
+      213: -4482337770216561747
+    second: UI XboxGamepad_140
+  - first:
+      213: 1515117315789129405
+    second: UI XboxGamepad_141
+  - first:
+      213: -4015847776605512993
+    second: UI XboxGamepad_142
+  - first:
+      213: -241622300141017020
+    second: UI XboxGamepad Buttons Simple D 1
+  - first:
+      213: -2435100224661977130
+    second: UI XboxGamepad_144
+  - first:
+      213: -4540143430739390284
+    second: UI XboxGamepad Buttons Simple C 1
+  - first:
+      213: -3169307797909730999
+    second: UI XboxGamepad_146
+  - first:
+      213: -2097823014261856526
+    second: UI XboxGamepad_147
+  - first:
+      213: -8054133964211407499
+    second: UI XboxGamepad_148
+  - first:
+      213: -6138706122498421637
+    second: UI XboxGamepad_149
+  - first:
+      213: 5646144648404685275
+    second: UI XboxGamepad_150
+  - first:
+      213: -9200436938054289207
+    second: UI XboxGamepad_151
+  - first:
+      213: -2153460909576340480
+    second: UI XboxGamepad_152
+  - first:
+      213: 6915630410410217206
+    second: UI XboxGamepad_153
+  - first:
+      213: 6575581150483004675
+    second: UI XboxGamepad Buttons Simple D 2
+  - first:
+      213: -8039947577286270784
+    second: UI XboxGamepad_155
+  - first:
+      213: -7377878985460984183
+    second: UI XboxGamepad_156
+  - first:
+      213: -7272966240429372529
+    second: UI XboxGamepad_157
+  - first:
+      213: 2458097800591431035
+    second: UI XboxGamepad_158
+  - first:
+      213: -2931255373414636184
+    second: UI XboxGamepad Buttons Simple C 2
+  - first:
+      213: -194394310837444839
+    second: UI XboxGamepad_160
+  - first:
+      213: -8358654224979144473
+    second: UI XboxGamepad_161
+  - first:
+      213: 1357971215883600658
+    second: UI XboxGamepad_162
+  - first:
+      213: -18604445486335849
+    second: UI XboxGamepad_163
+  - first:
+      213: -8691540972629965422
+    second: UI XboxGamepad_164
+  - first:
+      213: 8599471440445414923
+    second: UI XboxGamepad_165
+  - first:
+      213: -5614074423203511353
+    second: UI XboxGamepad_166
+  - first:
+      213: 7340932245611378902
+    second: UI XboxGamepad_167
+  - first:
+      213: -8841392379474928893
+    second: UI XboxGamepad Buttons Simple D 3
+  - first:
+      213: 3388868278984752735
+    second: UI XboxGamepad_169
+  - first:
+      213: -7064689030124147544
+    second: UI XboxGamepad_170
+  - first:
+      213: -1708684773793295539
+    second: UI XboxGamepad_171
+  - first:
+      213: 8323487213183962443
+    second: UI XboxGamepad_172
+  - first:
+      213: -2515826366116249193
+    second: UI XboxGamepad Buttons Simple C 3
+  - first:
+      213: -1583855115138845204
+    second: UI XboxGamepad_174
+  - first:
+      213: 327492665331691670
+    second: UI XboxGamepad_175
+  - first:
+      213: -1073152044354653639
+    second: UI XboxGamepad_176
+  - first:
+      213: -6336469670087552689
+    second: UI XboxGamepad_177
+  - first:
+      213: -2404811776111010800
+    second: UI XboxGamepad_178
+  - first:
+      213: -2152338320476199106
+    second: UI XboxGamepad Buttons Simple D 4
+  - first:
+      213: -4309144373583748134
+    second: UI XboxGamepad_180
+  - first:
+      213: -8270984329956969770
+    second: UI XboxGamepad_181
+  - first:
+      213: 188879735337008137
+    second: UI XboxGamepad_182
+  - first:
+      213: 1823425645457081709
+    second: UI XboxGamepad_183
+  - first:
+      213: -4684585625235875396
+    second: UI XboxGamepad Buttons Simple C 4
+  - first:
+      213: 7497161478069047032
+    second: UI XboxGamepad_185
+  - first:
+      213: -6327569481681506920
+    second: UI XboxGamepad_186
+  - first:
+      213: 7437325855816712564
+    second: UI XboxGamepad_187
+  - first:
+      213: -2535382227307185837
+    second: UI XboxGamepad_188
+  - first:
+      213: 2358190340818245937
+    second: UI XboxGamepad_189
+  - first:
+      213: -2441354323404162802
+    second: UI XboxGamepad_190
+  - first:
+      213: 3111738581550247022
+    second: UI XboxGamepad_191
+  - first:
+      213: -1908573153381475191
+    second: UI XboxGamepad_192
+  - first:
+      213: 8141482198305016159
+    second: UI XboxGamepad_193
+  - first:
+      213: 2191413361628746863
+    second: UI XboxGamepad L 0
+  - first:
+      213: -3036419031501344164
+    second: UI XboxGamepad L 1
+  - first:
+      213: -7161361413072842022
+    second: UI XboxGamepad Buttons Simple E 0
+  - first:
+      213: -525935825164436300
+    second: UI XboxGamepad_197
+  - first:
+      213: 4867539749963752548
+    second: UI XboxGamepad Buttons Simple E 1
+  - first:
+      213: -1782270900068142570
+    second: UI XboxGamepad_199
+  - first:
+      213: -3000190479496572304
+    second: UI XboxGamepad Buttons Simple F 0
+  - first:
+      213: -1309348162266646441
+    second: UI XboxGamepad_201
+  - first:
+      213: -3245180028197878261
+    second: UI XboxGamepad Buttons Simple F 1
+  - first:
+      213: 7711616162936547534
+    second: UI XboxGamepad_203
+  - first:
+      213: -5200745624462575828
+    second: UI XboxGamepad R 0
+  - first:
+      213: -5060864610631710820
+    second: UI XboxGamepad R 1
+  - first:
+      213: 6888336986398566252
+    second: UI XboxGamepad LS 0
+  - first:
+      213: -8739794401488200603
+    second: UI XboxGamepad LS 1
+  - first:
+      213: 4430036523246170078
+    second: UI XboxGamepad LS 2
+  - first:
+      213: -2583540309646973031
+    second: UI XboxGamepad LS 3
+  - first:
+      213: 5395475457659418248
+    second: UI XboxGamepad LS 4
+  - first:
+      213: 4371796209346008623
+    second: UI XboxGamepad LS 5
+  - first:
+      213: -1893732841709264369
+    second: UI XboxGamepad LS 6
+  - first:
+      213: -7637102791700830610
+    second: UI XboxGamepad LS 7
+  - first:
+      213: -4148366922132500931
+    second: UI XboxGamepad LS 8
+  - first:
+      213: 5282824173586957815
+    second: UI XboxGamepad LS 9
+  - first:
+      213: -138374778060805234
+    second: UI XboxGamepad LS 10
+  - first:
+      213: 49046757642068502
+    second: UI XboxGamepad LS 11
+  - first:
+      213: -5139781249830546750
+    second: UI XboxGamepad LS 12
+  - first:
+      213: 4055344734741273368
+    second: UI XboxGamepad LS 13
+  - first:
+      213: -2993343813016760310
+    second: UI XboxGamepad RS 0
+  - first:
+      213: 1214903121112415452
+    second: UI XboxGamepad RS 1
+  - first:
+      213: 527643414967168506
+    second: UI XboxGamepad RS 2
+  - first:
+      213: 8205231772711755300
+    second: UI XboxGamepad RS 3
+  - first:
+      213: 2336221381794717977
+    second: UI XboxGamepad RS 4
+  - first:
+      213: 7143690210410301352
+    second: UI XboxGamepadUI XboxGamepad RS
+  - first:
+      213: -6663799318500948796
+    second: UI XboxGamepad RS 6
+  - first:
+      213: -413449098513687312
+    second: UI XboxGamepad RS 7
+  - first:
+      213: 2256944135494738810
+    second: UI XboxGamepad RS 8
+  - first:
+      213: -8722583043682090200
+    second: UI XboxGamepad RS 9
+  - first:
+      213: -6603578153248507748
+    second: UI XboxGamepad RS 10
+  - first:
+      213: -7863320089701234567
+    second: UI XboxGamepad RS 11
+  - first:
+      213: 6205836036824456888
+    second: UI XboxGamepad RS 12
+  - first:
+      213: 5817374384700059456
+    second: UI XboxGamepad RS 13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI XboxGamepad A 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8967d7053c8c370800000000000000
+      internalID: 8343133060173568161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad A 1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7815535db178220800000000000000
+      internalID: 2487987921682008029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad X 0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099832c04a668b4c0800000000000000
+      internalID: -4271551391796590192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad X 1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd248b348dc58910800000000000000
+      internalID: 1839101990668610995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad B 0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f280e3ed5a61350800000000000000
+      internalID: 5987155128577699616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad B 1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50de59f704a42be0800000000000000
+      internalID: -1502896021479436196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Y 0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4e0e149efb98590800000000000000
+      internalID: -7671389481695386406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Y 1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae90d542671a498a0800000000000000
+      internalID: -6299232449996191254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LB 0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00d0ae8189d4c150800000000000000
+      internalID: 5892073362974363663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LB 1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 992
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821c294dcbb3260e0800000000000000
+      internalID: -2278192779289771736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad A 2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e05b46e5fbf98a30800000000000000
+      internalID: 4218179559558435044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad A 3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4328d1790627681a0800000000000000
+      internalID: -6807628027546205644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad X 2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca82a86841e5db40800000000000000
+      internalID: 5464521423993342665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad X 3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f4c22e75e139d70800000000000000
+      internalID: 9048609439123001120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad B 2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4aae617c710c7640800000000000000
+      internalID: 5078936113757727311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad B 3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe938fe521392eb0800000000000000
+      internalID: -4744206693456175371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Y 2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a6a0132c25ee9f0800000000000000
+      internalID: -437321119808460240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Y 3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357bdbaece3450f90800000000000000
+      internalID: -6988104561965811885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RB 0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88e2c3a11ce6ec00800000000000000
+      internalID: 929689933604645004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RB 1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 960
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc90e4fd40bd82920800000000000000
+      internalID: 2965861168596257231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Menu 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965e4f55e99e916c0800000000000000
+      internalID: -4172046713525836439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Menu 1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a93409d378d0700800000000000000
+      internalID: 508211031445838403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Share 0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f87f32ceedc5670800000000000000
+      internalID: 8528936900129951598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Share 1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bd92bcfcaf59ed0800000000000000
+      internalID: -2407742655385969850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RT 0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eaf6ae53d376a540800000000000000
+      internalID: 5018826186414291688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RT 1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c74d335927a0710800000000000000
+      internalID: 1660265397784706200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LT 0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7360bdd19551913f0800000000000000
+      internalID: -929688375578130889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LT 1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27110dea5518e9e30800000000000000
+      internalID: 4512186081676890482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Xbox Logo 0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a316e97031ab8b0800000000000000
+      internalID: -5135771501619758535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Xbox Logo 1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 928
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa4c6db5105a7a60800000000000000
+      internalID: 7672532969481587447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Dpad Dark 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c1ddcb8993d7fe0800000000000000
+      internalID: -1189731398389523359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Dpad Dark 1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 864
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce393ef7d63c0e70800000000000000
+      internalID: 9082694849810480838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Dpad Dark 2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 864
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea57fbdbe6fb2ff0800000000000000
+      internalID: -59682677171201312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Dpad Dark 3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 864
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9c8a6eb8b5206a0800000000000000
+      internalID: -6484519857031689782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Dpad Dark 4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 864
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c924c9aff36d72b30800000000000000
+      internalID: 4262611142605292188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Dpad Light 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb65334bc35b70a80800000000000000
+      internalID: -8500626499312593220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Dpad Light 1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 800
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3be4283e5c0fe690800000000000000
+      internalID: -7570818849778111686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Dpad Light 2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 800
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff6eba51535cc8b0800000000000000
+      internalID: -5130634266601951237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Dpad Light 3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 800
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55242ff2351539d40800000000000000
+      internalID: 5589900980225458773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Dpad Light 4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 800
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc67dfbea7f6a7490800000000000000
+      internalID: -7747757635201567029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple B 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 736
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac4188a7d8215960800000000000000
+      internalID: 7588891753806122147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple A 0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 736
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ac9299b2805a650800000000000000
+      internalID: 6243405441765329411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple B 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c9d2a99797bd770800000000000000
+      internalID: 8636630273597742080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple A 1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 672
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b76ca7ff970b020800000000000000
+      internalID: 2355516743298218762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple B 2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbc88ee78f76ac80800000000000000
+      internalID: -8311815840466416655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple A 2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 608
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d00b7b23dcd5780800000000000000
+      internalID: -8692566088041362045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple B 3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7fb5ab274ea6840800000000000000
+      internalID: 5218234299666134983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple A 3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 544
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f791b490841a9a940800000000000000
+      internalID: 5307950966598474111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple B 4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dab44412c870acc0800000000000000
+      internalID: -3701826118739510572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple A 4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 480
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370b449fa0134dd60800000000000000
+      internalID: 7914004368398266483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple D 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de5ae8d2e3f6c200800000000000000
+      internalID: 200115389091962582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple C 0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 416
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2476d8798ed2cb20800000000000000
+      internalID: 3153327371131974700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple D 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44828465cc595acf0800000000000000
+      internalID: -241622300141017020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple C 1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0947dba9b2ef0c0800000000000000
+      internalID: -4540143430739390284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple D 2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d3b4aa738214b50800000000000000
+      internalID: 6575581150483004675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple C 2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8656aa1b4c61257d0800000000000000
+      internalID: -2931255373414636184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple D 3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b1d8d79701d4580800000000000000
+      internalID: -8841392379474928893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple C 3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791441bdf3df51dd0800000000000000
+      internalID: -2515826366116249193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple D 4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e372e8b73bb5122e0800000000000000
+      internalID: -2152338320476199106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple C 4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb91aef91320dfeb0800000000000000
+      internalID: -4684585625235875396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad L 0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f641def77d6796e10800000000000000
+      internalID: 2191413361628746863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad L 1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52702e7af87cd5d0800000000000000
+      internalID: -3036419031501344164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple E 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad29a91ccbbbd9c90800000000000000
+      internalID: -7161361413072842022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple E 1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464eeaefc99fc8340800000000000000
+      internalID: 4867539749963752548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple F 0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072191397ae2d56d0800000000000000
+      internalID: -3000190479496572304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad Buttons Simple F 1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06c21345fdc6f2d0800000000000000
+      internalID: -3245180028197878261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad R 0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27bdb6c86d33d7b0800000000000000
+      internalID: -5200745624462575828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad R 1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9783f2437234c9b0800000000000000
+      internalID: -5060864610631710820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67a87f3ef9489f50800000000000000
+      internalID: 6888336986398566252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c19591c4306b680800000000000000
+      internalID: -8739794401488200603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf281e1fb6aa7d30800000000000000
+      internalID: 4430036523246170078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997e69cc6cb652cd0800000000000000
+      internalID: -2583540309646973031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886b020a75490ea40800000000000000
+      internalID: 5395475457659418248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26d7785d7dbbac30800000000000000
+      internalID: 4371796209346008623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02ad6e830c18b5e0800000000000000
+      internalID: -1893732841709264369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66278b597f830690800000000000000
+      internalID: -7637102791700830610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ecf48634a0e66c0800000000000000
+      internalID: -4148366922132500931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f54f75a89c505940800000000000000
+      internalID: 5282824173586957815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8befcb5fd4641ef0800000000000000
+      internalID: -138374778060805234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612e3a624cf3ea000800000000000000
+      internalID: 49046757642068502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c213ac5f24dba8b0800000000000000
+      internalID: -5139781249830546750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad LS 13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b1104dc8a774830800000000000000
+      internalID: 4055344734741273368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00d58659a18576d0800000000000000
+      internalID: -2993343813016760310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc3b6aa3f33cd010800000000000000
+      internalID: 1214903121112415452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd213de3e0925700800000000000000
+      internalID: 527643414967168506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e9b38f2d6ded170800000000000000
+      internalID: 8205231772711755300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911eb8a08fceb6020800000000000000
+      internalID: 2336221381794717977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepadUI XboxGamepad RS
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a701f0c56c732360800000000000000
+      internalID: 7143690210410301352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4c24e73dd6583a0800000000000000
+      internalID: -6663799318500948796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcd2664c32234af0800000000000000
+      internalID: -413449098513687312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73a012cbb6425f10800000000000000
+      internalID: 2256944135494738810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823cb7d9fe823f680800000000000000
+      internalID: -8722583043682090200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98b71928a06b54a0800000000000000
+      internalID: -6603578153248507748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9784a224a00efd290800000000000000
+      internalID: -7863320089701234567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be5d3ddefe8f1650800000000000000
+      internalID: 6205836036824456888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI XboxGamepad RS 13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fe08d5e277bb050800000000000000
+      internalID: 5817374384700059456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

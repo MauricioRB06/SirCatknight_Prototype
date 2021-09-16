@@ -50,11 +50,15 @@ MonoBehaviour:
     m_Localized: You Have Collected A Piece Of The Collectible !
     m_Metadata:
       m_Items: []
-  - m_Id: 19816527711346688
+  - m_Id: 28247079460184064
     m_Localized: You Have Pressed The Button !
     m_Metadata:
       m_Items: []
-  - m_Id: 19816529053523968
+  - m_Id: 28247078759735296
+    m_Localized: You Have Unlocked A New Collectable Item !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28247080131272704
     m_Localized: You Have Activated The Lever !
     m_Metadata:
       m_Items: []

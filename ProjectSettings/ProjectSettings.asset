@@ -145,6 +145,8 @@ PlayerSettings:
   - {fileID: 11400000, guid: 534c5ad12316d454b897ab4c811bc2fc, type: 2}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -579,7 +581,7 @@ PlayerSettings:
     Standalone: 1
   il2cppCompilerConfiguration:
     Android: 2
-    Standalone: 2
+    Standalone: 1
     WebGL: 2
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}

@@ -50,11 +50,16 @@ MonoBehaviour:
     m_Localized: "\xA1 Has Recogido Una Pieza Del Coleccionable !"
     m_Metadata:
       m_Items: []
-  - m_Id: 19816527711346688
+  - m_Id: 28247079460184064
     m_Localized: "\xA1 Has Presionado El Boton !"
     m_Metadata:
       m_Items: []
-  - m_Id: 19816529053523968
+  - m_Id: 28247078759735296
+    m_Localized: "\xA1 Haz Desbloqueado Un Nuevo Coleccionable, Puedes Verlo Desde
+      El Men\xFA Principal !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28247080131272704
     m_Localized: "\xA1 Has Activado La Palanca !"
     m_Metadata:
       m_Items: []

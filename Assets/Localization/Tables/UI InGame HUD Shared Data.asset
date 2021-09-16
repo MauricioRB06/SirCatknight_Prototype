@@ -19,6 +19,26 @@ MonoBehaviour:
     m_Key: Collectables Counter
     m_Metadata:
       m_Items: []
+  - m_Id: 8428604969623552
+    m_Key: FinalBoss 1 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8428607318433792
+    m_Key: FinalBoss 2 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8428609566580736
+    m_Key: FinalBoss 3 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8428612653588480
+    m_Key: FinalBoss 4 Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8428614733963264
+    m_Key: FinalBoss 5 Name
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

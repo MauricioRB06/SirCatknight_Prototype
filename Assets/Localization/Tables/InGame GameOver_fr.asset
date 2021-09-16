@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 20031935782912
-    m_Localized: 'Retourner au menu '
+    m_Localized: Retourner au menu
     m_Metadata:
       m_Items: []
   references:
