@@ -21,14 +21,15 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 54155452416
     m_Localized: "Perseo... debout, c'est moi, Pepperoni...\r\n\r\nMiaouvil t'a ensorcel\xE9
-      et a enlev\xE9 \xE0 Ziel, dois aller \xE0 la sauver, peux utilise [ X ] pour
-      d\xE9placer."
+      et a enlev\xE9 \xE0 Ziel, dois aller \xE0 la sauver, peux utilise <sprite=\"{InputDevice}\"
+      index={ButtonA}> pour d\xE9placer."
     m_Metadata:
       m_Items:
       - id: 0
   - m_Id: 1327042830336
     m_Localized: "Tu ne rappeles rien ?\r\n\r\nTu s'\xE9tais battu contre lui, quand
-      il t'a lanc\xE9 son sort et tu as tomb\xE8.\r\n\r\nUtilise [ X ] pour souter."
+      il t'a lanc\xE9 son sort et tu as tomb\xE8.\r\n\r\nUtilise <sprite=\"{InputDevice}\"
+      index={ButtonA}> pour souter."
     m_Metadata:
       m_Items:
       - id: 0
@@ -42,20 +43,23 @@ MonoBehaviour:
   - m_Id: 2005207261184
     m_Localized: "Miaouvil doit l'a emmen\xE9 dans son ch\xE2teau, c'est un large
       chemin, mais, elle  attend pour toi, si te trouves lieux \xE9troits utilise
-      [ X ] pour te braisser."
+      <sprite=\"{InputDevice}\" index={ButtonA}> pour te braisser."
     m_Metadata:
       m_Items:
       - id: 0
   - m_Id: 2230357499904
     m_Localized: Quelques fois, tu auras qui escalader pour peux avancer dans t'aventure,
-      utilice [ X ] pour prendre des murs et [ X ] pour monter, tu peux sauter entre
-      les musr avec [ X ] aussi.
+      utilice <sprite="{InputDevice}" index={ButtonA}> pour prendre des murs et <sprite="{InputDevice}"
+      index={ButtonB}> pour monter, tu peux sauter entre les musr avec <sprite="{InputDevice}"
+      index={ButtonC}> aussi.
     m_Metadata:
       m_Items:
       - id: 0
   - m_Id: 2853064843264
-    m_Localized: Quand tu es suspendu d'un griffe, tu peux utiliser [ X ] pour monter
-      ou [ X ] pour tomber du mur, tu peux utiliser [ X ] pour sauter aussi.
+    m_Localized: Quand tu es suspendu d'un griffe, tu peux utiliser <sprite="{InputDevice}"
+      index={ButtonA}> pour monter ou <sprite="{InputDevice}" index={ButtonB}> pour
+      tomber du mur, tu peux utiliser <sprite="{InputDevice}" index={ButtonC}> pour
+      sauter aussi.
     m_Metadata:
       m_Items:
       - id: 0
@@ -66,15 +70,16 @@ MonoBehaviour:
       m_Items:
       - id: 0
   - m_Id: 3439634063360
-    m_Localized: Tu peux utiliser [ X ] pour esquiver obstacles et risques sur la
-      route.
+    m_Localized: Tu peux utiliser <sprite="{InputDevice}" index={ButtonA}> pour esquiver
+      obstacles et risques sur la route.
     m_Metadata:
       m_Items:
       - id: 0
   - m_Id: 3696216416256
-    m_Localized: "Utilise [ X ] pour activer la charge, pendant que tu le  maintiens
-      sous pression, utilise [ X ] pour indiquer la direction, apr\xE8s lib\xE9re-le
-      [ X ] pour te ruer ou attends et se r\xE9alisera seule."
+    m_Localized: "Utilise <sprite=\"{InputDevice}\" index={ButtonA}> pour activer
+      la charge, pendant que tu le  maintiens sous pression, utilise <sprite=\"{InputDevice}\"
+      index={ButtonB}> pour indiquer la direction, apr\xE8s lib\xE9re-le <sprite=\"{InputDevice}\"
+      index={ButtonC}> pour te ruer ou attends et se r\xE9alisera seule."
     m_Metadata:
       m_Items:
       - id: 0
@@ -99,7 +104,7 @@ MonoBehaviour:
   - m_Id: 5214894202880
     m_Localized: "Il y a des zones o\xF9 tu ne pourras pas passer facilement sans
       \xEAtre bless\xE9, mais  tu peux interagir avec quelques objets, approche \xE0
-      la manette et presse [ X ]"
+      la manette et presse <sprite=\"{InputDevice}\" index={ButtonA}>"
     m_Metadata:
       m_Items:
       - id: 0
@@ -111,8 +116,8 @@ MonoBehaviour:
       - id: 0
   - m_Id: 5631199846400
     m_Localized: "Tu n\xE9cessiteras ta arme si tu veux opposer \xE0 Miaouvil, Je
-      te rends \xE0 Poissoncalibur,  utilise [ X ] pour attaquer, plus tard trouveras
-      une  place pour practiquer."
+      te rends \xE0 Poissoncalibur,  utilise <sprite=\"{InputDevice}\" index={ButtonA}>
+      pour attaquer, plus tard trouveras une  place pour practiquer."
     m_Metadata:
       m_Items:
       - id: 0
@@ -146,8 +151,8 @@ MonoBehaviour:
       - id: 0
   - m_Id: 7724694413312
     m_Localized: "Tu peux te glisser pour les murs si tu sautes vers eux et utilises
-      [ X ] \xE0 la direction dans laquelle le mur, mais fais attention, n'oublie
-      pas t'accrocher."
+      <sprite=\"{InputDevice}\" index={ButtonA}> \xE0 la direction dans laquelle
+      le mur, mais fais attention, n'oublie pas t'accrocher."
     m_Metadata:
       m_Items:
       - id: 0

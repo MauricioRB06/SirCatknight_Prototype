@@ -2926,7 +2926,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &447039052
 GameObject:
@@ -5513,7 +5513,7 @@ MonoBehaviour:
   m_Priority: 8
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 762410006}
+  m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 8.4375
@@ -5748,36 +5748,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &554621414
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 554621415}
-  m_Layer: 0
-  m_Name: --------------------
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &554621415
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 554621414}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555734024
 GameObject:
@@ -6854,7 +6824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &762410005
 Animator:
   serializedVersion: 3
@@ -7728,7 +7698,7 @@ Transform:
   m_Children:
   - {fileID: 1082866448}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845983336
 GameObject:
@@ -8255,68 +8225,70 @@ MonoBehaviour:
       m_RotationOrder: 4
   m_CustomBlends: {fileID: 11400000, guid: 7af7e9ad7f4676840a8b5b2684d764f2, type: 2}
   m_ParentHash:
-  - m_Hash: -206898213
+  - m_Hash: -182255266
     m_ParentHash: 756556552
-  - m_Hash: -1320882692
+  - m_Hash: -1911851079
     m_ParentHash: 756556552
-  - m_Hash: -1329142667
+  - m_Hash: 880168169
     m_ParentHash: 756556552
-  - m_Hash: 77018424
-    m_ParentHash: -1329142667
-  - m_Hash: -1650563966
-    m_ParentHash: -1329142667
-  - m_Hash: -359050220
-    m_ParentHash: -1329142667
-  - m_Hash: 818646448
-    m_ParentHash: -1329142667
-  - m_Hash: -1446847478
-    m_ParentHash: -1329142667
-  - m_Hash: -557454180
-    m_ParentHash: -1329142667
-  - m_Hash: -888217176
-    m_ParentHash: -1329142667
-  - m_Hash: 284277212
+  - m_Hash: -599753859
+    m_ParentHash: 880168169
+  - m_Hash: 1162422983
+    m_ParentHash: 880168169
+  - m_Hash: 843979345
+    m_ParentHash: 880168169
+  - m_Hash: -357690856
+    m_ParentHash: 880168169
+  - m_Hash: 1940341666
+    m_ParentHash: 880168169
+  - m_Hash: 77624116
+    m_ParentHash: 880168169
+  - m_Hash: -849312775
+    m_ParentHash: 880168169
+  - m_Hash: -1925688830
     m_ParentHash: 756556552
-  - m_Hash: -50351601
+  - m_Hash: -727909209
     m_ParentHash: 756556552
-  - m_Hash: -1591123305
+  - m_Hash: -1059105617
     m_ParentHash: 756556552
-  - m_Hash: -742847641
+  - m_Hash: -69581361
     m_ParentHash: 756556552
-  - m_Hash: 944942267
+  - m_Hash: -529013713
     m_ParentHash: 756556552
-  - m_Hash: 189279958
+  - m_Hash: -747805118
     m_ParentHash: 756556552
-  - m_Hash: -191091765
+  - m_Hash: -1473423586
     m_ParentHash: 756556552
-  - m_Hash: 1942004565
+  - m_Hash: -300655360
     m_ParentHash: 756556552
-  - m_Hash: 1966245397
+  - m_Hash: 348434477
     m_ParentHash: 756556552
-  - m_Hash: -1374819193
+  - m_Hash: -2039569873
     m_ParentHash: 756556552
-  - m_Hash: 1431812985
+  - m_Hash: 947774944
     m_ParentHash: 756556552
-  - m_Hash: -13515134
+  - m_Hash: 1989134140
     m_ParentHash: 756556552
-  - m_Hash: -1575013221
+  - m_Hash: -1533620706
     m_ParentHash: 756556552
-  - m_Hash: -1011740279
+  - m_Hash: -5951235
     m_ParentHash: 756556552
-  - m_Hash: -1502000208
+  - m_Hash: -1572591695
     m_ParentHash: 756556552
-  - m_Hash: -1028978710
+  - m_Hash: -1973453616
     m_ParentHash: 756556552
-  - m_Hash: -724509558
+  - m_Hash: -1004339857
     m_ParentHash: 756556552
-  - m_Hash: -96619122
-    m_ParentHash: -724509558
-  - m_Hash: -598523496
-    m_ParentHash: -724509558
-  - m_Hash: -173232115
-    m_ParentHash: -724509558
-  - m_Hash: -1624114590
-    m_ParentHash: -724509558
+  - m_Hash: 217420830
+    m_ParentHash: 756556552
+  - m_Hash: 1276942200
+    m_ParentHash: 217420830
+  - m_Hash: -34770361
+    m_ParentHash: 217420830
+  - m_Hash: -471744133
+    m_ParentHash: 217420830
+  - m_Hash: -148012317
+    m_ParentHash: 217420830
 --- !u!4 &929669970
 Transform:
   m_ObjectHideFlags: 0
@@ -11182,7 +11154,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1803623336
 GameObject:
@@ -11217,7 +11189,7 @@ Transform:
   - {fileID: 1167846508}
   - {fileID: 1103515490}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1805199436
 GameObject:
@@ -11662,7 +11634,7 @@ MonoBehaviour:
   m_Priority: 3
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 762410006}
+  m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 4.21875
@@ -11942,7 +11914,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2004937608
 GameObject:

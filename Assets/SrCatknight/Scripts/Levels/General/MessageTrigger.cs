@@ -39,7 +39,7 @@ namespace SrCatknight.Scripts.Levels.General
             }
             else
             {
-                Debug.LogError($"{gameObject.name} dont have a tex GameObject, please add once");
+                 Debug.LogError($"{gameObject.name} dont have a tex GameObject, please add once");
             }
             
             if (objectToReveal != null)

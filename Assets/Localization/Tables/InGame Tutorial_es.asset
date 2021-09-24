@@ -24,14 +24,15 @@ MonoBehaviour:
 
 
       Miauvil te ha
-      hechizado y ha raptado a Ziel, debes ir a rescatarla, puedes usar [X] para
-      moverte.'
+      hechizado y ha raptado a Ziel, debes ir a rescatarla, puedes usar <sprite="{InputDevice}"
+      index={ButtonA}> para moverte.'
     m_Metadata:
       m_Items:
       - id: 0
   - m_Id: 1327042830336
     m_Localized: "\xBFNo recuerdas nada?\n\nEstabas luchando con \xE9l, cuando te
-      lanzo uno de sus hechizos y ca\xEDste.\n\nUtiliza [X] para saltar."
+      lanzo uno de sus hechizos y ca\xEDste.\n\nUtiliza <sprite=\"{InputDevice}\"
+      index={ButtonA}> para saltar."
     m_Metadata:
       m_Items:
       - id: 0
@@ -44,20 +45,23 @@ MonoBehaviour:
   - m_Id: 2005207261184
     m_Localized: "Miauvil debe haberla llevado a su castillo, es un camino largo,
       pero, ella est\xE1 esperando por ti, si te encuentras lugares estrechos usa
-      [X] para agacharta."
+      <sprite=\"{InputDevice}\" index={ButtonA}> para agacharta."
     m_Metadata:
       m_Items:
       - id: 0
   - m_Id: 2230357499904
     m_Localized: "En algunas ocasiones, tendr\xE1s que escalar para poder avanzar
-      en tu aventura, usa [X] para agarrarte de las paredes y [X] para subir, puedes
-      usar [X] para saltar entre las paredes."
+      en tu aventura, usa <sprite=\"{InputDevice}\" index={ButtonA}> para agarrarte
+      de las paredes y <sprite=\"{InputDevice}\" index={ButtonB}> para subir, puedes
+      usar <sprite=\"{InputDevice}\" index={ButtonC}> para saltar entre las paredes."
     m_Metadata:
       m_Items:
       - id: 0
   - m_Id: 2853064843264
-    m_Localized: "Al quedar colgando de una garra puedes usar [X] para subir o [X]
-      para dejarte caer, tambi\xE9n puedes usar [X] para saltar."
+    m_Localized: "Al quedar colgando de una garra puedes usar <sprite=\"{InputDevice}\"
+      index={ButtonA}> para subir o <sprite=\"{InputDevice}\" index={ButtonB}> para
+      dejarte caer, tambi\xE9n puedes usar <sprite=\"{InputDevice}\" index={ButtonC}>
+      para saltar."
     m_Metadata:
       m_Items:
       - id: 0
@@ -68,15 +72,16 @@ MonoBehaviour:
       m_Items:
       - id: 0
   - m_Id: 3439634063360
-    m_Localized: "Puedes usar [ X ] para esquivar obst\xE1culos y peligros por el
-      camino."
+    m_Localized: "Puedes usar <sprite=\"{InputDevice}\" index={ButtonA}> para esquivar
+      obst\xE1culos y peligros por el camino."
     m_Metadata:
       m_Items:
       - id: 0
   - m_Id: 3696216416256
-    m_Localized: "Usa [X] para activar la embestida, mientras lo mantienes presionado,
-      usa [X] para indicar la direcci\xF3n, luego suelta [X] para lanzarte o espera
-      y se realizar\xE1 solo."
+    m_Localized: "Usa <sprite=\"{InputDevice}\" index={ButtonA}> para activar la
+      embestida, mientras lo mantienes presionado, usa <sprite=\"{InputDevice}\"
+      index={ButtonB}> para indicar la direcci\xF3n, luego suelta <sprite=\"{InputDevice}\"
+      index={ButtonC}> para lanzarte o espera y se realizar\xE1 solo."
     m_Metadata:
       m_Items:
       - id: 0
@@ -101,7 +106,7 @@ MonoBehaviour:
   - m_Id: 5214894202880
     m_Localized: "Hay zonas por las que no podr\xE1s pasar f\xE1cilmente sin sufrir
       da\xF1o, pero podr\xE1s interactuar con algunos objetos, ac\xE9rcate a la palanca
-      y presiona [X]"
+      y presiona <sprite=\"{InputDevice}\" index={ButtonA}>"
     m_Metadata:
       m_Items:
       - id: 0
@@ -113,8 +118,8 @@ MonoBehaviour:
       - id: 0
   - m_Id: 5631199846400
     m_Localized: "Necesitar\xE1s tu arma si quieres enfrentar a Miauvil, te regreso
-      a Pezcalibur, usa [X] para atacar, m\xE1s adelante encontrar\xE1s un lugar
-      para practicar."
+      a Pezcalibur, usa <sprite=\"{InputDevice}\" index={ButtonA}> para atacar, m\xE1s
+      adelante encontrar\xE1s un lugar para practicar."
     m_Metadata:
       m_Items:
       - id: 0
@@ -147,8 +152,8 @@ MonoBehaviour:
       - id: 0
   - m_Id: 7724694413312
     m_Localized: "Puedes deslizarte por las paredes si saltas hacia\r\nellas y utilizas
-      [X] en la direcci\xF3n en la que se\r\nencuentra la pared, pero ten cuidado,
-      no olvides\r\nagarrarte."
+      <sprite=\"{InputDevice}\" index={ButtonA}> en la direcci\xF3n en la que se\r\nencuentra
+      la pared, pero ten cuidado, no olvides\r\nagarrarte."
     m_Metadata:
       m_Items:
       - id: 0
