@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -280,6 +281,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tilemap Level 1 Decoration Potion 1_3: -1597136839770306765
+      Tilemap Level 1 Decoration Potion 1_4: 3489807080600050213
+      Tilemap Level 1 Decoration Potion 1_5: -1537963607473663120
+      Tilemap Level 1 Decoration Potion 1_0: -1776521579443317553
+      Tilemap Level 1 Decoration Potion 1_2: 7130052977705961418
+      Tilemap Level 1 Decoration Potion 1_1: 5859194332539024687
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

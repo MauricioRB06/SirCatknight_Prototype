@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tilemap Level 1 Decoration Bird_2: 1683937686646326454
+      Tilemap Level 1 Decoration Bird_0: -7950392051817898275
+      Tilemap Level 1 Decoration Bird_1: 3240165092789955054
+      Tilemap Level 1 Decoration Bird_3: 1657506707015438550
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

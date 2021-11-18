@@ -120,6 +120,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -904,6 +905,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      EnemyB: 1764527668196454919
+      EnemyB_Attack_1_2: 7450987328128072434
+      EnemyB_Hurt_2: -4717904868969351930
+      EnemyB_Attack_2_1: -1776197696747616451
+      EnemyB_Hurt_1: 4939859758995839491
+      EnemyB_Attack_2_2: 636514639080267508
+      EnemyB_Walk_3: -4009169832849872421
+      EnemyB_Attack_1_4: -1244574058397242909
+      EnemyB_Walk_4: -4503835064482728124
+      EnemyB_Sneer_1: -4223722710618340053
+      EnemyB_Walk_1: 3191072702410114677
+      EnemyB_Dead_2: -106896885423160345
+      EnemyB_Dead_4: -6739634986172008713
+      EnemyB_Sneer_4: -1637076781045498549
+      EnemyB_Dead_3: -6132665063708082519
+      EnemyB_Idle_3: -3957495485233163602
+      EnemyB_Attack_1_6: -7692699897527940371
+      EnemyB_Attack_1_5: 3584405505283728780
+      EnemyB_Idle_1: 9160934363356314298
+      EnemyB_Projectile: 839881634331537804
+      EnemyB_Idle_4: 5601706565256005550
+      EnemyB_Attack_1_1: -5466532798797530909
+      EnemyB_Attack_2_3: 8523387810488436295
+      EnemyB_Walk_6: 1979679911077576569
+      EnemyB_Attack_2_4: 2096393750058120044
+      EnemyB_Walk_5: -4570496054255030989
+      EnemyB_Attack_1_3: 3174702571086300945
+      EnemyB_Sneer_2: 8539120940631132542
+      EnemyB_Sneer_3: -1397490034567925106
+      EnemyB_Dead_1: 9095842794700722558
+      EnemyB_Walk_2: -626465000530834128
+      EnemyB_Idle_2: -975750271816749376
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

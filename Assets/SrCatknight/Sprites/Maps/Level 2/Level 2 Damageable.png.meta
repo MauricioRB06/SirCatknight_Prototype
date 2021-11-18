@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -328,6 +329,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 2 Damageable_3: 1973616679457224850
+      Level 2 Damageable_0: -5925779768581276696
+      Level 2 Damageable_7: 8855746799049405503
+      Level 2 Damageable_2: 1192283535798625812
+      Level 2 Damageable_6: 2868731881756519707
+      Level 2 Damageable_4: -841448300715178569
+      Level 2 Damageable_5: -3688957634835751610
+      Level 2 Damageable_1: 199877901309600920
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

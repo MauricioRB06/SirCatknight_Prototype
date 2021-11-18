@@ -57,6 +57,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -400,6 +401,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Pepperoni Base Idle 2: -4069904641193462147
+      Pepperoni Base Run 3: 8973996387449100772
+      Pepperoni Base Idle 3: 4844035531355873871
+      Pepperoni Base Run 1: 706706151084878435
+      Pepperoni Text Box: 7815678173549898568
+      Pepperoni Base Idle 1: -6469317206132777063
+      Pepperoni Base Run 4: -5565789742184678382
+      Pepperoni Base Run 5: -3201033991640232843
+      Pepperoni Base Run 0: -2247115051980454893
+      Pepperoni Base Run 2: -5926935678204566011
+      Pepperoni Base Idle 0: 8832589869512601949
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

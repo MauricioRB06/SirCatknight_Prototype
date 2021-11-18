@@ -147,6 +147,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1120,6 +1121,48 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Decoration Cat_22: 820099363546460254
+      Decoration Cat_31: 1992593927283762861
+      Decoration Cat_25: -7751653058110701276
+      Decoration Cat_0: -2174360935814982167
+      Decoration Cat_34: -2417698814357561961
+      Decoration Cat_6: -6535348135162019311
+      Decoration Cat_7: -1720861881797401314
+      Decoration Cat_18: 2074336185939633887
+      Decoration Cat_26: 4578091923585785038
+      Decoration Cat_23: -4809174405492428749
+      Decoration Cat_28: -4744022328097510489
+      Decoration Cat_36: -6863566092178871214
+      Decoration Cat_37: 4099483105056549029
+      Decoration Cat_38: -6547689355983619872
+      Decoration Cat_40: -6948643160779171218
+      Decoration Cat_14: -7081614633588968468
+      Decoration Cat_5: 3999343241684538315
+      Decoration Cat_19: 8984982188056104417
+      Decoration Cat_21: 2723686745701026059
+      Decoration Cat_29: -5887742848308822448
+      Decoration Cat_4: -6692316462684304852
+      Decoration Cat_2: 8645717175880122500
+      Decoration Cat_35: -5407470123656484784
+      Decoration Cat_24: -7963838413879307876
+      Decoration Cat_11: -2341910778425105524
+      Decoration Cat_12: -4335207883283375144
+      Decoration Cat_13: -1488424689931210393
+      Decoration Cat_10: -4433992510497022026
+      Decoration Cat_15: 3844542957999997654
+      Decoration Cat_30: -5676242226526009137
+      Decoration Cat_27: 852809885240415964
+      Decoration Cat_3: -205722929263038638
+      Decoration Cat_8: -4256675799362744724
+      Decoration Cat_32: -4063526680981288415
+      Decoration Cat_9: 8731121997791137133
+      Decoration Cat_33: -6302769826792348075
+      Decoration Cat_20: -3713938155869547455
+      Decoration Cat_16: -6635152740633350333
+      Decoration Cat_39: 4122337304360657074
+      Decoration Cat_17: -8776691524557342592
+      Decoration Cat_1: -9817800822159801
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

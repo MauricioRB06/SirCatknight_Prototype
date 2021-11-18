@@ -60,6 +60,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -424,6 +425,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tilemap Level 2 Decoration Balloon _10: 2894943942891700583
+      Tilemap Level 2 Decoration Balloon _8: 4440623873024320697
+      Tilemap Level 2 Decoration Balloon _11: 9096622247396028092
+      Tilemap Level 2 Decoration Balloon _9: 3179001929440108123
+      Tilemap Level 2 Decoration Balloon _1: 945345960054928890
+      Tilemap Level 2 Decoration Balloon _0: 1328466254147929936
+      Tilemap Level 2 Decoration Balloon _4: -5398859398394224396
+      Tilemap Level 2 Decoration Balloon _2: -7455195906496961943
+      Tilemap Level 2 Decoration Balloon _6: -8688944026833788417
+      Tilemap Level 2 Decoration Balloon _7: 4547831662993475993
+      Tilemap Level 2 Decoration Balloon _5: 9021586456509131888
+      Tilemap Level 2 Decoration Balloon _3: 5460362119739990611
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

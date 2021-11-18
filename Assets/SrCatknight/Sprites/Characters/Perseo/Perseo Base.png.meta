@@ -456,6 +456,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -3592,6 +3593,151 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Perseo Base Sleep 6: -638392479763508336
+      Perseo Base JumpEnd 1: 6686743625444760084
+      Perseo Base FallingDown 3: 3778881728391580983
+      Perseo Base WallGrab 8: -8333093320964002002
+      Perseo Base CrouchIdle 3: -1111675344010095053
+      Perseo Base WallGrab 2: 3348724520722351799
+      Perseo Base DeadByFall 0: 3898765344916653951
+      Perseo Base HighKnockback 1: -4352878383038163134
+      Perseo Base Walk 6: -6633719158044686902
+      Perseo Base CrouchWalk 3: -1141119441281868056
+      Perseo Base DashRoll 4: 1588718952918121386
+      Perseo Base LedgeHang 0: 6168202992540502800
+      Perseo Base HighKnockback 6: 4450019337212443599
+      Perseo Base Run 0: 6814338160689441167
+      Perseo Base Run 5: 88321064088768133
+      Perseo Base WallSlide 0: -8334108117862541168
+      Perseo Base WallClimb 3: -1966494338993666815
+      Perseo Base WallClimb 10: 4670543488050332337
+      Perseo Base CrouchWalk 0: -1592650407379311935
+      Perseo Base Sleep 7: 5822774112171701408
+      Perseo Base Interact 7: -5724441003805197855
+      Perseo Base JumpEnd 4: 6416401462827062811
+      Perseo Base LowKnockback 2: 6010696457785187866
+      Perseo Base Run 4: 5881117547776227190
+      Perseo Base WallClimb 7: 2275526232473574147
+      Perseo Base FallingDown 6: -1904863782233450946
+      Perseo Base Run 6: 6670683896082327465
+      Perseo Base FallingDown 8: -8911763984817663823
+      Perseo Base Walk 5: 5592975671056454733
+      Perseo Base DashRoll 1: 1738779523110593438
+      Perseo Base WallClimb 9: -777571276883656292
+      Perseo Base Landing 0: 6386611218368822719
+      Perseo Base DashRoll 0: 1532625580554383230
+      Perseo Base JumpIdle 2: 995934289598753955
+      Perseo Base Landing 3: -3671439472304955585
+      Perseo Base Walk 4: -2636039502682379610
+      Perseo Base CrouchWalk 2: 8287983815124678497
+      Perseo Base JumpIdle 0: 4589800224455930411
+      Perseo Base WallGrab 3: -690865284961309154
+      Perseo Base Idle 4: -8146452139895657871
+      Perseo Base Interact 0: -7932368223087909558
+      Perseo Base DeadByDamage 6: -6808315695850793511
+      Perseo Base Landing 2: -1910811066586107925
+      Perseo Base DodgeRoll 0: 6943187389310296155
+      Perseo Base LowKnockback 1: 6475184520923942728
+      Perseo Base WallGrab 10: -2301664530275757271
+      Perseo Base CrouchWalk 9: -4326500155755274349
+      Perseo Base HighKnockback 7: -921686301795487661
+      Perseo Base Sleep 4: 3151280699222601679
+      Perseo Base CrouchWalk 11: 6352427777539168112
+      Perseo Base JumpRun 1: 4623720398249516006
+      Perseo Base JumpEnd 0: -7133002762444950482
+      Perseo Base WallClimb 1: 7990784053741420636
+      Perseo Base Idle 3: 227042943317989525
+      Perseo Base Interact 1: -5911733607415408247
+      Perseo Base LedgeGrab 0: -8650402028407414135
+      Perseo Base DashRoll 2: 1346904484942069666
+      Perseo Base WallClimb 6: -5773112472068804773
+      Perseo Base Sleep 11: -4743870744874263265
+      Perseo Base Idle 2: -3710001863649173568
+      Perseo Base FallingDown 7: 1956277906830948132
+      Perseo Base HighKnockback 0: 4336352768790605710
+      Perseo Base CrouchWalk 10: 8360971898397407545
+      Perseo Base HighKnockback 3: -6201601431017354870
+      Perseo Base Sleep 5: -5778856123750423002
+      Perseo Base Landing 1: -5376512295564204871
+      Perseo Base Walk 2: -514844180504647290
+      Perseo Base HighKnockback 5: 6003201646639044386
+      Perseo Base JumpRun 0: -6865786735116119010
+      Perseo Base Run 2: 4785346141804234756
+      Perseo Base DeadByDamage 7: 257097243119204877
+      Perseo Base CrouchWalk 8: 3200303251820891935
+      Perseo Base WallClimb 11: 6145355958186061551
+      Perseo Base JumpEnd 3: 7384621409410765164
+      Perseo Base DashRoll 5: -5211373906322658261
+      Perseo Base FallingDown 0: 3701183485867065882
+      Perseo Base CrouchWalk 6: -4195589624616840623
+      Perseo Base FallingDown 2: -7302238932273032774
+      Perseo Base FallingDown 4: -4007384039316452636
+      Perseo Base DashRoll 3: -980432458630268339
+      Perseo Base WallGrab 4: 1617543103163271710
+      Perseo Base DeadByDamage 5: -3694846796427278099
+      Perseo Base DeadByDamage 9: 2612980256948260538
+      Perseo Base Interact 5: 1633393406069100455
+      Perseo Base CrouchIdle 0: 11343415052578775
+      Perseo Base LowKnockback 3: -2327031575557081165
+      Perseo Base HighKnockback 8: 2784503556888994546
+      Perseo Base JumpRun 3: 8133066854860259143
+      Perseo Base JumpIdle 1: 931080080678221683
+      Perseo Base FallingDown 5: -5489709785174329749
+      Perseo Base DeadByDamage 1: 1528336248475831282
+      Perseo Base CrouchWalk 7: 7374258824051250167
+      Perseo Base WallGrab 1: 3354177788705931555
+      Perseo Base DeadByDamage 0: -2474015838297448818
+      Perseo Base Sleep 9: 402476213589376491
+      Perseo Base CrouchWalk 5: -1233357837225018915
+      Perseo Base JumpEnd 2: 1675273117279475638
+      Perseo Base DeadByDamage 2: 6514151858585755917
+      Perseo Base WallGrab 9: -3326389434420301668
+      Perseo Base LedgeClimb 0: -9185220082155625861
+      Perseo Base Interact 3: 7685429266275065861
+      Perseo Base DeadByDamage 4: -6630033163389737473
+      Perseo Base WallGrab 11: -4611374814150430543
+      Perseo Base WallClimb 4: 6561646107343623280
+      Perseo Base WallGrab 6: 4880106891427924098
+      Perseo Base LedgeHang 1: 2294198623380702299
+      Perseo Base Interact 4: -8861475179700073767
+      Perseo Base Sleep 10: -7662484456878148044
+      Perseo Base WallClimb 5: 2096957682082239975
+      Perseo Base LedgeClimb 1: -5464626633092464721
+      Perseo Base WallGrab 5: 5128351070060275445
+      Perseo Base Idle 0: 2944414178735431708
+      Perseo Base LowKnockback 0: -3786524224613447703
+      Perseo Base WallGrab 0: -7353905261681097564
+      Perseo Base HighKnockback 4: 1711420850711223073
+      Perseo Base Walk 1: 4103939558338578125
+      Perseo Base Sleep 2: 6553900794854401844
+      Perseo Base CrouchIdle 2: 334602575464378920
+      Perseo Base CrouchWalk 4: -3280399396455271249
+      Perseo Base Walk 3: -3877388245511726714
+      Perseo Base Idle 1: 1951821007265842862
+      Perseo Base LedgeClimb 2: 8712728449078302766
+      Perseo Base FallingDown 9: 6475180542895930015
+      Perseo Base CrouchIdle 1: -30463824619836436
+      Perseo Base WallClimb 0: 4845578993609235151
+      Perseo Base Sleep 0: 6831254171023869364
+      Perseo Base DodgeRoll 1: 8939907238212453931
+      Perseo Base WallClimb 8: 704524851519886276
+      Perseo Base Run 3: -5990023704932935872
+      Perseo Base CrouchWalk 1: -8544725431452790645
+      Perseo Base Sleep 1: -7006268071156239350
+      Perseo Base Sleep 8: 8936226883581570300
+      Perseo Base Interact 6: -6866337449450059126
+      Perseo Base Sleep 3: 5376147989152045197
+      Perseo Base WallClimb 2: -7699097916664520665
+      Perseo Base HighKnockback 2: 2345754747787365153
+      Perseo Base FallingDown 1: 7446618777169190569
+      Perseo Base DodgeRoll 2: -3750472162333995549
+      Perseo Base DeadByDamage 8: -4763275367885972906
+      Perseo Base DeadByDamage 10: -5687311137134191342
+      Perseo Base Interact 2: -5626701064545761037
+      Perseo Base WallGrab 7: 2620680675613917071
+      Perseo Base LedgeGrab 1: 6312645515915791156
+      Perseo Base DeadByDamage 3: -1687750616994005759
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

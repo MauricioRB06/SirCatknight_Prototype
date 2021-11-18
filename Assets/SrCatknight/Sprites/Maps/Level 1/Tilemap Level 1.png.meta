@@ -24,6 +24,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2803,6 +2804,134 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tilemap Level 1_44: -9112757707624610803
+      Tilemap Level 1_96: -4759983427005883821
+      Tilemap Level 1_342: -7086252516192247303
+      Tilemap Level 1_153: 7266923438490920026
+      Tilemap Level 1_223: -2516430648814372585
+      Tilemap Level 1_155: -8447380212358185176
+      Tilemap Level 1_215: 1791733970718618657
+      Tilemap Level 1_307: -8847326957865142715
+      Tilemap Level 1_54: 1648121580111506486
+      Tilemap Level 1_338: 7645252105096418925
+      Tilemap Level 1_251: -5608012635615809393
+      Tilemap Level 1_259: -1724375368485288334
+      Tilemap Level 1_315: 9168903719221984538
+      Tilemap Level 1_375: -4684186136233879235
+      Tilemap Level 1_104: -339213123485765989
+      Tilemap Level 1_255: 2849564521993833730
+      Tilemap Level 1_56: -6842524609591294429
+      Tilemap Level 1_199: -1967283952255631002
+      Tilemap Level 1_350: -1125385322553768854
+      Tilemap Level 1_257: -8695499206367441411
+      Tilemap Level 1_371: -7257053590895420353
+      Tilemap Level 1_167: 2918133032722035819
+      Tilemap Level 1_357: -3444429771461213992
+      Tilemap Level 1_278: -2207040317092484993
+      Tilemap Level 1_171: -2821205408375478853
+      Tilemap Level 1_303: -133257570439747370
+      Tilemap Level 1_267: -8637055664081346070
+      Tilemap Level 1_370: 9159090802619195588
+      Tilemap Level 1_379: 2505834384929850068
+      Tilemap Level 1_304: 1493556977638092361
+      Tilemap Level 1_221: 7763460293110429411
+      Tilemap Level 1_343: -5146302185622104872
+      Tilemap Level 1_349: 7605607626344352958
+      Tilemap Level 1_381: -602150379391090126
+      Tilemap Level 1_261: 8485755310538847184
+      Tilemap Level 1_346: 7263918211716696617
+      Tilemap Level 1_311: -3886455361469438028
+      Tilemap Level 1_94: -2578515757263283451
+      Tilemap Level 1_209: -6633895436647481653
+      Tilemap Level 1_161: 6595085693587583183
+      Tilemap Level 1_207: -5855630021722831522
+      Tilemap Level 1_364: -7633544867650283165
+      Tilemap Level 1_165: 7144638419148077552
+      Tilemap Level 1_380: 8746772577897005756
+      Tilemap Level 1_275: 7141088100473708205
+      Tilemap Level 1_253: 3769050751285039471
+      Tilemap Level 1_339: -6328039663346689881
+      Tilemap Level 1_38: 7678322515418722267
+      Tilemap Level 1_277: 5934892769526739053
+      Tilemap Level 1_320: -4147859430622276614
+      Tilemap Level 1_112: -5065004932626569772
+      Tilemap Level 1_373: -1310258873704754648
+      Tilemap Level 1_98: 3723354678075236661
+      Tilemap Level 1_60: 2228198040137870137
+      Tilemap Level 1_219: -8371430774645091044
+      Tilemap Level 1_203: 5914556189653585934
+      Tilemap Level 1_353: -5098283083704245914
+      Tilemap Level 1_369: -173558206141897335
+      Tilemap Level 1_341: 4147167473184780140
+      Tilemap Level 1_366: -4583298099137118855
+      Tilemap Level 1_269: 3543204063387959861
+      Tilemap Level 1_159: 4108062413578349383
+      Tilemap Level 1_305: 3261953472598205050
+      Tilemap Level 1_42: 8852874121383964086
+      Tilemap Level 1_157: 7518295754078247116
+      Tilemap Level 1_217: -2030488423942255235
+      Tilemap Level 1_344: -7142147884728550562
+      Tilemap Level 1_376: 2735901383385475449
+      Tilemap Level 1_36: 6138319529046505440
+      Tilemap Level 1_273: 3632228899551265026
+      Tilemap Level 1_354: -2814215574521009330
+      Tilemap Level 1_363: -4867544062389874500
+      Tilemap Level 1_367: -8963140470027725508
+      Tilemap Level 1_382: 8036680437311982922
+      Tilemap Level 1_32: 1495205319656031494
+      Tilemap Level 1_383: -8620173580785065803
+      Tilemap Level 1_213: -3412858434639231559
+      Tilemap Level 1_361: 7017309715952503064
+      Tilemap Level 1_101: 1611085622415705302
+      Tilemap Level 1_40: 6067905248674452950
+      Tilemap Level 1_384: -4783580456998265373
+      Tilemap Level 1_211: -7316834731856742559
+      Tilemap Level 1_224: -2924205552960324238
+      Tilemap Level 1_345: 7744722402796372222
+      Tilemap Level 1_340: -6147407890858917122
+      Tilemap Level 1_368: 4090723270648431969
+      Tilemap Level 1_148: -8061493911257965050
+      Tilemap Level 1_46: 8594869133529289801
+      Tilemap Level 1_205: -1659271039821837679
+      Tilemap Level 1_356: -3952806103916754575
+      Tilemap Level 1_309: 3197453761259600075
+      Tilemap Level 1_348: 210667999463971517
+      Tilemap Level 1_377: 8542754505547206125
+      Tilemap Level 1_163: -6883920436541252798
+      Tilemap Level 1_372: -7060721355706580620
+      Tilemap Level 1_351: -1993018985808261263
+      Tilemap Level 1_201: -4528287182764575781
+      Tilemap Level 1_378: -4206673924468239062
+      Tilemap Level 1_374: 905714135590859886
+      Tilemap Level 1_360: -6086163520200905928
+      Tilemap Level 1_151: 703999710360792181
+      Tilemap Level 1_225: 8035365208359762198
+      Tilemap Level 1_385: -1368273245310968280
+      Tilemap Level 1_318: 1341351871557106551
+      Tilemap Level 1_365: 4138265959832610198
+      Tilemap Level 1_313: -6463487673906570405
+      Tilemap Level 1_52: 7731813670224748843
+      Tilemap Level 1_359: 6555633636204557003
+      Tilemap Level 1_173: 2588410214402973246
+      Tilemap Level 1_34: -4156665642665158467
+      Tilemap Level 1_50: -5368372617331949051
+      Tilemap Level 1_355: -3550920790871271002
+      Tilemap Level 1_58: -9125149127834764440
+      Tilemap Level 1_271: 8926494780818283862
+      Tilemap Level 1_169: -1857483554144276061
+      Tilemap Level 1_265: -6372916969269430698
+      Tilemap Level 1_352: -1997695764919919878
+      Tilemap Level 1_362: 4638507525773223426
+      Tilemap Level 1_107: -1968266351305526475
+      Tilemap Level 1_358: 2708168723450200111
+      Tilemap Level 1_48: -6780145635143585235
+      Tilemap Level 1_110: 3564695942144036385
+      Tilemap Level 1_114: -6329686259026456104
+      Tilemap Level 1_276: 1873119262952296682
+      Tilemap Level 1_302: -6762560429433020473
+      Tilemap Level 1_263: -7558565911151171837
+      Tilemap Level 1_347: 7536722321128495809
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -81,6 +81,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -592,6 +593,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 1 Enemy Donut_11: 4447508962932102735
+      Level 1 Enemy Donut_1: 3596933798003822374
+      Level 1 Enemy Donut_13: -8401357457079867725
+      Level 1 Enemy Donut_17: -4898734276477664562
+      Level 1 Enemy Donut_8: -8398340523610930420
+      Level 1 Enemy Donut_18: -1124843226434933491
+      Level 1 Enemy Donut_3: 4892012467147963955
+      Level 1 Enemy Donut_12: -436386643142355326
+      Level 1 Enemy Donut_5: -6132292875746404189
+      Level 1 Enemy Donut_6: 8830846195440163042
+      Level 1 Enemy Donut_15: 4284707066129324245
+      Level 1 Enemy Donut_14: 3445799560950011047
+      Level 1 Enemy Donut_16: 7345736361085765383
+      Level 1 Enemy Donut_9: -1967820449925811874
+      Level 1 Enemy Donut_4: 1009375051323300600
+      Level 1 Enemy Donut_2: 5729571910797673038
+      Level 1 Enemy Donut_10: -3970683613392290238
+      Level 1 Enemy Donut_0: -6136355662619015989
+      Level 1 Enemy Donut_7: -9015120930875625773
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

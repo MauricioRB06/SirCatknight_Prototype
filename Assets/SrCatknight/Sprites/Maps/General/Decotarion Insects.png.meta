@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -280,6 +281,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      DecotarionInsects_1: 8220272038131720793
+      DecotarionInsects_4: -5167109225546797691
+      DecotarionInsects_0: 1640713988304748925
+      DecotarionInsects_2: 3088155558165304724
+      DecotarionInsects_5: -3457240410309991889
+      DecotarionInsects_3: 663915251246497635
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

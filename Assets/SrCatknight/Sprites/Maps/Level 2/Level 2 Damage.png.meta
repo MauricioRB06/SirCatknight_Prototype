@@ -117,6 +117,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -880,6 +881,38 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 2 Damage_77: 8235122724912141864
+      Level 2 Damage_57: 8537688656827628837
+      Level 2 Damage_17: 4169778133559167184
+      Level 2 Damage_31: -4025442824905054872
+      Level 2 Damage_28: -5697358344757410476
+      Level 2 Damage_50: -6724147359295084692
+      Level 2 Damage_1: 3120694641296073059
+      Level 2 Damage_32: 8307534577306771425
+      Level 2 Damage_53: 8221297593580955878
+      Level 2 Damage_6: 7002542682586567345
+      Level 2 Damage_2: 7699996603340781748
+      Level 2 Damage_5: -7758473345790768667
+      Level 2 Damage_23: 4069376472872856527
+      Level 2 Damage_3: 8016627503037534529
+      Level 2 Damage_10: 4304413327042665061
+      Level 2 Damage_25: 697044919788831903
+      Level 2 Damage_21: -5313260208813397206
+      Level 2 Damage_4: 6844672833381486125
+      Level 2 Damage_7: -1059743512977415275
+      Level 2 Damage_8: -6164529412271931699
+      Level 2 Damage_30: -850983182401193556
+      Level 2 Damage_73: -7215705254025731779
+      Level 2 Damage_27: -1122921064741666779
+      Level 2 Damage_81: 5812951977597610275
+      Level 2 Damage_47: 2299494876892140029
+      Level 2 Damage_19: -3872454906938525853
+      Level 2 Damage_9: -852137674399792749
+      Level 2 Damage_29: -5900823032022784013
+      Level 2 Damage_0: -4762271794687924884
+      Level 2 Damage_11: -36821367030351731
+      Level 2 Damage_15: -3463118760448874335
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

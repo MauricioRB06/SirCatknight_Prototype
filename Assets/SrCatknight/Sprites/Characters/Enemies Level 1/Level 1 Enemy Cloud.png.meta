@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -328,6 +329,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 1 Enemy Cloud_2: -8790646284902573146
+      Level 1 Enemy Cloud_5: -4390760666822857487
+      Level 1 Enemy Cloud_6: 339332387503191275
+      Level 1 Enemy Cloud_0: 8211095956241272090
+      Level 1 Enemy Cloud_1: 4912360521435447243
+      Level 1 Enemy Cloud_3: 3214121306944355583
+      Level 1 Enemy Cloud_7: 1462770277877121541
+      Level 1 Enemy Cloud_4: 5620929487336769013
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

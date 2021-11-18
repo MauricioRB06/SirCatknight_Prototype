@@ -81,6 +81,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -592,6 +593,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 2 Interactable_0: -6746322481404566964
+      Level 2 Interactable_15: -8414676749214504978
+      Level 2 Interactable_7: -6402743209655568329
+      Level 2 Interactable_10: 4121209586306286937
+      Level 2 Interactable_5: -6147966138151519726
+      Level 2 Interactable_11: 135476015170861127
+      Level 2 Interactable_14: -1826288730026686563
+      Level 2 Interactable_4: -6824185057446881751
+      Level 2 Interactable_18: -406587021070800386
+      Level 2 Interactable_9: 7280557250457483170
+      Level 2 Interactable_2: 7635574263555707273
+      Level 2 Interactable_3: 1498035772840632134
+      Level 2 Interactable_12: -3872542765683650315
+      Level 2 Interactable_13: 3942139488658093918
+      Level 2 Interactable_1: 8501917038451078237
+      Level 2 Interactable_16: 2924846828065704659
+      Level 2 Interactable_8: -4612478561861501138
+      Level 2 Interactable_6: 6039932512180859032
+      Level 2 Interactable_17: 6638210324521564077
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

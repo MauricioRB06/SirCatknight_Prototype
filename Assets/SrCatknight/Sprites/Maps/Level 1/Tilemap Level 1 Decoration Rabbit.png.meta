@@ -57,6 +57,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -400,6 +401,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tilemap Level 1 Decoration Rabbit_10: -6548360914665193700
+      Tilemap Level 1 Decoration Rabbit_4: 7811940504299345787
+      Tilemap Level 1 Decoration Rabbit_9: 2761807221671135317
+      Tilemap Level 1 Decoration Rabbit_5: 1432583620470083985
+      Tilemap Level 1 Decoration Rabbit_8: -6091564973509009799
+      Tilemap Level 1 Decoration Rabbit_3: -4414529069260927485
+      Tilemap Level 1 Decoration Rabbit_1: -1325220353803077858
+      Tilemap Level 1 Decoration Rabbit_7: -1979481600598120159
+      Tilemap Level 1 Decoration Rabbit_2: -6328408707179532004
+      Tilemap Level 1 Decoration Rabbit_6: 4708766858221022170
+      Tilemap Level 1 Decoration Rabbit_0: 2482330352164951471
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

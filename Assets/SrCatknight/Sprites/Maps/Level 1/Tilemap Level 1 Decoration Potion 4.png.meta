@@ -144,6 +144,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1096,6 +1097,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tilemap Level 1 Decoration Potion 4_23: 3189433962750748778
+      Tilemap Level 1 Decoration Potion 4_22: -5380246476269135018
+      Tilemap Level 1 Decoration Potion 4_7: -3210377855220638897
+      Tilemap Level 1 Decoration Potion 4_10: -3368272492373594896
+      Tilemap Level 1 Decoration Potion 4_16: -3355846198014045684
+      Tilemap Level 1 Decoration Potion 4_26: 6325216565057190473
+      Tilemap Level 1 Decoration Potion 4_31: -2834808667337969958
+      Tilemap Level 1 Decoration Potion 4_32: 4522890419908294632
+      Tilemap Level 1 Decoration Potion 4_30: -8477289820899992411
+      Tilemap Level 1 Decoration Potion 4_27: 4854482540832292762
+      Tilemap Level 1 Decoration Potion 4_17: 3022331760162802332
+      Tilemap Level 1 Decoration Potion 4_33: -5626388175247035727
+      Tilemap Level 1 Decoration Potion 4_8: -7326689069690676079
+      Tilemap Level 1 Decoration Potion 4_24: 4447955293553965148
+      Tilemap Level 1 Decoration Potion 4_9: 7748069264359886553
+      Tilemap Level 1 Decoration Potion 4_3: 612850923305331258
+      Tilemap Level 1 Decoration Potion 4_5: -3786004703812127283
+      Tilemap Level 1 Decoration Potion 4_12: -8722141387032187194
+      Tilemap Level 1 Decoration Potion 4_13: 853409937882651233
+      Tilemap Level 1 Decoration Potion 4_21: -570389062152877129
+      Tilemap Level 1 Decoration Potion 4_29: -5499579386630047494
+      Tilemap Level 1 Decoration Potion 4_34: 8529888415126900316
+      Tilemap Level 1 Decoration Potion 4_19: 2827722428157442837
+      Tilemap Level 1 Decoration Potion 4_2: -8871236323716143809
+      Tilemap Level 1 Decoration Potion 4_14: -5436653052024531988
+      Tilemap Level 1 Decoration Potion 4_0: -3173156284995998855
+      Tilemap Level 1 Decoration Potion 4_4: -7988671893208128474
+      Tilemap Level 1 Decoration Potion 4_6: -1129656231184984255
+      Tilemap Level 1 Decoration Potion 4_18: 140590565917765186
+      Tilemap Level 1 Decoration Potion 4_15: -8447869928339717382
+      Tilemap Level 1 Decoration Potion 4_28: 2656130220385921382
+      Tilemap Level 1 Decoration Potion 4_1: -9670496105280071
+      Tilemap Level 1 Decoration Potion 4_11: 2171478997941891993
+      Tilemap Level 1 Decoration Potion 4_25: 2302573976115264500
+      Tilemap Level 1 Decoration Potion 4_20: 165434548724940322
+      Tilemap Level 1 Decoration Potion 4_39: 3060907766428066190
+      Tilemap Level 1 Decoration Potion 4_35: 6298408054443921398
+      Tilemap Level 1 Decoration Potion 4_38: -101541894754646946
+      Tilemap Level 1 Decoration Potion 4_36: 5048479164791911813
+      Tilemap Level 1 Decoration Potion 4_37: -5533723143618799513
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tilemap Level 5 Decotarion Torch B_2: -8102375927764577351
+      Tilemap Level 5 Decotarion Torch B_1: 4431674004872073349
+      Tilemap Level 5 Decotarion Torch B_3: 920172329607356299
+      Tilemap Level 5 Decotarion Torch B_0: 5748305869892288127
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

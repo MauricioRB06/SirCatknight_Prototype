@@ -114,6 +114,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -856,6 +857,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 1 Interactable_25: 8936980829158115388
+      Level 1 Interactable_27: 2852276664774092603
+      Level 1 Interactable_19: 7718011815354832041
+      Level 1 Interactable_14: -2526828789927350576
+      Level 1 Interactable_20: -555430952286671943
+      Level 1 Interactable_28: -1059459381084292899
+      Level 1 Interactable_17: 643866962779073358
+      Level 1 Interactable_6: 9017645672646545205
+      Level 1 Interactable_8: 3055008008454928225
+      Level 1 Interactable_21: 7891917653888950276
+      Level 1 Interactable_13: -7902010687863580815
+      Level 1 Interactable_11: -3527078070021243083
+      Level 1 Interactable_7: -394348957763133350
+      Level 1 Interactable_10: 2072542323583565066
+      Level 1 Interactable_12: 5158733851555888569
+      Level 1 Interactable_4: -8876642823726887971
+      Level 1 Interactable_9: -612603154150238376
+      Level 1 Interactable_26: 6417597616424325205
+      Level 1 Interactable_24: 7889161908843755686
+      Level 1 Interactable_1: -3753192819577743587
+      Level 1 Interactable_18: 958157608238186861
+      Level 1 Interactable_15: -1824810957648193670
+      Level 1 Interactable_23: -1430386732901521869
+      Level 1 Interactable_5: 6592783086984666825
+      Level 1 Interactable_3: 1049537229873865883
+      Level 1 Interactable_16: 7380834715578474030
+      Level 1 Interactable_29: 7271452953157866650
+      Level 1 Interactable_2: -8196803601760874709
+      Level 1 Interactable_0: 8764772902876965433
+      Level 1 Interactable_22: 2832313350012188560
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

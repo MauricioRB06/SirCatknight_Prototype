@@ -108,6 +108,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -808,6 +809,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 5 Damage_26: 7039541055686157851
+      Level 5 Damage_9: -8729783897448828674
+      Level 5 Damage_17: -8789118156074459432
+      Level 5 Damage_22: -5332349612581022047
+      Level 5 Damage_13: -3940721739725933809
+      Level 5 Damage_18: 899179332845688874
+      Level 5 Damage_8: -5345237840900455703
+      Level 5 Damage_16: 4903081136447863573
+      Level 5 Damage_24: -4122143291557108682
+      Level 5 Damage_21: -8230988766606990981
+      Level 5 Damage_14: 2020747413596273984
+      Level 5 Damage_19: -5404205414344940365
+      Level 5 Damage_6: 5573535012438040225
+      Level 5 Damage_0: 4647887511299289687
+      Level 5 Damage_7: 6191141981174801686
+      Level 5 Damage_23: -1758944647881695762
+      Level 5 Damage_5: -4803735012464978587
+      Level 5 Damage_3: 6465207245501679212
+      Level 5 Damage_10: -3168006988334451576
+      Level 5 Damage_11: -4800024548350129765
+      Level 5 Damage_1: 5746459798969880452
+      Level 5 Damage_25: -4940543503449833861
+      Level 5 Damage_4: 4675948505740123896
+      Level 5 Damage_20: 7922828710299416038
+      Level 5 Damage_12: 2248958089459044813
+      Level 5 Damage_2: 1937040535560263265
+      Level 5 Damage_15: -2108387238676469080
+      Level 5 Damage_27: 159815191110435445
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

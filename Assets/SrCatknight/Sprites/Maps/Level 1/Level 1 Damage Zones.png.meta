@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -328,6 +329,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 1 Damage Zones_3: -7807845174561422160
+      Level 1 Damage Zones_0: 6367179029296734127
+      Level 1 Damage Zones_7: -6611533662495476283
+      Level 1 Damage Zones_4: 105133325984185421
+      Level 1 Damage Zones_1: -6748141109148012603
+      Level 1 Damage Zones_2: 4343099831276869796
+      Level 1 Damage Zones_6: -7355457865459966653
+      Level 1 Damage Zones_5: -9000856088565805014
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

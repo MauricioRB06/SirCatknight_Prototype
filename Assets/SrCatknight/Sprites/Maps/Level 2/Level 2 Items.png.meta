@@ -75,6 +75,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -544,6 +545,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 2 Items_11: -7503052949831293664
+      Level 2 Items_15: 5932124127155581242
+      Level 2 Items_0: -592936607998173248
+      Level 2 Items_12: -7470055555640104051
+      Level 2 Items_7: 3819292727566449670
+      Level 2 Items_2: 5340701320672573645
+      Level 2 Items_14: 677034142969212517
+      Level 2 Items_9: 1201883140380392665
+      Level 2 Items_4: 4949586863419596686
+      Level 2 Items_5: 1340834765203372422
+      Level 2 Items_8: -2285713593401509610
+      Level 2 Items_10: 7986180403596743176
+      Level 2 Items_3: -6514901402780880278
+      Level 2 Items_1: -9163450784043324126
+      Level 2 Items_6: 8303221162621663593
+      Level 2 Items_13: 6638999057518724368
+      Level 2 Items_16: 3848422292032407161
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

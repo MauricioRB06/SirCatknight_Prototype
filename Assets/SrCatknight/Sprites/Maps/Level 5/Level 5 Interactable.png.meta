@@ -156,6 +156,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1192,6 +1193,51 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 5 Interactable_16: -3079430489849377574
+      Level 5 Interactable_42: -1160930565477796323
+      Level 5 Interactable_32: 4321076662726835963
+      Level 5 Interactable_21: -4549135412439452638
+      Level 5 Interactable_11: -6747374770771063681
+      Level 5 Interactable_28: 320069966377323632
+      Level 5 Interactable_20: 6104325668392296467
+      Level 5 Interactable_26: -7732075239522008091
+      Level 5 Interactable_41: -8156862831132280723
+      Level 5 Interactable_38: -2956151790009617762
+      Level 5 Interactable_15: -7931355718676544813
+      Level 5 Interactable_0: 7032318923210562349
+      Level 5 Interactable_29: -219588783230670978
+      Level 5 Interactable_2: 8681577204980772337
+      Level 5 Interactable_30: -4194788749357658442
+      Level 5 Interactable_35: 5777105806613514066
+      Level 5 Interactable_18: -3982796802949768317
+      Level 5 Interactable_4: -1379692589211228653
+      Level 5 Interactable_24: -1490866963453089474
+      Level 5 Interactable_12: 3553951114698076012
+      Level 5 Interactable_33: -2329415310432403952
+      Level 5 Interactable_39: 670378225836430074
+      Level 5 Interactable_36: -842794664914425409
+      Level 5 Interactable_7: 2000218251358505753
+      Level 5 Interactable_13: 9081293008859026466
+      Level 5 Interactable_14: 760070281164086560
+      Level 5 Interactable_6: 3696432462912194586
+      Level 5 Interactable_43: -4744592505849956975
+      Level 5 Interactable_10: 4869476311801471558
+      Level 5 Interactable_23: 3751353745129698032
+      Level 5 Interactable_31: -53885696989437593
+      Level 5 Interactable_17: -4993613075494227960
+      Level 5 Interactable_27: -5342388975086035165
+      Level 5 Interactable_19: -7842957909267920423
+      Level 5 Interactable_3: -7392773437079180893
+      Level 5 Interactable_37: -5081914034338269917
+      Level 5 Interactable_25: -904388579287079090
+      Level 5 Interactable_34: 6290214034011802704
+      Level 5 Interactable_9: -1278387554814082443
+      Level 5 Interactable_40: 4418502240720236526
+      Level 5 Interactable_5: -5149194518818907251
+      Level 5 Interactable_1: -6441043078048123031
+      Level 5 Interactable_22: -859861784378838958
+      Level 5 Interactable_8: -7250630917541982845
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

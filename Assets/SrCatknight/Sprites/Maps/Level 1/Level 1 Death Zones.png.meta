@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -328,6 +329,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 1 Death Zones_5: -8418373876230685520
+      Level 1 Death Zones_0: -1125341160513621845
+      Level 1 Death Zones_2: -8786427863859519024
+      Level 1 Death Zones_4: -5351535809524480819
+      Level 1 Death Zones_1: 888009958884468192
+      Level 1 Death Zones_3: -4390221763356825149
+      Level 1 Death Zones_7: -1066037320701605942
+      Level 1 Death Zones_6: 6811301562592983616
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

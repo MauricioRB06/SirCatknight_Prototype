@@ -60,6 +60,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -424,6 +425,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tilemap Level 2 Decoration Sakura Tree _7: 7856099605505690424
+      Tilemap Level 2 Decoration Sakura Tree _4: 3641553820418877910
+      Tilemap Level 2 Decoration Sakura Tree _2: -1536187733654472217
+      Tilemap Level 2 Decoration Sakura Tree _0: 6321969588694012515
+      Tilemap Level 2 Decoration Sakura Tree _10: 6253586343792500617
+      Tilemap Level 2 Decoration Sakura Tree _6: -7282391070247391163
+      Tilemap Level 2 Decoration Sakura Tree _1: -2237713709918812552
+      Tilemap Level 2 Decoration Sakura Tree _3: 6992146363226954742
+      Tilemap Level 2 Decoration Sakura Tree _11: 1117999473557884877
+      Tilemap Level 2 Decoration Sakura Tree _5: -9029206832422003484
+      Tilemap Level 2 Decoration Sakura Tree _8: 6157994355894026797
+      Tilemap Level 2 Decoration Sakura Tree _9: -2802328345299272271
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

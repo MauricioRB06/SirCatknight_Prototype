@@ -63,6 +63,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -448,6 +449,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 0 Combat Dummy TakeDamage 2: 3437070834539858367
+      Level 0 Combat Dummy BrokenParticles 1: -2168438958361096504
+      Level 0 Combat DummyBrokenB: 2813618054967613980
+      Level 0 Combat Dummy Broken 2: -1609295916686280996
+      Level 0 Combat Dummy TakeDamage 0: 5810695271997985881
+      Level 0 Combat Dummy Broken 1: -6543017234700817203
+      Level 0 Combat Dummy BrokenParticles 2: 66871650556392180
+      Level 0 Combat Dummy BrokenParticles 0: 4440853548220440400
+      Level 0 Combat Dummy TakeDamage 3: 7141552997382275645
+      Level 0 Combat DummyBrokenA: -4466026266386030450
+      Level 0 Combat Dummy: 5100372728825712119
+      Level 0 Combat Dummy Broken 0: 56096077429666703
+      Level 0 Combat Dummy TakeDamage 1: -86750760015202693
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

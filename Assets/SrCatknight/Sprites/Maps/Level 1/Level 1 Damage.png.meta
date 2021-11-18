@@ -135,6 +135,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1024,6 +1025,44 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 1 Damage_7: 3885107614631594149
+      Level 1 Damage_16: 2693942095942996561
+      Level 1 Damage_28: 6421698454853356502
+      Level 1 Damage_1: -4366133521113827304
+      Level 1 Damage_10: -5571363772153823769
+      Level 1 Damage_32: 7194274435315960756
+      Level 1 Damage_9: 3835548206731049066
+      Level 1 Damage_22: -1649709210813515837
+      Level 1 Damage_36: 5446023142268806370
+      Level 1 Damage_35: 1185104765207331053
+      Level 1 Damage_21: 4097221631482193791
+      Level 1 Damage_15: -578143725146088637
+      Level 1 Damage_19: -1373225250295325130
+      Level 1 Damage_12: -2530898623675807898
+      Level 1 Damage_34: 138463201261222335
+      Level 1 Damage_25: 7110716990817320193
+      Level 1 Damage_4: -1212456760396028307
+      Level 1 Damage_17: -623084406746946436
+      Level 1 Damage_14: -1807698539277468892
+      Level 1 Damage_31: 1027997941376609354
+      Level 1 Damage_5: -2869809323677626187
+      Level 1 Damage_6: 5617155797513013947
+      Level 1 Damage_27: 7634761617339757003
+      Level 1 Damage_11: -5071208445949637475
+      Level 1 Damage_3: 4169003551682689894
+      Level 1 Damage_30: 3923421978411638187
+      Level 1 Damage_26: 7738485594574411591
+      Level 1 Damage_0: -8145066013593921142
+      Level 1 Damage_8: -2895677768374748974
+      Level 1 Damage_2: -6892833418763430697
+      Level 1 Damage_20: -3115872907726690945
+      Level 1 Damage_33: -1664595255621550106
+      Level 1 Damage_13: -7954242674116050377
+      Level 1 Damage_24: 6688069979308768309
+      Level 1 Damage_23: -4047318385013483979
+      Level 1 Damage_18: -8030474462861404355
+      Level 1 Damage_29: 2574637778428114263
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

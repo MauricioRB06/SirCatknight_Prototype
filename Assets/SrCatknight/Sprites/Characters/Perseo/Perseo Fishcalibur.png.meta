@@ -573,6 +573,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -4528,6 +4529,190 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Perseo Fishcalibur PrimaryAttack Weapon 17: -2853981276327602030
+      Perseo Fishcalibur WallGrab 3: 2058071738529025683
+      Perseo Fishcalibur Sleep 5: 7736487045047211047
+      Perseo Fishcalibur JumpIdle 0: 5903224725356546439
+      Perseo Fishcalibur LowKnockback 2: 3034825396712899049
+      Perseo Fishcalibur WallSlide 0: -5012309402767701
+      Perseo Fishcalibur FallingDown 5: 3537223058238150975
+      Perseo Fishcalibur JumpEnd 4: -731665087201450955
+      Perseo Fishcalibur DeadByDamage 6: -8671253371887100431
+      Perseo Fishcalibur Landing 1: 4035646503436790457
+      Perseo Fishcalibur WallGrab 5: 5830778079483806928
+      Perseo Fishcalibur HihgKnockback 2: -303449234158090539
+      Perseo Fishcalibur LedgeClimb 1: 3395215972037109320
+      Perseo Fishcalibur PrimaryAttack Perseo 13: 6017602881872662938
+      Perseo Fishcalibur HihgKnockback 5: -887092090415204924
+      Perseo Fishcalibur CrouchWalk 5: -8955993786723714702
+      Perseo Fishcalibur WallClimb 0: -521961022116365084
+      Perseo Fishcalibur DeadByDamage 8: -7481850825193842423
+      Perseo Fishcalibur WallGrab 4: -6726687355121010996
+      Perseo Fishcalibur WallGrab 7: -6637047756861506416
+      Perseo Fishcalibur Idle 3: 2638674488344158918
+      Perseo Fishcalibur Sleep 11: 3918164946117825842
+      Perseo Fishcalibur Run 2: -5792733123558180259
+      Perseo Fishcalibur PrimaryAttack Weapon 0: 3819395290725056954
+      Perseo Fishcalibur WallGrab 0: -1738328922211664121
+      Perseo Fishcalibur CrouchIdle 0: -8597423538638820142
+      Perseo Fishcalibur FallingDown 3: 5219441755657384738
+      Perseo Fishcalibur PrimaryAttack Perseo 5: 7149325822422346054
+      Perseo Fishcalibur WallClimb 1: 3107963642235614951
+      Perseo Fishcalibur LowKnockback 1: 2090545338742978024
+      Perseo Fishcalibur Idle 4: -6465228809274263272
+      Perseo Fishcalibur FallingDown 7: -6951290843948215667
+      Perseo Fishcalibur PrimaryAttack Perseo 18: 7803145516185358719
+      Perseo Fishcalibur DashRoll 1: 18559799116739757
+      Perseo Fishcalibur PrimaryAttack Perseo 3: -6110443609596414284
+      Perseo Fishcalibur Sleep 0: 6284774764691163675
+      Perseo Fishcalibur PrimaryAttack Perseo 17: -1233158451867264887
+      Perseo Fishcalibur Interact 7: 6244522341323443124
+      Perseo Fishcalibur Sleep 4: -1981174940217711918
+      Perseo Fishcalibur DashRoll 5: 6385065624459240617
+      Perseo Fishcalibur WallClimb 3: -8882329469183181742
+      Perseo Fishcalibur Sleep 2: 1212527270239892826
+      Perseo Fishcalibur FallingDown 9: 5338216393616789198
+      Perseo Fishcalibur Interact 3: 3784785862890133097
+      Perseo Fishcalibur Interact 2: -1555604100461596413
+      Perseo Fishcalibur Interact 4: -1407061781172222146
+      Perseo Fishcalibur Interact 0: 3532460764386843611
+      Perseo Fishcalibur PrimaryAttack Perseo 2: 1834908741861551547
+      Perseo Fishcalibur Sleep 7: -8867101638993998236
+      Perseo Fishcalibur CrouchWalk 11: 3422162894050202938
+      Perseo Fishcalibur WallGrab 6: 7644235660918914372
+      Perseo Fishcalibur DeadByFall 0: 8774196065165195433
+      Perseo Fishcalibur PrimaryAttack Perseo 6: -3610896507045130026
+      Perseo Fishcalibur Run 5: 8823152113440658561
+      Perseo Fishcalibur WallClimb 10: -2373136456716139426
+      Perseo Fishcalibur Run 1: 5137033971560594576
+      Perseo Fishcalibur WallClimb 9: 5905130698462733901
+      Perseo Fishcalibur DodgeRoll 0: 523311802541728578
+      Perseo Fishcalibur LowKnockback 3: -6030368106148766180
+      Perseo Fishcalibur Empty: -2520055713547326331
+      Perseo Fishcalibur PrimaryAttack Weapon 6: -6062238867907942609
+      Perseo Fishcalibur WallGrab 2: -1229740230414643207
+      Perseo Fishcalibur CrouchIdle 3: 3486854096702827482
+      Perseo Fishcalibur FallingDown 6: 9008237099899337835
+      Perseo Fishcalibur CrouchWalk 1: 3833352738959254858
+      Perseo Fishcalibur WallGrab 1: -1712017286023444322
+      Perseo Fishcalibur PrimaryAttack Perseo 16: -9038718268292786211
+      Perseo Fishcalibur DeadByDamage 10: 6502150449038239965
+      Perseo Fishcalibur CrouchWalk 7: 6429462629888674823
+      Perseo Fishcalibur Idle 1: 3014232991418710061
+      Perseo Fishcalibur PrimaryAttack Perseo 9: -1927511693051546826
+      Perseo Fishcalibur Walk 1: 6920590343763016869
+      Perseo Fishcalibur WallGrab 10: 7721568752847914916
+      Perseo Fishcalibur PrimaryAttack Weapon 9: 2234115233746168252
+      Perseo Fishcalibur CrouchWalk 3: -6982814441624098863
+      Perseo Fishcalibur WallGrab 9: -9020271674954722828
+      Perseo Fishcalibur DashRoll 4: -3765627252572953830
+      Perseo Fishcalibur Walk 2: -623525884416799864
+      Perseo Fishcalibur JumpRun 1: -5353697001266369498
+      Perseo Fishcalibur Walk 4: -5858995247892307514
+      Perseo Fishcalibur Run 0: -2402175395354047600
+      Perseo Fishcalibur JumpIdle 2: 780259277920448944
+      Perseo Fishcalibur LedgeGrab 0: -3737383151813605666
+      Perseo Fishcalibur PrimaryAttack Weapon 1: -8624936697876478630
+      Perseo Fishcalibur PrimaryAttack Perseo 10: -192961113843799793
+      Perseo Fishcalibur HihgKnockback 1: -2573788222101381303
+      Perseo Fishcalibur Landing 3: -5090905945775236835
+      Perseo Fishcalibur DeadByDamage 4: -7979128465294211712
+      Perseo Fishcalibur DeadByDamage 5: -297851696624587410
+      Perseo Fishcalibur Sleep 1: -630258079435482328
+      Perseo Fishcalibur DeadByDamage 7: 2385009220522762678
+      Perseo Fishcalibur CrouchIdle 2: 5418008045384117559
+      Perseo Fishcalibur JumpRun 0: 4583936428712001194
+      Perseo Fishcalibur Walk 5: 3284643405282251112
+      Perseo Fishcalibur Run 4: 8672108628613179406
+      Perseo Fishcalibur WallGrab 11: 3740352207322107794
+      Perseo Fishcalibur LedgeGrab 1: 6545499785485322946
+      Perseo Fishcalibur CrouchIdle 1: -791905951512859493
+      Perseo Fishcalibur DodgeRoll 2: 7686245867063699989
+      Perseo Fishcalibur PrimaryAttack Weapon 3: -67429982221080878
+      Perseo Fishcalibur PrimaryAttack Perseo 14: 5163242994964387602
+      Perseo Fishcalibur WallClimb 7: 3849482135137007380
+      Perseo Fishcalibur FallingDown 0: 4229750888077157109
+      Perseo Fishcalibur Interact 1: -7327162615442670851
+      Perseo Fishcalibur DeadByDamage 3: 2917370781328035055
+      Perseo Fishcalibur WallClimb 8: 7879306214790266982
+      Perseo Fishcalibur PrimaryAttack Weapon 7: 7269450192484667145
+      Perseo Fishcalibur HihgKnockback 8: -3584928703048625166
+      Perseo Fishcalibur Sleep 6: 5964642183836709893
+      Perseo Fishcalibur PrimaryAttack Weapon 14: 4793116275199011854
+      Perseo Fishcalibur PrimaryAttack Perseo 11: 996834770869208897
+      Perseo Fishcalibur PrimaryAttack Weapon 4: -3184145337797284465
+      Perseo Fishcalibur Interact 6: -2316864611425260935
+      Perseo Fishcalibur Sleep 10: -7159337133870983271
+      Perseo Fishcalibur JumpEnd 1: -6238223255515249947
+      Perseo Fishcalibur DashRoll 0: -5824109796393494700
+      Perseo Fishcalibur WallGrab 8: 2660592304709858607
+      Perseo Fishcalibur PrimaryAttack Weapon 18: -7884813015390248317
+      Perseo Fishcalibur PrimaryAttack Perseo 12: -9103936687361319497
+      Perseo Fishcalibur CrouchWalk 9: 658807035419198975
+      Perseo Fishcalibur DeadByDamage 9: 6715856257589225006
+      Perseo Fishcalibur Walk 0: -8135469298359720822
+      Perseo Fishcalibur PrimaryAttack Weapon 16: -7245912982687371876
+      Perseo Fishcalibur DeadByDamage 2: -4012451218461117937
+      Perseo Fishcalibur PrimaryAttack Weapon 13: 4351903450203887223
+      Perseo Fishcalibur CrouchWalk 8: -7251936130119260196
+      Perseo Fishcalibur PrimaryAttack Weapon 8: -1121310909509173359
+      Perseo Fishcalibur WallClimb 5: 7829483086000477017
+      Perseo Fishcalibur FallingDown 2: 5123153555350181770
+      Perseo Fishcalibur CrouchWalk 4: 5631757630390060973
+      Perseo Fishcalibur WallClimb 2: 5481508546221153142
+      Perseo Fishcalibur DodgeRoll 1: -8183643485686826219
+      Perseo Fishcalibur PrimaryAttack Perseo 15: -9208782272971725377
+      Perseo Fishcalibur Idle 0: 7484836443133406014
+      Perseo Fishcalibur CrouchWalk 0: 7288118955549744667
+      Perseo Fishcalibur PrimaryAttack Weapon 12: 4680409969648169937
+      Perseo Fishcalibur PrimaryAttack Perseo 1: -8064666417918064791
+      Perseo Fishcalibur Idle 2: -8020672986163396849
+      Perseo Fishcalibur JumpEnd 3: 7432284573799749507
+      Perseo Fishcalibur LedgeHang 1: 3548257825586840263
+      Perseo Fishcalibur PrimaryAttack Weapon 2: 3514668095002440772
+      Perseo Fishcalibur HihgKnockback 3: 8853671218095609271
+      Perseo Fishcalibur LedgeClimb 0: 6235956975649236942
+      Perseo Fishcalibur HihgKnockback 0: -5721203956969087603
+      Perseo Fishcalibur WallClimb 11: -3227736356760392924
+      Perseo Fishcalibur PrimaryAttack Weapon 15: 6668757923715564681
+      Perseo Fishcalibur JumpRun 2: -1191519461900713886
+      Perseo Fishcalibur LowKnockback 0: 3274327961570228932
+      Perseo Fishcalibur HihgKnockback 6: -1502502305931272447
+      Perseo Fishcalibur DeadByDamage 1: -3284897597929757786
+      Perseo Fishcalibur CrouchWalk 2: 2942011438388302029
+      Perseo Fishcalibur Landing 2: -8713857620512693597
+      Perseo Fishcalibur PrimaryAttack Perseo 0: 3729679888706065332
+      Perseo Fishcalibur Run 3: 6613263600766918643
+      Perseo Fishcalibur DeadByDamage 0: 129376181933807110
+      Perseo Fishcalibur PrimaryAttack Weapon 5: 46380711900537103
+      Perseo Fishcalibur LedgeClimb 2: -2195447398620717156
+      Perseo Fishcalibur DashRoll 3: -8924079788499387879
+      Perseo Fishcalibur JumpEnd 2: -40543773546835085
+      Perseo Fishcalibur DashRoll 2: -3867719063174872171
+      Perseo Fishcalibur FallingDown 8: 6855903986686519848
+      Perseo Fishcalibur JumpIdle 1: -5173855167579069756
+      Perseo Fishcalibur WallClimb 6: 1585438115681898865
+      Perseo Fishcalibur PrimaryAttack Weapon 11: -8753778766901307861
+      Perseo Fishcalibur Sleep 8: -5958235983884518794
+      Perseo Fishcalibur HihgKnockback 7: -9005785498038945506
+      Perseo Fishcalibur JumpEnd 0: -3047110507843780828
+      Perseo Fishcalibur WallClimb 4: -4162285204709409519
+      Perseo Fishcalibur Sleep 9: 4223064108468158395
+      Perseo Fishcalibur Walk 3: 7579654591561663274
+      Perseo Fishcalibur FallingDown 1: 8303280299407888440
+      Perseo Fishcalibur Landing 0: 5577601563519539427
+      Perseo Fishcalibur LedgeHang 0: 4964685860100294726
+      Perseo Fishcalibur Sleep 3: -4023961762868333529
+      Perseo Fishcalibur CrouchWalk 6: -130034393754612293
+      Perseo Fishcalibur HihgKnockback 4: 1840512393510412261
+      Perseo Fishcalibur PrimaryAttack Weapon 10: -4156002396647709727
+      Perseo Fishcalibur PrimaryAttack Perseo 8: 3115716006979227955
+      Perseo Fishcalibur PrimaryAttack Perseo 7: 6211929441954580019
+      Perseo Fishcalibur FallingDown 4: 3278743940400227125
+      Perseo Fishcalibur Interact 5: 6019243365446240655
+      Perseo Fishcalibur CrouchWalk 10: -5366944569209560643
+      Perseo Fishcalibur PrimaryAttack Perseo 4: -7479353503539266162
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

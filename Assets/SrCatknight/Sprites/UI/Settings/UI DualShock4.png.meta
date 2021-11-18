@@ -837,6 +837,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2830,6 +2831,96 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      UI DualShock4 R 0: 4179241845575267045
+      UI DualShock4 Logo 1: 8659434124434078291
+      UI DualShock4 L 10: -171083797711590913
+      UI DualShock4 Touchpad 12: -38161536005690197
+      UI DualShock4 Circle 1: -376209339560334854
+      UI DualShock4 Touchpad 3: 1756318475215072421
+      UI DualShock4 L 12: -1667480089675319521
+      UI DualShock4 L3 0: -1149897913738523379
+      UI DualShock4 L1 1: -7718218989600508365
+      UI DualShock4 Buttons Selection A 2: 2534195337955688889
+      UI DualShock4 L 13: 9090331193929179866
+      UI DualShock4 R 4: -2602507694642228739
+      UI DualShock4 L 7: 7804611432828634263
+      UI DualShock4 Options Blank: -5841648346496035927
+      UI DualShock4 R 6: -2661005670237116843
+      UI DualShock4 Buttons Selection B 0: -4582252927166022098
+      UI DualShock4 L 1: 6590604313528790505
+      UI DualShock4 Dpad Dark 4: -6323542474354467690
+      UI DualShock4 L 0: -9039617762279953647
+      UI DualShock4 Circle 0: -9072292437164092024
+      UI DualShock4 Logo 0: -4422763489165557163
+      UI DualShock4 R 1: 4271845910450789849
+      UI DualShock4 L1 0: 4933356129704830080
+      UI DualShock4 Touchpad 6: 6821371203553021828
+      UI DualShock4 R1 0: -3130925527362865751
+      UI DualShock4 Touchpad 4: -1935403106471410954
+      UI DualShock4 Touchpad 5: 6831248298932238849
+      UI DualShock4 L 5: 7887196000852081131
+      UI DualShock4 L 8: 465852118494445559
+      UI DualShock4 Dpad Light 4: -8905197640399607315
+      UI DualShock4 Touchpad 9: -6250906531263759598
+      UI DualShock4 L 2: 3052551702286034586
+      UI DualShock4 Touchpad 2: 18214057754570975
+      UI DualShock4 L 3: -7161000386562103264
+      UI DualShock4 Touchpad 10: -8349383931831479947
+      UI DualShock4 Square 1: -3813864827922075556
+      UI DualShock4 Buttons Selection B 1: 8575470317108395543
+      UI DualShock4 Cross 0: -3568978557184209801
+      UI DualShock4 R 5: 3683621129334328559
+      UI DualShock4 R 10: -6867422937959073476
+      UI DualShock4 R 13: -2640768605791983687
+      UI DualShock4 Touchpad 8: 1909967868048256980
+      UI DualShock4 L2 0: -5500815305470296943
+      UI DualShock4 R 11: -730682199767208473
+      UI DualShock4 Dpad Light 2: -2720508863800159410
+      UI DualShock4 Buttons Selection A 4: -835581658203899114
+      UI DualShock4 Buttons Selection B 4: -1753656535987508059
+      UI DualShock4 R 12: -4381400999696515487
+      UI DualShock4 R3 1: 256749677312217604
+      UI DualShock4 R 9: -6592144021455310686
+      UI DualShock4 Square 0: 2361125612959820784
+      UI DualShock4 Triangle 1: -1536652169441632028
+      UI DualShock4 Dpad Dark 1: -1979256911304267238
+      UI DualShock4 Touchpad 7: 5952253943036760857
+      UI DualShock4 Dpad Light 0: 5631106474849906855
+      UI DualShock4 R1 1: 427487560884222511
+      UI DualShock4 R3 0: -757102372238892737
+      UI DualShock4 R 7: -8530219649122126788
+      UI DualShock4 L 6: 5820914299168742613
+      UI DualShock4 Triangle 0: -8043216947136310746
+      UI DualShock4 Dpad Dark 3: 1575368426884567640
+      UI DualShock4 Share: 9052608966000756066
+      UI DualShock4 Dpad Light 1: 1441069111607840193
+      UI DualShock4 R2 0: -7749964353774763595
+      UI DualShock4 R 2: 7238210627268324428
+      UI DualShock4 Touchpad 1: -1885711930898747816
+      UI DualShock4 Buttons Selection B 3: 490793963383380529
+      UI DualShock4 Touchpad 0: -8190165820045264361
+      UI DualShock4 L 11: 3610703995974501231
+      UI DualShock4 R 8: 4286694694732505446
+      UI DualShock4 Dpad Dark 2: -8930119309124443195
+      UI DualShock4 L2 1: -8906469827456368776
+      UI DualShock4 Dpad Light 3: -572717230753750397
+      UI DualShock4 Dpad Dark 0: -6050050280662989682
+      UI DualShock4 R2 1: 3948675636954725003
+      UI DualShock4 Buttons Selection A 0: -2134498659894686947
+      UI DualShock4 Buttons Selection B 2: 8004087741769746626
+      UI DualShock4 Touchpad 13: 2454809595564509672
+      UI DualShock4 L 4: -7002674945290455685
+      UI DualShock4 L3 1: -7668512394204439579
+      UI DualShock4 Buttons Selection A 3: 3275900361810341704
+      UI DualShock4 Touchpad 11: -680475194072893836
+      UI DualShock4 L 9: 2373647648175911297
+      UI DualShock4 Buttons Simple 0: -9176577259685101619
+      UI DualShock4 Buttons Simple 1: -4241529839921538966
+      UI DualShock4 Buttons Selection A 1: -7530636845534841405
+      UI DualShock4 R 3: -4304146103712139972
+      UI DualShock4 Options: -3720001613543066427
+      UI DualShock4 Cross 1: 7325756343741069135
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

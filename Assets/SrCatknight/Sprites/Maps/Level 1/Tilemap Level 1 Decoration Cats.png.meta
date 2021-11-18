@@ -90,6 +90,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -664,6 +665,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tilemap Level 1 Decoration Cats_21: 840017653717117670
+      Tilemap Level 1 Decoration Cats_5: -6533832029275518375
+      Tilemap Level 1 Decoration Cats_15: 8009470973955906316
+      Tilemap Level 1 Decoration Cats_9: -5247734825524954262
+      Tilemap Level 1 Decoration Cats_3: 7484720687014476481
+      Tilemap Level 1 Decoration Cats_13: -6113954333707227409
+      Tilemap Level 1 Decoration Cats_19: -3139447989252985284
+      Tilemap Level 1 Decoration Cats_11: 1910837301033506336
+      Tilemap Level 1 Decoration Cats_14: 5884828757109623783
+      Tilemap Level 1 Decoration Cats_8: 1520048710878686059
+      Tilemap Level 1 Decoration Cats_20: 1497589442473901977
+      Tilemap Level 1 Decoration Cats_7: -8495934920770241588
+      Tilemap Level 1 Decoration Cats_1: -566958683954452171
+      Tilemap Level 1 Decoration Cats_6: -3417898981717439185
+      Tilemap Level 1 Decoration Cats_16: 5106705787806505967
+      Tilemap Level 1 Decoration Cats_12: -4443826677012809810
+      Tilemap Level 1 Decoration Cats_17: 7836431868247162065
+      Tilemap Level 1 Decoration Cats_2: 9187697793272014024
+      Tilemap Level 1 Decoration Cats_4: -8326988714761788650
+      Tilemap Level 1 Decoration Cats_0: -8201250097902844741
+      Tilemap Level 1 Decoration Cats_18: -3663818223314569487
+      Tilemap Level 1 Decoration Cats_10: 6162170060346520721
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -870,6 +870,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -6736,6 +6737,281 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 0 Interactable Trampoline 2: 5093554941548091580
+      Level 0 Damage Saw 0: -8088218302311463639
+      Level 0 Interactable Tutorial Door 5: 1994331795772207091
+      Level 0 Projectile CannonBall 2: 4869260199587910475
+      Level 0 Checkpoint Flag 12: -5622436357824824424
+      Level 0 Interactable Lever 23: -3174785781042619172
+      Level 0 Item Fishcalibur 5: 4119431001992201811
+      Level 0 Platform C0: -6353728893332639612
+      Level 0 Damage TurnBall 0: 2755984721889651931
+      Level 0 Checkpoint Flag 13: -8910746104037819392
+      Level 0 Damage Spike Multiple 1: 6178326383609479434
+      Level 0 Interactable Tutorial Door 20: 6357758969644783676
+      Level 0 Damage Bomb 1: 1888151237252956275
+      Level 0 Interactable Tutorial Door 1: -7095400527514105372
+      Level 0 Interactable Tutorial Door 28: 4420997487865047059
+      Level 0 Damage Zone Fire 6: -4978351388628823208
+      Level 0 DeathZone Lava 9: 488108404065414797
+      Level 0 Platform B1: -726110394796340926
+      Level 0 Item Health 1: -7939822066178416991
+      Level 0 Item Tutorial Key 3: 7098835510027220978
+      Level 0 Interactable Tutorial Door 22: 7886336467828737370
+      Level 0 Damage Spike Animated 4: 7429292603251230988
+      Level 0 Damage Zone Fire 7: -2074412192116264444
+      Level 0 Interactable Tutorial Door 18: 3946951932982352375
+      Level 0 Item Tutorial Key 1: 6298454962653389600
+      Level 0 Damageable Chest 2: 2104226519162891348
+      Level 0 Damage Saw 1: -2621849424258614235
+      Level 0 Decotarion Chain 3: 3916791568119954995
+      Level 0 Damage Stalactite 0: 4301447308153287170
+      Level 0 Damage TurnBall 1: 2972109574056211641
+      Level 0 Interactable Tutorial Door 41: 8130117785013996474
+      Level 0 Checkpoint Flag 4: -1348018638373274709
+      Level 0 Damage Saw 6: -3946623141122440404
+      Level 0 Decotarion Chain 4: -3252508434378949074
+      Level 0 Interactable Tutorial Door 9: 6519285786310818299
+      Level 0 Interactable Tutorial Door 58: 8991431716365139558
+      Level 0 Damage Spike Simple 1: 6436590990410607052
+      Level 0 Interactable Tutorial Door 32: 5875686861738160012
+      Level 0 Damage Saw 4: -390522824492312360
+      Level 0 Interactable Tutorial Door 53: -2934950019978817946
+      Level 0 Interactable Teleporter 2: 12915926599016705
+      Level 0 Interactable Tutorial Door 19: 4032778020977380697
+      Level 0 Item Shield 2: -418223513662847815
+      Level 0 Interactable Tutorial Door 34: -1020036480124034333
+      Level 0 DeathZone Lava 4: 6656475596091542803
+      Level 0 Item Fishcalibur 1: 3719338071128170122
+      Level 0 Interactable Tutorial Door 48: -7575607214886526603
+      Level 0 Damage Spike Animated 5: 2382021573258702325
+      Level 0 Platform D3B: -3192584177785283206
+      Level 0 Damage Spike Simple 0: -430959830850435788
+      Level 0 Interactable Lever 15: -9001883580133384283
+      Level 0 Item Collectable 4: 7833305887011136323
+      Level 0 Interactable Lever 22: -7836206041657092774
+      Level 0 Damage Zone Fire 2: -5009255372599231332
+      Level 0 Interactable Tutorial Door 51: 6983058489794633127
+      Level 0 Damage Spike Multiple 4: -6462662516924437124
+      Level 0 Damage Saw 2: -8841112718189429616
+      Level 0 DeathZone Lava 2: -5301556810127577584
+      Level 0 Item Tutorial Key 0: -8618464105962012059
+      Level 0 Interactable Trampoline 3: -3111131012922944927
+      Level 0 Item Collectable 0: -117873198943897087
+      Level 0 Decotarion SawRail 2: 5973220255630831731
+      Level 0 DeathZone LavaComplement 6: 3104932078455194805
+      Level 0 Damage Saw 10: -6341364986863654191
+      Level 0 DeathZone LavaComplement 10: 4890802882892743641
+      Level 0 Damage Bomb 7: -7098627224149952592
+      Level 0 Damage Saw 7: -6028588147745336151
+      Level 0 Interactable Tutorial Door 56: 7602234056967697708
+      Level 0 Decotarion Chain 2: 2230271031572518838
+      Level 0 DeathZone LavaComplement 3: 2037714557303079568
+      Level 0 DeathZone Lava 5: -5059002718820429435
+      Level 0 Damage Bomb 6: 4631076532193464958
+      Level 0 Platform A1: 1701577970138341949
+      Level 0 Damage Bomb 5: 615418427476204577
+      Level 0 Interactable Trampoline 0: 4074341643561881855
+      Level 0 DeathZone LavaComplement 2: -7195680704064403043
+      Level 0 DeathZone LavaComplement 8: 3066285474969969728
+      Level 0 Projectile CannonBall 7: 5336388798428046047
+      Level 0 Damage Spike Animated 3: -165141587237702542
+      Level 0 Damage Saw 8: 4385484873024505518
+      Level 0 Item Health 2: 4097122711336080544
+      Level 0 Item Fishcalibur 0: 1614068451777492295
+      Level 0 Item Fishcalibur 2: 6355678661535816598
+      Level 0 Item Tutorial Key 2: 1989741625261539236
+      Level 0 Interactable Lever 18: 8963154867034535263
+      Level 0 Checkpoint Flag 3: -7168996020167491865
+      Level 0 Interactable Lever 11: 4716576619199296208
+      Level 0 Interactable Tutorial Door 52: 8084085533888694318
+      Level 0 Damage TurnBall 3: 4705002396063863519
+      Level 0 Projectile CannonBall 10: 9043612402676670445
+      Level 0 Interactable Teleporter 0: -2017879770636606926
+      Level 0 Damage Saw 5: 6589396192754607378
+      Level 0 Checkpoint Flag 2: 4544396674497134607
+      Level 0 Interactable Tutorial Door 15: 1092021634686074018
+      Level 0 Interactable Tutorial Door 40: 5519706234310414060
+      Level 0 Projectile CannonBall 11: -4052135655915781586
+      Level 0 DeathZone LavaComplement 9: -3214336782401031106
+      Level 0 Checkpoint Flag 9: 7126502855879120989
+      Level 0 Damage TurnBall 2: -855934526520005554
+      Level 0 Damage Bomb 2: 4345752911948356935
+      Level 0 Damage Spike Multiple 3: 7513302987960746062
+      Level 0 Interactable Tutorial Door 11: -2821419612784169206
+      Level 0 Interactable Tutorial Door 17: 7601103813994254252
+      Level 0 Decotarion Chain 1: -1315615549719162876
+      Level 0 Item Shield 4: 3558110390272764040
+      Level 0 Damage Spike Animated 8: -905410422731132048
+      Level 0 Checkpoint Flag 16: -7124806098513614467
+      Level 0 Checkpoint Flag 10: -7571157642951858486
+      Level 0 Item Health 3: 8496696358125855441
+      Level 0 Damage Stalactite 2: 1424953940952826148
+      Level 0 DeathZone Lava 1: 5056094707288285961
+      Level 0 Interactable Lever 6: -3887232338757100176
+      Level 0 DeathZone LavaComplement 1: -3403018439751450042
+      Level 0 Item Shield 3: 982882232746934915
+      Level 0 Damage Spike Simple 2: 8492784607801304139
+      Level 0 Damage Cannon 5: 7676904791552777865
+      Level 0 Interactable Tutorial Door 29: 7952780214041312678
+      Level 0 DeathZone Lava 11: -4413900915636426485
+      Level 0 Damage Spike Simple 5: 6679281739704000121
+      Level 0 Damage Cannon 4: 7767727167383254538
+      Level 0 Checkpoint Flag 0: 4764882281566535737
+      Level 0 Item Collectable 1: 681490506182652092
+      Level 0 Interactable Tutorial Door 50: 7357182412706161005
+      Level 0 Damage Saw 3: 3568015410920007717
+      Level 0 DeathZone Lava 7: 7731887447868318959
+      Level 0 Interactable Tutorial Door 25: 6292325636496252459
+      Level 0 Interactable Lever 21: -5188286085486203613
+      Level 0 Interactable Tutorial Door 7: -50836075655600786
+      Level 0 Interactable Tutorial Door 14: -2949021659829358101
+      Level 0 Interactable Tutorial Door 2: 2648077007796501921
+      Level 0 Damage Chainedball 0: -3893309386418508176
+      Level 0 Damage Spike Animated 11: -6534032437695198583
+      Level 0 Interactable Teleporter 6: -4206695325348517446
+      Level 0 DeathZone Lava 6: 9165467293808965325
+      Level 0 Interactable Trampoline 4: 8976105124458144686
+      Level 0 Interactable Tutorial Door 12: -3266431459470649131
+      Level 0 Platform B0: -7577633315679458989
+      Level 0 Interactable Lever 2: 6970064848763107956
+      Level 0 Checkpoint Flag 15: 957016738119190847
+      Level 0 Interactable Trampoline 1: -2519591893924336107
+      Level 0 Interactable Teleporter 5: 445733862473040482
+      Level 0 Interactable Teleporter 7: 1543029358716517856
+      Level 0 Damage Bomb 4: -8673385115141887140
+      Level 0 Item Collectable 3: -3580191260893697698
+      Level 0 Interactable Lever 8: -5403509596038520617
+      Level 0 Interactable Tutorial Door 10: 5456393267132733861
+      Level 0 Interactable Tutorial Door 31: 3420872064379803998
+      Level 0 Checkpoint Flag 8: -9170800688024282172
+      Level 0 Item Health 0: -5352627687345963583
+      Level 0 Interactable Tutorial Door 60: -4897167661290431536
+      Level 0 DeathZone Lava 3: 6494135632944413647
+      Level 0 Platform D1A: -772424556084567307
+      Level 0 Item Fishcalibur 3: 749705742248296943
+      Level 0 Projectile CannonBall 9: -6085051297315274816
+      Level 0 Damage Cannon 3: -1578589523011288525
+      Level 0 Interactable Lever 0: 1743000842741342051
+      Level 0 Interactable Lever 12: -579161919976678766
+      Level 0 Damage Zone Fire 3: 8678122293648388052
+      Level 0 Damageable Chest 4: 8380506457951010449
+      Level 0 Interactable Lever 5: 315148862199062189
+      Level 0 Interactable Tutorial Door 26: -6600555946103761999
+      Level 0 Damage Pendulum 0: 3871526986256964302
+      Level 0 DeathZone LavaComplement 4: -4010009568737615255
+      Level 0 Decotarion SawRail 3: -3855186409632307552
+      Level 0 Damageable Chest 1: -2505452427770052956
+      Level 0 Item Fishcalibur 4: 8719497589649698651
+      Level 0 Damage Spike Animated 2: -3865189639580948926
+      Level 0 Damage Cannon 2: -169071336572964920
+      Level 0 Damage Cannon 6: 4972394735014376552
+      Level 0 Interactable Chocolate 0: -3222785662747008727
+      Level 0 Damage Spike Multiple 2: 7044418485538385441
+      Level 0 Damage Zone Fire 1: -5212140192398719024
+      Level 0 Interactable Tutorial Door 44: 6902277302832657204
+      Level 0 Projectile CannonBall 4: -4696339085716971106
+      Level 0 Projectile CannonBall 6: 4115022402265427144
+      Level 0 Damage Cannon 1: -5286512987001829171
+      Level 0 Damage Spike Animated 1: -5532085278611098722
+      Level 0 Interactable Lever 19: 5107878183057035654
+      Level 0 Interactable Tutorial Door 0: -1536581672765992083
+      Level 0 DeathZone LavaComplement 7: -1773903618430756292
+      Level 0 DeathZone Lava 10: 4309584161555590517
+      Level 0 Checkpoint Flag 14: 9072838132370779088
+      Level 0 Interactable Tutorial Door 35: -1769217755727767508
+      Level 0 Damage Stalactite 5: 7427759606687280948
+      Level 0 Interactable Tutorial Door 54: -7996527747995520840
+      Level 0 Projectile CannonBall 8: -5595837194879671791
+      Level 0 Interactable Lever 14: -5139277842144179396
+      Level 0 Interactable Lever 9: 4549741215921045855
+      Level 0 Interactable Tutorial Door 55: -509336056879220800
+      Level 0 Damage Bomb 3: 7083563171559440252
+      Level 0 Item Collectable 5: 6600724901149304932
+      Level 0 Item Collectable 2: -2518496799757214972
+      Level 0 Platform A0: 4795848647256250266
+      Level 0 Item Shield 0: -2316988832475854606
+      Level 0 Interactable Tutorial Door 57: 8345229257799296177
+      Level 0 Projectile CannonBall 3: -2425509878051221306
+      Level 0 Projectile CannonBall 1: 4006349834752438070
+      Level 0 Damage Spike Simple 4: 1848518019943808993
+      Level 0 Interactable Tutorial Door 6: 3600467902795656439
+      Level 0 Interactable Tutorial Door 16: -3032228553594192365
+      Level 0 Interactable Tutorial Door 49: 7640057933017399370
+      Level 0 Interactable Tutorial Door 42: 8916073211555122562
+      Level 0 Decotarion SawRail 1: 1558048864218554185
+      Level 0 Damage Bomb 0: -6125226609234999938
+      Level 0 Damage Cannon 0: -9075045101643371410
+      Level 0 Damage Axis 0: -7316692527416802000
+      Level 0 Damage Spike Animated 0: 8709579269545185952
+      Level 0 Platform C1: -6415703737905558102
+      Level 0 Interactable Lever 20: 4493408273926042454
+      Level 0 Platform D1B: -4119675418711123007
+      Level 0 Damage Spike Multiple 5: 3369138940479857042
+      Level 0 Decotarion Chain 0: 3031857943904237200
+      Level 0 Platform D2A: -1729654585618715059
+      Level 0 Interactable Tutorial Door 47: 4886111396569994034
+      Level 0 Interactable Teleporter 3: -6513962506640435821
+      Level 0 Damageable Chest 0: 4067852297904520631
+      Level 0 Checkpoint Flag 11: -2151919376212544837
+      Level 0 Checkpoint Flag 1: 352268713758739272
+      Level 0 Interactable Tutorial Door 39: -1107166287269939367
+      Level 0 Interactable Teleporter 4: -7755426727518466519
+      Level 0 Checkpoint Flag 5: -8351511652169068978
+      Level 0 Interactable Lever 7: -7981067950231824509
+      Level 0 Damage Saw 9: -4983354111382863978
+      Level 0 Interactable Tutorial Door 3: 6867122649138266397
+      Level 0 Interactable Tutorial Door 45: 6772573501084943091
+      Level 0 Interactable Lever 16: -8180943970574756733
+      Level 0 Interactable Tutorial Door 24: 9035068777307220630
+      Level 0 Decotarion SawRail 0: -7084850634870827293
+      Level 0 Interactable Tutorial Door 13: 8754848852762355674
+      Level 0 Checkpoint Flag 7: -4623514384586560337
+      Level 0 Item Shield 1: 617129003120133651
+      Level 0 Interactable Tutorial Door 37: 3038907071067143691
+      Level 0 DeathZone LavaComplement 5: -6194088873754683671
+      Level 0 Interactable Tutorial Door 43: 4924228139893652457
+      Level 0 Interactable Lever 17: -5188264528754082116
+      Level 0 Interactable Lever 10: 3537922155918936873
+      Level 0 Interactable Tutorial Door 21: -2607268209026398296
+      Level 0 Damage Stalactite 4: 6552001084047417500
+      Level 0 DeathZone LavaComplement 0: -6822298804547092221
+      Level 0 Damage Zone Fire 4: -383962791781722031
+      Level 0 DeathZone LavaComplement 11: 6445914011153964367
+      Level 0 Interactable Tutorial Door 23: 6794831125274503942
+      Level 0 Interactable Lever 13: -3813206077864810473
+      Level 0 Platform D2B: 2659834155337826
+      Level 0 Damage Stalactite 1: 4529830897875196697
+      Level 0 Interactable Tutorial Door 4: -6577593895262385953
+      Level 0 Interactable Teleporter 1: 4128057369927765430
+      Level 0 Platform D3A: -7283623022509794575
+      Level 0 Interactable Lever 4: 6724739669717640018
+      Level 0 Checkpoint Flag 6: 7785997873338181290
+      Level 0 Interactable Lever 1: -5298286559886995318
+      Level 0 Damage Spike Animated 7: -7781105072553470928
+      Level 0 Damage Stalactite 3: -2409930931865668484
+      Level 0 Damage Spike Animated 6: 7656625047528076884
+      Level 0 Interactable Tutorial Door 38: 6316585809067852013
+      Level 0 Damage Spike Animated 10: -430882719876538390
+      Level 0 Damageable Chest 3: 3710873793033004620
+      Level 0 Damage Spike Animated 9: -2668802976596621801
+      Level 0 Damage Zone Fire 5: 3912237309650074899
+      Level 0 Interactable Tutorial Door 36: 2068932379650206118
+      Level 0 Interactable Lever 3: -2235117101189559863
+      Level 0 DeathZone Lava 0: -3248667831729898040
+      Level 0 Interactable Tutorial Door 27: -8457805905172977365
+      Level 0 Interactable Tutorial Door 59: 8959427730504570720
+      Level 0 Damage Spike Simple 3: -8404659224159932057
+      Level 0 Interactable Tutorial Door 33: -4300141571288249626
+      Level 0 DeathZone Lava 8: 1416154976763117574
+      Level 0 Projectile CannonBall 0: -4288986441383167170
+      Level 0 Projectile CannonBall 5: -3770970674731431706
+      Level 0 Interactable Tutorial Door 46: 683670745231960952
+      Level 0 Damage Spike Multiple 0: 4656192745021457914
+      Level 0 Interactable Tutorial Door 30: -592660575945368985
+      Level 0 Damage Zone Fire 0: -950113526640728584
+      Level 0 Interactable Tutorial Door 8: 6029667001473535960
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

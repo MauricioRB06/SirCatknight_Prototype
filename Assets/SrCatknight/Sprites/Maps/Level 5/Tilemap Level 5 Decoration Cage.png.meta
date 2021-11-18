@@ -36,6 +36,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -232,6 +233,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tilemap Level 5 Decoration Cage: 418272662460499851
+      Tilemap Level 5 Decoration Cage_2: 9083878700722146477
+      Tilemap Level 5 Decoration Cage_1: 5948423609085259217
+      Tilemap Level 5 Decoration Cage_3: -144641073907760109
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

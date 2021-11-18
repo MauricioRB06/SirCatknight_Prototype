@@ -726,6 +726,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2866,6 +2867,103 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      UI XboxGamepad LS 0: 6888336986398566252
+      UI XboxGamepad LS 13: 4055344734741273368
+      UI XboxGamepad RS 13: 5817374384700059456
+      UI XboxGamepad Buttons Simple E 1: 4867539749963752548
+      UI XboxGamepad LS 7: -7637102791700830610
+      UI XboxGamepad Buttons Simple D 2: 6575581150483004675
+      UI XboxGamepad B 0: 5987155128577699616
+      UI XboxGamepad Share 1: -2407742655385969850
+      UI XboxGamepad Buttons Simple A 4: 7914004368398266483
+      UI XboxGamepad Dpad Dark 4: 4262611142605292188
+      UI XboxGamepad Y 1: -6299232449996191254
+      UI XboxGamepad Buttons Simple A 2: -8692566088041362045
+      UI XboxGamepad LS 3: -2583540309646973031
+      UI XboxGamepad R 0: -5200745624462575828
+      UI XboxGamepad Buttons Simple B 4: -3701826118739510572
+      UI XboxGamepad Buttons Simple D 3: -8841392379474928893
+      UI XboxGamepad Buttons Simple E 0: -7161361413072842022
+      UI XboxGamepad Dpad Light 0: -8500626499312593220
+      UI XboxGamepadUI XboxGamepad RS: 7143690210410301352
+      UI XboxGamepad Y 2: -437321119808460240
+      UI XboxGamepad RS 2: 527643414967168506
+      UI XboxGamepad Dpad Light 2: -5130634266601951237
+      UI XboxGamepad A 1: 2487987921682008029
+      UI XboxGamepad RB 0: 929689933604645004
+      UI XboxGamepad Dpad Light 4: -7747757635201567029
+      UI XboxGamepad X 0: -4271551391796590192
+      UI XboxGamepad LS 6: -1893732841709264369
+      UI XboxGamepad LS 12: -5139781249830546750
+      UI XboxGamepad Buttons Simple F 1: -3245180028197878261
+      UI XboxGamepad L 1: -3036419031501344164
+      UI XboxGamepad Buttons Simple D 4: -2152338320476199106
+      UI XboxGamepad Buttons Simple A 3: 5307950966598474111
+      UI XboxGamepad Buttons Simple C 0: 3153327371131974700
+      UI XboxGamepad Buttons Simple C 1: -4540143430739390284
+      UI Xbox Logo 1: 7672532969481587447
+      UI XboxGamepad Dpad Dark 1: 9082694849810480838
+      UI XboxGamepad RS 10: -6603578153248507748
+      UI XboxGamepad LB 1: -2278192779289771736
+      UI XboxGamepad LS 8: -4148366922132500931
+      UI XboxGamepad Buttons Simple D 1: -241622300141017020
+      UI XboxGamepad Buttons Simple F 0: -3000190479496572304
+      UI XboxGamepad RS 7: -413449098513687312
+      UI XboxGamepad A 2: 4218179559558435044
+      UI XboxGamepad RS 3: 8205231772711755300
+      UI XboxGamepad Buttons Simple B 1: 8636630273597742080
+      UI XboxGamepad LS 11: 49046757642068502
+      UI XboxGamepad Buttons Simple A 1: 2355516743298218762
+      UI XboxGamepad B 1: -1502896021479436196
+      UI XboxGamepad RT 1: 1660265397784706200
+      UI XboxGamepad Dpad Dark 2: -59682677171201312
+      UI XboxGamepad LT 0: -929688375578130889
+      UI XboxGamepad LT 1: 4512186081676890482
+      UI XboxGamepad RS 12: 6205836036824456888
+      UI XboxGamepad RS 9: -8722583043682090200
+      UI XboxGamepad Buttons Simple C 3: -2515826366116249193
+      UI XboxGamepad LS 4: 5395475457659418248
+      UI XboxGamepad LS 2: 4430036523246170078
+      UI XboxGamepad LS 1: -8739794401488200603
+      UI XboxGamepad RS 11: -7863320089701234567
+      UI XboxGamepad Y 0: -7671389481695386406
+      UI XboxGamepad LS 9: 5282824173586957815
+      UI XboxGamepad B 2: 5078936113757727311
+      UI XboxGamepad Buttons Simple D 0: 200115389091962582
+      UI XboxGamepad Buttons Simple B 3: 5218234299666134983
+      UI XboxGamepad Share 0: 8528936900129951598
+      UI XboxGamepad RB 1: 2965861168596257231
+      UI XboxGamepad Menu 1: 508211031445838403
+      UI XboxGamepad RT 0: 5018826186414291688
+      UI XboxGamepad Buttons Simple A 0: 6243405441765329411
+      UI XboxGamepad Dpad Light 3: 5589900980225458773
+      UI XboxGamepad Dpad Dark 3: -6484519857031689782
+      UI XboxGamepad L 0: 2191413361628746863
+      UI XboxGamepad Buttons Simple C 2: -2931255373414636184
+      UI Xbox Logo 0: -5135771501619758535
+      UI XboxGamepad Dpad Dark 0: -1189731398389523359
+      UI XboxGamepad B 3: -4744206693456175371
+      UI XboxGamepad Buttons Simple B 0: 7588891753806122147
+      UI XboxGamepad A 3: -6807628027546205644
+      UI XboxGamepad LB 0: 5892073362974363663
+      UI XboxGamepad Y 3: -6988104561965811885
+      UI XboxGamepad RS 1: 1214903121112415452
+      UI XboxGamepad Dpad Light 1: -7570818849778111686
+      UI XboxGamepad X 3: 9048609439123001120
+      UI XboxGamepad RS 0: -2993343813016760310
+      UI XboxGamepad Menu 0: -4172046713525836439
+      UI XboxGamepad RS 6: -6663799318500948796
+      UI XboxGamepad X 1: 1839101990668610995
+      UI XboxGamepad R 1: -5060864610631710820
+      UI XboxGamepad Buttons Simple B 2: -8311815840466416655
+      UI XboxGamepad LS 5: 4371796209346008623
+      UI XboxGamepad LS 10: -138374778060805234
+      UI XboxGamepad RS 4: 2336221381794717977
+      UI XboxGamepad A 0: 8343133060173568161
+      UI XboxGamepad RS 8: 2256944135494738810
+      UI XboxGamepad Buttons Simple C 4: -4684585625235875396
+      UI XboxGamepad X 2: 5464521423993342665
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

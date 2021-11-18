@@ -24,6 +24,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -451,6 +452,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Tilemap Level 1 Decoration Food_9: 2458619756232415023
+      Tilemap Level 1 Decoration Food_11: -2746272580666897085
+      Tilemap Level 1 Decoration Food_4: 7959601024433084145
+      Tilemap Level 1 Decoration Food_15: 2022261776775751243
+      Tilemap Level 1 Decoration Food_7: -3379886421350494466
+      Tilemap Level 1 Decoration Food_3: 6379052603100357995
+      Tilemap Level 1 Decoration Food_5: 759414614436017437
+      Tilemap Level 1 Decoration Food_8: -1821082233874117588
+      Tilemap Level 1 Decoration Food_6: 2788076854147846033
+      Tilemap Level 1 Decoration Food_12: -5727184596119156423
+      Tilemap Level 1 Decoration Food_0: -7867492544774433977
+      Tilemap Level 1 Decoration Food_13: -741225735254391021
+      Tilemap Level 1 Decoration Food_2: 2623480921827556607
+      Tilemap Level 1 Decoration Food_1: 3186589241887989956
+      Tilemap Level 1 Decoration Food_10: 4457008416669672430
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

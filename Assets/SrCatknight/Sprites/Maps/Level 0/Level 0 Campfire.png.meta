@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -328,6 +329,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 0 Campfire_2: 4093774854219886128
+      Level 0 Campfire_4: 2967730315280322196
+      Level 0 Campfire_0: -2334130821168493423
+      Level 0 Campfire_1: -6053886097112670710
+      Level 0 Campfire_5: -4757469591535905758
+      Level 0 Campfire_6: -6824795223625079823
+      Level 0 Campfire_7: -7263560619202818220
+      Level 0 Campfire_3: -8081240461445074342
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

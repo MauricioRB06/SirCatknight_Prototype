@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -712,6 +713,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Credits_Arcade_6: -2205789304316125690
+      Credits_Arcade_13: 5481586079656155999
+      Credits_Arcade_7: 343446683625376749
+      Credits_Arcade_8: 6749825318079959622
+      Credits_Arcade_4: 5903350500551885833
+      Credits_Arcade_16: -2555656249643675198
+      Credits_Arcade_5: 2523497383256276770
+      Credits_Arcade_18: -6501406408925286063
+      Credits_Arcade_0: 4555902038578925181
+      Credits_Arcade_14: -5349946925293727553
+      Credits_Arcade_11: 8975938157598519250
+      Credits_Arcade_23: 4218881844911772223
+      Credits_Arcade_3: -5641983246606097727
+      Credits_Arcade_21: -2201415902157028592
+      Credits_Arcade_12: -3974236913093443824
+      Credits_Arcade_19: 8228475562571879504
+      Credits_Arcade_9: 5996780007407559320
+      Credits_Arcade_17: -126974609518078820
+      Credits_Arcade_15: 1811770834541593544
+      Credits_Arcade_20: 4246545518174030885
+      Credits_Arcade_1: 4912820846744907104
+      Credits_Arcade_22: 5586503334881935095
+      Credits_Arcade_2: 5095246089885210603
+      Credits_Arcade_10: -863242535663805080
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

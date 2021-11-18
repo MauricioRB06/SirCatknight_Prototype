@@ -63,6 +63,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -427,6 +428,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level 5 Projectiles_7: -3631078646356141887
+      Level 5 Projectiles_10: -4119146910609858619
+      Level 5 Projectiles_11: -2058179029409904814
+      Level 5 Projectiles_2: 2852084184502628118
+      Level 5 Projectiles_8: -477147620535767700
+      Level 5 Projectiles_0: -7148082872395344844
+      Level 5 Projectiles_4: -8543425053274509165
+      Level 5 Projectiles_5: 8118692485513821042
+      Level 5 Projectiles_1: 1300942866800278235
+      Level 5 Projectiles_9: -6918420374168340099
+      Level 5 Projectiles_6: 6905424970191725270
+      Level 5 Projectiles_3: 3859457313450624649
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
