@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Enemy
-  - Level Music
-  - Boss Music
-  - LevelSpawn
-  - Platfom
-  - Ground
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -17,14 +11,14 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground/Walls
-  - BlockingVolume
-  - Damageable
-  - Dead
-  - Player
-  - Weapon
-  - Projectiles
-  - Interactable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -46,43 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 2840594545
-    locked: 0
-  - name: BackgroundDecoration
-    uniqueID: 2090695731
-    locked: 0
-  - name: Ground and Walls
-    uniqueID: 2287366829
-    locked: 0
-  - name: Damageable Objects
-    uniqueID: 2035777425
-    locked: 0
-  - name: Enemys
-    uniqueID: 1667960627
-    locked: 0
-  - name: PickUpObjects
-    uniqueID: 3615571261
-    locked: 0
-  - name: Interactable Objects
-    uniqueID: 2541703905
-    locked: 0
-  - name: Player
-    uniqueID: 3764674289
-    locked: 0
-  - name: ForegroundDecorationA
-    uniqueID: 756119877
-    locked: 0
-  - name: DamageObjects
-    uniqueID: 135042913
-    locked: 0
-  - name: DamageProjectiles
-    uniqueID: 434826159
-    locked: 0
-  - name: ForegroundDecorationB
-    uniqueID: 1796422411
-    locked: 0
-  - name: UI
-    uniqueID: 2606211409
     locked: 0
